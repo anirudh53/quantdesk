@@ -115,6 +115,13 @@ dl.facts dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; 
 .facts-h { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin: 14px 0 6px; }
 .facts-h:first-child { margin-top: 0; }
 ul.plain { margin: 0; padding-left: 18px; color: var(--ink-2); }
+.rgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 16px 0; }
+.rpanel { background: var(--surface-2); border-radius: 10px; padding: 12px 14px; }
+.reading { margin: 0 0 8px; font-size: 13px; color: var(--ink); }
+ol.qlist { margin: 0; padding-left: 18px; color: var(--ink); font-size: 13px; display: grid; gap: 6px; }
+ul.news li { margin-bottom: 4px; }
+ul.news a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--axis); text-underline-offset: 2px; }
+ul.news a:hover { text-decoration-color: var(--ink); }
 
 #tip { position: fixed; pointer-events: none; z-index: 10; background: var(--surface); color: var(--ink); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.18); max-width: 300px; display: none; }
 #tip .tv { font-size: 14px; font-weight: 650; }
@@ -284,7 +291,7 @@ footer ul { padding-left: 18px; }
     app.replaceChildren(...[
       tiles(run, ok),
       changesCallout(run),
-      dividendsCard(run),
+      eventsCard(run, ok),
       el("div", { class: "grid2" }, [attentionCard(ok), moveCard(ok)]),
       namesTable(run, ok),
       detailCard(run, ok),
@@ -317,26 +324,29 @@ footer ul { padding-left: 18px; }
   }
 
   function daysBetween(a, b) { return Math.round((Date.parse(b) - Date.parse(a)) / 864e5); }
-  function dividendsCard(run) {
-    if (!run.dividends) return null;                 // older reports predate dividend tracking
-    const list = run.dividends;
-    const head = ["Symbol", "Ex-dividend date", "Own by close of", "Last paid", "Trailing yield", "Pays"];
-    const rows = list.map(d => {
-      const left = daysBetween(run.date, d.last_buy_day);
-      const when = left < 0 ? "too late" : left === 0 ? "today" : left === 1 ? "tomorrow" : "in " + left + " days";
-      return el("tr", { tabindex: "0", onclick: () => select(d.symbol), onkeydown: e => { if (e.key === "Enter") select(d.symbol); } }, [
-        el("td", null, [el("strong", { text: short(d.symbol) }), el("span", { class: "name", text: d.name || "" })]),
-        el("td", { text: d.ex_date }),
-        el("td", null, [d.last_buy_day + " ", el("span", { class: "chip" + (left === 0 ? " hot" : ""), text: when })]),
-        el("td", { class: "num", text: isNum(d.last_amount) ? CUR[run.market] + d.last_amount : "unknown" }),
-        el("td", { class: "num", text: isNum(d.yield_ttm) ? (d.yield_ttm * 100).toFixed(2) + "%" : "unknown" }),
-        el("td", { text: d.pay_date || "not published" })
+  function eventsCard(run, ok) {
+    if (!run.dividends && !ok.some(r => "next_earnings" in r)) return null;   // older reports predate event tracking
+    const ev = [];
+    (run.dividends || []).forEach(d => ev.push({ date: d.ex_date, symbol: d.symbol, name: d.name, kind: "Ex-dividend",
+      detail: "Own by close " + d.last_buy_day + (isNum(d.last_amount) ? " · last paid " + CUR[run.market] + d.last_amount : "") + (isNum(d.yield_ttm) ? " · " + (d.yield_ttm * 100).toFixed(2) + "% yield" : "") + (d.pay_date ? " · pays " + d.pay_date : ""),
+      due: d.last_buy_day }));
+    ok.forEach(r => { if (r.next_earnings && daysBetween(run.date, r.next_earnings) <= 21) ev.push({ date: r.next_earnings, symbol: r.symbol, name: r.name, kind: "Earnings",
+      detail: "Results day: moves are usually several times a normal day" + (r.trend && isNum(r.trend.vol_annual) ? " (normal ≈ ±" + (r.trend.vol_annual / Math.sqrt(252) * 100).toFixed(1) + "%)" : ""), due: r.next_earnings }); });
+    ev.sort((a, b) => a.date.localeCompare(b.date));
+    const rows = ev.map(e => {
+      const left = daysBetween(run.date, e.due);
+      const when = left < 0 ? "passed" : left === 0 ? "today" : left === 1 ? "tomorrow" : "in " + left + " days";
+      return el("tr", { tabindex: "0", onclick: () => select(e.symbol), onkeydown: k => { if (k.key === "Enter") select(e.symbol); } }, [
+        el("td", { style: "white-space:nowrap", text: e.date }),
+        el("td", null, [el("strong", { text: short(e.symbol) }), el("span", { class: "name", text: e.name || "" })]),
+        el("td", null, [el("span", { class: "chip" + (left <= 1 && left >= 0 ? " hot" : ""), text: e.kind + " · " + when })]),
+        el("td", { class: "dim", text: e.detail })
       ]);
     });
-    return el("section", { class: "card" }, [el("h2", { text: "Upcoming dividends (next 14 days)" }),
-      el("p", { class: "hint", text: "To receive a dividend you must own the shares at the close of the trading day before the ex-date. On the ex-date the price usually drops by about the dividend amount. Dates from Yahoo can be missing, especially for India; confirm with the company or exchange." }),
-      list.length ? el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i === 3 || i === 4 ? "num" : null, text: h })))]), el("tbody", null, rows)])])
-                  : el("p", { class: "dim", style: "margin:0", text: "No ex-dividend dates published for your watchlist in the next 14 days." })]);
+    return el("section", { class: "card" }, [el("h2", { text: "Upcoming events" }),
+      el("p", { class: "hint", text: "Ex-dividend dates (next 14 days) and earnings (next 21 days). To get a dividend you must own the shares at the close of the trading day before the ex-date; the price usually drops by about the dividend on the ex-date. Dates come from Yahoo; confirm with the company." }),
+      ev.length ? el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, ["Date", "Stock", "Event", "Details"].map(h => el("th", { text: h })))]), el("tbody", null, rows)])])
+                : el("p", { class: "dim", style: "margin:0", text: "No dividend or earnings dates published for your watchlist in the coming weeks." })]);
   }
 
   function select(sym) { state.sym = sym; render(); const d = document.getElementById("detail"); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" }); }
@@ -396,8 +406,8 @@ footer ul { padding-left: 18px; }
   }
 
   function namesTable(run, ok) {
-    const head = ["Symbol", "60 days", "Close", "1 day", "Move vs normal", "Volume vs avg", "From 52w high", "Flags"];
-    const numCols = new Set([2, 3, 4, 5, 6]);
+    const head = ["Symbol", "60 days", "Close", "1 day", "Move vs normal", "Volume vs avg", "P/E (fwd)", "12m vs market", "Flags"];
+    const numCols = new Set([2, 3, 4, 5, 6, 7]);
     const body = ok.map(r => {
       const tr = el("tr", { tabindex: "0", class: r.symbol === state.sym ? "sel" : null, onclick: () => select(r.symbol),
                             onkeydown: e => { if (e.key === "Enter") select(r.symbol); } }, [
@@ -407,7 +417,8 @@ footer ul { padding-left: 18px; }
         el("td", { class: "num " + (r.ret_1d > 0 ? "up" : r.ret_1d < 0 ? "down" : ""), text: pct(r.ret_1d) }),
         el("td", { class: "num", text: sig(r.move_vs_vol) }),
         el("td", { class: "num", text: isNum(r.volume_ratio_20d) ? r.volume_ratio_20d.toFixed(2) + "×" : "–" }),
-        el("td", { class: "num", text: pct(r.dist_52w_high, 1) }),
+        el("td", { class: "num", text: fmtPE(r) }),
+        el("td", { class: "num " + cls((r.trend || {}).rel_12m), text: pct((r.trend || {}).rel_12m, 0) }),
         el("td", null, [(r.flags || []).length ? el("div", { class: "chips" }, r.flags.map(f => el("span", { class: "chip" + (isHot(f) ? " hot" : ""), text: chipText(f) }))) : el("span", { class: "dim", text: "none" })])
       ]);
       return tr;
@@ -463,32 +474,87 @@ footer ul { padding-left: 18px; }
     pairs.forEach(([k, v]) => { dl.appendChild(el("dt", { text: k })); dl.appendChild(el("dd", { text: v == null || v === "" ? "unknown" : String(v) })); });
     return dl;
   }
+  const cls = v => isNum(v) ? (v > 0 ? "up" : v < 0 ? "down" : "") : "";
+  const x2 = v => isNum(v) ? v.toFixed(1) : null;
+  const pc0 = v => isNum(v) ? (v * 100).toFixed(0) + "%" : null;
+  const mag = v => isNum(v) ? (Math.abs(v) * 100).toFixed(0) + "%" : "–";      // size of a change, no sign (wording carries direction)
+  function fmtPE(r) {
+    const f = r.fundamentals || {};
+    if (!isNum(f.pe_trailing) && !isNum(f.pe_forward)) return "–";
+    return (x2(f.pe_trailing) || "–") + " (" + (x2(f.pe_forward) || "–") + ")";
+  }
+  function bigNum(v, m) {
+    if (!isNum(v)) return null;
+    const a = Math.abs(v), c = CUR[m];
+    return a >= 1e12 ? c + (v / 1e12).toFixed(2) + "T" : a >= 1e9 ? c + (v / 1e9).toFixed(1) + "B" : a >= 1e6 ? c + (v / 1e6).toFixed(0) + "M" : c + v.toFixed(0);
+  }
+  function panel(title, reading, pairs) {
+    return el("div", { class: "rpanel" }, [el("div", { class: "facts-h", text: title }), reading ? el("p", { class: "reading", text: reading }) : null, facts(pairs)]);
+  }
+  function safeUrl(u) { try { const x = new URL(u); return x.protocol === "https:" || x.protocol === "http:" ? x.href : null; } catch (e) { return null; } }
+
+  // Plain-language research prompts derived from the evidence. Questions to investigate, never instructions.
+  function questions(r, run) {
+    const q = [], f = r.fundamentals || {}, t = r.trend || {}, sc = r.sector || {}, dr = r.dividend_record || {}, rank = (sc.pe_trailing || {}).pct_rank;
+    if ((r.flags || []).some(x => /large 1-day move|volume .*x/.test(x))) q.push("Today was unusual. What caused it? Check the headlines below and the company's filings before reading anything into the price.");
+    if (r.next_earnings && daysBetween(run.date, r.next_earnings) <= 14) q.push("Earnings on " + r.next_earnings + ". Results often move the price several times a normal day, in either direction. Are you comfortable holding through that?");
+    if (isNum(rank) && rank >= 0.75) q.push("Valued above " + Math.round(rank * 100) + "% of its sector on P/E. What justifies the premium (faster growth, higher margins) and how likely is it to last?");
+    if (isNum(rank) && rank <= 0.25) q.push("Cheaper than most of its sector on P/E. Is that an opportunity or a warning (shrinking business, one-off profits, debt)?");
+    if (isNum(f.payout_ratio) && f.payout_ratio > 0.8) q.push("Pays out " + pc0(f.payout_ratio) + " of earnings as dividends. Is the dividend covered by free cash flow if profits dip?");
+    if (dr.cut_in_5y) q.push("The dividend was cut in the last 5 years. What happened, and could it happen again?");
+    if (t.above_200d === false && isNum(t.rel_12m) && t.rel_12m < -0.1) q.push("Below its 200-day average and lagging the market by " + mag(t.rel_12m) + " over 12 months. Has the business changed, or only the mood?");
+    if (isNum(f.debt_to_equity) && f.debt_to_equity > 1.5) q.push("Debt is " + f.debt_to_equity.toFixed(1) + "× equity. How would higher rates or a weak year affect it?");
+    if (isNum(f.revenue_growth) && f.revenue_growth < 0) q.push("Revenue is shrinking (down " + mag(f.revenue_growth) + " year on year). Temporary or structural?");
+    q.push("Before any decision: why would you own it, for how long, and what specific news would make you sell? Write it down first.");
+    return q;
+  }
+
   function detailCard(run, ok) {
     const r = ok.find(x => x.symbol === state.sym);
     if (!r) return null;
-    const m = r.model || {}, w = m.oos || {}, dv = r.dividends || {}, se = r.sentiment || {};
-    const right = el("div", null, [
-      el("div", { class: "facts-h", text: "Today" }),
-      facts([["1-day move", pct(r.ret_1d) + " (" + sig(r.move_vs_vol) + ")"], ["Volume vs 20d avg", isNum(r.volume_ratio_20d) ? r.volume_ratio_20d + "×" : null],
-             ["From 52-week high", pct(r.dist_52w_high, 1)], ["Attention score", r._att.toFixed(2)]]),
-      el("div", { class: "facts-h", text: "Dividends" }),
-      facts([["Trailing 12 months", isNum(dv.trailing_12m) ? money(dv.trailing_12m, run.market) : null], ["Last ex-date", dv.last_ex_date], ["Next ex-date", dv.next_ex_date || "none published"]]),
-      el("div", { class: "facts-h", text: "Model (hypothesis)" }),
-      w.status === "ok" ? facts([["Edge evidence", m.edge_evidence], ["P(up in 5 days)", isNum(m.p_up_5d) ? (m.p_up_5d * 100).toFixed(0) + "%" : null],
-             ["Past accuracy vs always-guess", (w.accuracy * 100).toFixed(1) + "% vs " + (Math.max(w.base_rate_up, 1 - w.base_rate_up) * 100).toFixed(1) + "%"],
-             ["Beat buy-and-hold after costs", w.beats_buyhold_after_costs ? "yes" : "no"]]) : el("p", { class: "dim", text: "Not enough history." }),
-      el("div", { class: "facts-h", text: "Press tone" }),
-      se.status === "ok" ? facts([["Headlines", se.n], ["Mean tone (−1…+1)", se.mean_compound]]) : el("p", { class: "dim", style: "margin:0", text: "Unknown – no news feeds configured. Unknown is not neutral." })
-    ]);
-    const gaps = (r.gaps || []).filter(g => !g.startsWith("sentiment"));
+    const m = r.model || {}, w = m.oos || {}, dv = r.dividends || {}, f = r.fundamentals || {}, t = r.trend || {}, dr = r.dividend_record || {}, sc = r.sector || {};
+    const bench = run.market === "US" ? "S&P 500" : "Nifty 50";
+    const pe = sc.pe_trailing, fpe = sc.pe_forward;
+    const valReading = pe ? "P/E " + x2(f.pe_trailing) + " vs " + sc.sector + " median " + pe.median + ": higher than " + Math.round(pe.pct_rank * 100) + "% of " + pe.n + " peers in the " + sc.universe + "."
+                          : (isNum(f.pe_trailing) ? "No sector comparison yet (needs a market scan with enough peers)." : "Valuation unavailable (Yahoo has no earnings figure, or earnings are negative).");
+    const yld = isNum(dv.trailing_12m) && r.close ? dv.trailing_12m / r.close : null;
+    const divReading = !yld ? "No dividend in the last 12 months." :
+      (dr.consecutive_increases >= 5 ? "Raised the dividend " + dr.consecutive_increases + " years in a row. " : dr.cut_in_5y ? "Cut the dividend at least once in the last 5 years. " : "") +
+      (isNum(f.payout_ratio) ? "Pays out " + pc0(f.payout_ratio) + " of earnings." : "");
+    const trendReading = [t.above_200d == null ? null : (t.above_200d ? "Above" : "Below") + " its 200-day average", isNum(t.rel_12m) ? (t.rel_12m >= 0 ? "ahead of" : "behind") + " the " + bench + " by " + mag(t.rel_12m) + " over 12 months" : null].filter(Boolean).join(", ") + ".";
+    const qualReading = [isNum(f.profit_margin) ? "Keeps " + pc0(f.profit_margin) + " of revenue as profit" : null, isNum(f.revenue_growth) ? "revenue " + (f.revenue_growth >= 0 ? "growing " : "shrinking ") + mag(f.revenue_growth) + " a year" : null].filter(Boolean).join(", ");
+    const news = (r.news || []).map(n => {
+      const href = safeUrl(n.link);
+      return el("li", null, [href ? el("a", { href, target: "_blank", rel: "noopener noreferrer", text: n.title }) : el("span", { text: n.title }),
+        el("span", { class: "dim", text: " · " + (n.source || "") + (n.published ? " · " + n.published.slice(0, 10) : "") })]);
+    });
+    const modelLine = w.status === "ok"
+      ? ((m.edge_evidence || "").startsWith("candidate") ? "Price-pattern model: possible edge (unvalidated). P(up in 5 days) " + pc0(m.p_up_5d) + "." :
+         "Price-pattern model: no reliable edge (" + (w.accuracy * 100).toFixed(1) + "% right vs " + (Math.max(w.base_rate_up, 1 - w.base_rate_up) * 100).toFixed(1) + "% by always guessing), so its probability is hidden.")
+      : "Price-pattern model: not enough history.";
+    const gaps = (r.gaps || []).filter(g => !g.startsWith("sentiment") && !g.startsWith("press tone"));
     return el("section", { class: "card", id: "detail" }, [
       el("div", { class: "detail-head" }, [
         el("div", null, [el("h2", { text: short(r.symbol) + (r.name ? " – " + r.name : "") }), el("span", { class: "big", text: money(r.close, run.market) }), " ",
-          el("span", { class: r.ret_1d > 0 ? "up" : r.ret_1d < 0 ? "down" : "", text: pct(r.ret_1d) })]),
-        el("div", { class: "meta", text: "Source " + (r.source || "–") + " · as of " + (r.asof || "–") + " · retrieved " + (r.retrieved || "–") })
+          el("span", { class: cls(r.ret_1d), text: pct(r.ret_1d) + (r.bar && r.bar !== "complete" ? " so far today" : "") })]),
+        el("div", { class: "meta", text: (sc.sector || f.yahoo_sector || "") + (bigNum(f.market_cap, run.market) ? " · market cap " + bigNum(f.market_cap, run.market) : "") + " · prices as of " + (r.asof || "–") + " (" + (r.source || "–") + ")" })
       ]),
-      (r.flags || []).length ? el("div", { class: "chips", style: "margin-bottom:12px" }, r.flags.map(f => el("span", { class: "chip" + (isHot(f) ? " hot" : ""), text: f }))) : null,
-      el("div", { class: "detail-grid" }, [priceChart(r.closes_60d, run.market), right]),
+      (r.flags || []).length ? el("div", { class: "chips", style: "margin-bottom:12px" }, r.flags.map(x => el("span", { class: "chip" + (isHot(x) ? " hot" : ""), text: x }))) : null,
+      el("div", { class: "detail-grid" }, [priceChart(r.closes_60d, run.market),
+        el("div", null, [el("div", { class: "facts-h", text: "Questions to answer before deciding" }), el("ol", { class: "qlist" }, questions(r, run).map(x => el("li", { text: x })))])]),
+      el("div", { class: "rgrid" }, [
+        panel("Valuation", valReading, [["P/E trailing (forward)", fmtPE(r)], ["Sector median P/E", pe ? pe.median : null], ["Forward P/E vs sector", fpe ? "above " + Math.round(fpe.pct_rank * 100) + "% of peers" : null],
+                                        ["Price / book", x2(f.price_to_book)], ["EV / EBITDA", x2(f.ev_to_ebitda)]]),
+        panel("Business quality", qualReading, [["Profit margin", pc0(f.profit_margin)], ["Return on equity", pc0(f.roe)], ["Revenue growth (y/y)", pct(f.revenue_growth, 0)],
+                                                ["Earnings growth (y/y)", pct(f.earnings_growth, 0)], ["Debt / equity", isNum(f.debt_to_equity) ? f.debt_to_equity.toFixed(2) + "×" : null]]),
+        panel("Dividend", divReading, [["Trailing yield", yld ? (yld * 100).toFixed(2) + "%" : "none"], ["Payout ratio", pc0(f.payout_ratio)], ["Years of increases", dr.years_paid ? String(dr.consecutive_increases) : null],
+                                        ["5-year growth / yr", pct(dr.cagr_5y, 1)], ["Next ex-date", dv.next_ex_date || "none published"]]),
+        panel("Trend & risk", trendReading, [["1 / 3 / 12 months", [t.ret_1m, t.ret_3m, t.ret_12m].map(v => pct(v, 0)).join(" / ")], ["12m vs " + bench, pct(t.rel_12m, 0)],
+                                            ["Volatility (yearly)", pc0(t.vol_annual)], ["Worst drop, last year", pct(t.max_drawdown_1y, 0)], ["Beta vs market", isNum(t.beta_1y) ? t.beta_1y.toFixed(2) : null]])
+      ]),
+      el("div", { class: "facts-h", text: "Recent headlines (last 7 days, Google News)" }),
+      news.length ? el("ul", { class: "plain news" }, news) : el("p", { class: "dim", text: "No headlines found." }),
+      el("p", { class: "hint", style: "margin-top:12px", text: modelLine + " Fundamentals: Yahoo Finance (secondary source; check the company's filings for anything that matters)." }),
       gaps.length ? el("div", null, [el("div", { class: "facts-h", text: "Gaps for this name" }), el("ul", { class: "plain" }, gaps.map(g => el("li", { text: g })))]) : null
     ]);
   }
@@ -502,7 +568,7 @@ footer ul { padding-left: 18px; }
       return el("tr", { tabindex: "0", onclick: () => select(r.symbol), onkeydown: e => { if (e.key === "Enter") select(r.symbol); } }, [
         el("td", null, [el("strong", { text: short(r.symbol) })]),
         el("td", null, [el("span", { class: "status" }, [el("span", { class: "dot", style: "background:" + (cand ? "var(--warning)" : "var(--muted)") }), cand ? "⚠ candidate" : "– weak/none"])]),
-        el("td", { class: "num " + (cand ? "" : "dim"), text: isNum(r.model.p_up_5d) ? (r.model.p_up_5d * 100).toFixed(0) + "%" : "–" }),
+        el("td", { class: "num " + (cand ? "" : "dim"), text: cand && isNum(r.model.p_up_5d) ? (r.model.p_up_5d * 100).toFixed(0) + "%" : "hidden" }),
         el("td", { class: "num", text: (w.accuracy * 100).toFixed(1) + "%" }),
         el("td", { class: "num", text: (guess * 100).toFixed(1) + "%" }),
         el("td", { class: "num " + (w.accuracy > guess ? "up" : "down"), text: ((w.accuracy - guess) * 100 > 0 ? "+" : "") + ((w.accuracy - guess) * 100).toFixed(1) + " pts" }),
@@ -514,7 +580,7 @@ footer ul { padding-left: 18px; }
     return el("section", { class: "card" }, [
       el("h2", { text: "Model record" }),
       el("p", { class: "hint", text: "A simple model's 5-day guess, shown next to how it actually did on ~2 years of data it hadn't seen. \"Always-guess\" = just predicting the more common outcome every time." }),
-      anyCand ? null : el("div", { class: "callout warn" }, [el("strong", { text: "No name shows a reliable edge. " }), "The model doesn't beat simple guessing by enough to trust, so ignore the P(up) numbers."]),
+      anyCand ? null : el("div", { class: "callout warn" }, [el("strong", { text: "No name shows a reliable edge. " }), "The model doesn't beat simple guessing by enough to trust, so its probabilities are hidden."]),
       el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i >= 2 && i !== 6 ? "num" : null, text: h })))]), el("tbody", null, rows)])])
     ]);
   }
@@ -595,12 +661,13 @@ footer ul { padding-left: 18px; }
         el("td", null, [el("strong", { text: short(d.symbol) }), el("span", { class: "name", text: d.name || "" })]),
         el("td", { class: "num", text: isNum(d.yield_ttm) ? (d.yield_ttm * 100).toFixed(2) + "%" : "–" }),
         el("td", { text: d.ex_date }),
-        el("td", null, [el("span", { class: "chip" + (left === 0 ? " hot" : ""), text: left === 0 ? "today" : left === 1 ? "tomorrow" : "in " + left + " days" })])
+        el("td", null, [el("span", { class: "chip" + (left === 0 ? " hot" : ""), text: left === 0 ? "today" : left === 1 ? "tomorrow" : "in " + left + " days" })]),
+        el("td", { class: "num", text: isNum(d.payout_ratio) ? (d.payout_ratio * 100).toFixed(0) + "%" + (d.payout_ratio > 1 ? " ⚠" : "") : "–" })
       ]);
     });
     return el("section", { class: "card" }, [el("div", { style: "display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:baseline" }, [el("h2", { text: "Ex-dividend in the next 14 days" }), toggle]),
-      el("p", { class: "hint", text: "Trailing 12-month yield. You must own by the close of the day before the ex-date; the price usually drops by about the dividend on the ex-date. Yields above 15% are likely inflated by a one-off special dividend." }),
-      list.length ? el("div", { class: "tscroll", style: "max-height:360px;overflow-y:auto" }, [el("table", null, [el("thead", null, [el("tr", null, ["Stock", "Yield", "Ex-date", "Own by close"].map((h, i) => el("th", { class: i === 1 ? "num" : null, text: h })))]), el("tbody", null, rows)])])
+      el("p", { class: "hint", text: "Trailing 12-month yield. You must own by the close of the day before the ex-date; the price usually drops by about the dividend on the ex-date. Yields above 15% are likely inflated by a one-off special dividend. Payout = share of earnings paid as dividends; ⚠ above 100% means the dividend exceeds profits (normal for property trusts/REITs, a risk sign for most others)." }),
+      list.length ? el("div", { class: "tscroll", style: "max-height:360px;overflow-y:auto" }, [el("table", null, [el("thead", null, [el("tr", null, ["Stock", "Yield", "Ex-date", "Own by close", "Payout"].map((h, i) => el("th", { class: i === 1 || i === 4 ? "num" : null, text: h })))]), el("tbody", null, rows)])])
                   : el("p", { class: "dim", text: "None you can still qualify for." })]);
   }
 
@@ -618,16 +685,17 @@ footer ul { padding-left: 18px; }
       el("td", { class: "num", text: pct(r.ret_20d, 1) }),
       el("td", { class: "num", text: pct(r.dist_52w_high, 1) }),
       el("td", { class: "num", text: isNum(r.yield_ttm) ? (r.yield_ttm * 100).toFixed(1) + "%" : "–" }),
+      el("td", { class: "num", text: isNum(r.pe_forward) ? r.pe_forward.toFixed(1) : "–" }),
       el("td", null, [(r.flags || []).length ? el("div", { class: "chips" }, r.flags.map(f => el("span", { class: "chip" + (isHot(f) ? " hot" : ""), text: chipText(f) }))) : el("span", { class: "dim", text: "–" })])
     ])));
     const search = el("input", { type: "search", placeholder: "Search symbol, company or sector", value: scanQuery, "aria-label": "Search scan",
       style: "font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 10px;width:min(320px,100%)",
       oninput: e => { scanQuery = e.target.value; const pos = e.target.selectionStart; renderScan(); const n = document.querySelector('input[type="search"]'); n.focus(); n.setSelectionRange(pos, pos); } });
-    const head = ["Stock", "Sector", "Close", "1 day", "Move vs normal", "Volume vs avg", "20 days", "From 52w high", "Yield", "Flags"];
+    const head = ["Stock", "Sector", "Close", "1 day", "Move vs normal", "Volume vs avg", "20 days", "From 52w high", "Yield", "Fwd P/E", "Flags"];
     return el("section", { class: "card" }, [
       el("div", { style: "display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px" }, [
         el("div", null, [el("h2", { text: q ? "Search results (" + shown.length + ")" : "Top 25 by attention" }), el("p", { class: "hint", style: "margin:0", text: "Most unusual move + volume today across the whole index. Search to find any stock in it." })]), search]),
-      el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i >= 2 && i <= 8 ? "num" : null, text: h })))]), tbody])])]);
+      el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i >= 2 && i <= 9 ? "num" : null, text: h })))]), tbody])])]);
   }
 
   // ---------- wiring ----------

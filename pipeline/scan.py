@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import yaml
 from . import alerts
-from .data import now_utc
+from .data import _retry, now_utc
 from .run_daily import market_today
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -20,6 +20,8 @@ MIN_ALERT_YIELD = 0.03               # scan dividend alerts only above this trai
 SUSPECT_YIELD = 0.15                 # above this, trailing yield probably includes a special dividend
 FLAG_SIGMA = 2.5
 KEEP_SCANS = 60
+CACHE_DAYS = 7                       # refresh each name's per-share fundamentals about weekly
+INFO_PER_RUN = 120                   # Yahoo quote-summary calls per scan (rate-limit budget)
 
 def load_scan_universe(market: str) -> tuple[list, dict]:
     cfg = yaml.safe_load((ROOT / "config" / "scan_universe.yaml").read_text())
@@ -60,20 +62,62 @@ def screen(sym: str, df: pd.DataFrame, latest: pd.Timestamp) -> dict:
     if row["yield_ttm"] and row["yield_ttm"] > SUSPECT_YIELD: f.append("yield looks inflated (special dividend?) - check")
     return row
 
-def next_ex_dates(syms: list, today: dt.date) -> dict:
-    """Ex-dividend calendar lookups, only for dividend payers. Missing stays missing."""
+def _num(v):
+    try:
+        v = float(v); return v if math.isfinite(v) else None
+    except (TypeError, ValueError):
+        return None
+
+def refresh_fundamentals(market: str, syms: list) -> dict:
+    """Per-share fundamentals change quarterly, so they are cached (data/fundamentals_<MKT>.json) and refreshed in a
+    rolling window: at most INFO_PER_RUN names per scan, stalest first. Valuation ratios are then computed from TODAY's
+    price. This keeps Yahoo requests low enough to avoid rate limits."""
+    import yfinance as yf
+    path = ROOT / "data" / f"fundamentals_{market}.json"
+    try:
+        cache = json.loads(path.read_text())
+    except Exception:
+        cache = {}
+    cutoff = str(dt.date.today() - dt.timedelta(days=CACHE_DAYS))
+    stale = sorted((s for s in syms if cache.get(s, {}).get("fetched", "") < cutoff), key=lambda s: cache.get(s, {}).get("fetched", ""))
+    def one(s):
+        try:
+            i = _retry(lambda: yf.Ticker(s).info, tries=3, wait=3.0) or {}
+        except Exception:
+            return s, None
+        if not i.get("symbol") and not i.get("quoteType"):
+            return s, None
+        return s, {"fetched": str(dt.date.today()), "eps_trailing": _num(i.get("trailingEps")), "eps_forward": _num(i.get("forwardEps")),
+                   "book_value": _num(i.get("bookValue")), "shares": _num(i.get("sharesOutstanding")), "payout_ratio": _num(i.get("payoutRatio"))}
+    with ThreadPoolExecutor(4) as ex:                    # 8 workers triggered Yahoo rate limits (HTTP 429)
+        for s, v in ex.map(one, stale[:INFO_PER_RUN]):
+            if v: cache[s] = v
+    path.parent.mkdir(exist_ok=True)
+    path.write_text(json.dumps(cache, indent=0, sort_keys=True))
+    return cache
+
+def valuation(close: float, f: dict | None) -> dict:
+    if not f:
+        return {}
+    ratio = lambda d: round(close / d, 2) if d and d > 0 else None   # negative earnings: P/E not meaningful
+    return {"pe_trailing": ratio(f.get("eps_trailing")), "pe_forward": ratio(f.get("eps_forward")),
+            "price_to_book": ratio(f.get("book_value")), "market_cap": close * f["shares"] if f.get("shares") else None,
+            "payout_ratio": f.get("payout_ratio"), "fundamentals_as_of": f.get("fetched")}
+
+def ex_dividend_dates(payers: list, today: dt.date) -> dict:
+    """Ex-dividend calendar lookups for dividend payers only. Missing stays missing."""
     import yfinance as yf
     def one(s):
         try:
-            cal = yf.Ticker(s).calendar
+            cal = _retry(lambda: yf.Ticker(s).calendar, tries=2)
             ex, pay = (cal.get("Ex-Dividend Date"), cal.get("Dividend Date")) if isinstance(cal, dict) else (None, None)
             if ex and pd.Timestamp(ex).date() >= today:
-                return s, str(ex), str(pay) if pay else None
+                return s, {"next_ex_date": str(ex), "pay_date": str(pay) if pay else None}
         except Exception:
             pass
-        return s, None, None
-    with ThreadPoolExecutor(8) as ex:
-        return {s: (e, p) for s, e, p in ex.map(one, syms)}
+        return s, {}
+    with ThreadPoolExecutor(4) as ex:
+        return dict(ex.map(one, payers))
 
 def attention(r: dict) -> float:
     s = min(abs(r["move_vs_vol"]), 5) if r.get("move_vs_vol") is not None else 0.0
@@ -81,12 +125,27 @@ def attention(r: dict) -> float:
     s += 0.5 * len([x for x in r["flags"] if "52-week" in x])
     return round(s, 2)
 
+def download(syms: list) -> pd.DataFrame:
+    """Bulk daily history. Names Yahoo drops (rate limit, timeout) are retried once after a pause."""
+    import time
+    import yfinance as yf
+    get = lambda ss: yf.download(ss, period="1y", auto_adjust=True, actions=True, group_by="ticker", threads=True, progress=False)
+    raw = get(syms)
+    missing = [s for s in syms if s not in raw.columns.get_level_values(0) or raw[s]["Close"].dropna().empty]
+    if len(missing) > 0.05 * len(syms):
+        time.sleep(45)
+        again = get(missing if len(missing) > 1 else missing * 2)
+        got = [s for s in missing if s in again.columns.get_level_values(0) and not again[s]["Close"].dropna().empty]
+        if got:
+            raw = pd.concat([raw.drop(columns=got, level=0, errors="ignore"), again[got]], axis=1)
+    return raw
+
 def run(market: str, send_alerts: bool = True) -> pathlib.Path:
     import yfinance as yf
     names, meta = load_scan_universe(market)
     today = market_today(market)
     syms = [n["symbol"] for n in names]
-    raw = yf.download(syms, period="1y", auto_adjust=True, actions=True, group_by="ticker", threads=True, progress=False)
+    raw = download(syms)
     raw.index = pd.to_datetime(raw.index).tz_localize(None).normalize()
     closes = raw.xs("Close", axis=1, level=1)
     latest = closes.dropna(how="all").index.max()          # last day with real prices (Yahoo can add an empty row for today)
@@ -102,10 +161,17 @@ def run(market: str, send_alerts: bool = True) -> pathlib.Path:
         r.update(name=info[s]["name"], sector=info[s].get("sector"))
         rows.append(r)
     ok = [r for r in rows if r["status"] == "ok"]
-    payers = [r["symbol"] for r in ok if r["dividends"]["trailing_12m"]]
-    for s, (ex, pay) in next_ex_dates(payers, today).items():
-        r = next(x for x in ok if x["symbol"] == s)
-        r["dividends"].update(next_ex_date=ex, pay_date=pay)
+    if len(ok) < 0.5 * len(rows):
+        # a mostly-failed download (rate limit, outage) must not overwrite the last good scan
+        raise RuntimeError(f"scan aborted: only {len(ok)} of {len(rows)} names returned prices (Yahoo rate limit or outage?)")
+    fcache = refresh_fundamentals(market, [r["symbol"] for r in ok])
+    exd = ex_dividend_dates([r["symbol"] for r in ok if r["dividends"]["trailing_12m"]], today)
+    for r in ok:
+        r["dividends"].update(exd.get(r["symbol"], {}))
+        r.update(valuation(r["close"], fcache.get(r["symbol"])))
+        # REITs pay out more than accounting earnings by design (judge them on FFO), so they are not flagged
+        if (r.get("payout_ratio") or 0) > 1 and r.get("yield_ttm") and r.get("sector") not in ("Real Estate", "Realty"):
+            r["flags"].append("payout ratio above 100% of earnings (dividend may be at risk)")
     for r in ok:
         r["attention"] = attention(r)
     ok.sort(key=lambda r: r["attention"], reverse=True)

@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse, datetime as dt, json, pathlib, yaml
 import numpy as np
 from zoneinfo import ZoneInfo
-from . import alerts, data, features, model, sentiment
+from . import alerts, data, features, model, research, sentiment
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 MARKET_TZ = {"US": "America/New_York", "IN": "Asia/Kolkata"}
@@ -23,8 +23,23 @@ def load_universe(market: str):
     cost = cfg["costs"]["us_bps" if market == "US" else "in_bps"]
     return ok, unresolved, cost, cfg.get("watchlist", [])
 
-def analyse(sym: str, cost_bps: float, synthetic: bool, feeds: list, today: dt.date | None = None) -> dict:
+SESSION = {"US": (dt.time(9, 30), dt.time(16, 0)), "IN": (dt.time(9, 15), dt.time(15, 30))}
+
+def session_fraction(market: str, bar_date: str, now: dt.datetime | None = None) -> float | None:
+    """Share of today's session elapsed if the latest bar is today's and the market is still open, else None (complete bar)."""
+    now = now or dt.datetime.now(ZoneInfo(MARKET_TZ[market]))
+    if bar_date != str(now.date()):
+        return None
+    o, c = SESSION[market]
+    start, end = now.replace(hour=o.hour, minute=o.minute, second=0), now.replace(hour=c.hour, minute=c.minute, second=0)
+    if now >= end:
+        return None
+    return max((now - start).total_seconds() / (end - start).total_seconds(), 0.05)
+
+def analyse(sym: str, cost_bps: float, synthetic: bool, feeds: list, today: dt.date | None = None,
+            name: str | None = None, market: str = "US", bench=None) -> dict:
     out = {"symbol": sym, "flags": [], "gaps": []}
+    today = today or dt.date.today()
     try:
         px = data.fetch_prices(sym, synthetic=synthetic)
     except Exception as e:                                   # failed != quiet
@@ -33,31 +48,53 @@ def analyse(sym: str, cost_bps: float, synthetic: bool, feeds: list, today: dt.d
     out.update(status="ok", source=px.attrs["source"], retrieved=px.attrs["retrieved"], asof=px.attrs["asof"])
     f = features.build(px)
     last = f.iloc[-1]
-    ret1 = float(px["close"].pct_change().iloc[-1])
-    vol20 = float(last["vol20"])
-    out["close"] = round(float(px["close"].iloc[-1]), 4)
+    c, v = px["close"], px["volume"]
+    ret1 = float(c.pct_change().iloc[-1])
+    vol20 = float(c.pct_change().iloc[-21:-1].std())        # typical daily move, EXCLUDING today (same as the market scan)
+    out["close"] = round(float(c.iloc[-1]), 4)
     out["ret_1d"] = round(ret1, 4)
     out["move_vs_vol"] = round(ret1 / vol20, 2) if vol20 else None
-    tail = px["close"].iloc[-60:]                            # recent history for the dashboard chart
-    out["closes_60d"] = [[str(d.date()), round(float(c), 4)] for d, c in tail.items()]
-    out["volume_ratio_20d"] = round(float(last["volratio"]), 2)
+    tail = c.iloc[-60:]                                      # recent history for the dashboard chart
+    out["closes_60d"] = [[str(d.date()), round(float(x), 4)] for d, x in tail.items()]
+    # volume vs the prior 20 days; mid-session, compare against the pace expected by this time of day
+    frac = None if synthetic else session_fraction(market, out["asof"])
+    avgv = float(v.iloc[-21:-1].mean())
+    out["volume_ratio_20d"] = round(float(v.iloc[-1]) / (avgv * (frac or 1)), 2) if avgv else None
+    out["bar"] = "complete" if frac is None else f"partial ({frac:.0%} of session)"
     out["dist_52w_high"] = round(float(last["dist_hi252"]), 3)
-    age = ((today or dt.date.today()) - dt.date.fromisoformat(out["asof"])).days
+    age = (today - dt.date.fromisoformat(out["asof"])).days
     if age > 4: out["flags"].append(f"STALE data ({age} days old)")
+    if frac is not None: out["flags"].append(f"intraday: day {frac:.0%} done, move and volume so far")
     if out["move_vs_vol"] is not None and abs(out["move_vs_vol"]) >= 2.5:
         out["flags"].append(f"large 1-day move ({out['move_vs_vol']} x 20d vol)")
-    if out["volume_ratio_20d"] >= 2.0:
+    if out["volume_ratio_20d"] and out["volume_ratio_20d"] >= 2.0:
         out["flags"].append(f"volume {out['volume_ratio_20d']}x 20-day average (anomaly; cause not identified)")
     if out["dist_52w_high"] > -0.01: out["flags"].append("at/near 52-week high")
-    # dividends (missing stays unknown)
+    # one profile fetch feeds dividends, fundamentals and the event calendar (missing stays unknown)
+    prof = data.fetch_profile(sym, synthetic=synthetic)
     try:
-        dv = data.fetch_dividends(sym, synthetic=synthetic)
+        dv = data.fetch_dividends(sym, synthetic=synthetic, profile=prof, today=today)
     except Exception as e:                                   # one bad fetch must not kill the run
         dv = {"symbol": sym, "trailing_12m": None, "next_ex_date": None, "error": str(e)}
         out["gaps"].append(f"dividend fetch failed: {e}")
     out["dividends"] = dv
     if dv.get("next_ex_date"): out["flags"].append(f"ex-dividend date {dv['next_ex_date']}")
-    if dv.get("trailing_12m") is None: out["gaps"].append("dividend data unavailable or none paid (not distinguished)")
+    if dv.get("trailing_12m") is None and not synthetic: out["gaps"].append("dividend data unavailable")
+    # research context: valuation vs sector, quality, dividend record, trend/risk, events, headlines
+    fund = research.fundamentals(prof.get("info") or {})
+    out["fundamentals"] = fund
+    out["dividend_record"] = research.dividend_record(prof.get("dividends"), today)
+    out["trend"] = research.trend_risk(px, bench)
+    out["sector"] = None if synthetic else research.sector_context(sym, market, fund)
+    out["next_earnings"] = research.next_earnings(prof.get("calendar"), today)
+    if out["next_earnings"]:
+        days = (dt.date.fromisoformat(out["next_earnings"]) - today).days
+        if days <= 14: out["flags"].append(f"earnings in {days} days ({out['next_earnings']})")
+    if not (prof.get("info") or {}) and not synthetic: out["gaps"].append("fundamentals unavailable from Yahoo")
+    try:
+        out["news"] = [] if synthetic else research.news(name or sym, market)
+    except Exception as e:
+        out["news"] = []; out["gaps"].append(f"news fetch failed: {e}")
     # ML baseline with its own out-of-sample record
     wf = model.walk_forward(f, cost_bps=cost_bps)
     out["model"] = {"oos": wf, "p_up_5d": None, "label": "hypothesis, not a signal"}
@@ -67,11 +104,11 @@ def analyse(sym: str, cost_bps: float, synthetic: bool, feeds: list, today: dt.d
         out["model"]["edge_evidence"] = "weak/none" if not proven else "candidate (still unvalidated; check stability)"
     else:
         out["gaps"].append("model: insufficient history")
-    # sentiment (press tone only)
-    heads = sentiment.fetch_rss(sym, feeds) if (feeds and not synthetic) else []
+    # press tone: configured feeds if any, otherwise the headlines above (context only)
+    heads = sentiment.fetch_rss(sym, feeds) if (feeds and not synthetic) else [{"title": n["title"]} for n in out["news"]]
     out["sentiment"] = sentiment.score_headlines(heads)
-    if out["sentiment"]["status"] != "ok":
-        out["gaps"].append("sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral")
+    if out["sentiment"]["status"] != "ok" and not synthetic:
+        out["gaps"].append("press tone: no recent headlines found -> unknown, not neutral")
     return out
 
 def attention(r: dict) -> float:
@@ -96,10 +133,24 @@ def to_markdown(market, mode, results, unresolved, now) -> str:
     for r in ok:
         w = r["model"]["oos"]
         if w["status"] == "ok":
-            L.append(f"| {r['symbol']} | {r['model']['p_up_5d']} | {w['n_oos']} | {w['accuracy']} | {w['base_rate_up']} | "
+            shown = r['model']['p_up_5d'] if r['model']['edge_evidence'].startswith("candidate") else "hidden (no edge)"
+            L.append(f"| {r['symbol']} | {shown} | {w['n_oos']} | {w['accuracy']} | {w['base_rate_up']} | "
                      f"{w['beats_buyhold_after_costs']} | {r['model']['edge_evidence']} |")
         else:
             L.append(f"| {r['symbol']} | n/a | - | - | - | - | insufficient data |")
+    pc = lambda x: f"{x:+.0%}" if isinstance(x, (int, float)) else "?"
+    L += ["", "## Research snapshot (context, not a verdict)", "",
+          "| Symbol | P/E (fwd) | P/E vs sector | Div yield | Div growth streak | 12m vs market | Above 200d | Next earnings |",
+          "|---|---|---|---|---|---|---|---|"]
+    for r in ok:
+        fu, sc, tr, dr = r.get("fundamentals") or {}, r.get("sector") or {}, r.get("trend") or {}, r.get("dividend_record") or {}
+        pe = fu.get("pe_trailing"); pf = fu.get("pe_forward")
+        rank = (sc.get("pe_trailing") or {}).get("pct_rank")
+        dvy = (r["dividends"].get("trailing_12m") or 0) / r["close"] if r["dividends"].get("trailing_12m") else None
+        L.append(f"| {r['symbol']} | {pe and round(pe, 1)} ({pf and round(pf, 1)}) | "
+                 f"{'above ' + format(rank, '.0%') + ' of sector' if rank is not None else '?'} | "
+                 f"{format(dvy, '.2%') if dvy else '-'} | {dr.get('consecutive_increases', '?')} yrs | {pc(tr.get('rel_12m'))} | "
+                 f"{ {True: 'yes', False: 'no'}.get(tr.get('above_200d'), '?') } | {r.get('next_earnings') or '?'} |")
     L += ["", "## Gaps and failures", ""]
     for r in results:
         if r.get("status") != "ok": L.append(f"- {r['symbol']}: {r.get('status')} - {'; '.join(r['gaps'])}")
@@ -129,12 +180,14 @@ def main():
     ap.add_argument("--market", choices=["US", "IN"], required=True)
     ap.add_argument("--mode", choices=["open", "midday", "close"], required=True)
     ap.add_argument("--synthetic", action="store_true")
+    ap.add_argument("--no-alerts", action="store_true", help="write the report but send no notifications")
     a = ap.parse_args()
     ok, unresolved, cost, _ = load_universe(a.market)
     feeds_path = ROOT / "config" / "feeds.yaml"
     feeds = yaml.safe_load(feeds_path.read_text()).get(a.market, []) if feeds_path.exists() else []
     today = market_today(a.market)
-    results = [dict(analyse(r["symbol"], cost, a.synthetic, feeds, today), name=r.get("name")) for r in ok]
+    bench = research.fetch_benchmark(a.market, a.synthetic)
+    results = [dict(analyse(r["symbol"], cost, a.synthetic, feeds, today, r.get("name"), a.market, bench), name=r.get("name")) for r in ok]
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     md = to_markdown(a.market, a.mode, results, unresolved, now)
     changes = diff_vs_previous(a.market, results) if a.mode == "midday" else None
@@ -144,9 +197,10 @@ def main():
     if divs:
         md += "\n\n## Upcoming ex-dividend dates (next 14 days)\n" + "\n".join(
             f"- {d['symbol']}: ex {d['ex_date']}, own by close {d['last_buy_day']}, last paid {d['last_amount']}" for d in divs)
-    if not a.synthetic:
+    if not a.synthetic and not a.no_alerts:
         try:
             alerts.dividend_alerts(a.market, results, today)
+            alerts.earnings_alerts(a.market, results, today)
         except Exception as e:                               # an alert failure must not lose the report
             print(f"dividend alerts failed: {e}")
     stem = f"{today}_{a.market}_{a.mode}"

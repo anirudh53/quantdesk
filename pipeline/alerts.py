@@ -47,6 +47,7 @@ def upcoming_dividends(results: list, today: dt.date) -> list:
         ttm, close = dv.get("trailing_12m"), r.get("close")
         out.append({"symbol": r["symbol"], "name": r.get("name"), "ex_date": str(ex), "last_buy_day": str(last_buy),
                     "pay_date": dv.get("pay_date"), "last_amount": dv.get("last_amount"),
+                    "payout_ratio": r.get("payout_ratio", (r.get("fundamentals") or {}).get("payout_ratio")),
                     "yield_ttm": round(ttm / close, 4) if ttm and close else None})
     return sorted(out, key=lambda d: d["ex_date"])
 
@@ -79,6 +80,37 @@ def dividend_alerts(market: str, results: list, today: dt.date, send: bool = Tru
             f.write(f"{dt.datetime.now():%Y-%m-%d %H:%M} {title} | {msg}\n")
     cutoff = str(today - dt.timedelta(days=60))
     sent = {k: v for k, v in sent.items() if v >= cutoff}
+    STATE.parent.mkdir(exist_ok=True)
+    STATE.write_text(json.dumps(sent, indent=1))
+    return fired
+
+EARNINGS_DAYS = 7
+
+def earnings_alerts(market: str, results: list, today: dt.date, send: bool = True) -> list:
+    """One heads-up per watchlist name about a week before it reports. Earnings are the biggest scheduled price event."""
+    sent, fired = _load(), []
+    for r in results:
+        d = r.get("next_earnings")
+        if r.get("status") != "ok" or not d:
+            continue
+        day = dt.date.fromisoformat(d[:10])
+        n = (day - today).days
+        key = f"{market}:{r['symbol']}:{d[:10]}:earnings"
+        if not (0 <= n <= EARNINGS_DAYS) or key in sent:
+            continue
+        sym = r["symbol"].replace(".NS", "")
+        when = "today" if n == 0 else "tomorrow" if n == 1 else f"in {n} days"
+        tr = r.get("trend") or {}
+        vol = f" Its typical daily move is about {tr['vol_annual'] / 252 ** 0.5:.1%}; results days often move several times that." if tr.get("vol_annual") else ""
+        title = f"{sym} reports earnings {day:%a %b %d} ({when})"
+        msg = f"Scheduled results date from Yahoo (confirm on the company's investor-relations page).{vol}"
+        if send:
+            notify(title, (r.get("name") or sym) + " · info only, not advice", msg)
+        sent[key] = str(today)
+        fired.append({"key": key, "title": title})
+        LOG.parent.mkdir(exist_ok=True)
+        with LOG.open("a") as f:
+            f.write(f"{dt.datetime.now():%Y-%m-%d %H:%M} {title} | {msg}\n")
     STATE.parent.mkdir(exist_ok=True)
     STATE.write_text(json.dumps(sent, indent=1))
     return fired

@@ -22,18 +22,24 @@ def due_slot(now_local: dt.datetime) -> str | None:
             current = mode
     return current
 
+FAILED = []
+
 def run(cmd: list, label: str) -> None:
     r = subprocess.run([sys.executable, "-m", *cmd], cwd=ROOT, capture_output=True, text=True)
     print(f"{label}: exit {r.returncode}")
     if r.returncode:
         print(r.stderr[-3000:])
+        FAILED.append(label)
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     uni = ROOT / "config" / "scan_universe.yaml"
-    if not uni.exists() or (dt.datetime.now().timestamp() - uni.stat().st_mtime) > 30 * 86400:
+    # age from the 'retrieved' stamp inside the file: in the cloud every checkout has a fresh file mtime
+    stamp_line = next((l for l in uni.read_text().splitlines() if l.startswith("retrieved:")), "") if uni.exists() else ""
+    retrieved = stamp_line.split(":", 1)[1].strip().strip("'\"")[:10] if stamp_line else "2000-01-01"
+    if (dt.date.today() - dt.date.fromisoformat(retrieved)).days > 30:
         print("refreshing scan universe (index constituents older than 30 days)", flush=True)
         if not a.dry_run:
             run(["pipeline.universe_refresh"], "universe refresh")   # on failure the old list is kept
@@ -58,3 +64,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    if FAILED:                                       # non-zero exit so the cloud workflow shows red and sends a failure alert
+        sys.exit(f"failed: {', '.join(FAILED)}")
