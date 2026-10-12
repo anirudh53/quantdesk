@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Quantdesk Dashboard</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --surface-2: #f3f2ee;
+  --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
+  --series-1: #2a78d6; --up: #2a78d6; --down: #e34948; --mid: #f0efec;
+  --good-text: #006300; --bad-text: #c02f2f;
+  --warning: #fab219; --critical: #d03b3b; --good: #0ca30c;
+  --chip: #eeede8; --focus: #2a78d6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --surface-2: #232321;
+    --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --series-1: #3987e5; --up: #3987e5; --down: #e66767; --mid: #383835;
+    --good-text: #0ca30c; --bad-text: #e66767; --chip: #2a2a28; --focus: #3987e5;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --surface-2: #232321;
+  --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+  --series-1: #3987e5; --up: #3987e5; --down: #e66767; --mid: #383835;
+  --good-text: #0ca30c; --bad-text: #e66767; --chip: #2a2a28; --focus: #3987e5;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--page); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 24px 16px 64px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 16px; }
+h1 { font-size: 22px; margin: 0; letter-spacing: -0.01em; }
+.sub { color: var(--ink-2); margin: 2px 0 0; }
+.built { color: var(--muted); font-size: 12px; }
+h2 { font-size: 15px; margin: 0 0 2px; }
+.hint { color: var(--muted); font-size: 12px; margin: 0 0 12px; }
+
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-bottom: 16px; }
+.seg { display: inline-flex; background: var(--surface-2); border-radius: 8px; padding: 3px; border: 1px solid var(--border); }
+.seg button { border: 0; background: transparent; color: var(--ink-2); font: inherit; font-weight: 600; padding: 6px 14px; border-radius: 6px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+select { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; }
+.meta { color: var(--ink-2); font-size: 12px; }
+.badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--ink-2); }
+button:focus-visible, select:focus-visible, tr:focus-visible, .bar-row:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.tile .label { color: var(--ink-2); font-size: 12px; }
+.tile .value { font-size: 28px; font-weight: 650; letter-spacing: -0.02em; margin-top: 2px; }
+.tile .note { color: var(--muted); font-size: 12px; }
+
+.callout { border-left: 3px solid var(--series-1); background: var(--surface); border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; border-top: 1px solid var(--border); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.callout ul { margin: 4px 0 0; padding-left: 18px; }
+.callout.warn { border-left-color: var(--warning); }
+
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+@media (max-width: 860px) { .grid2 { grid-template-columns: 1fr; } }
+section.card { margin-bottom: 16px; }
+
+/* horizontal bar charts */
+.bars { display: grid; gap: 2px; }
+.bar-row { display: grid; grid-template-columns: 112px 1fr; align-items: center; gap: 10px; padding: 3px 0; cursor: pointer; border-radius: 6px; }
+.bar-row:hover { background: var(--surface-2); }
+.bar-row .sym { font-weight: 600; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.track { position: relative; height: 18px; }
+.fill { position: absolute; top: 3px; height: 12px; background: var(--series-1); border-radius: 0 4px 4px 0; }
+.fill.neg { background: var(--down); border-radius: 4px 0 0 4px; }
+.fill.pos { background: var(--up); }
+.bar-val { position: absolute; top: 0; font-size: 11px; color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; line-height: 18px; }
+.zero { position: absolute; top: -2px; bottom: -2px; width: 1px; background: var(--axis); }
+.thresh { position: absolute; top: -2px; bottom: -2px; width: 1px; background: var(--grid); }
+.axis-note { display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; margin: 6px 0 0 122px; }
+.legend { display: flex; gap: 14px; color: var(--ink-2); font-size: 12px; margin-bottom: 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+
+/* tables */
+.tscroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; font-weight: 600; color: var(--ink-2); font-size: 12px; padding: 8px 10px; border-bottom: 1px solid var(--axis); white-space: nowrap; }
+th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td { padding: 8px 10px; border-bottom: 1px solid var(--grid); vertical-align: middle; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: var(--surface-2); }
+tbody tr.sel { background: var(--surface-2); box-shadow: inset 3px 0 0 var(--series-1); }
+.name { color: var(--muted); font-size: 11px; display: block; }
+.up { color: var(--good-text); } .down { color: var(--bad-text); }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip { font-size: 11px; background: var(--chip); color: var(--ink-2); padding: 2px 7px; border-radius: 999px; white-space: nowrap; }
+.chip.hot { box-shadow: inset 0 0 0 1px var(--warning); color: var(--ink); }
+.status { display: inline-flex; white-space: nowrap; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; }
+.status .dot { width: 8px; height: 8px; border-radius: 50%; }
+.dim { color: var(--muted); }
+
+/* detail */
+.detail-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; margin-bottom: 8px; }
+.detail-head .big { font-size: 26px; font-weight: 650; }
+.detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+@media (max-width: 860px) { .detail-grid { grid-template-columns: 1fr; } }
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+dl.facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; font-size: 13px; }
+dl.facts dt { color: var(--ink-2); }
+dl.facts dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.facts-h { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin: 14px 0 6px; }
+.facts-h:first-child { margin-top: 0; }
+ul.plain { margin: 0; padding-left: 18px; color: var(--ink-2); }
+
+#tip { position: fixed; pointer-events: none; z-index: 10; background: var(--surface); color: var(--ink); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.18); max-width: 300px; display: none; }
+#tip .tv { font-size: 14px; font-weight: 650; }
+#tip .tl { color: var(--ink-2); }
+.empty { color: var(--muted); padding: 40px 0; text-align: center; }
+footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
+footer ul { padding-left: 18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Quantdesk</h1>
+      <p class="sub">Daily research evidence for your watchlist. Not buy/sell signals.</p>
+    </div>
+    <div class="built" id="built"></div>
+  </header>
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="View" id="viewseg">
+      <button data-view="watch">Watchlist</button><button data-view="scan">Market scan</button>
+    </div>
+    <div class="seg" role="group" aria-label="Market" id="mktseg">
+      <button data-mkt="US">US</button><button data-mkt="IN">India</button>
+    </div>
+    <label class="meta"><span id="runlabel">Run</span> <select id="run"></select></label>
+    <span class="meta" id="runmeta"></span>
+  </div>
+
+  <div id="app"></div>
+
+  <footer>
+    <ul>
+      <li>Attention ranks how unusual today's move and volume are. It says nothing about which way the price goes next.</li>
+      <li>"Move vs normal" = today's % move divided by the stock's typical daily move over the last 20 days (σ). Beyond ±2.5σ gets flagged.</li>
+      <li>Model probabilities only count if the model's own out-of-sample record supports them. "Weak/none" means ignore them.</li>
+      <li>Data is from Yahoo Finance via yfinance: delayed / end-of-day, can be wrong. Check primary sources before acting on anything.</li>
+    </ul>
+  </footer>
+</div>
+<div id="tip" role="tooltip"></div>
+
+<script id="data" type="application/json">/*__DATA__*/null</script>
+<script>
+(function () {
+  "use strict";
+  const DATA = JSON.parse(document.getElementById("data").textContent) || { runs: [] };
+  const MKT_NAME = { US: "US", IN: "India" };
+  const CUR = { US: "$", IN: "₹" };
+  const store = {
+    get(k) { try { return localStorage.getItem("qd." + k); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem("qd." + k, v); } catch (e) {} }
+  };
+  const state = { view: store.get("view") === "scan" ? "scan" : "watch", market: store.get("market") || "US", runId: null, scanId: null, sym: null };
+  DATA.scans = DATA.scans || [];
+
+  // ---------- helpers ----------
+  function el(tag, attrs, kids) {
+    const n = document.createElement(tag);
+    if (attrs) for (const k in attrs) {
+      const v = attrs[k];
+      if (v == null || v === false) continue;
+      if (k === "class") n.className = v;
+      else if (k === "text") n.textContent = v;
+      else if (k === "style") n.setAttribute("style", v);
+      else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v);
+    }
+    (kids || []).forEach(c => { if (c != null) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function svg(tag, attrs) {
+    const n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+  const isNum = v => typeof v === "number" && isFinite(v);
+  const pct = (v, d = 2) => isNum(v) ? (v > 0 ? "+" : "") + (v * 100).toFixed(d) + "%" : "–";
+  const sig = v => isNum(v) ? (v > 0 ? "+" : "") + v.toFixed(2) + "σ" : "–";
+  const money = (v, m) => isNum(v) ? CUR[m] + v.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "–";
+  const short = s => s.replace(/\.NS$/, "");
+  function attention(r) {
+    let s = 0;
+    if (isNum(r.move_vs_vol)) s += Math.min(Math.abs(r.move_vs_vol), 5);
+    s += Math.min(Math.max((isNum(r.volume_ratio_20d) ? r.volume_ratio_20d : 1) - 1, 0), 3);
+    s += 0.5 * (r.flags || []).filter(f => f.includes("ex-dividend") || f.includes("52-week")).length;
+    return Math.round(s * 100) / 100;
+  }
+  const isHot = f => /large 1-day move|volume .*x|STALE/.test(f);
+  function chipText(f) {
+    return f.replace(/ \(anomaly; cause not identified\)/, "").replace(/large 1-day move \((.*) x 20d vol\)/, "big move $1σ")
+            .replace(/volume ([\d.]+)x 20-day average/, "volume $1× avg").replace("at/near 52-week high", "near 52w high")
+            .replace("ex-dividend date", "ex-div");
+  }
+
+  // tooltip
+  const tip = document.getElementById("tip");
+  function showTip(evt, value, lines) {
+    tip.replaceChildren(el("div", { class: "tv", text: value }), ...lines.map(l => el("div", { class: "tl", text: l })));
+    tip.style.display = "block";
+    let x, y;
+    if (evt.clientX != null && (evt.clientX || evt.clientY)) { x = evt.clientX; y = evt.clientY; }
+    else { const b = evt.currentTarget.getBoundingClientRect(); x = b.left + 40; y = b.bottom; }
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    tip.style.left = Math.min(x + 14, innerWidth - w - 8) + "px";
+    tip.style.top = (y + h + 20 > innerHeight ? y - h - 12 : y + 14) + "px";
+  }
+  const hideTip = () => { tip.style.display = "none"; };
+  function hover(node, fn) {
+    node.addEventListener("pointermove", e => { const t = fn(); showTip(e, t[0], t[1]); });
+    node.addEventListener("pointerleave", hideTip);
+    node.addEventListener("focus", e => { const t = fn(); showTip(e, t[0], t[1]); });
+    node.addEventListener("blur", hideTip);
+  }
+
+  // ---------- run selection ----------
+  const runsFor = m => DATA.runs.filter(r => r.market === m);
+  function currentRun() { return DATA.runs.find(r => r.id === state.runId); }
+  function previousRun(run) {                  // the run just before this one, same market (for "change since" tiles)
+    const list = runsFor(run.market); const i = list.findIndex(r => r.id === run.id);
+    return list[i + 1] || null;
+  }
+
+  function renderControls() {
+    document.querySelectorAll("#mktseg button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.mkt === state.market)));
+    document.querySelectorAll("#viewseg button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
+    document.getElementById("built").textContent = DATA.built ? "Dashboard built " + DATA.built : "";
+    const sel = document.getElementById("run");
+    if (state.view === "scan") {
+      document.getElementById("runlabel").textContent = "Scan";
+      const sl = DATA.scans.filter(x => x.market === state.market);
+      sel.replaceChildren(...sl.map((x, i) => el("option", { value: x.id, text: x.date + (i === 0 ? " (latest)" : "") })));
+      if (!sl.some(x => x.id === state.scanId)) state.scanId = sl.length ? sl[0].id : null;
+      sel.value = state.scanId || ""; sel.disabled = !sl.length;
+      return;
+    }
+    document.getElementById("runlabel").textContent = "Run";
+    const list = runsFor(state.market);
+    sel.replaceChildren(...list.map((r, i) => el("option", { value: r.id, text: r.date + " · " + r.mode + (i === 0 ? " (latest)" : "") })));
+    if (!list.some(r => r.id === state.runId)) state.runId = list.length ? list[0].id : null;
+    sel.value = state.runId || "";
+    sel.disabled = !list.length;
+    document.getElementById("built").textContent = DATA.built ? "Dashboard built " + DATA.built : "";
+  }
+
+  // ---------- main render ----------
+  function render() {
+    renderControls();
+    if (state.view === "scan") return renderScan();
+    const app = document.getElementById("app");
+    const run = currentRun();
+    const meta = document.getElementById("runmeta");
+    if (!run) {
+      meta.textContent = "";
+      app.replaceChildren(el("div", { class: "card empty", text: "No " + MKT_NAME[state.market] + " reports yet. They appear here after the next scheduled run." }));
+      return;
+    }
+    const ok = run.results.filter(r => r.status === "ok");
+    ok.forEach(r => { r._att = attention(r); });
+    ok.sort((a, b) => b._att - a._att);
+    const asof = [...new Set(ok.map(r => r.asof))].sort().pop();
+    meta.replaceChildren(document.createTextNode("Prices as of " + (asof || "–") + " "), el("span", { class: "badge", text: "delayed / end-of-day" }),
+                         document.createTextNode(" · generated " + (run.generated || "–")));
+    if (!state.sym || !ok.some(r => r.symbol === state.sym)) state.sym = ok.length ? ok[0].symbol : null;
+
+    app.replaceChildren(...[
+      tiles(run, ok),
+      changesCallout(run),
+      dividendsCard(run),
+      el("div", { class: "grid2" }, [attentionCard(ok), moveCard(ok)]),
+      namesTable(run, ok),
+      detailCard(run, ok),
+      modelCard(ok),
+      gapsCard(run)
+    ].filter(Boolean));
+  }
+
+  function tile(label, value, note) {
+    return el("div", { class: "card tile" }, [el("div", { class: "label", text: label }), el("div", { class: "value", text: value }), note ? el("div", { class: "note", text: note }) : null]);
+  }
+  function tiles(run, ok) {
+    const flagged = ok.filter(r => (r.flags || []).length);
+    const big = ok.filter(r => isNum(r.move_vs_vol)).sort((a, b) => Math.abs(b.move_vs_vol) - Math.abs(a.move_vs_vol))[0];
+    const vol = ok.filter(r => isNum(r.volume_ratio_20d) && r.volume_ratio_20d >= 2);
+    const candidates = ok.filter(r => r.model && r.model.edge_evidence && r.model.edge_evidence.startsWith("candidate"));
+    const failed = run.results.filter(r => r.status !== "ok").length + (run.unresolved || []).length;
+    const stale = ok.filter(r => (r.flags || []).some(f => f.startsWith("STALE"))).length;
+    return el("div", { class: "tiles" }, [
+      tile("Names with a flag", flagged.length + " of " + ok.length, flagged.slice(0, 4).map(r => short(r.symbol)).join(", ") || "quiet day"),
+      tile("Biggest move vs normal", big ? sig(big.move_vs_vol) : "–", big ? short(big.symbol) + " " + pct(big.ret_1d) : ""),
+      tile("Unusual volume (≥2× avg)", String(vol.length), vol.map(r => short(r.symbol)).join(", ") || "none"),
+      tile("Model edge candidates", candidates.length + " of " + ok.length, candidates.length ? "still unvalidated" : "no name shows a reliable edge"),
+      tile("Data problems", String(failed + stale), failed + stale ? (failed ? failed + " missing/failed " : "") + (stale ? stale + " stale" : "") : "all names loaded")
+    ]);
+  }
+  function changesCallout(run) {
+    if (!run.changes || !run.changes.length) return null;
+    return el("div", { class: "callout" }, [el("strong", { text: "Changes since the earlier run today" }), el("ul", null, run.changes.map(c => el("li", { text: c })))]);
+  }
+
+  function daysBetween(a, b) { return Math.round((Date.parse(b) - Date.parse(a)) / 864e5); }
+  function dividendsCard(run) {
+    if (!run.dividends) return null;                 // older reports predate dividend tracking
+    const list = run.dividends;
+    const head = ["Symbol", "Ex-dividend date", "Own by close of", "Last paid", "Trailing yield", "Pays"];
+    const rows = list.map(d => {
+      const left = daysBetween(run.date, d.last_buy_day);
+      const when = left < 0 ? "too late" : left === 0 ? "today" : left === 1 ? "tomorrow" : "in " + left + " days";
+      return el("tr", { tabindex: "0", onclick: () => select(d.symbol), onkeydown: e => { if (e.key === "Enter") select(d.symbol); } }, [
+        el("td", null, [el("strong", { text: short(d.symbol) }), el("span", { class: "name", text: d.name || "" })]),
+        el("td", { text: d.ex_date }),
+        el("td", null, [d.last_buy_day + " ", el("span", { class: "chip" + (left === 0 ? " hot" : ""), text: when })]),
+        el("td", { class: "num", text: isNum(d.last_amount) ? CUR[run.market] + d.last_amount : "unknown" }),
+        el("td", { class: "num", text: isNum(d.yield_ttm) ? (d.yield_ttm * 100).toFixed(2) + "%" : "unknown" }),
+        el("td", { text: d.pay_date || "not published" })
+      ]);
+    });
+    return el("section", { class: "card" }, [el("h2", { text: "Upcoming dividends (next 14 days)" }),
+      el("p", { class: "hint", text: "To receive a dividend you must own the shares at the close of the trading day before the ex-date. On the ex-date the price usually drops by about the dividend amount. Dates from Yahoo can be missing, especially for India; confirm with the company or exchange." }),
+      list.length ? el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i === 3 || i === 4 ? "num" : null, text: h })))]), el("tbody", null, rows)])])
+                  : el("p", { class: "dim", style: "margin:0", text: "No ex-dividend dates published for your watchlist in the next 14 days." })]);
+  }
+
+  function select(sym) { state.sym = sym; render(); const d = document.getElementById("detail"); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" }); }
+
+  // Attention: single series, magnitude
+  function attentionCard(ok) {
+    const max = Math.max(1, ...ok.map(r => r._att));
+    const rows = ok.map(r => {
+      const w = (r._att / max) * 82;
+      const row = el("div", { class: "bar-row", tabindex: "0", role: "button", "aria-label": r.symbol + " attention " + r._att, onclick: () => select(r.symbol),
+                             onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(r.symbol); } } }, [
+        el("span", { class: "sym", text: short(r.symbol) }),
+        el("div", { class: "track" }, [el("div", { class: "fill", style: "left:0;width:" + w + "%" }), el("span", { class: "bar-val", style: "left:calc(" + w + "% + 6px)", text: r._att.toFixed(2) })])
+      ]);
+      hover(row, () => [short(r.symbol) + " · attention " + r._att.toFixed(2),
+        ["Move " + sig(r.move_vs_vol) + " (" + pct(r.ret_1d) + ")", "Volume " + (isNum(r.volume_ratio_20d) ? r.volume_ratio_20d + "× 20-day avg" : "–"),
+         ...((r.flags || []).length ? r.flags.map(chipText) : ["no flags"])]]);
+      return row;
+    });
+    return el("section", { class: "card" }, [el("h2", { text: "Attention" }), el("p", { class: "hint", text: "How unusual today was (move + volume + events). Higher = look first. Not a direction call." }),
+      ok.length ? el("div", { class: "bars" }, rows) : el("div", { class: "empty", text: "No data" })]);
+  }
+
+  // Move vs normal: diverging around 0
+  function moveCard(ok) {
+    const rows = ok.filter(r => isNum(r.move_vs_vol)).sort((a, b) => b.move_vs_vol - a.move_vs_vol);
+    const lim = Math.max(3, ...rows.map(r => Math.abs(r.move_vs_vol))) * 1.1;
+    const pos = v => 50 + (v / lim) * 50;
+    const bars = rows.map(r => {
+      const v = r.move_vs_vol, x0 = pos(0), x1 = pos(v);
+      const left = Math.min(x0, x1), w = Math.abs(x1 - x0);
+      const label = el("span", { class: "bar-val", text: sig(v), style: v >= 0 ? "left:calc(" + x1 + "% + 5px)" : "right:calc(" + (100 - x1) + "% + 5px)" });
+      const row = el("div", { class: "bar-row", tabindex: "0", role: "button", "aria-label": r.symbol + " move " + sig(v), onclick: () => select(r.symbol),
+                             onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(r.symbol); } } }, [
+        el("span", { class: "sym", text: short(r.symbol) }),
+        el("div", { class: "track" }, [
+          el("div", { class: "thresh", style: "left:" + pos(-2.5) + "%" }), el("div", { class: "thresh", style: "left:" + pos(2.5) + "%" }),
+          el("div", { class: "zero", style: "left:" + x0 + "%" }),
+          el("div", { class: "fill " + (v >= 0 ? "pos" : "neg"), style: "left:" + left + "%;width:" + Math.max(w, 0.4) + "%" }), label])
+      ]);
+      hover(row, () => [sig(v) + " · " + pct(r.ret_1d), [short(r.symbol) + (r.name ? " – " + r.name : ""), "Close " + money(r.close, state.market)]]);
+      return row;
+    });
+    return el("section", { class: "card" }, [el("h2", { text: "Today's move vs normal" }),
+      el("p", { class: "hint", text: "1-day move in units of the stock's typical daily move (20-day σ). Faint lines mark ±2.5σ, the flag threshold." }),
+      el("div", { class: "legend" }, [el("span", null, [el("i", { style: "background:var(--up)" }), "Up"]), el("span", null, [el("i", { style: "background:var(--down)" }), "Down"])]),
+      rows.length ? el("div", { class: "bars" }, bars) : el("div", { class: "empty", text: "No data" })]);
+  }
+
+  function sparkline(closes) {
+    if (!closes || closes.length < 2) return el("span", { class: "dim", text: "–" });
+    const W = 90, H = 24, v = closes.map(c => c[1]), lo = Math.min(...v), hi = Math.max(...v), span = hi - lo || 1;
+    const s = svg("svg", { viewBox: "0 0 " + W + " " + H, width: W, height: H, "aria-hidden": "true" });
+    s.appendChild(svg("polyline", { points: v.map((y, i) => (i / (v.length - 1) * W).toFixed(1) + "," + (H - 2 - (y - lo) / span * (H - 4)).toFixed(1)).join(" "),
+      fill: "none", stroke: "var(--series-1)", "stroke-width": "1.5", "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    return s;
+  }
+
+  function namesTable(run, ok) {
+    const head = ["Symbol", "60 days", "Close", "1 day", "Move vs normal", "Volume vs avg", "From 52w high", "Flags"];
+    const numCols = new Set([2, 3, 4, 5, 6]);
+    const body = ok.map(r => {
+      const tr = el("tr", { tabindex: "0", class: r.symbol === state.sym ? "sel" : null, onclick: () => select(r.symbol),
+                            onkeydown: e => { if (e.key === "Enter") select(r.symbol); } }, [
+        el("td", null, [el("strong", { text: short(r.symbol) }), el("span", { class: "name", text: r.name || "" })]),
+        el("td", null, [sparkline(r.closes_60d)]),
+        el("td", { class: "num", text: money(r.close, run.market) }),
+        el("td", { class: "num " + (r.ret_1d > 0 ? "up" : r.ret_1d < 0 ? "down" : ""), text: pct(r.ret_1d) }),
+        el("td", { class: "num", text: sig(r.move_vs_vol) }),
+        el("td", { class: "num", text: isNum(r.volume_ratio_20d) ? r.volume_ratio_20d.toFixed(2) + "×" : "–" }),
+        el("td", { class: "num", text: pct(r.dist_52w_high, 1) }),
+        el("td", null, [(r.flags || []).length ? el("div", { class: "chips" }, r.flags.map(f => el("span", { class: "chip" + (isHot(f) ? " hot" : ""), text: chipText(f) }))) : el("span", { class: "dim", text: "none" })])
+      ]);
+      return tr;
+    });
+    return el("section", { class: "card" }, [el("h2", { text: "All names" }), el("p", { class: "hint", text: "Sorted by attention. Click a row for detail." }),
+      el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: numCols.has(i) ? "num" : null, text: h })))]), el("tbody", null, body)])])]);
+  }
+
+  // Detail: 60-day price line with crosshair
+  function priceChart(closes, market) {
+    const wrap = el("div", { class: "chart" });
+    if (!closes || closes.length < 2) { wrap.appendChild(el("div", { class: "empty", text: "No price history in this report (older reports don't include it)." })); return wrap; }
+    const W = 640, H = 240, L = 56, R = 12, T = 12, B = 28;
+    const v = closes.map(c => c[1]);
+    let lo = Math.min(...v), hi = Math.max(...v); const pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
+    const X = i => L + i / (closes.length - 1) * (W - L - R), Y = y => T + (1 - (y - lo) / (hi - lo)) * (H - T - B);
+    const s = svg("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": "60-day closing price" });
+    for (let k = 0; k <= 4; k++) {
+      const val = lo + (hi - lo) * k / 4, y = Y(val);
+      s.appendChild(svg("line", { x1: L, x2: W - R, y1: y, y2: y, stroke: k === 0 ? "var(--axis)" : "var(--grid)", "stroke-width": 1 }));
+      const t = svg("text", { x: L - 8, y: y + 4, "text-anchor": "end", "font-size": 11, fill: "var(--muted)", style: "font-variant-numeric: tabular-nums" });
+      t.textContent = val.toLocaleString(undefined, { maximumFractionDigits: val < 100 ? 2 : 0 }); s.appendChild(t);
+    }
+    [0, Math.floor((closes.length - 1) / 2), closes.length - 1].forEach((i, j) => {
+      const t = svg("text", { x: X(i), y: H - 8, "text-anchor": ["start", "middle", "end"][j], "font-size": 11, fill: "var(--muted)" });
+      t.textContent = closes[i][0]; s.appendChild(t);
+    });
+    s.appendChild(svg("polyline", { points: v.map((y, i) => X(i).toFixed(1) + "," + Y(y).toFixed(1)).join(" "), fill: "none", stroke: "var(--series-1)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    const last = closes.length - 1;
+    s.appendChild(svg("circle", { cx: X(last), cy: Y(v[last]), r: 4, fill: "var(--series-1)", stroke: "var(--surface)", "stroke-width": 2 }));
+    const cross = svg("line", { y1: T, y2: H - B, stroke: "var(--axis)", "stroke-width": 1, visibility: "hidden" });
+    const dot = svg("circle", { r: 4, fill: "var(--series-1)", stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" });
+    s.appendChild(cross); s.appendChild(dot);
+    const hit = svg("rect", { x: L, y: T, width: W - L - R, height: H - T - B, fill: "transparent" });
+    s.appendChild(hit);
+    hit.addEventListener("pointermove", e => {
+      const b = s.getBoundingClientRect(), sx = (e.clientX - b.left) / b.width * W;
+      const i = Math.max(0, Math.min(last, Math.round((sx - L) / (W - L - R) * last)));
+      cross.setAttribute("x1", X(i)); cross.setAttribute("x2", X(i)); cross.setAttribute("visibility", "visible");
+      dot.setAttribute("cx", X(i)); dot.setAttribute("cy", Y(v[i])); dot.setAttribute("visibility", "visible");
+      const chg = i > 0 ? (v[i] / v[i - 1] - 1) : null;
+      showTip(e, money(v[i], market), [closes[i][0] + (chg != null ? " · " + pct(chg) + " that day" : "")]);
+    });
+    hit.addEventListener("pointerleave", () => { cross.setAttribute("visibility", "hidden"); dot.setAttribute("visibility", "hidden"); hideTip(); });
+    wrap.appendChild(s);
+    const first = v[0], chg60 = v[last] / first - 1;
+    wrap.appendChild(el("p", { class: "hint", style: "margin-top:6px", text: "Close over the last " + closes.length + " trading days: " + pct(chg60) + " (" + closes[0][0] + " → " + closes[last][0] + ")." }));
+    return wrap;
+  }
+
+  function facts(pairs) {
+    const dl = el("dl", { class: "facts" });
+    pairs.forEach(([k, v]) => { dl.appendChild(el("dt", { text: k })); dl.appendChild(el("dd", { text: v == null || v === "" ? "unknown" : String(v) })); });
+    return dl;
+  }
+  function detailCard(run, ok) {
+    const r = ok.find(x => x.symbol === state.sym);
+    if (!r) return null;
+    const m = r.model || {}, w = m.oos || {}, dv = r.dividends || {}, se = r.sentiment || {};
+    const right = el("div", null, [
+      el("div", { class: "facts-h", text: "Today" }),
+      facts([["1-day move", pct(r.ret_1d) + " (" + sig(r.move_vs_vol) + ")"], ["Volume vs 20d avg", isNum(r.volume_ratio_20d) ? r.volume_ratio_20d + "×" : null],
+             ["From 52-week high", pct(r.dist_52w_high, 1)], ["Attention score", r._att.toFixed(2)]]),
+      el("div", { class: "facts-h", text: "Dividends" }),
+      facts([["Trailing 12 months", isNum(dv.trailing_12m) ? money(dv.trailing_12m, run.market) : null], ["Last ex-date", dv.last_ex_date], ["Next ex-date", dv.next_ex_date || "none published"]]),
+      el("div", { class: "facts-h", text: "Model (hypothesis)" }),
+      w.status === "ok" ? facts([["Edge evidence", m.edge_evidence], ["P(up in 5 days)", isNum(m.p_up_5d) ? (m.p_up_5d * 100).toFixed(0) + "%" : null],
+             ["Past accuracy vs always-guess", (w.accuracy * 100).toFixed(1) + "% vs " + (Math.max(w.base_rate_up, 1 - w.base_rate_up) * 100).toFixed(1) + "%"],
+             ["Beat buy-and-hold after costs", w.beats_buyhold_after_costs ? "yes" : "no"]]) : el("p", { class: "dim", text: "Not enough history." }),
+      el("div", { class: "facts-h", text: "Press tone" }),
+      se.status === "ok" ? facts([["Headlines", se.n], ["Mean tone (−1…+1)", se.mean_compound]]) : el("p", { class: "dim", style: "margin:0", text: "Unknown – no news feeds configured. Unknown is not neutral." })
+    ]);
+    const gaps = (r.gaps || []).filter(g => !g.startsWith("sentiment"));
+    return el("section", { class: "card", id: "detail" }, [
+      el("div", { class: "detail-head" }, [
+        el("div", null, [el("h2", { text: short(r.symbol) + (r.name ? " – " + r.name : "") }), el("span", { class: "big", text: money(r.close, run.market) }), " ",
+          el("span", { class: r.ret_1d > 0 ? "up" : r.ret_1d < 0 ? "down" : "", text: pct(r.ret_1d) })]),
+        el("div", { class: "meta", text: "Source " + (r.source || "–") + " · as of " + (r.asof || "–") + " · retrieved " + (r.retrieved || "–") })
+      ]),
+      (r.flags || []).length ? el("div", { class: "chips", style: "margin-bottom:12px" }, r.flags.map(f => el("span", { class: "chip" + (isHot(f) ? " hot" : ""), text: f }))) : null,
+      el("div", { class: "detail-grid" }, [priceChart(r.closes_60d, run.market), right]),
+      gaps.length ? el("div", null, [el("div", { class: "facts-h", text: "Gaps for this name" }), el("ul", { class: "plain" }, gaps.map(g => el("li", { text: g })))]) : null
+    ]);
+  }
+
+  function modelCard(ok) {
+    const withModel = ok.filter(r => r.model && r.model.oos && r.model.oos.status === "ok");
+    const anyCand = withModel.some(r => (r.model.edge_evidence || "").startsWith("candidate"));
+    const rows = withModel.map(r => {
+      const w = r.model.oos, cand = (r.model.edge_evidence || "").startsWith("candidate");
+      const guess = Math.max(w.base_rate_up, 1 - w.base_rate_up);
+      return el("tr", { tabindex: "0", onclick: () => select(r.symbol), onkeydown: e => { if (e.key === "Enter") select(r.symbol); } }, [
+        el("td", null, [el("strong", { text: short(r.symbol) })]),
+        el("td", null, [el("span", { class: "status" }, [el("span", { class: "dot", style: "background:" + (cand ? "var(--warning)" : "var(--muted)") }), cand ? "⚠ candidate" : "– weak/none"])]),
+        el("td", { class: "num " + (cand ? "" : "dim"), text: isNum(r.model.p_up_5d) ? (r.model.p_up_5d * 100).toFixed(0) + "%" : "–" }),
+        el("td", { class: "num", text: (w.accuracy * 100).toFixed(1) + "%" }),
+        el("td", { class: "num", text: (guess * 100).toFixed(1) + "%" }),
+        el("td", { class: "num " + (w.accuracy > guess ? "up" : "down"), text: ((w.accuracy - guess) * 100 > 0 ? "+" : "") + ((w.accuracy - guess) * 100).toFixed(1) + " pts" }),
+        el("td", { text: w.beats_buyhold_after_costs ? "yes" : "no" }),
+        el("td", { class: "num", text: String(w.n_oos) })
+      ]);
+    });
+    const head = ["Symbol", "Edge evidence", "P(up 5d)", "Past accuracy", "Always-guess", "Difference", "Beat buy & hold", "Tests"];
+    return el("section", { class: "card" }, [
+      el("h2", { text: "Model record" }),
+      el("p", { class: "hint", text: "A simple model's 5-day guess, shown next to how it actually did on ~2 years of data it hadn't seen. \"Always-guess\" = just predicting the more common outcome every time." }),
+      anyCand ? null : el("div", { class: "callout warn" }, [el("strong", { text: "No name shows a reliable edge. " }), "The model doesn't beat simple guessing by enough to trust, so ignore the P(up) numbers."]),
+      el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i >= 2 && i !== 6 ? "num" : null, text: h })))]), el("tbody", null, rows)])])
+    ]);
+  }
+
+  function gapsCard(run) {
+    const items = [];
+    run.results.forEach(r => {
+      if (r.status !== "ok") items.push(short(r.symbol) + ": " + r.status + " – " + (r.gaps || []).join("; "));
+      else (r.gaps || []).filter(g => !g.startsWith("sentiment")).forEach(g => items.push(short(r.symbol) + ": " + g));
+    });
+    (run.unresolved || []).forEach(n => items.push(n + ": symbol not set in config, not researched"));
+    const noSent = run.results.filter(r => (r.gaps || []).some(g => g.startsWith("sentiment"))).length;
+    if (noSent) items.push("Press tone unknown for " + noSent + " name(s): no news feeds configured (config/feeds.yaml).");
+    return el("section", { class: "card" }, [el("h2", { text: "Gaps and data problems" }), el("p", { class: "hint", text: "Missing data is shown as unknown, never as neutral." }),
+      items.length ? el("ul", { class: "plain" }, items.map(t => el("li", { text: t }))) : el("p", { class: "dim", text: "None." })]);
+  }
+
+  // ---------- market scan ----------
+  let scanQuery = "", scanHighYieldOnly = true;
+  function renderScan() {
+    const app = document.getElementById("app"), meta = document.getElementById("runmeta");
+    const sc = DATA.scans.find(x => x.id === state.scanId);
+    if (!sc) {
+      meta.textContent = "";
+      app.replaceChildren(el("div", { class: "card empty", text: "No " + MKT_NAME[state.market] + " market scan yet. It runs once a day at 5:30pm market time." }));
+      return;
+    }
+    const ok = sc.results.filter(r => r.status === "ok"), sm = sc.summary;
+    meta.replaceChildren(document.createTextNode("Prices as of " + sc.asof + " "), el("span", { class: "badge", text: "delayed / end-of-day" }),
+      document.createTextNode(" · " + (sc.market === "US" ? "S&P 500" : "Nifty 100") + ", " + sm.scanned + " names · generated " + sc.generated));
+    const hy = (sc.upcoming_dividends || []).filter(d => isNum(d.yield_ttm) && d.yield_ttm >= 0.03 && d.yield_ttm <= 0.15 && d.last_buy_day >= sc.date);
+    const chanceNote = sm.big_moves <= sm.big_moves_expected_by_chance * 1.5 ? "about what chance alone produces (~" + sm.big_moves_expected_by_chance + ")" : "more than chance alone (~" + sm.big_moves_expected_by_chance + ") would explain";
+    app.replaceChildren(...[
+      el("div", { class: "tiles" }, [
+        tile("Breadth (stocks up today)", sm.breadth_up + " of " + sm.ok, Math.round(sm.breadth_up / sm.ok * 100) + "% rose"),
+        tile("Big moves (≥2.5σ)", String(sm.big_moves), chanceNote),
+        tile("Unusual volume (≥2× avg)", String(sm.unusual_volume), sm.unusual_volume ? "see table below" : "none"),
+        tile("Near 52-week high / low", sm.near_high + " / " + sm.near_low, "within 1% of the 1-year extreme"),
+        tile("High-yield ex-dividend soon", String(hy.length), "≥3% yield, can still qualify, next 14 days")
+      ]),
+      el("div", { class: "callout" }, [el("strong", { text: "How to read a wide scan. " }),
+        "With " + sm.ok + " stocks, a few will look unusual every day by pure chance. Treat this as a list of questions to look into, not signals. To follow a name in depth (price chart, model record, alerts), add it to config/universe.yaml."]),
+      el("div", { class: "grid2" }, [sectorCard(sc), scanDividendsCard(sc)]),
+      scanTable(sc, ok),
+      sm.failed ? el("section", { class: "card" }, [el("h2", { text: "Not scanned" }),
+        el("ul", { class: "plain" }, sc.results.filter(r => r.status !== "ok").map(r => el("li", { text: r.symbol + (r.name ? " (" + r.name + ")" : "") + ": " + (r.reason || r.status) })))]) : null
+    ].filter(Boolean));
+  }
+
+  function sectorCard(sc) {
+    const rows = sc.sector_moves || [];
+    const lim = Math.max(0.005, ...rows.map(r => Math.abs(r.avg_ret_1d))) * 1.15;
+    const pos = v => 50 + (v / lim) * 50;
+    const bars = rows.map(r => {
+      const v = r.avg_ret_1d, x0 = pos(0), x1 = pos(v);
+      const row = el("div", { class: "bar-row", tabindex: "0", style: "grid-template-columns: 150px 1fr" }, [
+        el("span", { class: "sym", style: "font-weight:500", text: r.sector }),
+        el("div", { class: "track" }, [el("div", { class: "zero", style: "left:" + x0 + "%" }),
+          el("div", { class: "fill " + (v >= 0 ? "pos" : "neg"), style: "left:" + Math.min(x0, x1) + "%;width:" + Math.max(Math.abs(x1 - x0), 0.4) + "%" }),
+          el("span", { class: "bar-val", text: pct(v), style: v >= 0 ? "left:calc(" + x1 + "% + 5px)" : "right:calc(" + (100 - x1) + "% + 5px)" })])
+      ]);
+      hover(row, () => [pct(v) + " average", [r.sector, r.up + " of " + r.n + " stocks rose"]]);
+      return row;
+    });
+    return el("section", { class: "card" }, [el("h2", { text: "Sectors today" }), el("p", { class: "hint", text: "Average 1-day move of the stocks in each sector (equal-weighted)." }),
+      el("div", { class: "legend" }, [el("span", null, [el("i", { style: "background:var(--up)" }), "Up"]), el("span", null, [el("i", { style: "background:var(--down)" }), "Down"])]),
+      el("div", { class: "bars" }, bars)]);
+  }
+
+  function scanDividendsCard(sc) {
+    const all = (sc.upcoming_dividends || []).filter(d => d.last_buy_day >= sc.date);
+    const list = scanHighYieldOnly ? all.filter(d => isNum(d.yield_ttm) && d.yield_ttm >= 0.03) : all;
+    const toggle = el("label", { class: "meta", style: "display:inline-flex;gap:6px;align-items:center;cursor:pointer" }, [
+      el("input", { type: "checkbox", checked: scanHighYieldOnly ? "checked" : null, onchange: e => { scanHighYieldOnly = e.target.checked; renderScan(); } }), "Only ≥3% yield"]);
+    const rows = list.map(d => {
+      const left = daysBetween(sc.date, d.last_buy_day);
+      return el("tr", { style: "cursor:default" }, [
+        el("td", null, [el("strong", { text: short(d.symbol) }), el("span", { class: "name", text: d.name || "" })]),
+        el("td", { class: "num", text: isNum(d.yield_ttm) ? (d.yield_ttm * 100).toFixed(2) + "%" : "–" }),
+        el("td", { text: d.ex_date }),
+        el("td", null, [el("span", { class: "chip" + (left === 0 ? " hot" : ""), text: left === 0 ? "today" : left === 1 ? "tomorrow" : "in " + left + " days" })])
+      ]);
+    });
+    return el("section", { class: "card" }, [el("div", { style: "display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:baseline" }, [el("h2", { text: "Ex-dividend in the next 14 days" }), toggle]),
+      el("p", { class: "hint", text: "Trailing 12-month yield. You must own by the close of the day before the ex-date; the price usually drops by about the dividend on the ex-date. Yields above 15% are likely inflated by a one-off special dividend." }),
+      list.length ? el("div", { class: "tscroll", style: "max-height:360px;overflow-y:auto" }, [el("table", null, [el("thead", null, [el("tr", null, ["Stock", "Yield", "Ex-date", "Own by close"].map((h, i) => el("th", { class: i === 1 ? "num" : null, text: h })))]), el("tbody", null, rows)])])
+                  : el("p", { class: "dim", text: "None you can still qualify for." })]);
+  }
+
+  function scanTable(sc, ok) {
+    const q = scanQuery.trim().toLowerCase();
+    const match = r => !q || r.symbol.toLowerCase().includes(q) || (r.name || "").toLowerCase().includes(q) || (r.sector || "").toLowerCase().includes(q);
+    const shown = ok.filter(match).slice(0, q ? 200 : 25);
+    const tbody = el("tbody", null, shown.map(r => el("tr", { style: "cursor:default" }, [
+      el("td", null, [el("strong", { text: short(r.symbol) }), el("span", { class: "name", text: r.name || "" })]),
+      el("td", { class: "dim", text: r.sector || "" }),
+      el("td", { class: "num", text: money(r.close, sc.market) }),
+      el("td", { class: "num " + (r.ret_1d > 0 ? "up" : r.ret_1d < 0 ? "down" : ""), text: pct(r.ret_1d) }),
+      el("td", { class: "num", text: sig(r.move_vs_vol) }),
+      el("td", { class: "num", text: isNum(r.volume_ratio_20d) ? r.volume_ratio_20d.toFixed(2) + "×" : "–" }),
+      el("td", { class: "num", text: pct(r.ret_20d, 1) }),
+      el("td", { class: "num", text: pct(r.dist_52w_high, 1) }),
+      el("td", { class: "num", text: isNum(r.yield_ttm) ? (r.yield_ttm * 100).toFixed(1) + "%" : "–" }),
+      el("td", null, [(r.flags || []).length ? el("div", { class: "chips" }, r.flags.map(f => el("span", { class: "chip" + (isHot(f) ? " hot" : ""), text: chipText(f) }))) : el("span", { class: "dim", text: "–" })])
+    ])));
+    const search = el("input", { type: "search", placeholder: "Search symbol, company or sector", value: scanQuery, "aria-label": "Search scan",
+      style: "font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 10px;width:min(320px,100%)",
+      oninput: e => { scanQuery = e.target.value; const pos = e.target.selectionStart; renderScan(); const n = document.querySelector('input[type="search"]'); n.focus(); n.setSelectionRange(pos, pos); } });
+    const head = ["Stock", "Sector", "Close", "1 day", "Move vs normal", "Volume vs avg", "20 days", "From 52w high", "Yield", "Flags"];
+    return el("section", { class: "card" }, [
+      el("div", { style: "display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px" }, [
+        el("div", null, [el("h2", { text: q ? "Search results (" + shown.length + ")" : "Top 25 by attention" }), el("p", { class: "hint", style: "margin:0", text: "Most unusual move + volume today across the whole index. Search to find any stock in it." })]), search]),
+      el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i >= 2 && i <= 8 ? "num" : null, text: h })))]), tbody])])]);
+  }
+
+  // ---------- wiring ----------
+  document.querySelectorAll("#mktseg button").forEach(b => b.addEventListener("click", () => {
+    state.market = b.dataset.mkt; store.set("market", state.market); state.runId = null; state.scanId = null; state.sym = null; scanQuery = ""; render();
+  }));
+  document.querySelectorAll("#viewseg button").forEach(b => b.addEventListener("click", () => {
+    state.view = b.dataset.view; store.set("view", state.view); render();
+  }));
+  document.getElementById("run").addEventListener("change", e => { if (state.view === "scan") state.scanId = e.target.value; else state.runId = e.target.value; render(); });
+  if (state.view === "watch" && !runsFor(state.market).length && DATA.runs.length) state.market = DATA.runs[0].market;
+  render();
+})();
+</script>
+</body>
+</html>

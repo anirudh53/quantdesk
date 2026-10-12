@@ -1,0 +1,12 @@
+# Linux only (macOS cron ignores CRON_TZ): on a Mac use schedule/install_macos.sh instead.
+# Edit paths. Requires cronie (CRON_TZ supported). Weekdays only. Data is delayed/EOD: midday run diffs against the morning run.
+# India (NSE 09:15-15:30 IST)
+CRON_TZ=Asia/Kolkata
+30 8  * * 1-5 cd /path/to/quantdesk && python -m pipeline.run_daily --market IN --mode open
+30 12 * * 1-5 cd /path/to/quantdesk && python -m pipeline.run_daily --market IN --mode midday
+30 16 * * 1-5 cd /path/to/quantdesk && python -m pipeline.run_daily --market IN --mode close
+# US (NYSE/Nasdaq 09:30-16:00 ET)
+CRON_TZ=America/New_York
+30 8  * * 1-5 cd /path/to/quantdesk && python -m pipeline.run_daily --market US --mode open
+30 12 * * 1-5 cd /path/to/quantdesk && python -m pipeline.run_daily --market US --mode midday
+30 16 * * 1-5 cd /path/to/quantdesk && python -m pipeline.run_daily --market US --mode close

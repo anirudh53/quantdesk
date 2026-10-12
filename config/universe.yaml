@@ -1,0 +1,29 @@
+# Universe is explicit. Nothing is added from memory.
+# Rank sources: americancompanies.com (2026-07-14, US), founderpin.com (2026-09-11, India). Both secondary.
+# yfinance symbols: US = plain ticker; NSE = SYMBOL.NS. Fill "symbol" for India names after you confirm on NSE.
+watchlist: [AAPL, NVDA, RELIANCE.NS, TCS.NS]
+us:
+  - {name: Nvidia, symbol: NVDA}
+  - {name: Apple, symbol: AAPL}
+  - {name: Alphabet, symbol: GOOGL}
+  - {name: Microsoft, symbol: MSFT}
+  - {name: Amazon, symbol: AMZN}
+  - {name: Broadcom, symbol: AVGO}
+  - {name: Meta Platforms, symbol: META}
+  - {name: Tesla, symbol: TSLA}
+  - {name: Eli Lilly, symbol: LLY}
+  - {name: Micron, symbol: MU}
+india:
+  - {name: Reliance Industries, symbol: RELIANCE.NS}
+  - {name: Tata Consultancy Services, symbol: TCS.NS}
+  - {name: Bharti Airtel, symbol: BHARTIARTL.NS}
+  - {name: HDFC Bank, symbol: HDFCBANK.NS}
+  - {name: ICICI Bank, symbol: ICICIBANK.NS}
+  - {name: State Bank of India, symbol: SBIN.NS}
+  - {name: Bajaj Finance, symbol: BAJFINANCE.NS}
+  - {name: Larsen & Toubro, symbol: LT.NS}
+  - {name: Hindustan Unilever, symbol: HINDUNILVR.NS}
+  - {name: Titan Company, symbol: TITAN.NS}
+costs:   # round-trip cost assumptions used in model evaluation (edit to your broker)
+  us_bps: 5
+  in_bps: 25

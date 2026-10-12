@@ -1,0 +1,475 @@
+{
+ "generated": "2026-10-12 18:31 UTC",
+ "results": [
+  {
+   "symbol": "NVDA",
+   "flags": [],
+   "gaps": [
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:36Z",
+   "asof": "2026-10-12",
+   "close": 226.59,
+   "ret_1d": -0.0117,
+   "move_vs_vol": -0.85,
+   "volume_ratio_20d": 0.43,
+   "dist_52w_high": -0.053,
+   "dividends": {
+    "symbol": "NVDA",
+    "trailing_12m": 0.53,
+    "last_ex_date": "2026-09-10",
+    "next_ex_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:36Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.568,
+     "accuracy": 0.566,
+     "brier": 0.2508,
+     "brier_baseline": 0.2454,
+     "z_vs_baseline_optimistic": -0.09,
+     "strategy_mean_per_period": 0.0068,
+     "buyhold_mean_per_period": 0.00714,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.641,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:37Z"
+   }
+  },
+  {
+   "symbol": "AAPL",
+   "flags": [
+    "at/near 52-week high"
+   ],
+   "gaps": [
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:37Z",
+   "asof": "2026-10-12",
+   "close": 339.56,
+   "ret_1d": 0.0087,
+   "move_vs_vol": 0.83,
+   "volume_ratio_20d": 0.4,
+   "dist_52w_high": -0.004,
+   "dividends": {
+    "symbol": "AAPL",
+    "trailing_12m": 1.32,
+    "last_ex_date": "2026-08-10",
+    "next_ex_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:37Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.558,
+     "accuracy": 0.539,
+     "brier": 0.2572,
+     "brier_baseline": 0.2467,
+     "z_vs_baseline_optimistic": -0.81,
+     "strategy_mean_per_period": 0.00271,
+     "buyhold_mean_per_period": 0.00488,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.485,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:38Z"
+   }
+  },
+  {
+   "symbol": "GOOGL",
+   "flags": [],
+   "gaps": [
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:38Z",
+   "asof": "2026-10-12",
+   "close": 352.435,
+   "ret_1d": 0.0022,
+   "move_vs_vol": 0.17,
+   "volume_ratio_20d": 0.43,
+   "dist_52w_high": -0.124,
+   "dividends": {
+    "symbol": "GOOGL",
+    "trailing_12m": 1.07,
+    "last_ex_date": "2026-09-04",
+    "next_ex_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:38Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.566,
+     "accuracy": 0.539,
+     "brier": 0.2559,
+     "brier_baseline": 0.2457,
+     "z_vs_baseline_optimistic": -1.18,
+     "strategy_mean_per_period": 0.00746,
+     "buyhold_mean_per_period": 0.00881,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.547,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:38Z"
+   }
+  },
+  {
+   "symbol": "MSFT",
+   "flags": [
+    "at/near 52-week high",
+    "ex-dividend date 2026-11-18"
+   ],
+   "gaps": [
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:39Z",
+   "asof": "2026-10-12",
+   "close": 539.02,
+   "ret_1d": 0.0074,
+   "move_vs_vol": 0.53,
+   "volume_ratio_20d": 0.5,
+   "dist_52w_high": 0.0,
+   "dividends": {
+    "symbol": "MSFT",
+    "trailing_12m": 4.47,
+    "last_ex_date": "2026-08-20",
+    "next_ex_date": "2026-11-18",
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:39Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.564,
+     "accuracy": 0.537,
+     "brier": 0.2529,
+     "brier_baseline": 0.246,
+     "z_vs_baseline_optimistic": -1.18,
+     "strategy_mean_per_period": -0.0006,
+     "buyhold_mean_per_period": 0.00339,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.705,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:39Z"
+   }
+  },
+  {
+   "symbol": "AMZN",
+   "flags": [],
+   "gaps": [
+    "dividend data unavailable or none paid (not distinguished)",
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:40Z",
+   "asof": "2026-10-12",
+   "close": 259.935,
+   "ret_1d": -0.0095,
+   "move_vs_vol": -0.6,
+   "volume_ratio_20d": 0.42,
+   "dist_52w_high": -0.085,
+   "dividends": {
+    "symbol": "AMZN",
+    "trailing_12m": null,
+    "last_ex_date": null,
+    "next_ex_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:40Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.531,
+     "accuracy": 0.495,
+     "brier": 0.2632,
+     "brier_baseline": 0.249,
+     "z_vs_baseline_optimistic": -1.62,
+     "strategy_mean_per_period": 0.00039,
+     "buyhold_mean_per_period": 0.00443,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.56,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:40Z"
+   }
+  },
+  {
+   "symbol": "AVGO",
+   "flags": [],
+   "gaps": [
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:40Z",
+   "asof": "2026-10-12",
+   "close": 355.09,
+   "ret_1d": -0.0178,
+   "move_vs_vol": -0.83,
+   "volume_ratio_20d": 0.34,
+   "dist_52w_high": -0.26,
+   "dividends": {
+    "symbol": "AVGO",
+    "trailing_12m": 3.19,
+    "last_ex_date": "2026-09-21",
+    "next_ex_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:40Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.525,
+     "accuracy": 0.521,
+     "brier": 0.2715,
+     "brier_baseline": 0.2494,
+     "z_vs_baseline_optimistic": -0.18,
+     "strategy_mean_per_period": 0.00975,
+     "buyhold_mean_per_period": 0.01016,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.744,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:41Z"
+   }
+  },
+  {
+   "symbol": "META",
+   "flags": [],
+   "gaps": [
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:41Z",
+   "asof": "2026-10-12",
+   "close": 749.48,
+   "ret_1d": 0.0429,
+   "move_vs_vol": 1.24,
+   "volume_ratio_20d": 0.84,
+   "dist_52w_high": -0.036,
+   "dividends": {
+    "symbol": "META",
+    "trailing_12m": 2.625,
+    "last_ex_date": "2026-09-21",
+    "next_ex_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:41Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 488,
+     "base_rate_up": 0.531,
+     "accuracy": 0.529,
+     "brier": 0.2668,
+     "brier_baseline": 0.2491,
+     "z_vs_baseline_optimistic": -0.09,
+     "strategy_mean_per_period": 0.00447,
+     "buyhold_mean_per_period": 0.0038,
+     "beats_buyhold_after_costs": true
+    },
+    "p_up_5d": 0.555,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:41Z"
+   }
+  },
+  {
+   "symbol": "TSLA",
+   "flags": [],
+   "gaps": [
+    "dividend data unavailable or none paid (not distinguished)",
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:42Z",
+   "asof": "2026-10-12",
+   "close": 379.068,
+   "ret_1d": -0.0095,
+   "move_vs_vol": -0.5,
+   "volume_ratio_20d": 0.39,
+   "dist_52w_high": -0.226,
+   "dividends": {
+    "symbol": "TSLA",
+    "trailing_12m": null,
+    "last_ex_date": null,
+    "next_ex_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:42Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.497,
+     "accuracy": 0.517,
+     "brier": 0.2608,
+     "brier_baseline": 0.25,
+     "z_vs_baseline_optimistic": 0.63,
+     "strategy_mean_per_period": 0.00181,
+     "buyhold_mean_per_period": 0.01001,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.534,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:42Z"
+   }
+  },
+  {
+   "symbol": "LLY",
+   "flags": [],
+   "gaps": [
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:42Z",
+   "asof": "2026-10-12",
+   "close": 1177.83,
+   "ret_1d": -0.0012,
+   "move_vs_vol": -0.1,
+   "volume_ratio_20d": 0.29,
+   "dist_52w_high": -0.08,
+   "dividends": {
+    "symbol": "LLY",
+    "trailing_12m": 8.190000000000001,
+    "last_ex_date": "2026-08-14",
+    "next_ex_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:42Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.545,
+     "accuracy": 0.533,
+     "brier": 0.2731,
+     "brier_baseline": 0.2479,
+     "z_vs_baseline_optimistic": -0.54,
+     "strategy_mean_per_period": 0.00065,
+     "buyhold_mean_per_period": 0.00413,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.551,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:43Z"
+   }
+  },
+  {
+   "symbol": "MU",
+   "flags": [
+    "ex-dividend date 2026-10-13"
+   ],
+   "gaps": [
+    "sentiment: no headlines (feeds not configured or none found) -> unknown, not neutral"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-12T18:31:43Z",
+   "asof": "2026-10-12",
+   "close": 991.6835,
+   "ret_1d": -0.0363,
+   "move_vs_vol": -1.25,
+   "volume_ratio_20d": 0.67,
+   "dist_52w_high": -0.183,
+   "dividends": {
+    "symbol": "MU",
+    "trailing_12m": 0.645,
+    "last_ex_date": "2026-07-06",
+    "next_ex_date": "2026-10-13",
+    "source": "yfinance",
+    "retrieved": "2026-10-12T18:31:43Z"
+   },
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 495,
+     "base_rate_up": 0.612,
+     "accuracy": 0.541,
+     "brier": 0.2601,
+     "brier_baseline": 0.2374,
+     "z_vs_baseline_optimistic": -3.23,
+     "strategy_mean_per_period": 0.02745,
+     "buyhold_mean_per_period": 0.02824,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.652,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "no_headlines",
+    "n": 0,
+    "retrieved": "2026-10-12T18:31:44Z"
+   }
+  }
+ ],
+ "unresolved": []
+}
