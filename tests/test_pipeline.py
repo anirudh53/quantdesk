@@ -89,3 +89,13 @@ def test_crypto_random_coins_show_no_edge():
     xs = crypto.cross_section(crypto.panel(close, vol, "C0"), cost_bps=30, refit_every=8)
     assert xs["status"] == "ok"
     assert all(v["edge_evidence"] == "weak/none" for v in xs["oos"].values())
+
+def test_crypto_changes_detects_trend_flip_and_regime():
+    from pipeline import crypto
+    coin = lambda sig, mv=0.1: {"symbol": "X", "name": "Xcoin", "status": "ok", "close": 10.0, "ret_1d": 0.01,
+                                "move_vs_vol": mv, "trend": {"signal_now": sig}}
+    prev = {"regime": {"btc_above_200d": False}, "results": [coin("out (downtrend)")]}
+    doc = {"regime": {"btc_above_200d": True}, "results": [coin("in (uptrend)", 3.0)]}
+    c = crypto.changes(doc, prev)
+    assert any("crossed above" in x for x in c) and any("trend turned UP" in x for x in c) and any("normal move" in x for x in c)
+    assert crypto.changes(prev, prev) == []

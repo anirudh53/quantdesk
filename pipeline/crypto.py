@@ -288,13 +288,62 @@ def to_markdown(doc: dict) -> str:
           "- The trend rule mostly cuts drawdowns; it usually gives up some return in strong bull runs."]
     return "\n".join(L)
 
+# ---------- phone alerts ----------
+
+def changes(doc: dict, prev: dict | None) -> list:
+    """What is new since the previous daily report: trend flips, BTC regime change, outsized moves, model edge appearing."""
+    out = []
+    old = {r["symbol"]: r for r in (prev or {}).get("results", []) if r.get("status") == "ok"}
+    if prev and prev["regime"]["btc_above_200d"] != doc["regime"]["btc_above_200d"]:
+        out.append(f"BTC crossed {'above' if doc['regime']['btc_above_200d'] else 'below'} its 200-day average")
+    for r in doc["results"]:
+        if r.get("status") != "ok":
+            continue
+        o, now = old.get(r["symbol"]), r["trend"]["signal_now"]
+        if o and now and o["trend"]["signal_now"] and now != o["trend"]["signal_now"]:
+            price = f"${r['close']:,.0f}" if r["close"] >= 1000 else f"${r['close']:.4g}"
+            out.append(f"{r['name']}: trend turned {'UP' if now.startswith('in') else 'DOWN'} ({price})")
+        if r.get("move_vs_vol") is not None and abs(r["move_vs_vol"]) >= 2.5:
+            out.append(f"{r['name']}: {r['ret_1d']:+.1%} in a day ({r['move_vs_vol']:+.1f}x its normal move)")
+    xs, oxs = doc.get("cross_section") or {}, (prev or {}).get("cross_section") or {}
+    for k, v in (xs.get("oos") or {}).items():
+        before = ((oxs.get("oos") or {}).get(k) or {}).get("edge_evidence")
+        if v["edge_evidence"] != before and before is not None:
+            out.append(f"Model '{k}' edge evidence: {before} -> {v['edge_evidence']}")
+    return out
+
+def send_alerts(doc: dict, prev: dict | None) -> list:
+    """One ntfy digest per day, only when something changed. Re-runs for the same day do not repeat it."""
+    from . import alerts
+    items = changes(doc, prev)
+    sent = alerts._load()
+    key = f"CRYPTO:{doc['asof']}"
+    if not items or key in sent:
+        return items
+    rg = doc["regime"]
+    head = f"BTC {'above' if rg['btc_above_200d'] else 'below'} 200d, {rg['btc_dd_from_high']:+.0%} from high"
+    alerts.notify(f"Crypto: {len(items)} change{'s' * (len(items) > 1)} ({doc['asof']})",
+                  f"{head} · info only, not advice", "\n".join(f"- {x}" for x in items[:12]))
+    sent[key] = doc["asof"]
+    alerts.STATE.parent.mkdir(exist_ok=True)
+    alerts.STATE.write_text(json.dumps(sent, indent=1))
+    return items
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--synthetic", action="store_true")
+    ap.add_argument("--no-alerts", action="store_true", help="write the report but send no notifications")
     a = ap.parse_args()
     doc = run(a.synthetic)
     OUT.mkdir(parents=True, exist_ok=True)
     stem = f"{doc['asof']}_CRYPTO"
+    older = sorted(p for p in OUT.glob("*_CRYPTO.json") if p.stem < stem)
+    prev = json.loads(older[-1].read_text()) if older else None
+    if not a.synthetic and not a.no_alerts:
+        try:
+            doc["alerts"] = send_alerts(doc, prev)
+        except Exception as e:                       # an alert failure must not lose the report
+            print(f"crypto alerts failed: {e}")
     md = to_markdown(doc)
     (OUT / f"{stem}.md").write_text(md)
     (OUT / f"{stem}.json").write_text(json.dumps(doc, indent=1, default=str))
