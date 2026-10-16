@@ -71,3 +71,21 @@ def test_scan_valuation_from_cached_per_share_data():
     from pipeline import scan
     v = scan.valuation(100.0, {"eps_trailing": 5.0, "eps_forward": -1.0, "book_value": 20.0, "shares": 1e6, "payout_ratio": 0.4})
     assert v["pe_trailing"] == 20.0 and v["pe_forward"] is None and v["price_to_book"] == 5.0
+
+def test_crypto_panel_has_no_lookahead():
+    from pipeline import crypto
+    syms = [f"C{i}" for i in range(10)]
+    close, vol, _ = crypto.fetch(syms, years=3, synthetic=True)
+    p1 = crypto.panel(close, vol, "C0")
+    p2 = crypto.panel(close.iloc[:-70], vol.iloc[:-70], "C0")
+    common = p1.index.intersection(p2.index)
+    assert len(common) > 100
+    pd.testing.assert_frame_equal(p1.loc[common, crypto.FEATS], p2.loc[common, crypto.FEATS], check_exact=False)
+
+def test_crypto_random_coins_show_no_edge():
+    from pipeline import crypto
+    syms = [f"C{i}" for i in range(12)]
+    close, vol, _ = crypto.fetch(syms, years=4, synthetic=True)
+    xs = crypto.cross_section(crypto.panel(close, vol, "C0"), cost_bps=30, refit_every=8)
+    assert xs["status"] == "ok"
+    assert all(v["edge_evidence"] == "weak/none" for v in xs["oos"].values())

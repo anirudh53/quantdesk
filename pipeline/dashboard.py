@@ -42,8 +42,22 @@ def load_scans() -> list:
             out.append(doc)
     return out
 
+MAX_CRYPTO_RUNS = 14                                     # one run a day; two weeks of history
+
+def load_crypto() -> list:
+    out = []
+    for p in sorted((ROOT / "reports" / "crypto").glob("*_CRYPTO.json"), reverse=True)[:MAX_CRYPTO_RUNS]:
+        try:
+            doc = json.loads(p.read_text())
+        except Exception:
+            continue
+        doc["id"] = p.stem
+        out.append(doc)
+    return out
+
 def build() -> pathlib.Path:
-    payload = {"built": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "runs": load_runs(), "scans": load_scans()}
+    payload = {"built": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "runs": load_runs(), "scans": load_scans(),
+               "crypto": load_crypto()}
     blob = json.dumps(payload, default=str).replace("</", "<\\/")   # keep embedded JSON from closing the script tag
     html = TEMPLATE.read_text().replace("/*__DATA__*/null", blob)
     out = ROOT / "dashboard.html"

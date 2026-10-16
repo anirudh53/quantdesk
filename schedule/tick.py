@@ -12,6 +12,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 MARKET_TZ = {"US": "America/New_York", "IN": "Asia/Kolkata"}
 SLOTS = [("open", dt.time(8, 30)), ("midday", dt.time(12, 30)), ("close", dt.time(16, 30))]   # market local time
 SCAN_TIME = dt.time(17, 30)          # wide market scan, once a day after the close
+CRYPTO_TIME = dt.time(0, 30)         # crypto: once a day, every day, after the 00:00 UTC daily close
 
 def due_slot(now_local: dt.datetime) -> str | None:
     if now_local.weekday() >= 5:                     # weekends; exchange holidays still run (report shows STALE)
@@ -43,6 +44,13 @@ def main():
         print("refreshing scan universe (index constituents older than 30 days)", flush=True)
         if not a.dry_run:
             run(["pipeline.universe_refresh"], "universe refresh")   # on failure the old list is kept
+    utc = dt.datetime.now(dt.timezone.utc)
+    # the report is named after the last completed UTC day, so after 00:30 today's job writes yesterday's date
+    crypto_file = ROOT / "reports" / "crypto" / f"{utc.date() - dt.timedelta(days=1)}_CRYPTO.json"
+    if utc.time() >= CRYPTO_TIME and not crypto_file.exists():
+        print(f"{utc:%Y-%m-%d %H:%M} UTC crypto: running daily report", flush=True)
+        if not a.dry_run:
+            run(["pipeline.crypto"], "crypto")
     for mkt, tz in MARKET_TZ.items():
         now = dt.datetime.now(ZoneInfo(tz))
         mode = due_slot(now)

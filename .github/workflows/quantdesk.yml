@@ -8,13 +8,14 @@ on:
   schedule:
     - cron: "7 3,7,11,12 * * 1-5"                  # India: 08:37 / 12:37 / 16:37 / 17:37 IST
     - cron: "37 12,13,16,17,20,21,22 * * 1-5"      # US: 08:37 / 12:37 / 16:37 / 17:37 ET (EDT and EST)
+    - cron: "47 0 * * *"                           # Crypto: daily, after the 00:00 UTC close (also on weekends)
   workflow_dispatch:
     inputs:
       job:
         description: "What to run (auto = whatever is due now)"
         type: choice
         default: auto
-        options: [auto, US close, IN close, US scan, IN scan, dashboard only]
+        options: [auto, US close, IN close, US scan, IN scan, crypto, dashboard only]
 
 permissions:
   contents: write
@@ -52,6 +53,7 @@ jobs:
             "IN close")       python -m pipeline.run_daily --market IN --mode close ;;
             "US scan")        python -m pipeline.scan --market US ;;
             "IN scan")        python -m pipeline.scan --market IN ;;
+            crypto)           python -m pipeline.crypto ;;
             "dashboard only") true ;;
           esac
 

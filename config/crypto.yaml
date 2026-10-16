@@ -1,0 +1,25 @@
+# Crypto universe (Yahoo symbols, priced in USD). Edit freely; symbols Yahoo cannot price are reported and skipped.
+# Chosen as large, long-listed coins; stablecoins excluded. Note: today's survivors only, so backtests are optimistic.
+benchmark: BTC-USD
+coins:
+  - {name: Bitcoin, symbol: BTC-USD}
+  - {name: Ethereum, symbol: ETH-USD}
+  - {name: Solana, symbol: SOL-USD}
+  - {name: XRP, symbol: XRP-USD}
+  - {name: BNB, symbol: BNB-USD}
+  - {name: Dogecoin, symbol: DOGE-USD}
+  - {name: Cardano, symbol: ADA-USD}
+  - {name: Tron, symbol: TRX-USD}
+  - {name: Avalanche, symbol: AVAX-USD}
+  - {name: Chainlink, symbol: LINK-USD}
+  - {name: Polkadot, symbol: DOT-USD}
+  - {name: Litecoin, symbol: LTC-USD}
+  - {name: Bitcoin Cash, symbol: BCH-USD}
+  - {name: Stellar, symbol: XLM-USD}
+  - {name: Hedera, symbol: HBAR-USD}
+  - {name: Sui, symbol: SUI20947-USD}
+  - {name: Near, symbol: NEAR-USD}
+  - {name: Uniswap, symbol: UNI7083-USD}
+  - {name: Aave, symbol: AAVE-USD}
+costs:
+  round_trip_bps: 30     # exchange fee + spread for a typical retail venue; raise it for small caps

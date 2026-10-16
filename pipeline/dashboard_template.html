@@ -143,7 +143,7 @@ footer ul { padding-left: 18px; }
 
   <div class="controls">
     <div class="seg" role="group" aria-label="View" id="viewseg">
-      <button data-view="watch">Watchlist</button><button data-view="scan">Market scan</button>
+      <button data-view="watch">Watchlist</button><button data-view="scan">Market scan</button><button data-view="crypto">Crypto</button>
     </div>
     <div class="seg" role="group" aria-label="Market" id="mktseg">
       <button data-mkt="US">US</button><button data-mkt="IN">India</button>
@@ -176,8 +176,10 @@ footer ul { padding-left: 18px; }
     get(k) { try { return localStorage.getItem("qd." + k); } catch (e) { return null; } },
     set(k, v) { try { localStorage.setItem("qd." + k, v); } catch (e) {} }
   };
-  const state = { view: store.get("view") === "scan" ? "scan" : "watch", market: store.get("market") || "US", runId: null, scanId: null, sym: null };
+  const state = { view: ["scan", "crypto"].includes(store.get("view")) ? store.get("view") : "watch", market: store.get("market") || "US", runId: null, scanId: null, sym: null };
   DATA.scans = DATA.scans || [];
+  DATA.crypto = DATA.crypto || [];
+  state.cryptoId = null;
 
   // ---------- helpers ----------
   function el(tag, attrs, kids) {
@@ -251,6 +253,14 @@ footer ul { padding-left: 18px; }
     document.querySelectorAll("#viewseg button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
     document.getElementById("built").textContent = DATA.built ? "Dashboard built " + DATA.built : "";
     const sel = document.getElementById("run");
+    document.getElementById("mktseg").style.display = state.view === "crypto" ? "none" : "";
+    if (state.view === "crypto") {
+      document.getElementById("runlabel").textContent = "Day";
+      sel.replaceChildren(...DATA.crypto.map((x, i) => el("option", { value: x.id, text: x.asof + (i === 0 ? " (latest)" : "") })));
+      if (!DATA.crypto.some(x => x.id === state.cryptoId)) state.cryptoId = DATA.crypto.length ? DATA.crypto[0].id : null;
+      sel.value = state.cryptoId || ""; sel.disabled = !DATA.crypto.length;
+      return;
+    }
     if (state.view === "scan") {
       document.getElementById("runlabel").textContent = "Scan";
       const sl = DATA.scans.filter(x => x.market === state.market);
@@ -272,6 +282,7 @@ footer ul { padding-left: 18px; }
   function render() {
     renderControls();
     if (state.view === "scan") return renderScan();
+    if (state.view === "crypto") return renderCrypto();
     const app = document.getElementById("app");
     const run = currentRun();
     const meta = document.getElementById("runmeta");
@@ -698,6 +709,66 @@ footer ul { padding-left: 18px; }
       el("div", { class: "tscroll" }, [el("table", null, [el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i >= 2 && i <= 9 ? "num" : null, text: h })))]), tbody])])]);
   }
 
+
+  // ---------- crypto ----------
+  const pct0 = v => isNum(v) ? (v > 0 ? "+" : "") + Math.round(v * 100) + "%" : "–";
+  const signed = v => el("span", { style: isNum(v) ? "color:var(" + (v >= 0 ? "--good-text" : "--bad-text") + ")" : null, text: pct0(v) });
+  function ctable(head, rows, numFrom) {
+    return el("div", { class: "tscroll" }, [el("table", null, [
+      el("thead", null, [el("tr", null, head.map((h, i) => el("th", { class: i >= numFrom ? "num" : null, text: h })))]),
+      el("tbody", null, rows.map(cells => el("tr", null, cells.map((c, i) => el("td", { class: i >= numFrom ? "num" : null }, [c == null ? "–" : (typeof c === "object" ? c : String(c))])))))])]);
+  }
+  function renderCrypto() {
+    const app = document.getElementById("app"), meta = document.getElementById("runmeta");
+    const cx = DATA.crypto.find(x => x.id === state.cryptoId);
+    if (!cx) {
+      meta.textContent = "";
+      app.replaceChildren(el("div", { class: "card empty", text: "No crypto report yet. It runs once a day just after the 00:00 UTC daily close." }));
+      return;
+    }
+    meta.replaceChildren(document.createTextNode("Daily closes as of " + cx.asof + " (UTC) "), el("span", { class: "badge", text: "delayed / end-of-day" }),
+      document.createTextNode(" · generated " + cx.generated));
+    const rg = cx.regime, ok = cx.results.filter(r => r.status === "ok"), xs = cx.cross_section || {};
+    const name = s => (ok.find(r => r.symbol === s) || {}).name || s;
+    const riskRows = [...ok].sort((a, b) => a.vol_ann_1y - b.vol_ann_1y).map(r => [
+      r.name, sparkline(r.closes_120d), r.close.toLocaleString(undefined, { maximumSignificantDigits: 5 }), signed(r.ret_7d), signed(r.ret_30d), signed(r.ret_365d),
+      pct0(r.vol_ann_1y), isNum(r.sharpe_1y) ? r.sharpe_1y.toFixed(2) : "–", pct(r.cvar5_daily_1y, 1), pct0(r.dd_from_high), pct0(r.maxdd_3y),
+      isNum(r.beta_btc_90d) ? r.beta_btc_90d.toFixed(2) : "–", r.trend.signal_now || "–"]);
+    const trendRows = ok.filter(r => r.trend.buy_hold && r.trend.buy_hold.cagr != null).map(r => {
+      const h = r.trend.buy_hold, s = r.trend.trend_rule;
+      return [r.name, h.years, signed(h.cagr), pct0(h.maxdd), signed(s.cagr), pct0(s.maxdd), h.sharpe, s.sharpe, Math.round(r.trend.time_in_market * 100) + "%"];
+    });
+    const parts = [
+      el("div", { class: "tiles" }, [
+        tile("Bitcoin trend", rg.btc_above_200d ? "Above 200d" : "Below 200d", "200-day moving average"),
+        tile("Bitcoin from its high", pct0(rg.btc_dd_from_high), "within the last ~6 years"),
+        tile("Breadth", Math.round(rg.breadth_above_200d * 100) + "%", "of " + rg.breadth_n + " coins above their 200d average"),
+        tile("BTC volatility", Math.round(rg.btc_vol30_percentile_5y * 100) + "th pct", "30-day vol vs the last 5 years")
+      ]),
+      el("div", { class: "callout warn" }, [el("strong", { text: "Read before anything else. " }),
+        "Every coin here has lost 60–99% at least once in the last few years. The universe is today's survivors, so backtests look better than reality. Nothing on this page is a buy or sell signal."]),
+      el("section", { class: "card", style: "margin-bottom:16px" }, [el("h2", { text: "Risk profile" }),
+        el("p", { class: "hint", text: "Past behaviour, lowest volatility first. 'Worst-5% day' = average loss on the worst 5% of days over the past year. Trend = above at least 3 of its 20/50/100/200-day averages." }),
+        ctable(["Coin", "120d", "Close $", "7d", "30d", "1y", "Vol / yr", "Sharpe 1y", "Worst-5% day", "From high", "Max DD 3y", "Beta to BTC", "Trend"], riskRows, 2)]),
+      el("section", { class: "card", style: "margin-bottom:16px" }, [el("h2", { text: "Trend rule record" }),
+        el("p", { class: "hint", text: "Fixed rule (not fitted): hold while the trend reads 'in', sit in cash otherwise, " + cx.cost_round_trip_bps + " bps per round trip. It mostly shrinks drawdowns; whether it adds return depends on the coin." }),
+        ctable(["Coin", "Years", "Hold: CAGR", "Hold: max DD", "Rule: CAGR", "Rule: max DD", "Hold Sharpe", "Rule Sharpe", "Time in"], trendRows, 1)])
+    ];
+    if (xs.status === "ok") {
+      const methods = Object.keys(xs.oos);
+      parts.push(el("section", { class: "card", style: "margin-bottom:16px" }, [el("h2", { text: "Which coins beat the others next week? (walk-forward test)" }),
+        el("p", { class: "hint", text: "Each week the models rank the coins using only past data, then we check the real next-week ranking. Rank IC 0 = useless. 'Top third excess' = holding the model's top third vs all coins equally, after costs." }),
+        ctable(["Method", "Weeks", "Mean IC", "IC t-stat", "Last 52w IC", "Top third excess / yr", "Hit rate", "Edge evidence"],
+          methods.map(k => { const v = xs.oos[k]; return [k, v.weeks, v.mean_ic.toFixed(3), v.ic_t_stat.toFixed(2), v.ic_last_52w.toFixed(3), signed(v.top_third_excess_ann), pct0(v.top_third_hit_rate), v.edge_evidence]; }), 1)]));
+      parts.push(el("section", { class: "card", style: "margin-bottom:16px" }, [el("h2", { text: "Current model ranks (hypothesis only)" }),
+        el("p", { class: "hint", text: "1 = expected to do best relative to the others next week. The methods disagree a lot, and none has a record strong enough to rely on. As of " + xs.asof + "." }),
+        ctable(["Coin", ...methods], xs.consensus_order.map(s => [name(s), ...methods.map(k => xs.latest_rank[s][k])]), 1)]));
+    }
+    if ((cx.unresolved || []).length) parts.push(el("section", { class: "card" }, [el("h2", { text: "Not priced" }),
+      el("ul", { class: "plain" }, cx.unresolved.map(s => el("li", { text: s + ": Yahoo returned no usable prices" })))]));
+    app.replaceChildren(...parts);
+  }
+
   // ---------- wiring ----------
   document.querySelectorAll("#mktseg button").forEach(b => b.addEventListener("click", () => {
     state.market = b.dataset.mkt; store.set("market", state.market); state.runId = null; state.scanId = null; state.sym = null; scanQuery = ""; render();
@@ -705,7 +776,7 @@ footer ul { padding-left: 18px; }
   document.querySelectorAll("#viewseg button").forEach(b => b.addEventListener("click", () => {
     state.view = b.dataset.view; store.set("view", state.view); render();
   }));
-  document.getElementById("run").addEventListener("change", e => { if (state.view === "scan") state.scanId = e.target.value; else state.runId = e.target.value; render(); });
+  document.getElementById("run").addEventListener("change", e => { if (state.view === "scan") state.scanId = e.target.value; else if (state.view === "crypto") state.cryptoId = e.target.value; else state.runId = e.target.value; render(); });
   if (state.view === "watch" && !runsFor(state.market).length && DATA.runs.length) state.market = DATA.runs[0].market;
   render();
 })();

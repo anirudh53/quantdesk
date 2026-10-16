@@ -35,7 +35,10 @@ It deliberately does not output buy/sell, position sizes or price targets.
 6. Market scan (S&P 500 + Nifty 100, config/scan_universe.yaml): runs once a day at 17:30 market time; screens only, no model.
    One digest notification per scan for new ex-dividend dates with >= 3% trailing yield. Dashboard tab "Market scan".
    Refresh the constituent lists monthly: `.venv/bin/python -m pipeline.universe_refresh`. Run by hand: `.venv/bin/python -m pipeline.scan --market US`.
-7. Qualitative layer: open this folder in Claude Code (CLAUDE.md is the Chief). Ask it to read the latest reports and run the news / filings / industry / ownership desks on the flagged names, then bull/bear review.
+7. Crypto (config/crypto.yaml, 19 coins via Yahoo): `python -m pipeline.crypto`, once a day after the 00:00 UTC close, weekends too.
+   Risk profile per coin, a fixed trend rule's record vs buy-and-hold, and a weekly walk-forward test of three rankers
+   (28-day momentum, ridge, gradient boosting) scored by rank IC and top-third-vs-equal-weight after costs. Dashboard tab "Crypto".
+8. Qualitative layer: open this folder in Claude Code (CLAUDE.md is the Chief). Ask it to read the latest reports and run the news / filings / industry / ownership desks on the flagged names, then bull/bear review.
 
 ## Validate before trusting anything
 - Run for several weeks; read the "Model record" table. If edge evidence stays "weak/none", ignore the probabilities.
