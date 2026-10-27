@@ -1,0 +1,4200 @@
+{
+ "generated": "2026-10-27 23:58 UTC",
+ "market": "US",
+ "mode": "close",
+ "date": "2026-10-27",
+ "results": [
+  {
+   "symbol": "NVDA",
+   "flags": [],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:17Z",
+   "asof": "2026-10-27",
+   "close": 217.94,
+   "ret_1d": 0.009,
+   "move_vs_vol": 0.47,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     211.7031
+    ],
+    [
+     "2026-08-05",
+     218.975
+    ],
+    [
+     "2026-08-06",
+     218.7452
+    ],
+    [
+     "2026-08-07",
+     223.7097
+    ],
+    [
+     "2026-08-10",
+     217.3068
+    ],
+    [
+     "2026-08-11",
+     217.2569
+    ],
+    [
+     "2026-08-12",
+     223.8395
+    ],
+    [
+     "2026-08-13",
+     225.0482
+    ],
+    [
+     "2026-08-14",
+     224.9083
+    ],
+    [
+     "2026-08-17",
+     224.7585
+    ],
+    [
+     "2026-08-18",
+     219.4944
+    ],
+    [
+     "2026-08-19",
+     217.3168
+    ],
+    [
+     "2026-08-20",
+     216.6076
+    ],
+    [
+     "2026-08-21",
+     214.48
+    ],
+    [
+     "2026-08-24",
+     208.247
+    ],
+    [
+     "2026-08-25",
+     212.8119
+    ],
+    [
+     "2026-08-26",
+     209.4257
+    ],
+    [
+     "2026-08-27",
+     227.7252
+    ],
+    [
+     "2026-08-28",
+     217.3068
+    ],
+    [
+     "2026-08-31",
+     220.5332
+    ],
+    [
+     "2026-09-01",
+     217.197
+    ],
+    [
+     "2026-09-02",
+     224.1592
+    ],
+    [
+     "2026-09-03",
+     228.1947
+    ],
+    [
+     "2026-09-04",
+     230.1025
+    ],
+    [
+     "2026-09-08",
+     225.4777
+    ],
+    [
+     "2026-09-09",
+     223.42
+    ],
+    [
+     "2026-09-10",
+     218.36
+    ],
+    [
+     "2026-09-11",
+     218.29
+    ],
+    [
+     "2026-09-14",
+     210.96
+    ],
+    [
+     "2026-09-15",
+     212.17
+    ],
+    [
+     "2026-09-16",
+     213.9
+    ],
+    [
+     "2026-09-17",
+     219.34
+    ],
+    [
+     "2026-09-18",
+     222.27
+    ],
+    [
+     "2026-09-21",
+     227.38
+    ],
+    [
+     "2026-09-22",
+     228.87
+    ],
+    [
+     "2026-09-23",
+     225.51
+    ],
+    [
+     "2026-09-24",
+     224.58
+    ],
+    [
+     "2026-09-25",
+     225.07
+    ],
+    [
+     "2026-09-28",
+     228.86
+    ],
+    [
+     "2026-09-29",
+     227.21
+    ],
+    [
+     "2026-09-30",
+     228.38
+    ],
+    [
+     "2026-10-01",
+     230.86
+    ],
+    [
+     "2026-10-02",
+     233.95
+    ],
+    [
+     "2026-10-05",
+     238.9
+    ],
+    [
+     "2026-10-06",
+     239.24
+    ],
+    [
+     "2026-10-07",
+     237.47
+    ],
+    [
+     "2026-10-08",
+     230.48
+    ],
+    [
+     "2026-10-09",
+     229.28
+    ],
+    [
+     "2026-10-12",
+     226.32
+    ],
+    [
+     "2026-10-13",
+     228.52
+    ],
+    [
+     "2026-10-14",
+     221.3
+    ],
+    [
+     "2026-10-15",
+     217.23
+    ],
+    [
+     "2026-10-16",
+     214.13
+    ],
+    [
+     "2026-10-19",
+     217.09
+    ],
+    [
+     "2026-10-20",
+     216.47
+    ],
+    [
+     "2026-10-21",
+     221.97
+    ],
+    [
+     "2026-10-22",
+     212.21
+    ],
+    [
+     "2026-10-23",
+     210.96
+    ],
+    [
+     "2026-10-26",
+     216.0
+    ],
+    [
+     "2026-10-27",
+     217.94
+    ]
+   ],
+   "volume_ratio_20d": 0.82,
+   "bar": "complete",
+   "dist_52w_high": -0.089,
+   "dividends": {
+    "symbol": "NVDA",
+    "trailing_12m": 0.52,
+    "last_amount": 0.25,
+    "last_ex_date": "2026-09-10",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:17Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 5262596898816.0,
+    "pe_trailing": 27.552465,
+    "pe_forward": 13.694344,
+    "price_to_book": 22.98218,
+    "ev_to_ebitda": 25.979,
+    "profit_margin": 0.63663,
+    "operating_margin": 0.66236997,
+    "roe": 1.17211,
+    "revenue_growth": 1.059,
+    "earnings_growth": 1.278,
+    "debt_to_equity": 0.16971,
+    "current_ratio": 4.589,
+    "free_cashflow": 41809874944.0,
+    "payout_ratio": 0.0354,
+    "beta_yahoo": 2.216,
+    "yahoo_sector": "Technology",
+    "industry": "Semiconductors"
+   },
+   "dividend_record": {
+    "years_paid": 14,
+    "consecutive_increases": 2,
+    "cagr_5y": 0.2011,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": -0.0477,
+    "ret_3m": 0.1483,
+    "ret_6m": 0.0247,
+    "ret_12m": 0.1729,
+    "above_50d": false,
+    "above_200d": true,
+    "vol_annual": 0.3762,
+    "max_drawdown_1y": -0.2021,
+    "beta_1y": 1.94,
+    "rel_3m": 0.0927,
+    "rel_12m": 0.0358
+   },
+   "sector": {
+    "sector": "Information Technology",
+    "n_peers": 75,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 35.85,
+     "pct_rank": 0.33,
+     "n": 72
+    },
+    "pe_forward": {
+     "median": 18.91,
+     "pct_rank": 0.25,
+     "n": 75
+    },
+    "price_to_book": {
+     "median": 8.5,
+     "pct_rank": 0.83,
+     "n": 70
+    }
+   },
+   "next_earnings": "2026-11-17",
+   "news": [
+    {
+     "title": "Nvidia Stock Is 10% Below Its Record. Does Anthropic's IPO Filing Make It a Buy?",
+     "source": "The Motley Fool",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNM2VWZ25FNnFhdGp0SnNVdVF6YXpST2FfWGdFT3FnQlJDb21GOVR6UjZLY2RIVXgwSkdRZlVUM3JYWk1qZW85MTVua2w5WTRZb0RzeVpBZE45YklocXNVR2I2cUNLMFZSaVI0STBMYS11aGFNN05ubU52NmtjRlVXRHBoWTV4TkxBRUdDU1o1TWlNM0VJbHhIVGgyZVhTTHZNY0k2OWNpd2xxT0xzNVdOVHpqaE5UZ1BacmJieQ?oc=5",
+     "published": "2026-10-27 23:31 UTC"
+    },
+    {
+     "title": "Nvidia, AMD Get Their Jollies Hooking Up With Meta's Muse",
+     "source": "Investor's Business Daily",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYUYtTUVGcVg1OEY2WFpMeXZWTmQ0XzB0NGNEdTRTcE5vdGhGaTd3Yzg1XzlLbmZMMTNHUmhGcGxFNXJyNjhmM01KdVU3ZlNsc09IT1o0UWdRSW1fZUdLVVY5UGZOTnVsRXZxUUMtelh0eVFXRUF3YWY4UlQ1OEhLNi1KSVBpcHl5VHRB?oc=5",
+     "published": "2026-10-27 22:08 UTC"
+    },
+    {
+     "title": "Nvidia\u2019s New $3 Billion AI Bet Is on One of Its Own Customers",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQR3llTkxNaWxNc1hqa3J6UEJQbXlTelByVXhXRlFrNWJLX0ZJN2NTY3p5bWRCU3otdzhoN3lWYXI4TEgxMkd6Yl9pNGNobFJ2RXZiSTFSekRFY0FsOTRuMjhzdVBIY3V0UlRxYUNhWG0xTmVQMFV2ZEpDSHFCMjBYY0lVYXE0bmt1ejdmMF9BSFI?oc=5",
+     "published": "2026-10-27 21:40 UTC"
+    },
+    {
+     "title": "NVDA Stock Alert: What to Know as Nvidia Invests $3 Billion in Meta",
+     "source": "Barchart.com",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWnl5Qi1MY0NrMUF0ODAzM3hvbUxLMkpLRnBrMlp2RExVQkx5eEhtZW0zdVdac1pPNGowX1JBUkYzX3BHYWtVRnZtOGFZbzdoYV9oY3hpenJXcnltOE5IUEtKc21zRktPb0Q3cTRGX2VXc2FaUzFGZVRjWkZrc29veEdoX1pIazh6Wm5Rdy1CYkRFUUhQS0NNb01DSVE4SThlRkFiNWZmdkdQUF9qcVE?oc=5",
+     "published": "2026-10-27 21:32 UTC"
+    },
+    {
+     "title": "Nvidia, AMD to buy $4B in Meta shares as part of expanded chip partnerships",
+     "source": "SiliconANGLE",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbzNoNElDckgyajBzR3NPZ0tkQ2taREVmc3p1NHZFZDBDT0dPY1NQa29vZElHZGhsQUcxQ2wxV1BGaDVpLXJTSjluQ0hNWWE5U1A1R3Ezc2lkTWZ5X3ZzU1VxV29CM0txQmFFT2xrdUg1bFUzaFV3bDAya2FkMFdBVjh1dEp6ZmZXZEZkWWpNRmY3eHNyVGs0dWNvUHplZWVLZzhZQng3cDdkRklKWjlJ?oc=5",
+     "published": "2026-10-27 21:12 UTC"
+    },
+    {
+     "title": "Broadcom, Nvidia, Boeing, GM, UPS, JetBlue, and More Stocks That Explain Today\u2019s Market",
+     "source": "Barron's",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBET2xGeDU1LTZXN3FENUloNjE1UEVnT2VOSmVheVNjQUtfUGoydXpjSkx6M2FMMWUxTFZIWWZCT2d5MFZ4OXJMbFNndVY3M0s1bW8wTml4UTVhNEZSVGZ2aUVjWlg?oc=5",
+     "published": "2026-10-27 20:38 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.563,
+     "accuracy": 0.561,
+     "brier": 0.2516,
+     "brier_baseline": 0.2461,
+     "z_vs_baseline_optimistic": -0.09,
+     "strategy_mean_per_period": 0.00561,
+     "buyhold_mean_per_period": 0.00595,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.64,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.175,
+    "items": [
+     {
+      "title": "Nvidia Stock Is 10% Below Its Record. Does Anthropic's IPO Filing Make It a Buy?",
+      "compound": 0.0
+     },
+     {
+      "title": "Nvidia, AMD Get Their Jollies Hooking Up With Meta's Muse",
+      "compound": 0.4588
+     },
+     {
+      "title": "Nvidia\u2019s New $3 Billion AI Bet Is on One of Its Own Customers",
+      "compound": 0.0
+     },
+     {
+      "title": "NVDA Stock Alert: What to Know as Nvidia Invests $3 Billion in Meta",
+      "compound": 0.296
+     },
+     {
+      "title": "Nvidia, AMD to buy $4B in Meta shares as part of expanded chip partnerships",
+      "compound": 0.296
+     },
+     {
+      "title": "Broadcom, Nvidia, Boeing, GM, UPS, JetBlue, and More Stocks That Explain Today\u2019s Market",
+      "compound": 0.0
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:18Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Nvidia"
+  },
+  {
+   "symbol": "AAPL",
+   "flags": [
+    "at/near 52-week high",
+    "earnings in 6 days (2026-11-02)"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:18Z",
+   "asof": "2026-10-27",
+   "close": 347.1,
+   "ret_1d": 0.0093,
+   "move_vs_vol": 0.88,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     309.1134
+    ],
+    [
+     "2026-08-05",
+     310.732
+    ],
+    [
+     "2026-08-06",
+     312.1408
+    ],
+    [
+     "2026-08-07",
+     313.06
+    ],
+    [
+     "2026-08-10",
+     308.26
+    ],
+    [
+     "2026-08-11",
+     304.91
+    ],
+    [
+     "2026-08-12",
+     302.25
+    ],
+    [
+     "2026-08-13",
+     305.26
+    ],
+    [
+     "2026-08-14",
+     305.93
+    ],
+    [
+     "2026-08-17",
+     305.59
+    ],
+    [
+     "2026-08-18",
+     310.03
+    ],
+    [
+     "2026-08-19",
+     316.83
+    ],
+    [
+     "2026-08-20",
+     311.3
+    ],
+    [
+     "2026-08-21",
+     309.35
+    ],
+    [
+     "2026-08-24",
+     310.34
+    ],
+    [
+     "2026-08-25",
+     309.9
+    ],
+    [
+     "2026-08-26",
+     313.45
+    ],
+    [
+     "2026-08-27",
+     314.58
+    ],
+    [
+     "2026-08-28",
+     319.7
+    ],
+    [
+     "2026-08-31",
+     316.85
+    ],
+    [
+     "2026-09-01",
+     325.13
+    ],
+    [
+     "2026-09-02",
+     324.96
+    ],
+    [
+     "2026-09-03",
+     328.21
+    ],
+    [
+     "2026-09-04",
+     319.97
+    ],
+    [
+     "2026-09-08",
+     316.22
+    ],
+    [
+     "2026-09-09",
+     315.34
+    ],
+    [
+     "2026-09-10",
+     326.57
+    ],
+    [
+     "2026-09-11",
+     332.27
+    ],
+    [
+     "2026-09-14",
+     333.08
+    ],
+    [
+     "2026-09-15",
+     331.34
+    ],
+    [
+     "2026-09-16",
+     332.41
+    ],
+    [
+     "2026-09-17",
+     337.0
+    ],
+    [
+     "2026-09-18",
+     336.13
+    ],
+    [
+     "2026-09-21",
+     338.98
+    ],
+    [
+     "2026-09-22",
+     339.75
+    ],
+    [
+     "2026-09-23",
+     337.02
+    ],
+    [
+     "2026-09-24",
+     335.92
+    ],
+    [
+     "2026-09-25",
+     341.07
+    ],
+    [
+     "2026-09-28",
+     338.4
+    ],
+    [
+     "2026-09-29",
+     329.4
+    ],
+    [
+     "2026-09-30",
+     333.02
+    ],
+    [
+     "2026-10-01",
+     330.32
+    ],
+    [
+     "2026-10-02",
+     333.69
+    ],
+    [
+     "2026-10-05",
+     332.89
+    ],
+    [
+     "2026-10-06",
+     333.63
+    ],
+    [
+     "2026-10-07",
+     336.67
+    ],
+    [
+     "2026-10-08",
+     340.42
+    ],
+    [
+     "2026-10-09",
+     336.64
+    ],
+    [
+     "2026-10-12",
+     340.97
+    ],
+    [
+     "2026-10-13",
+     341.27
+    ],
+    [
+     "2026-10-14",
+     342.96
+    ],
+    [
+     "2026-10-15",
+     342.0
+    ],
+    [
+     "2026-10-16",
+     343.46
+    ],
+    [
+     "2026-10-19",
+     342.94
+    ],
+    [
+     "2026-10-20",
+     339.5
+    ],
+    [
+     "2026-10-21",
+     343.99
+    ],
+    [
+     "2026-10-22",
+     348.22
+    ],
+    [
+     "2026-10-23",
+     347.73
+    ],
+    [
+     "2026-10-26",
+     343.91
+    ],
+    [
+     "2026-10-27",
+     347.1
+    ]
+   ],
+   "volume_ratio_20d": 1.0,
+   "bar": "complete",
+   "dist_52w_high": -0.003,
+   "dividends": {
+    "symbol": "AAPL",
+    "trailing_12m": 1.06,
+    "last_amount": 0.27,
+    "last_ex_date": "2026-08-10",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:19Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 5065640247296.0,
+    "pe_trailing": 39.805046,
+    "pe_forward": 36.29823,
+    "price_to_book": 47.160328,
+    "ev_to_ebitda": 30.291,
+    "profit_margin": 0.27618998,
+    "operating_margin": 0.32623002,
+    "roe": 1.4875101,
+    "revenue_growth": 0.164,
+    "earnings_growth": 0.287,
+    "debt_to_equity": 0.78445,
+    "current_ratio": 1.003,
+    "free_cashflow": 107721875456.0,
+    "payout_ratio": 0.1204,
+    "beta_yahoo": 1.069,
+    "yahoo_sector": "Technology",
+    "industry": "Consumer Electronics"
+   },
+   "dividend_record": {
+    "years_paid": 23,
+    "consecutive_increases": 14,
+    "cagr_5y": 0.0499,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": 0.0257,
+    "ret_3m": 0.0272,
+    "ret_6m": 0.2845,
+    "ret_12m": 0.3256,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.2403,
+    "max_drawdown_1y": -0.138,
+    "beta_1y": 0.59,
+    "rel_3m": -0.0284,
+    "rel_12m": 0.1885
+   },
+   "sector": {
+    "sector": "Information Technology",
+    "n_peers": 75,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 35.85,
+     "pct_rank": 0.57,
+     "n": 72
+    },
+    "pe_forward": {
+     "median": 18.91,
+     "pct_rank": 0.91,
+     "n": 75
+    },
+    "price_to_book": {
+     "median": 8.5,
+     "pct_rank": 0.93,
+     "n": 70
+    }
+   },
+   "next_earnings": "2026-11-02",
+   "news": [
+    {
+     "title": "Apple Shares New Apple Watch Survival Stories",
+     "source": "MacRumors",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9mSWh5eTE4TUoyZE9aMlc5b0ZZYUJYMnI4Tl9ubFNRQVo3OGZrd0xxTTYxR19EMExjcW5zdW8zcFZkczRGNlpIaXNOdnh4ZWlzbWpCVG1FVmZRNjZ5Sjk0RXIxcHk4Sy1ORGh2MWsydlNIQVhp?oc=5",
+     "published": "2026-10-27 23:20 UTC"
+    },
+    {
+     "title": "Apple Shares tvOS 27.2 Release Notes With List of New Features",
+     "source": "MacRumors",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE00NHhVWTgyNXVma1VCaVBBWDJtQjZzQkNrYXBaS1hUX3BHdG5IVlhoV05ULXA2QngtNFBjTWt0MXVPa0dVSWRMcnhSRXdFLS1Ibmx1bkdfaFlsa29TWDhXVDVHbUliNkJHZG9kQm5FNWlxUFhVSkVKSWlB?oc=5",
+     "published": "2026-10-27 23:16 UTC"
+    },
+    {
+     "title": "This website shows you where iPhone Duo is in stock",
+     "source": "The Apple Post",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWExfVkMwM2pEejdZVmJTWUtyeUhQakdGUWJtVVRFVHlIMlFJMzVKVWI2Wlgycm43c3Q1eTN4ekZtaHZJU3JhWEE0Q3MyLVdPZENjT0g0WmZuY3RrMXBBaVFUa0xmZ01EdkM0UkpxNEotZlhaTkNVVEVaWWhlR0tCRTY5ZXJIYlAwWUhScXdoRjYxM1BXRWNxMFRNamgzQXPSAaQBQVVfeXFMTV9hMlVjY1Y3TkhzVmZxakUyUWpDMzRZTm9JUEJoOWU0MmN0TEgxZlJ6emx1dldFQW1LRTVBVjNLRXd6Vk02WHFTTEl2MVBWZHRMVzZHWVNBdGhCbFk1MXRlV0xGNjRTTUxSX0hGQWZGTXRMclV3SWNDbnFBeVZDY0NEQnpFbzJPd0hzWnpCSW9hUmFBQjllOFN4Tll4X2hhQ2RiR3k?oc=5",
+     "published": "2026-10-27 22:24 UTC"
+    },
+    {
+     "title": "How to buy the new Apple Creator Studio",
+     "source": "Mashable",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aTV9WbndFTEJhb2lGcjhIaV9hR2laTy1NSDB4LWZZZ0NqRXFJYmUzSXQzUjU0MUR2bkZQaGk2Zlp2cnlvNXQ2azJQbExmSi1LcXh3VzdjUTVsQUFsWTgwS3VESGl5T0NH?oc=5",
+     "published": "2026-10-27 21:52 UTC"
+    },
+    {
+     "title": "GM's new move aims to put its stock in the company of Amazon and Apple",
+     "source": "Detroit Free Press",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLTFqNHBmYklxMGYwb1JYYU1uZXZ6QlpsVzVnSnVteS1sUHpPWjhoUjBCam5HSHBhbm5xM25fXzMxZEFSN181ckpDc1NjQy14azNReEVJVE1yR0lwcFFZTFlGbzhSOU1FRXRYQ21xeUhSYTBveDIwdDIteG5lYlprSlFKY3pYb1B1czBwUE5zLTFNSkVjMHh1TFdPV1ZKeGljWkRuWG1wMzQ?oc=5",
+     "published": "2026-10-27 21:20 UTC"
+    },
+    {
+     "title": "GM takes another step closer to becoming a tech company that makes cars",
+     "source": "Detroit Free Press",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRUtHZWQ2SzBTbzdaQ2hTNi1sSzduejY4ZlF2Szc2ZmZqTHlrS0NPdTdmc3YtTkNHN2V6MVFtM29PbFNDMFpGMlpzbnVrSUM0b3pOWk04N1hDeHUxTm5KTktmSThIUFQzbXljTk40cU11NWpvYnlnekZxSFl4X0RPc1dCVFE5Y1A3eXhLa1J1SFRjVmtlUkJVb3liV0NJOFl0Vmw3alFLUWhwSUFSazFyZXlxN1RFWUktMWtvX0l4Z0Y3eG1RTHBDNE93RWhiZw?oc=5",
+     "published": "2026-10-27 20:23 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.575,
+     "accuracy": 0.538,
+     "brier": 0.2552,
+     "brier_baseline": 0.2444,
+     "z_vs_baseline_optimistic": -1.64,
+     "strategy_mean_per_period": 0.00438,
+     "buyhold_mean_per_period": 0.00502,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.561,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.128,
+    "items": [
+     {
+      "title": "Apple Shares New Apple Watch Survival Stories",
+      "compound": 0.296
+     },
+     {
+      "title": "Apple Shares tvOS 27.2 Release Notes With List of New Features",
+      "compound": 0.296
+     },
+     {
+      "title": "This website shows you where iPhone Duo is in stock",
+      "compound": 0.0
+     },
+     {
+      "title": "How to buy the new Apple Creator Studio",
+      "compound": 0.0
+     },
+     {
+      "title": "GM's new move aims to put its stock in the company of Amazon and Apple",
+      "compound": 0.1779
+     },
+     {
+      "title": "GM takes another step closer to becoming a tech company that makes cars",
+      "compound": 0.0
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:19Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Apple"
+  },
+  {
+   "symbol": "GOOGL",
+   "flags": [
+    "earnings in 1 days (2026-10-28)"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:19Z",
+   "asof": "2026-10-27",
+   "close": 320.58,
+   "ret_1d": 0.0119,
+   "move_vs_vol": 0.9,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     377.4074
+    ],
+    [
+     "2026-08-05",
+     362.1972
+    ],
+    [
+     "2026-08-06",
+     357.5202
+    ],
+    [
+     "2026-08-07",
+     354.0724
+    ],
+    [
+     "2026-08-10",
+     357.2903
+    ],
+    [
+     "2026-08-11",
+     343.5791
+    ],
+    [
+     "2026-08-12",
+     343.3193
+    ],
+    [
+     "2026-08-13",
+     346.1375
+    ],
+    [
+     "2026-08-14",
+     345.6778
+    ],
+    [
+     "2026-08-17",
+     343.779
+    ],
+    [
+     "2026-08-18",
+     343.9789
+    ],
+    [
+     "2026-08-19",
+     344.4986
+    ],
+    [
+     "2026-08-20",
+     340.4512
+    ],
+    [
+     "2026-08-21",
+     344.5985
+    ],
+    [
+     "2026-08-24",
+     347.8364
+    ],
+    [
+     "2026-08-25",
+     346.7371
+    ],
+    [
+     "2026-08-26",
+     341.7803
+    ],
+    [
+     "2026-08-27",
+     340.4312
+    ],
+    [
+     "2026-08-28",
+     346.3674
+    ],
+    [
+     "2026-08-31",
+     339.132
+    ],
+    [
+     "2026-09-01",
+     334.8048
+    ],
+    [
+     "2026-09-02",
+     336.9034
+    ],
+    [
+     "2026-09-03",
+     342.26
+    ],
+    [
+     "2026-09-04",
+     338.46
+    ],
+    [
+     "2026-09-08",
+     338.36
+    ],
+    [
+     "2026-09-09",
+     330.65
+    ],
+    [
+     "2026-09-10",
+     332.6
+    ],
+    [
+     "2026-09-11",
+     338.5
+    ],
+    [
+     "2026-09-14",
+     349.39
+    ],
+    [
+     "2026-09-15",
+     344.98
+    ],
+    [
+     "2026-09-16",
+     342.87
+    ],
+    [
+     "2026-09-17",
+     347.33
+    ],
+    [
+     "2026-09-18",
+     349.54
+    ],
+    [
+     "2026-09-21",
+     354.97
+    ],
+    [
+     "2026-09-22",
+     351.16
+    ],
+    [
+     "2026-09-23",
+     337.83
+    ],
+    [
+     "2026-09-24",
+     342.36
+    ],
+    [
+     "2026-09-25",
+     343.92
+    ],
+    [
+     "2026-09-28",
+     342.75
+    ],
+    [
+     "2026-09-29",
+     340.92
+    ],
+    [
+     "2026-09-30",
+     344.08
+    ],
+    [
+     "2026-10-01",
+     338.24
+    ],
+    [
+     "2026-10-02",
+     343.5
+    ],
+    [
+     "2026-10-05",
+     346.47
+    ],
+    [
+     "2026-10-06",
+     347.68
+    ],
+    [
+     "2026-10-07",
+     350.5
+    ],
+    [
+     "2026-10-08",
+     348.29
+    ],
+    [
+     "2026-10-09",
+     351.66
+    ],
+    [
+     "2026-10-12",
+     352.72
+    ],
+    [
+     "2026-10-13",
+     353.78
+    ],
+    [
+     "2026-10-14",
+     347.64
+    ],
+    [
+     "2026-10-15",
+     349.22
+    ],
+    [
+     "2026-10-16",
+     340.59
+    ],
+    [
+     "2026-10-19",
+     344.18
+    ],
+    [
+     "2026-10-20",
+     340.28
+    ],
+    [
+     "2026-10-21",
+     334.76
+    ],
+    [
+     "2026-10-22",
+     324.22
+    ],
+    [
+     "2026-10-23",
+     320.21
+    ],
+    [
+     "2026-10-26",
+     316.8
+    ],
+    [
+     "2026-10-27",
+     320.58
+    ]
+   ],
+   "volume_ratio_20d": 1.19,
+   "bar": "complete",
+   "dist_52w_high": -0.203,
+   "dividends": {
+    "symbol": "GOOGL",
+    "trailing_12m": 0.86,
+    "last_amount": 0.22,
+    "last_ex_date": "2026-09-04",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:20Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 3920672325632.0,
+    "pe_trailing": 16.085299,
+    "pe_forward": 20.872942,
+    "price_to_book": 6.2987266,
+    "ev_to_ebitda": 22.043,
+    "profit_margin": 0.54771,
+    "operating_margin": 0.34033,
+    "roe": 0.48676,
+    "revenue_growth": 0.242,
+    "earnings_growth": 2.94,
+    "debt_to_equity": 0.18859,
+    "current_ratio": 2.724,
+    "free_cashflow": 22665000960.0,
+    "payout_ratio": 0.042600002,
+    "beta_yahoo": 1.211,
+    "yahoo_sector": "Communication Services",
+    "industry": "Internet Content & Information"
+   },
+   "dividend_record": {
+    "years_paid": 2,
+    "consecutive_increases": 1,
+    "cagr_5y": null,
+    "cut_in_5y": null
+   },
+   "trend": {
+    "ret_1m": -0.0647,
+    "ret_3m": -0.0473,
+    "ret_6m": -0.0823,
+    "ret_12m": 0.2366,
+    "above_50d": false,
+    "above_200d": false,
+    "vol_annual": 0.3155,
+    "max_drawdown_1y": -0.2122,
+    "beta_1y": 1.36,
+    "rel_3m": -0.1029,
+    "rel_12m": 0.0995
+   },
+   "sector": {
+    "sector": "Communication Services",
+    "n_peers": 22,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 17.44,
+     "pct_rank": 0.39,
+     "n": 18
+    },
+    "pe_forward": {
+     "median": 14.39,
+     "pct_rank": 0.77,
+     "n": 22
+    },
+    "price_to_book": {
+     "median": 2.29,
+     "pct_rank": 0.68,
+     "n": 22
+    }
+   },
+   "next_earnings": "2026-10-28",
+   "news": [
+    {
+     "title": "Alphabet reports Q3 earnings on Wednesday: Here's what to watch for",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcGRyV2Fic3UzX2lyMjJQNWQ5d3Zvdm1aTF9MZkdRYkJrS1BhQjBYNWVYdUlCYkpta0pfN25pcDNILXBGSE8yQnNWakhBQmc0bnhoWWRkR2liOTgwVkhpOUQyNG1VMFRxR1ZMR3B5eGZESWZPaHd6V1FLTVd4UGdtaEpRUk1RSTRMT3FBcHRRa1pGZU1hWmtKbVV2VGpEM05KNFlnOU5aSDdQdkVj?oc=5",
+     "published": "2026-10-27 20:32 UTC"
+    },
+    {
+     "title": "AI debt fears ease ahead of Oracle, Alphabet and Amazon updates. Here's what to watch.",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBZNHVhb2N1VHhYN2hEc1pibmFxYUpRc19YazNmd2t2S1UweGJLN0hra1F1S2JHNU1MeDd1VV94N3VleXRaMmxHX0ZZV0doNFFrUkVrY1pJMjFNSVdHSmt6SFBXeGZTU1Z4alp5emxrcW0zN1HSAXhBVV95cUxOVGR4c0JHMzVmajhYcHV6T3djck95TXROZGU4cmRobTJsZ3pRczlQcmVHZ3IzVkIwdTBjTnpwWGJnX0FnZVg2bWh1bGZqd20teXEzR3pZdWVjWXYzTmt4YXhfdnJUNlJYNHJlUFE0R2ZDTDVlSWJwcUc?oc=5",
+     "published": "2026-10-27 19:57 UTC"
+    },
+    {
+     "title": "Google to report Q3 results as investors focus on AI growth, weigh Meta Muse AI risk",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPeFNCNzhFanV1OTduaTk2dkZ3VzcxSF9zcWl3NzJVdTIwUGNDLXZZMTNnVjA2S3A0eUpOQ1R1Qk1VS3dkbHpzaVBEQ1lMUUdhTExFUDFuRTEySGh1aGdzVXlWeGVrdy0ta1FDelc0NWVHal9GODJfdjJ0Qy1PMWJzQ3psLTNvZWJBWWJMdXVxdk9hZkFfVi1pLXpwdVFtU0pMZVRLalM0NlZnZlE4WUl2OXhXbGp5OWhtYUNiRjRuWVprQlNycjhlbTZQa21yZTV2bFVSY0hqWnVYU1k?oc=5",
+     "published": "2026-10-27 19:16 UTC"
+    },
+    {
+     "title": "Top Research Reports for Alphabet, ExxonMobil & Toyota Motor",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdU9aN044UnhiTVJTZG1sVldvTXE0R0twc25zVkhNRk1IckFVYkFjemRLWUx4SG1pSkUyRlgxVzVvRDV3bTFpWkR2eHh0dTJXRnRHQXVDOEYtN0EzZnpGNkNQOXNUTUdrQU5JT2NFU3FJdzY2UkVER09hNHBuSnNTQS01Mmo1TWFCemxrWmM0TFJ2Zm5JRlFZX0lUajFxbkpub20td3QwT1g?oc=5",
+     "published": "2026-10-27 19:09 UTC"
+    },
+    {
+     "title": "Alphabet Earnings To Accelerate The AI Bubble Burst (NASDAQ:GOOG)",
+     "source": "Seeking Alpha",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTUZhTTJ5OXZzZjJtNmFDNTF5THFzSTRKeXJQemFEbUZoMndDSVd2UFp6V3N1QnFYRWhNejN5NW9GbkdhbTBpckRRMXc1eDZVenZWWV9tZUtYNnVoVExMWlBOTUFCcXVfeFBuMlNyV2NaaUdWOXZpUDJzNV93dGZMNlBaYlBRNHNWc3RqMUxBUVNkU19tV2tJ?oc=5",
+     "published": "2026-10-27 18:56 UTC"
+    },
+    {
+     "title": "Alphabet & Microsoft Earnings Preview: AI Cloud Growth Takes Center Stage",
+     "source": "Zacks Investment Research",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNDJVMGRTOTZRNGJfYkNXSC1adjhOOGdLclktLUc0MmdYNVIxVUVKVVpKVnc5OHRad3M5bEdKbEphU3FjQjJla0NfSEh4a2hTY0IzYVh3eXRVYnZhRG0zbldBeEJlbVVkU2s1Z013VUdnMWM5c3FzckhzTnFUakRabVF1ZlJpdTAzS1VQM1prb2I0TG9RbnZzU2lXb1NtOE1CVmp1UWVZMTkzbkVlbElBZA?oc=5",
+     "published": "2026-10-27 18:18 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.555,
+     "accuracy": 0.53,
+     "brier": 0.2579,
+     "brier_baseline": 0.247,
+     "z_vs_baseline_optimistic": -1.09,
+     "strategy_mean_per_period": 0.00575,
+     "buyhold_mean_per_period": 0.00733,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.641,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.073,
+    "items": [
+     {
+      "title": "Alphabet reports Q3 earnings on Wednesday: Here's what to watch for",
+      "compound": 0.0
+     },
+     {
+      "title": "AI debt fears ease ahead of Oracle, Alphabet and Amazon updates. Here's what to watch.",
+      "compound": -0.2732
+     },
+     {
+      "title": "Google to report Q3 results as investors focus on AI growth, weigh Meta Muse AI risk",
+      "compound": 0.128
+     },
+     {
+      "title": "Top Research Reports for Alphabet, ExxonMobil & Toyota Motor",
+      "compound": 0.2023
+     },
+     {
+      "title": "Alphabet Earnings To Accelerate The AI Bubble Burst (NASDAQ:GOOG)",
+      "compound": 0.0
+     },
+     {
+      "title": "Alphabet & Microsoft Earnings Preview: AI Cloud Growth Takes Center Stage",
+      "compound": 0.3818
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:20Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Alphabet"
+  },
+  {
+   "symbol": "MSFT",
+   "flags": [
+    "ex-dividend date 2026-11-19",
+    "earnings in 1 days (2026-10-28)"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:20Z",
+   "asof": "2026-10-27",
+   "close": 531.33,
+   "ret_1d": -0.0024,
+   "move_vs_vol": -0.19,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     491.884
+    ],
+    [
+     "2026-08-05",
+     486.5441
+    ],
+    [
+     "2026-08-06",
+     498.9207
+    ],
+    [
+     "2026-08-07",
+     499.0505
+    ],
+    [
+     "2026-08-10",
+     505.1091
+    ],
+    [
+     "2026-08-11",
+     502.8633
+    ],
+    [
+     "2026-08-12",
+     491.5047
+    ],
+    [
+     "2026-08-13",
+     495.9464
+    ],
+    [
+     "2026-08-14",
+     494.4691
+    ],
+    [
+     "2026-08-17",
+     479.4474
+    ],
+    [
+     "2026-08-18",
+     480.725
+    ],
+    [
+     "2026-08-19",
+     483.4
+    ],
+    [
+     "2026-08-20",
+     481.15
+    ],
+    [
+     "2026-08-21",
+     483.24
+    ],
+    [
+     "2026-08-24",
+     487.31
+    ],
+    [
+     "2026-08-25",
+     491.71
+    ],
+    [
+     "2026-08-26",
+     496.37
+    ],
+    [
+     "2026-08-27",
+     505.06
+    ],
+    [
+     "2026-08-28",
+     513.53
+    ],
+    [
+     "2026-08-31",
+     507.29
+    ],
+    [
+     "2026-09-01",
+     501.02
+    ],
+    [
+     "2026-09-02",
+     496.82
+    ],
+    [
+     "2026-09-03",
+     510.12
+    ],
+    [
+     "2026-09-04",
+     499.7
+    ],
+    [
+     "2026-09-08",
+     493.95
+    ],
+    [
+     "2026-09-09",
+     491.65
+    ],
+    [
+     "2026-09-10",
+     492.44
+    ],
+    [
+     "2026-09-11",
+     495.63
+    ],
+    [
+     "2026-09-14",
+     505.41
+    ],
+    [
+     "2026-09-15",
+     497.12
+    ],
+    [
+     "2026-09-16",
+     490.3
+    ],
+    [
+     "2026-09-17",
+     497.75
+    ],
+    [
+     "2026-09-18",
+     493.78
+    ],
+    [
+     "2026-09-21",
+     501.61
+    ],
+    [
+     "2026-09-22",
+     498.0
+    ],
+    [
+     "2026-09-23",
+     500.59
+    ],
+    [
+     "2026-09-24",
+     497.93
+    ],
+    [
+     "2026-09-25",
+     516.17
+    ],
+    [
+     "2026-09-28",
+     509.22
+    ],
+    [
+     "2026-09-29",
+     508.96
+    ],
+    [
+     "2026-09-30",
+     512.9
+    ],
+    [
+     "2026-10-01",
+     512.8
+    ],
+    [
+     "2026-10-02",
+     517.53
+    ],
+    [
+     "2026-10-05",
+     525.18
+    ],
+    [
+     "2026-10-06",
+     529.3
+    ],
+    [
+     "2026-10-07",
+     529.76
+    ],
+    [
+     "2026-10-08",
+     522.61
+    ],
+    [
+     "2026-10-09",
+     535.07
+    ],
+    [
+     "2026-10-12",
+     541.15
+    ],
+    [
+     "2026-10-13",
+     543.45
+    ],
+    [
+     "2026-10-14",
+     533.69
+    ],
+    [
+     "2026-10-15",
+     539.44
+    ],
+    [
+     "2026-10-16",
+     529.05
+    ],
+    [
+     "2026-10-19",
+     533.52
+    ],
+    [
+     "2026-10-20",
+     531.87
+    ],
+    [
+     "2026-10-21",
+     532.95
+    ],
+    [
+     "2026-10-22",
+     521.08
+    ],
+    [
+     "2026-10-23",
+     524.51
+    ],
+    [
+     "2026-10-26",
+     532.6
+    ],
+    [
+     "2026-10-27",
+     531.33
+    ]
+   ],
+   "volume_ratio_20d": 0.96,
+   "bar": "complete",
+   "dist_52w_high": -0.022,
+   "dividends": {
+    "symbol": "MSFT",
+    "trailing_12m": 3.64,
+    "last_amount": 0.91,
+    "last_ex_date": "2026-08-20",
+    "next_ex_date": "2026-11-19",
+    "pay_date": "2026-12-10",
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:21Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 3945415311360.0,
+    "pe_trailing": 29.145914,
+    "pe_forward": 22.428717,
+    "price_to_book": 8.920172,
+    "ev_to_ebitda": 20.584,
+    "profit_margin": 0.40305,
+    "operating_margin": 0.45111,
+    "roe": 0.34039003,
+    "revenue_growth": 0.177,
+    "earnings_growth": 0.317,
+    "debt_to_equity": 0.29118,
+    "current_ratio": 1.23,
+    "free_cashflow": 16545500160.0,
+    "payout_ratio": 0.1983,
+    "beta_yahoo": 1.099,
+    "yahoo_sector": "Technology",
+    "industry": "Software - Infrastructure"
+   },
+   "dividend_record": {
+    "years_paid": 23,
+    "consecutive_increases": 20,
+    "cagr_5y": 0.1022,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": 0.0434,
+    "ret_3m": 0.3631,
+    "ret_6m": 0.2428,
+    "ret_12m": 0.0231,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.3294,
+    "max_drawdown_1y": -0.345,
+    "beta_1y": 1.04,
+    "rel_3m": 0.3075,
+    "rel_12m": -0.114
+   },
+   "sector": {
+    "sector": "Information Technology",
+    "n_peers": 75,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 35.85,
+     "pct_rank": 0.33,
+     "n": 72
+    },
+    "pe_forward": {
+     "median": 18.91,
+     "pct_rank": 0.6,
+     "n": 75
+    },
+    "price_to_book": {
+     "median": 8.5,
+     "pct_rank": 0.54,
+     "n": 70
+    }
+   },
+   "next_earnings": "2026-10-28",
+   "news": [
+    {
+     "title": "Dow Jones Futures: Growth Stocks Rally, Tesla Clears Buy Point; Fed, Microsoft, Google On Tap",
+     "source": "Investor's Business Daily",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOXctSXZneUdSOFNkQzc5bC1BWHgyUmJNS25RYldwUzJpeGwwUjVHTFhGSlZmS2Ytd3oxTEdHbFdrVlRPaG56eGZ1X0FVTmgwYUUwUDlmTlljVEx6V2prWHhyTWdZUXJJWG5oWWtXOUFuckhPZGRZR3p0eWxhRXZFVmhPeFdxVHNMOEJwWThoX2xtZXNwb1pYclVUd0hjVUU2QUNmQWtadndfZnNRNG9Td2FVM0xJeGZHRTFVZkoyQzVDVEFjWGc?oc=5",
+     "published": "2026-10-27 21:22 UTC"
+    },
+    {
+     "title": "Microsoft Could Swing By $184 Billion After Earnings",
+     "source": "Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYjJNVGZyMFdZb1VCN0VzX2p2UFROQmVzWU50RmdzemZUX0UtMTZoSVY2S1Q0MTZWcVdsUXlGTlFWYW5aRTNQT1RPMkMteHRab0VtTkFNNXh6dXZkbC1tenByWHRDcXdBM1VqUGdUM293RktGX3pzSTExZFNPb0RDYW5yTzREVjM4aUM4R0FzQmd6UmEtWmRVX0p6U1ZiOUZSVy12d3JCVkdnOWM?oc=5",
+     "published": "2026-10-27 19:30 UTC"
+    },
+    {
+     "title": "MSFT Stock Alert: What to Know as Microsoft Offers Buyouts to 60,000 Employees",
+     "source": "Barchart.com",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQzNBMDZvRWNDVkNqXzBUeC1jYWtXSVRLVTg5WkhjN3hCemY5TzE2WDVweGo5NU1KTXpOeHlEbjRnczM0Y2JyMFVBZXB4S3kyVnIxZDdhWENYb0tlNG13amx4RUFnakowVFJwZW9KUHBBdnVXdmdINll6TVZIYWZlVGRnaVF4N3JTbG41bTFlSWtmcmhkaVdVWE4xVHpaVDAyQUlySlBrY3pxenk5ZlJhNXM5MWo2N3liVkFtVF9R?oc=5",
+     "published": "2026-10-27 18:55 UTC"
+    },
+    {
+     "title": "Microsoft Earnings Could Trigger 5% Move as Options Traders Brace for Impact",
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNS0dZaU1FNHl3bDJpSDhCQTViNUN6Q0p3RFNpOFJPeko5NC1XRkU1WEJSQ3llRnNWdUFTckt2dGNJVkthclhqd0Y2Zno3TGtlamhKLTlvU3ByWTlUYkNwMjVibGtWdTU5cWIxNnJyRGpvNzBVQXVVUmpqZC1odnBOMHJSOVpPWE91V0w5cFJpb2RJTVJJdm9SdGdPTlhPdGJ4VUo1Q1RnNGhvNGQzR3dSaWFsandrU0NKVXN1RENoZnVTYzJXZmJjV29SeHAtNlVW?oc=5",
+     "published": "2026-10-27 18:28 UTC"
+    },
+    {
+     "title": "Alphabet & Microsoft Earnings Preview: AI Cloud Growth Takes Center Stage",
+     "source": "Zacks Investment Research",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNDJVMGRTOTZRNGJfYkNXSC1adjhOOGdLclktLUc0MmdYNVIxVUVKVVpKVnc5OHRad3M5bEdKbEphU3FjQjJla0NfSEh4a2hTY0IzYVh3eXRVYnZhRG0zbldBeEJlbVVkU2s1Z013VUdnMWM5c3FzckhzTnFUakRabVF1ZlJpdTAzS1VQM1prb2I0TG9RbnZzU2lXb1NtOE1CVmp1UWVZMTkzbkVlbElBZA?oc=5",
+     "published": "2026-10-27 18:18 UTC"
+    },
+    {
+     "title": "Microsoft\u2019s Dividend Yield Looks Small. The Check It Writes Every Year Doesn\u2019t.",
+     "source": "24/7 Wall St.",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNHVlRm5XMTBURTJ0anFzMUx6VUU1aEhiNUFVWFUxaEw5enduNElLTkxVZFdfSWxmY2NrTFQ4RWlSODFNUE4wcDJzUmg4cE1zMjA2dEQ4bXM2WDVndnAxR19JUlZUZzRpd25SWnZIVmJTV3NFTVpURjlxVUc1bzBENXpXTkpLTjBlQ2Q3R1NqN0xPZmhJWU95QktNMGtqY2NUbXZFUmJ6X1VPTTdRSGlEMXlZb3F1dDJNdFF3?oc=5",
+     "published": "2026-10-27 18:17 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.557,
+     "accuracy": 0.522,
+     "brier": 0.2583,
+     "brier_baseline": 0.2468,
+     "z_vs_baseline_optimistic": -1.54,
+     "strategy_mean_per_period": -0.00222,
+     "buyhold_mean_per_period": 0.00305,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.566,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.186,
+    "items": [
+     {
+      "title": "Dow Jones Futures: Growth Stocks Rally, Tesla Clears Buy Point; Fed, Microsoft, Google On Tap",
+      "compound": 0.4404
+     },
+     {
+      "title": "Microsoft Could Swing By $184 Billion After Earnings",
+      "compound": 0.0
+     },
+     {
+      "title": "MSFT Stock Alert: What to Know as Microsoft Offers Buyouts to 60,000 Employees",
+      "compound": 0.296
+     },
+     {
+      "title": "Microsoft Earnings Could Trigger 5% Move as Options Traders Brace for Impact",
+      "compound": 0.0
+     },
+     {
+      "title": "Alphabet & Microsoft Earnings Preview: AI Cloud Growth Takes Center Stage",
+      "compound": 0.3818
+     },
+     {
+      "title": "Microsoft\u2019s Dividend Yield Looks Small. The Check It Writes Every Year Doesn\u2019t.",
+      "compound": 0.0
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:21Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Microsoft"
+  },
+  {
+   "symbol": "AMZN",
+   "flags": [
+    "earnings in 2 days (2026-10-29)"
+   ],
+   "gaps": [
+    "dividend data unavailable"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:21Z",
+   "asof": "2026-10-27",
+   "close": 253.1,
+   "ret_1d": 0.0161,
+   "move_vs_vol": 0.79,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     277.42
+    ],
+    [
+     "2026-08-05",
+     272.65
+    ],
+    [
+     "2026-08-06",
+     272.26
+    ],
+    [
+     "2026-08-07",
+     274.48
+    ],
+    [
+     "2026-08-10",
+     278.09
+    ],
+    [
+     "2026-08-11",
+     272.27
+    ],
+    [
+     "2026-08-12",
+     267.28
+    ],
+    [
+     "2026-08-13",
+     265.13
+    ],
+    [
+     "2026-08-14",
+     262.65
+    ],
+    [
+     "2026-08-17",
+     261.31
+    ],
+    [
+     "2026-08-18",
+     259.45
+    ],
+    [
+     "2026-08-19",
+     265.84
+    ],
+    [
+     "2026-08-20",
+     260.11
+    ],
+    [
+     "2026-08-21",
+     258.63
+    ],
+    [
+     "2026-08-24",
+     262.07
+    ],
+    [
+     "2026-08-25",
+     261.06
+    ],
+    [
+     "2026-08-26",
+     260.28
+    ],
+    [
+     "2026-08-27",
+     256.26
+    ],
+    [
+     "2026-08-28",
+     266.43
+    ],
+    [
+     "2026-08-31",
+     259.77
+    ],
+    [
+     "2026-09-01",
+     254.92
+    ],
+    [
+     "2026-09-02",
+     254.98
+    ],
+    [
+     "2026-09-03",
+     258.9
+    ],
+    [
+     "2026-09-04",
+     258.51
+    ],
+    [
+     "2026-09-08",
+     256.97
+    ],
+    [
+     "2026-09-09",
+     252.4
+    ],
+    [
+     "2026-09-10",
+     251.89
+    ],
+    [
+     "2026-09-11",
+     256.78
+    ],
+    [
+     "2026-09-14",
+     253.54
+    ],
+    [
+     "2026-09-15",
+     248.42
+    ],
+    [
+     "2026-09-16",
+     245.96
+    ],
+    [
+     "2026-09-17",
+     251.19
+    ],
+    [
+     "2026-09-18",
+     253.71
+    ],
+    [
+     "2026-09-21",
+     258.45
+    ],
+    [
+     "2026-09-22",
+     254.98
+    ],
+    [
+     "2026-09-23",
+     249.27
+    ],
+    [
+     "2026-09-24",
+     249.38
+    ],
+    [
+     "2026-09-25",
+     249.67
+    ],
+    [
+     "2026-09-28",
+     246.15
+    ],
+    [
+     "2026-09-29",
+     246.67
+    ],
+    [
+     "2026-09-30",
+     249.15
+    ],
+    [
+     "2026-10-01",
+     248.23
+    ],
+    [
+     "2026-10-02",
+     251.52
+    ],
+    [
+     "2026-10-05",
+     251.4
+    ],
+    [
+     "2026-10-06",
+     256.29
+    ],
+    [
+     "2026-10-07",
+     259.92
+    ],
+    [
+     "2026-10-08",
+     254.06
+    ],
+    [
+     "2026-10-09",
+     262.43
+    ],
+    [
+     "2026-10-12",
+     259.53
+    ],
+    [
+     "2026-10-13",
+     258.58
+    ],
+    [
+     "2026-10-14",
+     254.08
+    ],
+    [
+     "2026-10-15",
+     254.76
+    ],
+    [
+     "2026-10-16",
+     250.0
+    ],
+    [
+     "2026-10-19",
+     262.45
+    ],
+    [
+     "2026-10-20",
+     262.63
+    ],
+    [
+     "2026-10-21",
+     262.37
+    ],
+    [
+     "2026-10-22",
+     250.38
+    ],
+    [
+     "2026-10-23",
+     248.0
+    ],
+    [
+     "2026-10-26",
+     249.09
+    ],
+    [
+     "2026-10-27",
+     253.1
+    ]
+   ],
+   "volume_ratio_20d": 0.95,
+   "bar": "complete",
+   "dist_52w_high": -0.109,
+   "dividends": {
+    "symbol": "AMZN",
+    "trailing_12m": null,
+    "last_amount": null,
+    "last_ex_date": null,
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:22Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 2730015850496.0,
+    "pe_trailing": 20.362028,
+    "pe_forward": 24.259678,
+    "price_to_book": 4.9476113,
+    "ev_to_ebitda": 16.924,
+    "profit_margin": 0.1744,
+    "operating_margin": 0.13689,
+    "roe": 0.30558002,
+    "revenue_growth": 0.196,
+    "earnings_growth": 2.423,
+    "debt_to_equity": 0.45616999999999996,
+    "current_ratio": 1.033,
+    "free_cashflow": 3219124992.0,
+    "payout_ratio": 0.0,
+    "beta_yahoo": 1.456,
+    "yahoo_sector": "Consumer Cyclical",
+    "industry": "Internet Retail"
+   },
+   "dividend_record": {
+    "years_paid": 0,
+    "consecutive_increases": 0,
+    "cagr_5y": null,
+    "cut_in_5y": null
+   },
+   "trend": {
+    "ret_1m": 0.0282,
+    "ret_3m": 0.1167,
+    "ret_6m": -0.0254,
+    "ret_12m": 0.1289,
+    "above_50d": false,
+    "above_200d": true,
+    "vol_annual": 0.3471,
+    "max_drawdown_1y": -0.2174,
+    "beta_1y": 1.48,
+    "rel_3m": 0.0611,
+    "rel_12m": -0.0082
+   },
+   "sector": {
+    "sector": "Consumer Discretionary",
+    "n_peers": 47,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 20.05,
+     "pct_rank": 0.52,
+     "n": 46
+    },
+    "pe_forward": {
+     "median": 16.34,
+     "pct_rank": 0.79,
+     "n": 47
+    },
+    "price_to_book": {
+     "median": 6.98,
+     "pct_rank": 0.39,
+     "n": 36
+    }
+   },
+   "next_earnings": "2026-10-29",
+   "news": [
+    {
+     "title": "GM's new move aims to put its stock in the company of Amazon and Apple",
+     "source": "Detroit Free Press",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLTFqNHBmYklxMGYwb1JYYU1uZXZ6QlpsVzVnSnVteS1sUHpPWjhoUjBCam5HSHBhbm5xM25fXzMxZEFSN181ckpDc1NjQy14azNReEVJVE1yR0lwcFFZTFlGbzhSOU1FRXRYQ21xeUhSYTBveDIwdDIteG5lYlprSlFKY3pYb1B1czBwUE5zLTFNSkVjMHh1TFdPV1ZKeGljWkRuWG1wMzQ?oc=5",
+     "published": "2026-10-27 21:20 UTC"
+    },
+    {
+     "title": "Amazon (AMZN) Q3 Earnings Preview: AWS Growth Takes Center Stage",
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOT3NMUmYwNE1obXhHRzdud0RGNEVQR3lkVDU1TU96XzdvRTlHN2phNXVLQy1GRG1TSmtyd3AtTFgwc2dqYVlxQ0hIWF9vVW9SQThrMHNRT3Z0cmlwRXBrQkZTS25oOXdnbVhHVGMzUEdBTk5iTU9VcEI2X2J2aHVjRFlSNXNEeWV3WUtELW5ydm1QaHViNjdZaldxYy1oTm1SXzFJeU9nUWhiMndXRi1hRDNldF84MDd4?oc=5",
+     "published": "2026-10-27 21:13 UTC"
+    },
+    {
+     "title": "Amazon has a Muse problem. Is a deal with OpenAI a solution?",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYWloQ3pDX3FidmJHX1VLUzdDdTJaSEU2Ul9XeFpHVXM4ak9qUkxRdGktc2w2MVVMQVo1SG5YdHpXNU9GYVUydktuamRfVDR4MGFSbVdsNHVFNWhDZmw3REdTejcwOENUcHMtSUlROW1jS0Y2RXhZLTI0YUh5dFFKZVRWSmV0cTQtVEJRQ2hwTXBGX3lUd0lacUt4Nnl5VjM3Xy1ZWTN5UFE?oc=5",
+     "published": "2026-10-27 20:39 UTC"
+    },
+    {
+     "title": "The era of the Renaissance Developer is here, thanks to AI. Amazon wants software engineers to adapt.",
+     "source": "Business Insider",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTEtTazhhZEFiRC1ta0ZTWW5VUjBhdHc2QkFYLVk5UjZWeXFxbTRzcE0tYzVvZ2NULTJZTk44amphaW5mNHd1anRBQmxlVUwzdGNYQy1STDEtZUYtdXZNWlY1ckdLN2lOUXIwRkhkb3BucXNmSWh4R3pfa2xlTUxMM0NVejdlamJRRGZzdE10QzNJT2lYWlk1T2dNOFB3SVE?oc=5",
+     "published": "2026-10-27 20:22 UTC"
+    },
+    {
+     "title": "AI debt fears ease ahead of Oracle, Alphabet and Amazon updates. Here's what to watch.",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBZNHVhb2N1VHhYN2hEc1pibmFxYUpRc19YazNmd2t2S1UweGJLN0hra1F1S2JHNU1MeDd1VV94N3VleXRaMmxHX0ZZV0doNFFrUkVrY1pJMjFNSVdHSmt6SFBXeGZTU1Z4alp5emxrcW0zN1HSAXhBVV95cUxOVGR4c0JHMzVmajhYcHV6T3djck95TXROZGU4cmRobTJsZ3pRczlQcmVHZ3IzVkIwdTBjTnpwWGJnX0FnZVg2bWh1bGZqd20teXEzR3pZdWVjWXYzTmt4YXhfdnJUNlJYNHJlUFE0R2ZDTDVlSWJwcUc?oc=5",
+     "published": "2026-10-27 19:57 UTC"
+    },
+    {
+     "title": "Amazon Stock: Wall Street Says AMZN Looks Increasingly Attractive Ahead of Q3 Earnings",
+     "source": "Barchart.com",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZlRVOG8yTlNyZU5GaEExRG0yRG4zWmxxT3hlOXZlX25FMl9GQ2JQekJjNFVUTHpBQ2RWd3ZBVkh3VEktUVN3bVpNN184Vkp2OE9iclY5VlN6MU5vR1pPUjdRSGtaa3hvM0k4QWlEeFN4bkQ0UThxRFdpcWtlUW1RWUR2b2dTZHRwV08zUmJQWnlQNDc4N0VmMkZsVl9OSnRxd0VUVWtkYlMzb3VUNFVvbE1abWc3bkRET0oxdkVLQjlncm1reHdkSA?oc=5",
+     "published": "2026-10-27 19:08 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.526,
+     "accuracy": 0.484,
+     "brier": 0.2635,
+     "brier_baseline": 0.2493,
+     "z_vs_baseline_optimistic": -1.89,
+     "strategy_mean_per_period": 0.00146,
+     "buyhold_mean_per_period": 0.00372,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.584,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.268,
+    "items": [
+     {
+      "title": "GM's new move aims to put its stock in the company of Amazon and Apple",
+      "compound": 0.1779
+     },
+     {
+      "title": "Amazon (AMZN) Q3 Earnings Preview: AWS Growth Takes Center Stage",
+      "compound": 0.5106
+     },
+     {
+      "title": "Amazon has a Muse problem. Is a deal with OpenAI a solution?",
+      "compound": 0.0772
+     },
+     {
+      "title": "The era of the Renaissance Developer is here, thanks to AI. Amazon wants software engineers to adapt.",
+      "compound": 0.5574
+     },
+     {
+      "title": "AI debt fears ease ahead of Oracle, Alphabet and Amazon updates. Here's what to watch.",
+      "compound": -0.2732
+     },
+     {
+      "title": "Amazon Stock: Wall Street Says AMZN Looks Increasingly Attractive Ahead of Q3 Earnings",
+      "compound": 0.5574
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:22Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Amazon"
+  },
+  {
+   "symbol": "AVGO",
+   "flags": [],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:22Z",
+   "asof": "2026-10-27",
+   "close": 342.33,
+   "ret_1d": 0.04,
+   "move_vs_vol": 1.61,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     417.3999
+    ],
+    [
+     "2026-08-05",
+     417.5197
+    ],
+    [
+     "2026-08-06",
+     419.8056
+    ],
+    [
+     "2026-08-07",
+     426.9825
+    ],
+    [
+     "2026-08-10",
+     421.6322
+    ],
+    [
+     "2026-08-11",
+     415.3237
+    ],
+    [
+     "2026-08-12",
+     415.2938
+    ],
+    [
+     "2026-08-13",
+     417.0605
+    ],
+    [
+     "2026-08-14",
+     392.2757
+    ],
+    [
+     "2026-08-17",
+     391.7167
+    ],
+    [
+     "2026-08-18",
+     379.3093
+    ],
+    [
+     "2026-08-19",
+     361.8211
+    ],
+    [
+     "2026-08-20",
+     363.3683
+    ],
+    [
+     "2026-08-21",
+     367.7803
+    ],
+    [
+     "2026-08-24",
+     358.1079
+    ],
+    [
+     "2026-08-25",
+     356.0916
+    ],
+    [
+     "2026-08-26",
+     354.9437
+    ],
+    [
+     "2026-08-27",
+     370.8647
+    ],
+    [
+     "2026-08-28",
+     368.1197
+    ],
+    [
+     "2026-08-31",
+     369.6668
+    ],
+    [
+     "2026-09-01",
+     369.0081
+    ],
+    [
+     "2026-09-02",
+     366.5725
+    ],
+    [
+     "2026-09-03",
+     356.5108
+    ],
+    [
+     "2026-09-04",
+     357.2495
+    ],
+    [
+     "2026-09-08",
+     367.8901
+    ],
+    [
+     "2026-09-09",
+     363.7177
+    ],
+    [
+     "2026-09-10",
+     360.1741
+    ],
+    [
+     "2026-09-11",
+     361.332
+    ],
+    [
+     "2026-09-14",
+     344.0934
+    ],
+    [
+     "2026-09-15",
+     338.6533
+    ],
+    [
+     "2026-09-16",
+     338.8929
+    ],
+    [
+     "2026-09-17",
+     346.6687
+    ],
+    [
+     "2026-09-18",
+     356.96
+    ],
+    [
+     "2026-09-21",
+     362.66
+    ],
+    [
+     "2026-09-22",
+     364.54
+    ],
+    [
+     "2026-09-23",
+     354.99
+    ],
+    [
+     "2026-09-24",
+     350.36
+    ],
+    [
+     "2026-09-25",
+     352.81
+    ],
+    [
+     "2026-09-28",
+     349.57
+    ],
+    [
+     "2026-09-29",
+     355.1
+    ],
+    [
+     "2026-09-30",
+     351.19
+    ],
+    [
+     "2026-10-01",
+     343.64
+    ],
+    [
+     "2026-10-02",
+     355.14
+    ],
+    [
+     "2026-10-05",
+     362.51
+    ],
+    [
+     "2026-10-06",
+     375.81
+    ],
+    [
+     "2026-10-07",
+     376.51
+    ],
+    [
+     "2026-10-08",
+     360.14
+    ],
+    [
+     "2026-10-09",
+     361.54
+    ],
+    [
+     "2026-10-12",
+     354.73
+    ],
+    [
+     "2026-10-13",
+     357.31
+    ],
+    [
+     "2026-10-14",
+     346.25
+    ],
+    [
+     "2026-10-15",
+     344.33
+    ],
+    [
+     "2026-10-16",
+     328.75
+    ],
+    [
+     "2026-10-19",
+     334.59
+    ],
+    [
+     "2026-10-20",
+     334.37
+    ],
+    [
+     "2026-10-21",
+     337.8
+    ],
+    [
+     "2026-10-22",
+     323.24
+    ],
+    [
+     "2026-10-23",
+     321.68
+    ],
+    [
+     "2026-10-26",
+     329.17
+    ],
+    [
+     "2026-10-27",
+     342.33
+    ]
+   ],
+   "volume_ratio_20d": 1.18,
+   "bar": "complete",
+   "dist_52w_high": -0.287,
+   "dividends": {
+    "symbol": "AVGO",
+    "trailing_12m": 2.6,
+    "last_amount": 0.65,
+    "last_ex_date": "2026-09-21",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:23Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 1634156675072.0,
+    "pe_trailing": 43.720306,
+    "pe_forward": 17.617271,
+    "price_to_book": 16.393543,
+    "ev_to_ebitda": 31.948,
+    "profit_margin": 0.42944,
+    "operating_margin": 0.54307,
+    "roe": 0.44245,
+    "revenue_growth": 0.855,
+    "earnings_growth": 2.153,
+    "debt_to_equity": 0.59604,
+    "current_ratio": 2.504,
+    "free_cashflow": 30596499456.0,
+    "payout_ratio": 0.32439998,
+    "beta_yahoo": 1.476,
+    "yahoo_sector": "Technology",
+    "industry": "Semiconductors"
+   },
+   "dividend_record": {
+    "years_paid": 16,
+    "consecutive_increases": 6,
+    "cagr_5y": 0.1263,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": -0.0207,
+    "ret_3m": -0.0739,
+    "ret_6m": -0.1409,
+    "ret_12m": -0.0261,
+    "above_50d": false,
+    "above_200d": false,
+    "vol_annual": 0.4596,
+    "max_drawdown_1y": -0.3297,
+    "beta_1y": 2.18,
+    "rel_3m": -0.1295,
+    "rel_12m": -0.1632
+   },
+   "sector": {
+    "sector": "Information Technology",
+    "n_peers": 75,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 35.85,
+     "pct_rank": 0.67,
+     "n": 72
+    },
+    "pe_forward": {
+     "median": 18.91,
+     "pct_rank": 0.45,
+     "n": 75
+    },
+    "price_to_book": {
+     "median": 8.5,
+     "pct_rank": 0.79,
+     "n": 70
+    }
+   },
+   "next_earnings": "2026-12-09",
+   "news": [
+    {
+     "title": "Nasdaq Rises 1.18% on Semiconductor Rally Driven by Anthropic IPO",
+     "source": "\uc870\uc120\uc77c\ubcf4",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbE5YcVVvRm55SWlPTXpWcHpxUFFxa01xZEs4ekJwUHN6MVo0bVRZcjE1ck1QMk0zcTVtX3hSbDF4UjNrOElIaFdTeW8yc1VsOTdSUGtaUENxZHNhVFZqXzhqN0hlSzV1U195M0Jsc2tWdlpyNUFNLTRfNDZ2YU56b0JHdjVPNjNRdHNYYU5n?oc=5",
+     "published": "2026-10-27 23:40 UTC"
+    },
+    {
+     "title": "Broadcom CEO says capital is \u2018available\u2019 after banks wavered",
+     "source": "TheStreet",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUUdWZjRFVW1hY3BNNmo5aW1BaldnNEFidlN5d1NOV3JQdGFjNVJ3QWVYMFRJRXpZb2JJanVncVdxOG5ZY01CYXBZWElPRUlPckczTXZwYUVWMlVWWjNfaUh2cG1heEJmaV85d0lDd0txZWRUY3YtelRYTEdTQWltX2hYRi1iak5HLXY2bE1pUTF5Zw?oc=5",
+     "published": "2026-10-27 23:03 UTC"
+    },
+    {
+     "title": "Penguin Solutions, Broadcom, FormFactor, Lattice Semiconductor, and AMD stocks trade up, what you need to know",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbEFfRVRHVkFMQ01lWVpKSnRFSUhlbWhKV2RKOTdKa2ZPSVlGUVdiYmJjYlUyV1BJUFVSbnJuRE01TWN3TnF5dENlTlRfMmNaOEdlU2lXUms1dWFFQXRzdzNtTnM4a0dkOVVzNU4xakFkNlA4Q2ZPMDcydHU4V2JKaFJ6SUJETDhKVTl6aFBMZFZvQkZmR01TUGVGUTlzbnhRd3hLV0h3T1RHVjA5TkVJ?oc=5",
+     "published": "2026-10-27 22:22 UTC"
+    },
+    {
+     "title": "Two Chip Stocks Upgraded To Buy On AI Data-Center Business",
+     "source": "Investor's Business Daily",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQX0djVUNQeFJLY29vS1pvS055TE81RkRVOG1ERkc5cHlDeXE1VE9wZE9lVTNEc2o0WXJubWVJRzl0TDFOQ3pESDZrSHJ6cnpfWFY1SVpxWDRmVmpNVFNxVVEweFBILVlMYjVMMUhxWEtmZVZSeWZQRHcxc1hkTi1CaTcyVlZ2eW45MWtJY21NcW1YWTZSRjlTX2Z5ZXQ?oc=5",
+     "published": "2026-10-27 22:11 UTC"
+    },
+    {
+     "title": "Broadcom (NASDAQ:AVGO) Shares Up 4% After Analyst Upgrade",
+     "source": "MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOekZ2d0FQaWFBSmZ2MFVGYjM3WlZHanU0OVotM05qckhhN1Z6ZUdvTHN6Nk5mcDV6Smt6aW1uSDFaRVNuQkFpUF85NzNON1B2SjNsVWRNanNLbGtVS0lkekkydU5xTUQ2ZXNJaVdDem03VEZmeHpKN04ySUxSdlR0WmFkSG1STlBlc1ZYRXVLMmtFb1c1VjhmU0J0MVpteno3dXhfM3k5bU9DVUN4YU0tSFhIV0M?oc=5",
+     "published": "2026-10-27 21:05 UTC"
+    },
+    {
+     "title": "How Broadcom's Stock Can Surge and Overcome 'the Biggest Dislocation in the Market'",
+     "source": "Moomoo",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZEl2SzRQOU5PSjZySkoyeTlqMjFFVG9BSEhyRkRmOFYyRF9makVNdzJkYVR0RVE1d0UzdkZWaGhaZDl3blBtUG51aXQ4QXZWX3V1YUVhVmNsZElTSW5NMllNM0tFSTJpVDVyLTlDcUZhN0tPaXRZNTRORWdKTUFFM2NLUE5QQUxwTXJXTHE2eDJjcFRpanFqeTBmeWJRYXZ6?oc=5",
+     "published": "2026-10-27 20:49 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.524,
+     "accuracy": 0.53,
+     "brier": 0.2697,
+     "brier_baseline": 0.2494,
+     "z_vs_baseline_optimistic": 0.27,
+     "strategy_mean_per_period": 0.00943,
+     "buyhold_mean_per_period": 0.00862,
+     "beats_buyhold_after_costs": true
+    },
+    "p_up_5d": 0.67,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.079,
+    "items": [
+     {
+      "title": "Nasdaq Rises 1.18% on Semiconductor Rally Driven by Anthropic IPO",
+      "compound": 0.0
+     },
+     {
+      "title": "Broadcom CEO says capital is \u2018available\u2019 after banks wavered",
+      "compound": 0.0
+     },
+     {
+      "title": "Penguin Solutions, Broadcom, FormFactor, Lattice Semiconductor, and AMD stocks trade up, what you need to know",
+      "compound": 0.1779
+     },
+     {
+      "title": "Two Chip Stocks Upgraded To Buy On AI Data-Center Business",
+      "compound": 0.0
+     },
+     {
+      "title": "Broadcom (NASDAQ:AVGO) Shares Up 4% After Analyst Upgrade",
+      "compound": 0.296
+     },
+     {
+      "title": "How Broadcom's Stock Can Surge and Overcome 'the Biggest Dislocation in the Market'",
+      "compound": 0.0
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:23Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Broadcom"
+  },
+  {
+   "symbol": "META",
+   "flags": [
+    "volume 2.61x 20-day average (anomaly; cause not identified)"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:23Z",
+   "asof": "2026-10-27",
+   "close": 620.19,
+   "ret_1d": -0.0164,
+   "move_vs_vol": -0.67,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     587.4764
+    ],
+    [
+     "2026-08-05",
+     588.3057
+    ],
+    [
+     "2026-08-06",
+     589.4349
+    ],
+    [
+     "2026-08-07",
+     591.6331
+    ],
+    [
+     "2026-08-10",
+     594.4509
+    ],
+    [
+     "2026-08-11",
+     598.6475
+    ],
+    [
+     "2026-08-12",
+     578.3935
+    ],
+    [
+     "2026-08-13",
+     594.5008
+    ],
+    [
+     "2026-08-14",
+     589.3848
+    ],
+    [
+     "2026-08-17",
+     568.5213
+    ],
+    [
+     "2026-08-18",
+     543.2413
+    ],
+    [
+     "2026-08-19",
+     545.5994
+    ],
+    [
+     "2026-08-20",
+     545.3996
+    ],
+    [
+     "2026-08-21",
+     549.4664
+    ],
+    [
+     "2026-08-24",
+     558.5792
+    ],
+    [
+     "2026-08-25",
+     569.6005
+    ],
+    [
+     "2026-08-26",
+     575.6857
+    ],
+    [
+     "2026-08-27",
+     570.6496
+    ],
+    [
+     "2026-08-28",
+     577.5642
+    ],
+    [
+     "2026-08-31",
+     571.8887
+    ],
+    [
+     "2026-09-01",
+     578.0837
+    ],
+    [
+     "2026-09-02",
+     592.3824
+    ],
+    [
+     "2026-09-03",
+     610.1984
+    ],
+    [
+     "2026-09-04",
+     616.2836
+    ],
+    [
+     "2026-09-08",
+     612.9962
+    ],
+    [
+     "2026-09-09",
+     653.1745
+    ],
+    [
+     "2026-09-10",
+     643.8719
+    ],
+    [
+     "2026-09-11",
+     647.519
+    ],
+    [
+     "2026-09-14",
+     665.0751
+    ],
+    [
+     "2026-09-15",
+     669.7115
+    ],
+    [
+     "2026-09-16",
+     672.7791
+    ],
+    [
+     "2026-09-17",
+     681.772
+    ],
+    [
+     "2026-09-18",
+     665.225
+    ],
+    [
+     "2026-09-21",
+     741.25
+    ],
+    [
+     "2026-09-22",
+     736.6
+    ],
+    [
+     "2026-09-23",
+     744.1
+    ],
+    [
+     "2026-09-24",
+     777.59
+    ],
+    [
+     "2026-09-25",
+     751.66
+    ],
+    [
+     "2026-09-28",
+     715.62
+    ],
+    [
+     "2026-09-29",
+     738.79
+    ],
+    [
+     "2026-09-30",
+     725.18
+    ],
+    [
+     "2026-10-01",
+     725.93
+    ],
+    [
+     "2026-10-02",
+     728.08
+    ],
+    [
+     "2026-10-05",
+     741.9
+    ],
+    [
+     "2026-10-06",
+     738.88
+    ],
+    [
+     "2026-10-07",
+     721.31
+    ],
+    [
+     "2026-10-08",
+     720.89
+    ],
+    [
+     "2026-10-09",
+     718.67
+    ],
+    [
+     "2026-10-12",
+     742.96
+    ],
+    [
+     "2026-10-13",
+     762.5
+    ],
+    [
+     "2026-10-14",
+     737.54
+    ],
+    [
+     "2026-10-15",
+     736.72
+    ],
+    [
+     "2026-10-16",
+     709.33
+    ],
+    [
+     "2026-10-19",
+     705.44
+    ],
+    [
+     "2026-10-20",
+     694.25
+    ],
+    [
+     "2026-10-21",
+     697.52
+    ],
+    [
+     "2026-10-22",
+     648.85
+    ],
+    [
+     "2026-10-23",
+     642.62
+    ],
+    [
+     "2026-10-26",
+     630.56
+    ],
+    [
+     "2026-10-27",
+     620.19
+    ]
+   ],
+   "volume_ratio_20d": 2.61,
+   "bar": "complete",
+   "dist_52w_high": -0.202,
+   "dividends": {
+    "symbol": "META",
+    "trailing_12m": 2.1,
+    "last_amount": 0.525,
+    "last_ex_date": "2026-09-21",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:24Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 1585722294272.0,
+    "pe_trailing": 21.159674,
+    "pe_forward": 17.624043,
+    "price_to_book": 5.819719,
+    "ev_to_ebitda": 13.923,
+    "profit_margin": 0.31145,
+    "operating_margin": 0.35414,
+    "roe": 0.32264,
+    "revenue_growth": 0.261,
+    "earnings_growth": 2.648,
+    "debt_to_equity": 0.42161000000000004,
+    "current_ratio": 1.903,
+    "free_cashflow": 16848499712.0,
+    "payout_ratio": 0.0716,
+    "beta_yahoo": 1.185,
+    "yahoo_sector": "Communication Services",
+    "industry": "Internet Content & Information"
+   },
+   "dividend_record": {
+    "years_paid": 2,
+    "consecutive_increases": 1,
+    "cagr_5y": null,
+    "cut_in_5y": null
+   },
+   "trend": {
+    "ret_1m": -0.1334,
+    "ret_3m": 0.0599,
+    "ret_6m": -0.0746,
+    "ret_12m": -0.1572,
+    "above_50d": false,
+    "above_200d": false,
+    "vol_annual": 0.4267,
+    "max_drawdown_1y": -0.2994,
+    "beta_1y": 1.5,
+    "rel_3m": 0.0043,
+    "rel_12m": -0.2943
+   },
+   "sector": {
+    "sector": "Communication Services",
+    "n_peers": 22,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 17.44,
+     "pct_rank": 0.61,
+     "n": 18
+    },
+    "pe_forward": {
+     "median": 14.39,
+     "pct_rank": 0.59,
+     "n": 22
+    },
+    "price_to_book": {
+     "median": 2.29,
+     "pct_rank": 0.64,
+     "n": 22
+    }
+   },
+   "next_earnings": null,
+   "news": [
+    {
+     "title": "Stock Market Today, Oct. 27: Meta Raises Largest-Ever Equity Offering to Nearly $98 Billion to Fund AI Infrastructure Bet",
+     "source": "The Motley Fool",
+     "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNYXhwSGQ0cTRBT1p1Z0k2RHBaTm9tUTZCQTdsSzRMRmdKcER3T0ZIQlNZcTlOWTZ1UVRLLTNEZDZibEE4TzhDS2RrR21rdGRadXRNNnQzVXE1UTNWaGl5dUZ3SmJFVERBRXZpR0dPV2VfTDJqNVlwVVBJTGh1MWxBWkNBbDdkWi00ZXJMUlFCXzBteU9WVHhQNllTMlYxZkVLNzBlRG9qVzVVQWx3MHlOYk5jY3Z6cDE2WFF5R3FTckJEQUU2eVZoYVNDTHc2VU5mUFlzZUlQT2Y5SHJhVmw4R0ViQTFHOE9MTG8yd3N6TEZRRGN5LWlTWmVRQ3BUUlRteVphNzM3ekc4VFhzWnc?oc=5",
+     "published": "2026-10-27 21:19 UTC"
+    },
+    {
+     "title": "Nvidia, AMD to buy $4B in Meta shares as part of expanded chip partnerships",
+     "source": "SiliconANGLE",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbzNoNElDckgyajBzR3NPZ0tkQ2taREVmc3p1NHZFZDBDT0dPY1NQa29vZElHZGhsQUcxQ2wxV1BGaDVpLXJTSjluQ0hNWWE5U1A1R3Ezc2lkTWZ5X3ZzU1VxV29CM0txQmFFT2xrdUg1bFUzaFV3bDAya2FkMFdBVjh1dEp6ZmZXZEZkWWpNRmY3eHNyVGs0dWNvUHplZWVLZzhZQng3cDdkRklKWjlJ?oc=5",
+     "published": "2026-10-27 21:12 UTC"
+    },
+    {
+     "title": "Meta Platforms Stock Falls Despite Posting Strong Q3 Numbers. Should Investors Buy the Dip?",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOWZYUTZlenV1VWkzZ3pTYkE4bTNnVGZkeUhReW96LVIxWnZZMmM5WmROdVVMRjJIM1hLelRMbXYwSTRLNU1uLTNCYnJLOHNZVV8zZGJ1R3RNQmtyV240bUItUkhXV0JWLTVwbDRKUUZlYXpmWEE5NnZIRy1ucUNmUUhkaGxMX1g0NnNTNlhQQlJSb3lhbGx5dzhEN2tJdy1u?oc=5",
+     "published": "2026-10-27 17:20 UTC"
+    },
+    {
+     "title": "What Is Going On With Meta Stock on Tuesday?",
+     "source": "Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVXhUSV9oM0pCVWRtZVQtZjJMdmhrdG1hWml2dkdqdzMxb1A2UDZ4azI4a1hDVE8tX2F5b2lBanZka3phcjBmZzFKMGdCWmpjU0xzNVV4d2hfYkx4UVpoNzdUeEFPTjRxSzBBekRKSDdhVkYwN2RQb0FhemhZS0JJNU1ZRWxhTHBkQW81ZmNvZTI0Y3N4a3FUcGVqd1ZGM3c?oc=5",
+     "published": "2026-10-27 17:06 UTC"
+    },
+    {
+     "title": "Market Chatter: Meta Platforms' Share Sale for AI Spending Oversubscribed",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYXRsMFNORmo4SFBjYU1rSHp2VUFHekNzMTZ3cTZ5S0pONFg1cHhRZkFVMDFZd3EwcjNhMWZ1dFdtcERjcC11Z0FxX2JldWVCZnRaT1dQZk04bVY0S01Ec2Y3Z19CVy1XRXJqOW1xVi1Hd3RSaXlCeWRWZXpJcXo0Z3lCQjVmM2RXSkNubENCdGJSaHFjaUN3NjQ5NDh6bjJp?oc=5",
+     "published": "2026-10-27 15:09 UTC"
+    },
+    {
+     "title": "AMD To Invest $1B In Meta Stock Offering As AI Partnership Expands \u2014 Helios Systems Now Running At Meta",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMVZONEsxU01Pa2dLUzZQWFFrM0VMQzJLWFQ1UzVkNW5zS0VIeDNCUDFYbmZMSWVnODBFWkJhLWVfWGNabFlTWEpicjYxcjItbHV5OE9pMkp2dzBKLUh3dFdGT0c5V19wWTBXQmVUQ3doNGRwa3BqalozWUx0M0lsVE9vdERua2Q1aGN2VWZzaVc3Zw?oc=5",
+     "published": "2026-10-27 14:59 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 487,
+     "base_rate_up": 0.532,
+     "accuracy": 0.534,
+     "brier": 0.265,
+     "brier_baseline": 0.249,
+     "z_vs_baseline_optimistic": 0.09,
+     "strategy_mean_per_period": 0.00317,
+     "buyhold_mean_per_period": 0.00313,
+     "beats_buyhold_after_costs": true
+    },
+    "p_up_5d": 0.627,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.049,
+    "items": [
+     {
+      "title": "Stock Market Today, Oct. 27: Meta Raises Largest-Ever Equity Offering to Nearly $98 Billion to Fund AI Infrastructure Bet",
+      "compound": 0.0
+     },
+     {
+      "title": "Nvidia, AMD to buy $4B in Meta shares as part of expanded chip partnerships",
+      "compound": 0.296
+     },
+     {
+      "title": "Meta Platforms Stock Falls Despite Posting Strong Q3 Numbers. Should Investors Buy the Dip?",
+      "compound": -0.4023
+     },
+     {
+      "title": "What Is Going On With Meta Stock on Tuesday?",
+      "compound": 0.0
+     },
+     {
+      "title": "Market Chatter: Meta Platforms' Share Sale for AI Spending Oversubscribed",
+      "compound": 0.296
+     },
+     {
+      "title": "AMD To Invest $1B In Meta Stock Offering As AI Partnership Expands \u2014 Helios Systems Now Running At Meta",
+      "compound": 0.1027
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:24Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Meta Platforms"
+  },
+  {
+   "symbol": "TSLA",
+   "flags": [],
+   "gaps": [
+    "dividend data unavailable"
+   ],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:24Z",
+   "asof": "2026-10-27",
+   "close": 407.46,
+   "ret_1d": 0.0404,
+   "move_vs_vol": 1.7,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     327.35
+    ],
+    [
+     "2026-08-05",
+     321.55
+    ],
+    [
+     "2026-08-06",
+     319.53
+    ],
+    [
+     "2026-08-07",
+     328.58
+    ],
+    [
+     "2026-08-10",
+     330.88
+    ],
+    [
+     "2026-08-11",
+     332.81
+    ],
+    [
+     "2026-08-12",
+     327.51
+    ],
+    [
+     "2026-08-13",
+     339.96
+    ],
+    [
+     "2026-08-14",
+     342.27
+    ],
+    [
+     "2026-08-17",
+     339.3
+    ],
+    [
+     "2026-08-18",
+     336.87
+    ],
+    [
+     "2026-08-19",
+     351.12
+    ],
+    [
+     "2026-08-20",
+     345.13
+    ],
+    [
+     "2026-08-21",
+     362.86
+    ],
+    [
+     "2026-08-24",
+     348.95
+    ],
+    [
+     "2026-08-25",
+     350.25
+    ],
+    [
+     "2026-08-26",
+     345.82
+    ],
+    [
+     "2026-08-27",
+     354.81
+    ],
+    [
+     "2026-08-28",
+     348.75
+    ],
+    [
+     "2026-08-31",
+     367.95
+    ],
+    [
+     "2026-09-01",
+     356.09
+    ],
+    [
+     "2026-09-02",
+     357.01
+    ],
+    [
+     "2026-09-03",
+     376.37
+    ],
+    [
+     "2026-09-04",
+     354.08
+    ],
+    [
+     "2026-09-08",
+     368.16
+    ],
+    [
+     "2026-09-09",
+     367.81
+    ],
+    [
+     "2026-09-10",
+     363.56
+    ],
+    [
+     "2026-09-11",
+     365.44
+    ],
+    [
+     "2026-09-14",
+     358.97
+    ],
+    [
+     "2026-09-15",
+     356.58
+    ],
+    [
+     "2026-09-16",
+     358.08
+    ],
+    [
+     "2026-09-17",
+     366.2
+    ],
+    [
+     "2026-09-18",
+     364.27
+    ],
+    [
+     "2026-09-21",
+     375.3
+    ],
+    [
+     "2026-09-22",
+     378.9
+    ],
+    [
+     "2026-09-23",
+     380.12
+    ],
+    [
+     "2026-09-24",
+     377.94
+    ],
+    [
+     "2026-09-25",
+     372.11
+    ],
+    [
+     "2026-09-28",
+     357.45
+    ],
+    [
+     "2026-09-29",
+     352.84
+    ],
+    [
+     "2026-09-30",
+     354.81
+    ],
+    [
+     "2026-10-01",
+     354.11
+    ],
+    [
+     "2026-10-02",
+     370.59
+    ],
+    [
+     "2026-10-05",
+     378.73
+    ],
+    [
+     "2026-10-06",
+     380.68
+    ],
+    [
+     "2026-10-07",
+     377.81
+    ],
+    [
+     "2026-10-08",
+     375.0
+    ],
+    [
+     "2026-10-09",
+     382.7
+    ],
+    [
+     "2026-10-12",
+     378.03
+    ],
+    [
+     "2026-10-13",
+     375.23
+    ],
+    [
+     "2026-10-14",
+     367.16
+    ],
+    [
+     "2026-10-15",
+     362.44
+    ],
+    [
+     "2026-10-16",
+     354.72
+    ],
+    [
+     "2026-10-19",
+     368.06
+    ],
+    [
+     "2026-10-20",
+     373.71
+    ],
+    [
+     "2026-10-21",
+     386.47
+    ],
+    [
+     "2026-10-22",
+     374.58
+    ],
+    [
+     "2026-10-23",
+     372.22
+    ],
+    [
+     "2026-10-26",
+     391.62
+    ],
+    [
+     "2026-10-27",
+     407.46
+    ]
+   ],
+   "volume_ratio_20d": 1.22,
+   "bar": "complete",
+   "dist_52w_high": -0.168,
+   "dividends": {
+    "symbol": "TSLA",
+    "trailing_12m": null,
+    "last_amount": null,
+    "last_ex_date": null,
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:25Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 1610579312640.0,
+    "pe_trailing": 447.7582,
+    "pe_forward": 189.04938,
+    "price_to_book": 18.038782,
+    "ev_to_ebitda": 160.848,
+    "profit_margin": 0.031070001,
+    "operating_margin": 0.0256,
+    "roe": 0.03844,
+    "revenue_growth": -0.002,
+    "earnings_growth": -0.436,
+    "debt_to_equity": 0.18295000000000003,
+    "current_ratio": 1.739,
+    "free_cashflow": 4736249856.0,
+    "payout_ratio": 0.0,
+    "beta_yahoo": 1.916,
+    "yahoo_sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers"
+   },
+   "dividend_record": {
+    "years_paid": 0,
+    "consecutive_increases": 0,
+    "cagr_5y": null,
+    "cut_in_5y": null
+   },
+   "trend": {
+    "ret_1m": 0.1399,
+    "ret_3m": 0.3658,
+    "ret_6m": 0.0836,
+    "ret_12m": -0.0605,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.4536,
+    "max_drawdown_1y": -0.391,
+    "beta_1y": 2.23,
+    "rel_3m": 0.3102,
+    "rel_12m": -0.1976
+   },
+   "sector": {
+    "sector": "Consumer Discretionary",
+    "n_peers": 47,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 20.05,
+     "pct_rank": 0.96,
+     "n": 46
+    },
+    "pe_forward": {
+     "median": 16.34,
+     "pct_rank": 1.0,
+     "n": 47
+    },
+    "price_to_book": {
+     "median": 6.98,
+     "pct_rank": 0.89,
+     "n": 36
+    }
+   },
+   "next_earnings": null,
+   "news": [
+    {
+     "title": "Tesla Stock Has Room to Run, If History Is Any Indicator",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOGVGVlR6UC1HNmg4SGZIQWxjRmxpSzEtQ005NFM0TW9qVjBILUJoZTVqN09mZkZncEtjSlVrTDVxOE42ZFpaRkZSUVJ3cThUX2hPUk1mMFJBVFBJMDNGMW56QnN1ZWpJNThpZjdqaUFYbmFXTmoxdmFHaTVQRFl3N0lLVlNabnZ5RW5MWklKNEpFcUt5TWJGNg?oc=5",
+     "published": "2026-10-27 19:23 UTC"
+    },
+    {
+     "title": "Tesla\u2019s Profit Fell 43% and the Stock Held Up. Here\u2019s Why",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMkJKNnE5N2lRdk5uVkVxdTVLVWxCTGgwbWZMWjJTR21yeXFjRTA0X0hrWWhQc3JfRS1WRUpSZjdtRXB5UEc3aXhmdW5VekRlZXRPUHdkVFFwSEg5VDVZLVZKTlV1UEItak1yS0Z6SkdhaUZzUG12LUd5UzFLODNOdW5tc2FZOVl3NXc0TlliWE5XeENwR1E?oc=5",
+     "published": "2026-10-27 16:33 UTC"
+    },
+    {
+     "title": "Why is Tesla stock climbing today?",
+     "source": "Investing.com",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRWJHNTJYVHEtZzlDMWRnVi1EQVVqTXAxX0k2SFRTMWwxMkd3UlRpSWthcmF0SW5rWnBfRTVxWEg0c0YtVEh3YUdSS0dOMWNQaUxBaVNjSUg0ZUc5cndTdUV0dDR4RjA2dFVOZzFXYVhTQU1RemoyVFpHTW5OT3ByWTVYcmgzYXZ2blFFcHZ6NndsOTJQTFdVT1BpVQ?oc=5",
+     "published": "2026-10-27 14:42 UTC"
+    },
+    {
+     "title": "Is Tesla Stock Safer Or Riskier Than A Year Ago?",
+     "source": "Trefis",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLXlLS2ZlZHNlWG4tT0ZxQjJXeGxNdS04Mlc3MVk0Y1hPcTFXRlJPYXpJeTdXQm5JcERJb2lLeHZyUDRITFN2WEd5OE4xTkV0dXBKcm4xUnZKWmRwUER0S3BvaWw1LUgySEpaaVhWc05SUG1CSUpLcFNrcGFXdmVkU3VHemFIZlhZR2VORVZNMFc0d0xtckpSMkpYN2MzT2pLdzdsYnMyTkdQekxl?oc=5",
+     "published": "2026-10-27 12:53 UTC"
+    },
+    {
+     "title": "SpaceX, Tesla and Anthropic may reshape the S&P 500\u2014but not right away",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaWpEU2xuOTdrWE1JNXJOaU9NUEVJNEJuOFpmZ1M4QXRac1V0dWFIWnM0aXdpd3B3Sy1NRUJCalU4NWRhbnZSTGZ0N05LcFJNWDJNaElxWUNVbTZFSHBlRUFwdnVLVEMtVlRRX2pCUGh5aVFoOTVNSWxRUzhnVHV6QlliakdXTnpTSFFvVkdrYXNuR21l0gGaAUFVX3lxTE9XNlExT2haYjFwRmZMWXBCTjBOZ3hYekt6Q2l0ajhaQU82ZHRUT041SjBjRHRhYkg4U2Iya2s5MlZPVTNIVFBrWllOZkxqWmRJQ0lpSmw5cnZfSDNqWUlOeUpCMl9hc01BN08wcE4xSWNVV2pZa2RYVzRXMExfYTBmVVo5SzhuaVlncUZMTXNtbktYVXEwN1RrMEE?oc=5",
+     "published": "2026-10-27 12:00 UTC"
+    },
+    {
+     "title": "In a SpaceX-Tesla Merger, Tesla Shareholders Might Be the Junior Partner",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQalZpc2l1X0cxaUZWeXRNYXVaRU5nX0VvYVZldXMtSHkxR1JWZWQyaTBwbl9MTlAzRkNaTGh2c3pjclNnMjdfZFpSandnOFhWRE50ZUJDa2N5cFk3ZjRDZFoxY3RYUmNKTnlSM3Qwc0UxQllMSGhPdU1CQmJDbGxGajV0TlZhY09mSEw2ekJWNUNFbWNIRFlvT3dqeG54M0pRS0xYWjJR?oc=5",
+     "published": "2026-10-27 10:50 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.496,
+     "accuracy": 0.492,
+     "brier": 0.261,
+     "brier_baseline": 0.25,
+     "z_vs_baseline_optimistic": -0.54,
+     "strategy_mean_per_period": 0.00154,
+     "buyhold_mean_per_period": 0.00627,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.455,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.091,
+    "items": [
+     {
+      "title": "Tesla Stock Has Room to Run, If History Is Any Indicator",
+      "compound": 0.0
+     },
+     {
+      "title": "Tesla\u2019s Profit Fell 43% and the Stock Held Up. Here\u2019s Why",
+      "compound": 0.4404
+     },
+     {
+      "title": "Why is Tesla stock climbing today?",
+      "compound": 0.0
+     },
+     {
+      "title": "Is Tesla Stock Safer Or Riskier Than A Year Ago?",
+      "compound": 0.1027
+     },
+     {
+      "title": "SpaceX, Tesla and Anthropic may reshape the S&P 500\u2014but not right away",
+      "compound": 0.0
+     },
+     {
+      "title": "In a SpaceX-Tesla Merger, Tesla Shareholders Might Be the Junior Partner",
+      "compound": 0.0
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:25Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Tesla"
+  },
+  {
+   "symbol": "LLY",
+   "flags": [
+    "ex-dividend date 2026-11-13",
+    "earnings in 2 days (2026-10-29)"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:25Z",
+   "asof": "2026-10-27",
+   "close": 1281.91,
+   "ret_1d": 0.0022,
+   "move_vs_vol": 0.11,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     1114.0836
+    ],
+    [
+     "2026-08-05",
+     1168.186
+    ],
+    [
+     "2026-08-06",
+     1190.2344
+    ],
+    [
+     "2026-08-07",
+     1184.0133
+    ],
+    [
+     "2026-08-10",
+     1230.1771
+    ],
+    [
+     "2026-08-11",
+     1213.2814
+    ],
+    [
+     "2026-08-12",
+     1218.5339
+    ],
+    [
+     "2026-08-13",
+     1207.27
+    ],
+    [
+     "2026-08-14",
+     1180.16
+    ],
+    [
+     "2026-08-17",
+     1183.16
+    ],
+    [
+     "2026-08-18",
+     1225.73
+    ],
+    [
+     "2026-08-19",
+     1280.34
+    ],
+    [
+     "2026-08-20",
+     1244.4
+    ],
+    [
+     "2026-08-21",
+     1255.4
+    ],
+    [
+     "2026-08-24",
+     1246.9301
+    ],
+    [
+     "2026-08-25",
+     1233.66
+    ],
+    [
+     "2026-08-26",
+     1189.41
+    ],
+    [
+     "2026-08-27",
+     1176.1
+    ],
+    [
+     "2026-08-28",
+     1174.61
+    ],
+    [
+     "2026-08-31",
+     1156.73
+    ],
+    [
+     "2026-09-01",
+     1160.0
+    ],
+    [
+     "2026-09-02",
+     1160.08
+    ],
+    [
+     "2026-09-03",
+     1159.6
+    ],
+    [
+     "2026-09-04",
+     1149.36
+    ],
+    [
+     "2026-09-08",
+     1123.91
+    ],
+    [
+     "2026-09-09",
+     1124.21
+    ],
+    [
+     "2026-09-10",
+     1123.0
+    ],
+    [
+     "2026-09-11",
+     1115.7
+    ],
+    [
+     "2026-09-14",
+     1138.28
+    ],
+    [
+     "2026-09-15",
+     1136.11
+    ],
+    [
+     "2026-09-16",
+     1137.8199
+    ],
+    [
+     "2026-09-17",
+     1152.4399
+    ],
+    [
+     "2026-09-18",
+     1152.9301
+    ],
+    [
+     "2026-09-21",
+     1164.89
+    ],
+    [
+     "2026-09-22",
+     1170.14
+    ],
+    [
+     "2026-09-23",
+     1150.99
+    ],
+    [
+     "2026-09-24",
+     1181.89
+    ],
+    [
+     "2026-09-25",
+     1183.46
+    ],
+    [
+     "2026-09-28",
+     1184.78
+    ],
+    [
+     "2026-09-29",
+     1184.63
+    ],
+    [
+     "2026-09-30",
+     1157.08
+    ],
+    [
+     "2026-10-01",
+     1149.85
+    ],
+    [
+     "2026-10-02",
+     1142.85
+    ],
+    [
+     "2026-10-05",
+     1143.12
+    ],
+    [
+     "2026-10-06",
+     1157.49
+    ],
+    [
+     "2026-10-07",
+     1188.72
+    ],
+    [
+     "2026-10-08",
+     1169.6
+    ],
+    [
+     "2026-10-09",
+     1179.27
+    ],
+    [
+     "2026-10-12",
+     1182.62
+    ],
+    [
+     "2026-10-13",
+     1166.51
+    ],
+    [
+     "2026-10-14",
+     1208.74
+    ],
+    [
+     "2026-10-15",
+     1251.61
+    ],
+    [
+     "2026-10-16",
+     1257.03
+    ],
+    [
+     "2026-10-19",
+     1240.34
+    ],
+    [
+     "2026-10-20",
+     1283.66
+    ],
+    [
+     "2026-10-21",
+     1270.75
+    ],
+    [
+     "2026-10-22",
+     1306.6899
+    ],
+    [
+     "2026-10-23",
+     1273.46
+    ],
+    [
+     "2026-10-26",
+     1279.14
+    ],
+    [
+     "2026-10-27",
+     1281.91
+    ]
+   ],
+   "volume_ratio_20d": 0.8,
+   "bar": "complete",
+   "dist_52w_high": -0.019,
+   "dividends": {
+    "symbol": "LLY",
+    "trailing_12m": 6.6899999999999995,
+    "last_amount": 1.73,
+    "last_ex_date": "2026-08-14",
+    "next_ex_date": "2026-11-13",
+    "pay_date": "2026-09-10",
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:26Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 1142639558656.0,
+    "pe_trailing": 43.031555,
+    "pe_forward": 27.051554,
+    "price_to_book": 33.7327,
+    "ev_to_ebitda": 28.499,
+    "profit_margin": 0.33528998,
+    "operating_margin": 0.54222,
+    "roe": 1.02286,
+    "revenue_growth": 0.477,
+    "earnings_growth": 0.262,
+    "debt_to_equity": 1.6207099999999999,
+    "current_ratio": 1.355,
+    "free_cashflow": 11065900032.0,
+    "payout_ratio": 0.2169,
+    "beta_yahoo": 0.453,
+    "yahoo_sector": "Healthcare",
+    "industry": "Drug Manufacturers - General"
+   },
+   "dividend_record": {
+    "years_paid": 54,
+    "consecutive_increases": 11,
+    "cagr_5y": 0.1518,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": 0.082,
+    "ret_3m": 0.0609,
+    "ret_6m": 0.4713,
+    "ret_12m": 0.5628,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.3495,
+    "max_drawdown_1y": -0.2318,
+    "beta_1y": 0.27,
+    "rel_3m": 0.0053,
+    "rel_12m": 0.4257
+   },
+   "sector": {
+    "sector": "Health Care",
+    "n_peers": 60,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 29.2,
+     "pct_rank": 0.78,
+     "n": 54
+    },
+    "pe_forward": {
+     "median": 17.53,
+     "pct_rank": 0.81,
+     "n": 59
+    },
+    "price_to_book": {
+     "median": 3.55,
+     "pct_rank": 0.98,
+     "n": 55
+    }
+   },
+   "next_earnings": "2026-10-29",
+   "news": [
+    {
+     "title": "$10,000 Invested in Eli Lilly 5 Years Ago Would Be Worth This Much Today",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeDFTemZQdFlRODhfSFlKWUcxVDhSNFd4RjhGcDFseFE3b1oyZS11eUViTXJLVlB4U29MdkhuMGt1VmtfcjJnNjd5REw4dHBPS1A1MVRiakNKdHd4cUxwX2VoUE5ITjhnTnIyZjMtZ0Uxd1oyX0VmUG5hS1pkb282NnkzVEhvQ3BaU0RHbEkyYTF4NVNr?oc=5",
+     "published": "2026-10-27 23:28 UTC"
+    },
+    {
+     "title": "Eli Lilly leads GLP-1 market with $1.21T value; Novo Nordisk aims recovery despite stagnant growth.",
+     "source": "Pluang",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT1VEdG1QRFJrRjlTZ3JkOG0zQ25fcVFjeVFEbTVKelgxUU9MOVFJRlhuVVhrVGZ3M0diY1R0QklHX2E2M09rR2lSLVI1dGJQd2ViajNsMkI5MWYyRWlCbDh1QjJkQ3NFd1NtSkhjVHNvWjhDWXl0S2wxX2E5RjFEb3BHQ3dYUlFfS2pReGw4MHJfQ2lId3F2bENFX2JrMDhGS0J4ZA?oc=5",
+     "published": "2026-10-27 22:47 UTC"
+    },
+    {
+     "title": "Eli Lilly (LLY) to Merge U.S. and International Operations into Lilly Global Markets",
+     "source": "GuruFocus",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSlBsTkM5WFJnZjExSDNQb0Y5NlpkZGg1bnlVN2xYeF9WNHd4LVZIaFlGN29KUURyWGZjUHM5STdXQlZEVTdWLVNFbzN3RHo4OF9RLTY0WWFsLXVHd195SzJMWmRaNzBlaVlyWFI1dlpaOTdCc1pqNE1TMFFPREViMFMxNEJCSTNzTlBsU3A4WUlZeExSQml5ai1pSmZVMXZka3JlSVltZC1hZm8tZU1pTnFwZWhpMXVHMTVN?oc=5",
+     "published": "2026-10-27 22:36 UTC"
+    },
+    {
+     "title": "Novo Nordisk Vs. Eli Lilly Q3 Preview: I'd (Now) Buy Both, But Lilly Is My Top Pick (NVO)",
+     "source": "Seeking Alpha",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdThxQ3V4b1RqMXktQklBMTg0ZjRMLUxaLWtGcndLT2toU2g2czNoQnJnWWJYV3R6ZjJLR01YSFd3bTVmVTZhVE5tVnpFbjI5RFF2VDJFTlJoWVdmNEdIcmoxRS03VnZBaVVFUUF6TVNTbkhIOExhWF9Ed19mRGFTQ2tORWpBQ2JWNExHQ21yeG80aHZYTU55cmtaU3o1bm9BUGZLTjZsM3JNMEN2Q3hkWnV2cVB3Y3loVVE?oc=5",
+     "published": "2026-10-27 22:08 UTC"
+    },
+    {
+     "title": "Eli Lilly international business chief Jonsson to retire; Yuffa to head global markets unit By Reuters",
+     "source": "Investing.com",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdU4wVm16MlBGMFNLOTl3Rk5INVpEWHNiajZYTW45SlNGdTNEX3JUWDdOQmhXQnVjaVR0LThsQk5ITEhMbHhFM1FsdEx2aXRjMEVrNEJuYlNwc0w0MHpVdWI2U3N2aEw3ckpWeHhVNE5sTUF3akk0V25TMUc1UEZTYWd3aVlud0I1MThXVHE3RzJSZ19aN0JUcFJUdDIwM2Z3dTE2R3JNSHRmTFJQdzlvSktXeTc2cEE3TEdZNVphaWd6M3R1bXJ5YkVBU3RvMDhUSnB5OF8zYjRWUE9kS3MwdQ?oc=5",
+     "published": "2026-10-27 21:09 UTC"
+    },
+    {
+     "title": "Eli Lilly appoints Ilya Yuffa to lead global ma...",
+     "source": "Pluang",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOcGctejNIVkNnNFJPbTlTVF9BS0hvU3NsZmFmY19ZT3c0dWRDOXh3MHUyaUF4X0JKMXdGcHBXVGpmMlFPbGYyelM1R2xyVGNUTFZjZWloQlIzNDhQTkRSS1luU0RiRUFxTVcxRzZYcUtwczFjTURMWC12dGxJX3d5amFnOUcxU3JvTGc1cTFMbmZpQVNKSmZXaVR4Zw?oc=5",
+     "published": "2026-10-27 20:24 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.567,
+     "accuracy": 0.569,
+     "brier": 0.2652,
+     "brier_baseline": 0.2455,
+     "z_vs_baseline_optimistic": 0.09,
+     "strategy_mean_per_period": 0.00578,
+     "buyhold_mean_per_period": 0.00592,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.509,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.096,
+    "items": [
+     {
+      "title": "$10,000 Invested in Eli Lilly 5 Years Ago Would Be Worth This Much Today",
+      "compound": 0.2263
+     },
+     {
+      "title": "Eli Lilly leads GLP-1 market with $1.21T value; Novo Nordisk aims recovery despite stagnant growth.",
+      "compound": 0.0557
+     },
+     {
+      "title": "Eli Lilly (LLY) to Merge U.S. and International Operations into Lilly Global Markets",
+      "compound": 0.0
+     },
+     {
+      "title": "Novo Nordisk Vs. Eli Lilly Q3 Preview: I'd (Now) Buy Both, But Lilly Is My Top Pick (NVO)",
+      "compound": 0.296
+     },
+     {
+      "title": "Eli Lilly international business chief Jonsson to retire; Yuffa to head global markets unit By Reuters",
+      "compound": 0.0
+     },
+     {
+      "title": "Eli Lilly appoints Ilya Yuffa to lead global ma...",
+      "compound": 0.0
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:26Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Eli Lilly"
+  },
+  {
+   "symbol": "MU",
+   "flags": [],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-10-27T23:58:26Z",
+   "asof": "2026-10-27",
+   "close": 928.76,
+   "ret_1d": 0.0277,
+   "move_vs_vol": 0.86,
+   "closes_60d": [
+    [
+     "2026-08-04",
+     892.5295
+    ],
+    [
+     "2026-08-05",
+     893.0494
+    ],
+    [
+     "2026-08-06",
+     881.3312
+    ],
+    [
+     "2026-08-07",
+     877.4319
+    ],
+    [
+     "2026-08-10",
+     860.8645
+    ],
+    [
+     "2026-08-11",
+     868.3834
+    ],
+    [
+     "2026-08-12",
+     911.1466
+    ],
+    [
+     "2026-08-13",
+     949.6805
+    ],
+    [
+     "2026-08-14",
+     971.5071
+    ],
+    [
+     "2026-08-17",
+     1011.5908
+    ],
+    [
+     "2026-08-18",
+     940.612
+    ],
+    [
+     "2026-08-19",
+     936.9625
+    ],
+    [
+     "2026-08-20",
+     974.1767
+    ],
+    [
+     "2026-08-21",
+     966.6279
+    ],
+    [
+     "2026-08-24",
+     910.2867
+    ],
+    [
+     "2026-08-25",
+     932.8232
+    ],
+    [
+     "2026-08-26",
+     938.2524
+    ],
+    [
+     "2026-08-27",
+     935.2428
+    ],
+    [
+     "2026-08-28",
+     932.7132
+    ],
+    [
+     "2026-08-31",
+     958.5791
+    ],
+    [
+     "2026-09-01",
+     933.2931
+    ],
+    [
+     "2026-09-02",
+     955.9296
+    ],
+    [
+     "2026-09-03",
+     958.0092
+    ],
+    [
+     "2026-09-04",
+     1016.4301
+    ],
+    [
+     "2026-09-08",
+     1000.1026
+    ],
+    [
+     "2026-09-09",
+     1027.6083
+    ],
+    [
+     "2026-09-10",
+     977.2562
+    ],
+    [
+     "2026-09-11",
+     975.1066
+    ],
+    [
+     "2026-09-14",
+     923.8846
+    ],
+    [
+     "2026-09-15",
+     927.454
+    ],
+    [
+     "2026-09-16",
+     926.4042
+    ],
+    [
+     "2026-09-17",
+     977.3462
+    ],
+    [
+     "2026-09-18",
+     1015.6401
+    ],
+    [
+     "2026-09-21",
+     1043.7957
+    ],
+    [
+     "2026-09-22",
+     1095.9875
+    ],
+    [
+     "2026-09-23",
+     1071.7113
+    ],
+    [
+     "2026-09-24",
+     1080.36
+    ],
+    [
+     "2026-09-25",
+     1082.1097
+    ],
+    [
+     "2026-09-28",
+     1053.8141
+    ],
+    [
+     "2026-09-29",
+     1064.9124
+    ],
+    [
+     "2026-09-30",
+     1064.9424
+    ],
+    [
+     "2026-10-01",
+     1097.2173
+    ],
+    [
+     "2026-10-02",
+     1074.7208
+    ],
+    [
+     "2026-10-05",
+     1063.7925
+    ],
+    [
+     "2026-10-06",
+     1045.3955
+    ],
+    [
+     "2026-10-07",
+     1087.8289
+    ],
+    [
+     "2026-10-08",
+     1035.677
+    ],
+    [
+     "2026-10-09",
+     1028.8381
+    ],
+    [
+     "2026-10-12",
+     988.8843
+    ],
+    [
+     "2026-10-13",
+     953.04
+    ],
+    [
+     "2026-10-14",
+     914.13
+    ],
+    [
+     "2026-10-15",
+     931.24
+    ],
+    [
+     "2026-10-16",
+     878.84
+    ],
+    [
+     "2026-10-19",
+     904.9
+    ],
+    [
+     "2026-10-20",
+     896.07
+    ],
+    [
+     "2026-10-21",
+     913.67
+    ],
+    [
+     "2026-10-22",
+     856.49
+    ],
+    [
+     "2026-10-23",
+     877.55
+    ],
+    [
+     "2026-10-26",
+     903.7
+    ],
+    [
+     "2026-10-27",
+     928.76
+    ]
+   ],
+   "volume_ratio_20d": 0.85,
+   "bar": "complete",
+   "dist_52w_high": -0.234,
+   "dividends": {
+    "symbol": "MU",
+    "trailing_12m": 0.5650000000000001,
+    "last_amount": 0.15,
+    "last_ex_date": "2026-10-14",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-10-27T23:58:27Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 1050820673536.0,
+    "pe_trailing": 12.49509,
+    "pe_forward": 4.489066,
+    "price_to_book": 7.5910096,
+    "ev_to_ebitda": 9.303,
+    "profit_margin": 0.63796,
+    "operating_margin": 0.80678004,
+    "roe": 0.8826,
+    "revenue_growth": 3.793,
+    "earnings_growth": 10.595,
+    "debt_to_equity": 0.03743,
+    "current_ratio": 3.314,
+    "free_cashflow": 29140250624.0,
+    "payout_ratio": 0.0070999996,
+    "beta_yahoo": 2.226,
+    "yahoo_sector": "Technology",
+    "industry": "Semiconductors"
+   },
+   "dividend_record": {
+    "years_paid": 11,
+    "consecutive_increases": 0,
+    "cagr_5y": 0.7905,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": -0.1187,
+    "ret_3m": 0.257,
+    "ret_6m": 0.8423,
+    "ret_12m": 3.2453,
+    "above_50d": false,
+    "above_200d": true,
+    "vol_annual": 0.8114,
+    "max_drawdown_1y": -0.391,
+    "beta_1y": 3.34,
+    "rel_3m": 0.2014,
+    "rel_12m": 3.1082
+   },
+   "sector": {
+    "sector": "Information Technology",
+    "n_peers": 75,
+    "scan_date": "2026-10-27",
+    "universe": "S&P 500",
+    "pe_trailing": {
+     "median": 35.85,
+     "pct_rank": 0.03,
+     "n": 72
+    },
+    "pe_forward": {
+     "median": 18.91,
+     "pct_rank": 0.0,
+     "n": 75
+    },
+    "price_to_book": {
+     "median": 8.5,
+     "pct_rank": 0.46,
+     "n": 70
+    }
+   },
+   "next_earnings": "2026-12-23",
+   "news": [
+    {
+     "title": "Intel, Microchip Technology, Marvell Technology, onsemi, and Seagate stocks trade up, what you need to know",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNek9QZ2xQX0NHcDN5MU80Q2dIclpid2ZlZDlta1ZheF9qMXNHRTFsTmZBTS1rSVpldUdrNjRaV2xuSlNoRDc1OTN5RmhuSnA4WFRxN1FLYnJhREx4YkxDNWNaQ1BUUTlJa2ZqVERyTWRlazJIeUNiQkwtT1hPc0pWMzU2VDhwb3BBaWJXRWVmTzBhZTh1bUdVbFdGdlJmNG1obXdlNENVaGN5WTV0R0k0?oc=5",
+     "published": "2026-10-27 23:10 UTC"
+    },
+    {
+     "title": "Micron Stocks Rise With Robot-Memory Forecast and a $61.5 Billion Hurdle",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaTYwaWVJUkdvR2tlUlA3OVNHZVc5S0VoNkFWcWNkWXZNY0VWUDhlLThsaGhla1ZGdW95Q3NDeEc4Y2RzekhtSEk4QldodTNoNFFYa2dWSm54RWk5d1NYOEVjd2pBMVo5VzVVQnZ5Mk1KaS1JU3h6MUFKNTR0ODlSTFlHR2p1T1duTTBmdElKNUpSbklXcFVLenpOVWQ?oc=5",
+     "published": "2026-10-27 19:57 UTC"
+    },
+    {
+     "title": "Seagate and One Momentum Stock to Buy Now for Big Upside",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa3luQzllVVlLRkhMb1BlVVUyN0I4VG03OWFsNVNlT01SY3FFNUtpRkZ0NVo0eUhuaGo2djlQVzRPS2J4dVRIMGJUS0dJX1FwMVZDSVdsTVppeEgtbkxJREg4azJsRk9vQTkzZFZVYktaTnVTb2V6eEFnNjI4THphMXBhYjJTLUNaYUllaWFRd0VHczhlTXZvelRHQQ?oc=5",
+     "published": "2026-10-27 18:05 UTC"
+    },
+    {
+     "title": "TSM vs. MU: Which Semiconductor Stock Is the Better Buy Post-Earnings?",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMTFTOFFaSGRRUElGckpCT00zVmhxT0o0X1k3di00ejZWSEVIV1g4QXFVdUd4SXFfRk5wTGtnRUtnUVhPX1pOZVpsVnlDQlg4YmdBeGw4emY5N0VMLWt1dmxVa0wwOHRLSUxuOW42OGZ6aWNoN0pQWWlTR3NTd280ZUM2T3pMSUVxYlVSTzZxQjNaTElSUmVMbldR?oc=5",
+     "published": "2026-10-27 18:00 UTC"
+    },
+    {
+     "title": "Micron, Musk, and Memory. A Big Prediction Is Lifting the Stock.",
+     "source": "Barron's",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NSnA4QTg5U0hoaGRRRFdFZC1wS2REemx2em5RTHl0Q3R6YVFQSW1QVmFaTTBGM3F0N0RWT2ZWTm5WeDVIODVqUHN5S3hBeExPRXVJZ08wQ2JBejJtVHRBYVRnRnpPbFNOcldMcVV1ZEhiZDdIQUJDY2JJVWI?oc=5",
+     "published": "2026-10-27 17:56 UTC"
+    },
+    {
+     "title": "1 of Wall Street\u2019s favorite stocks worth your attention and 2 we turn down",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdEZ1WjVtdzJ1WFBHZjBLcTB5TVYzbW91NmZHZ1kxdGR4T2ZXUWlqYVJwR2hUQTdPbVl1T0VUNUFQZlJLMGpzVzM0TENXRE9aZ0RwRThYaXpGZVppcXc4Mmt3M2VoandYRFNLam8xRDVkYzl6MkgzNUJZT3M0Wkk4RXZlRDZlb2treFU4azl6R3FfdnN2Y0Z1QjF3?oc=5",
+     "published": "2026-10-27 17:26 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 494,
+     "base_rate_up": 0.609,
+     "accuracy": 0.516,
+     "brier": 0.2657,
+     "brier_baseline": 0.2381,
+     "z_vs_baseline_optimistic": -4.24,
+     "strategy_mean_per_period": 0.01529,
+     "buyhold_mean_per_period": 0.02699,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.585,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.173,
+    "items": [
+     {
+      "title": "Intel, Microchip Technology, Marvell Technology, onsemi, and Seagate stocks trade up, what you need to know",
+      "compound": 0.0
+     },
+     {
+      "title": "Micron Stocks Rise With Robot-Memory Forecast and a $61.5 Billion Hurdle",
+      "compound": 0.0
+     },
+     {
+      "title": "Seagate and One Momentum Stock to Buy Now for Big Upside",
+      "compound": 0.0
+     },
+     {
+      "title": "TSM vs. MU: Which Semiconductor Stock Is the Better Buy Post-Earnings?",
+      "compound": 0.4404
+     },
+     {
+      "title": "Micron, Musk, and Memory. A Big Prediction Is Lifting the Stock.",
+      "compound": 0.0
+     },
+     {
+      "title": "1 of Wall Street\u2019s favorite stocks worth your attention and 2 we turn down",
+      "compound": 0.5994
+     }
+    ],
+    "retrieved": "2026-10-27T23:58:27Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Micron"
+  }
+ ],
+ "unresolved": [],
+ "changes": null,
+ "upcoming_dividends": []
+}
