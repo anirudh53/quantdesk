@@ -1,0 +1,4161 @@
+{
+ "generated": "2026-11-19 07:57 UTC",
+ "market": "IN",
+ "mode": "midday",
+ "date": "2026-11-19",
+ "results": [
+  {
+   "symbol": "RELIANCE.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:35Z",
+   "asof": "2026-11-19",
+   "close": 1366.1,
+   "ret_1d": 0.0023,
+   "move_vs_vol": 0.08,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     1309.8
+    ],
+    [
+     "2026-08-25",
+     1317.0
+    ],
+    [
+     "2026-08-26",
+     1298.0
+    ],
+    [
+     "2026-08-27",
+     1282.2
+    ],
+    [
+     "2026-08-28",
+     1287.0
+    ],
+    [
+     "2026-08-31",
+     1277.0
+    ],
+    [
+     "2026-09-01",
+     1309.0
+    ],
+    [
+     "2026-09-02",
+     1313.1
+    ],
+    [
+     "2026-09-03",
+     1302.5
+    ],
+    [
+     "2026-09-04",
+     1322.0
+    ],
+    [
+     "2026-09-07",
+     1309.5
+    ],
+    [
+     "2026-09-08",
+     1294.9
+    ],
+    [
+     "2026-09-09",
+     1279.0
+    ],
+    [
+     "2026-09-10",
+     1274.0
+    ],
+    [
+     "2026-09-11",
+     1257.5
+    ],
+    [
+     "2026-09-15",
+     1235.3
+    ],
+    [
+     "2026-09-16",
+     1240.0
+    ],
+    [
+     "2026-09-17",
+     1243.9
+    ],
+    [
+     "2026-09-18",
+     1226.4
+    ],
+    [
+     "2026-09-21",
+     1247.4
+    ],
+    [
+     "2026-09-22",
+     1240.4
+    ],
+    [
+     "2026-09-23",
+     1248.0
+    ],
+    [
+     "2026-09-24",
+     1219.2
+    ],
+    [
+     "2026-09-25",
+     1226.0
+    ],
+    [
+     "2026-09-28",
+     1197.6
+    ],
+    [
+     "2026-09-29",
+     1182.0
+    ],
+    [
+     "2026-09-30",
+     1187.0
+    ],
+    [
+     "2026-10-01",
+     1167.7
+    ],
+    [
+     "2026-10-05",
+     1186.4
+    ],
+    [
+     "2026-10-06",
+     1218.0
+    ],
+    [
+     "2026-10-07",
+     1207.7
+    ],
+    [
+     "2026-10-08",
+     1178.0
+    ],
+    [
+     "2026-10-09",
+     1170.3
+    ],
+    [
+     "2026-10-12",
+     1158.9
+    ],
+    [
+     "2026-10-13",
+     1166.7
+    ],
+    [
+     "2026-10-14",
+     1174.6
+    ],
+    [
+     "2026-10-15",
+     1215.0
+    ],
+    [
+     "2026-10-16",
+     1211.2
+    ],
+    [
+     "2026-10-19",
+     1202.0
+    ],
+    [
+     "2026-10-21",
+     1209.0
+    ],
+    [
+     "2026-10-22",
+     1184.5
+    ],
+    [
+     "2026-10-23",
+     1190.0
+    ],
+    [
+     "2026-10-26",
+     1201.8
+    ],
+    [
+     "2026-10-27",
+     1196.2
+    ],
+    [
+     "2026-10-28",
+     1158.0
+    ],
+    [
+     "2026-10-29",
+     1167.4
+    ],
+    [
+     "2026-10-30",
+     1164.9
+    ],
+    [
+     "2026-11-02",
+     1300.0
+    ],
+    [
+     "2026-11-03",
+     1307.9
+    ],
+    [
+     "2026-11-04",
+     1311.0
+    ],
+    [
+     "2026-11-05",
+     1313.4
+    ],
+    [
+     "2026-11-06",
+     1320.0
+    ],
+    [
+     "2026-11-09",
+     1324.4
+    ],
+    [
+     "2026-11-11",
+     1335.4
+    ],
+    [
+     "2026-11-12",
+     1339.7
+    ],
+    [
+     "2026-11-13",
+     1339.7
+    ],
+    [
+     "2026-11-16",
+     1344.8
+    ],
+    [
+     "2026-11-17",
+     1367.0
+    ],
+    [
+     "2026-11-18",
+     1363.0
+    ],
+    [
+     "2026-11-19",
+     1366.1
+    ]
+   ],
+   "volume_ratio_20d": 0.53,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.138,
+   "dividends": {
+    "symbol": "RELIANCE.NS",
+    "trailing_12m": 6.0,
+    "last_amount": 6.0,
+    "last_ex_date": "2026-06-05",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:35Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": null,
+    "pe_trailing": 22.513184,
+    "pe_forward": 18.510494,
+    "price_to_book": 1.9573988,
+    "ev_to_ebitda": 12.17,
+    "profit_margin": 0.06848,
+    "operating_margin": 0.1122,
+    "roe": 0.08759,
+    "revenue_growth": 0.298,
+    "earnings_growth": 0.407,
+    "debt_to_equity": 0.44325000000000003,
+    "current_ratio": 1.135,
+    "free_cashflow": 118661251072.0,
+    "payout_ratio": 0.098900005,
+    "beta_yahoo": 0.183,
+    "yahoo_sector": "Energy",
+    "industry": "Oil & Gas Refining & Marketing"
+   },
+   "dividend_record": {
+    "years_paid": 30,
+    "consecutive_increases": 16,
+    "cagr_5y": 0.111,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": 0.1365,
+    "ret_3m": 0.0334,
+    "ret_6m": 0.0376,
+    "ret_12m": -0.092,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.241,
+    "max_drawdown_1y": -0.2694,
+    "beta_1y": 0.97,
+    "rel_3m": -0.0164,
+    "rel_12m": -0.072
+   },
+   "sector": {
+    "sector": "Oil Gas & Consumable Fuels",
+    "n_peers": 6,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100",
+    "pe_trailing": {
+     "median": 7.81,
+     "pct_rank": 1.0,
+     "n": 6
+    },
+    "pe_forward": {
+     "median": 7.52,
+     "pct_rank": 1.0,
+     "n": 6
+    },
+    "price_to_book": {
+     "median": 1.27,
+     "pct_rank": 1.0,
+     "n": 6
+    }
+   },
+   "next_earnings": "2027-01-15",
+   "news": [
+    {
+     "title": "Reliance Industries shares: After 13% surge in 1 month, JPMorgan sees another 23% upside in Mukesh Ambani stock | Target",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNUzNQdjJaZDdVdGRlZnlESVl3ODIwYTh2NUZSM19NMFhCZVJITDlkRjlGOHMyaEs0c2JuYkZRcVpBZkVDYVhvakxyMjFiLTA1VmhtZ1VkZE0zd0JGVHptaHIta3JVNTlUUHhqRnFaZ3REMFJZT014QjR6VWhTMnR2M1NFVDZTZ2pSMkJnbExNcm1kUlNMemJlTFJFX0NidEZfb1J4QnMtTDhtWGQ3dlJLQmhfRTBVamduMnJCeHhDbm1GckJua0JOUktOSGtoMkZ1QlQ3eFFhdHdZd25HSF9CTVVDM2JSeno3TnE4Zzl1LUx1MzhXc3g5Y3I5MXpuOXNSVnJ5YmJrZjZpTVRaLUxId1FtcUxJMGPSAZcCQVVfeXFMTVMzUHYyWmQ3VXRkZWZ5RElZdzgyMGE4djVGUjNfTTBYQmVSSEw5ZEY5RjhzMmhLNHNibmJGUXFaQWZFQ2FYb2pMcjIxYi0wNVZobWdVZGRNM3dCRlR6bWhyLWtyVTU5VFB4akZxWmd0RDBSWU9NeEI0elVoUzJ0djNTRVQ2U2dqUjJCZ2xMTXJtZFJTTHpiZUxSRV9DYnRGX29SeEJzLUw4bVhkN3ZSS0JoX0UwVWpnbjJyQnh4Q25tRnJCbmtCTlJLTkhraDJGdUJUN3hRYXR3WXduR0hfQk1VQzNiUnp6N05xOGc5dS1MdTM4V3N4OWNyOTF6bjlzUlZyeWJia2Y2aU1UWi1MSHdRbXFMSTBj?oc=5",
+     "published": "2026-11-19 07:09 UTC"
+    },
+    {
+     "title": "News by CNBC TV18 on TradingView, 2026-11-19 \u2014 cnbctv:fc2d1d2e2094b:0",
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fVlVWMnJZZFRiTnU3cVBXZ3MyT04yNEU0MzVRQzctaWU3OHFfVHFXd0k0MFY2TDZaaTBhVVRoWHczSFJ4aXhnRzdBb0JYcmt3R3ptVEp3enpJb3Rkb2ZoQUhrcUtBa3M?oc=5",
+     "published": "2026-11-19 05:37 UTC"
+    },
+    {
+     "title": "Reliance Industries (NSEI:RELIANCE) Stock Sees Modest Fair Value Cut As Growth Assumptions Ease",
+     "source": "Yahoo Finance",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRi1iU24wblNjM2IzYVRrUTZocjVySVpHWUltS1QxbERyY3BqbGxPX3lCOHN4RHdCTTRqdnFXRThtaFlQWUNmYWRIRWwwV2txOUFfeWhhS0lQdXVldUJjZWdmSHZtM3BIT2ZNMU1QRkRTdmxfMUVtVUZjY3NxS3FBSENZamJRTWdLTzdkWG9tY1pMT3hnNDY2WFVaU1E5STl5Q01oMjBaaw?oc=5",
+     "published": "2026-11-19 01:14 UTC"
+    },
+    {
+     "title": "Reliance Industries Share Price Prediction for Tomorrow (19 Nov 2026): Stock Slips 0.29% on Heavy Volume",
+     "source": "Univest",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNWhYM05xRmFPM1QtblhVaExNREJrdnBwV3JhbjdLSld1QUR2VnU5RzcwcHZvY2paNHlldTRRb054UG9GRndyS1JUMndsak1Ga0FKZkM5OVBtQ01MM0ZBV2x4bURhWGhxRDVmeHRNdnNSc3ZsWUJ4Y0JHdnowTXpkdFZDNnJMTDhjWXZxNFg5NDFmaVpOcF9QRFNTR3JnUQ?oc=5",
+     "published": "2026-11-18 13:25 UTC"
+    },
+    {
+     "title": "Sohum's Sanjay Parekh sees upside in Reliance Industries, Airtel; calls Vedanta Aluminium a value pick",
+     "source": "CNBC TV18",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRTU2QXI5QTlXQmtHaGVmMzRsWnU3bjNKVjBJSzFna1RWOFJJM1JQNzh4S2cxVVFoNmRCank4MENxNmhnemZnRktOeXFRT0Q5YUdPRFFMMG1oblRZdlhHUGVVZm9wNk4taVQ1dXNSS2hScl9YTHJ2RFQ0OGxmWC13dllkS29JU2tlYUs0RVNydHZUM21tdlRQdmdHZHpCYXUyRU95SFRmMWgtOGtoQVppTGVqSdIBuAFBVV95cUxNczdRUWwyUFl2MFBLZTFBdEgtWUFGMHFLMVlCdnhFTXBLYXkyY29Db2JLaHNKci05bkZFVDdyaTNST1dha3h5dHY0V1Fxei1zS1FzN1d1Z1o4bFFOYTQ0Z1BLMEJ4c0M1b2RvU093R1Rlc3V4UDhoTl81R0JRMzZlemVoVVRTOXVJMUtLYjJSNDBtcnRaLVZ1NklGTzBXOW1WdjlpT2lMRWo3NHl4aUZlbVl2cWFkZmYw?oc=5",
+     "published": "2026-11-18 11:47 UTC"
+    },
+    {
+     "title": "Reliance Shares Rally 17% in 11 Sessions: What\u2019s Behind the Rs 2.74 Lakh Crore Gain?",
+     "source": "NiftyTrader",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNM2tJOFFoVkNtQlRjWm1SSEI0dlJYYWRIZkNqVWNaQ1REaTFVeVdESU1GTVBxV190YkhGdGdhS0RvUGhDS2xpNXlZd3JHcnRWZzI4cHphZndyLUtQTVpKbFo4MWNlTy1nc1IwVm9HVXpfbnR4N0tockU1SFJZb3d4NQ?oc=5",
+     "published": "2026-11-18 11:27 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.508,
+     "accuracy": 0.487,
+     "brier": 0.2604,
+     "brier_baseline": 0.2499,
+     "z_vs_baseline_optimistic": -0.92,
+     "strategy_mean_per_period": 7e-05,
+     "buyhold_mean_per_period": 0.00135,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.617,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.397,
+    "items": [
+     {
+      "title": "Reliance Industries shares: After 13% surge in 1 month, JPMorgan sees another 23% upside in Mukesh Ambani stock | Target",
+      "compound": 0.296
+     },
+     {
+      "title": "News by CNBC TV18 on TradingView, 2026-11-19 \u2014 cnbctv:fc2d1d2e2094b:0",
+      "compound": 0.0
+     },
+     {
+      "title": "Reliance Industries (NSEI:RELIANCE) Stock Sees Modest Fair Value Cut As Growth Assumptions Ease",
+      "compound": 0.7717
+     },
+     {
+      "title": "Reliance Industries Share Price Prediction for Tomorrow (19 Nov 2026): Stock Slips 0.29% on Heavy Volume",
+      "compound": 0.296
+     },
+     {
+      "title": "Sohum's Sanjay Parekh sees upside in Reliance Industries, Airtel; calls Vedanta Aluminium a value pick",
+      "compound": 0.34
+     },
+     {
+      "title": "Reliance Shares Rally 17% in 11 Sessions: What\u2019s Behind the Rs 2.74 Lakh Crore Gain?",
+      "compound": 0.6808
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:36Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Reliance Industries"
+  },
+  {
+   "symbol": "TCS.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:36Z",
+   "asof": "2026-11-19",
+   "close": 2331.7,
+   "ret_1d": -0.0201,
+   "move_vs_vol": -1.53,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     2272.022
+    ],
+    [
+     "2026-08-25",
+     2284.0579
+    ],
+    [
+     "2026-08-26",
+     2257.9963
+    ],
+    [
+     "2026-08-27",
+     2236.5105
+    ],
+    [
+     "2026-08-28",
+     2329.6157
+    ],
+    [
+     "2026-08-31",
+     2386.6128
+    ],
+    [
+     "2026-09-01",
+     2356.4729
+    ],
+    [
+     "2026-09-02",
+     2335.584
+    ],
+    [
+     "2026-09-03",
+     2307.8315
+    ],
+    [
+     "2026-09-04",
+     2291.8167
+    ],
+    [
+     "2026-09-07",
+     2257.9963
+    ],
+    [
+     "2026-09-08",
+     2243.573
+    ],
+    [
+     "2026-09-09",
+     2196.3242
+    ],
+    [
+     "2026-09-10",
+     2192.4448
+    ],
+    [
+     "2026-09-11",
+     2189.1624
+    ],
+    [
+     "2026-09-15",
+     2239.0969
+    ],
+    [
+     "2026-09-16",
+     2177.2258
+    ],
+    [
+     "2026-09-17",
+     2178.4194
+    ],
+    [
+     "2026-09-18",
+     2093.8689
+    ],
+    [
+     "2026-09-21",
+     2117.4436
+    ],
+    [
+     "2026-09-22",
+     2093.8689
+    ],
+    [
+     "2026-09-23",
+     2078.5503
+    ],
+    [
+     "2026-09-24",
+     2075.9641
+    ],
+    [
+     "2026-09-25",
+     2070.9905
+    ],
+    [
+     "2026-09-28",
+     2059.7502
+    ],
+    [
+     "2026-09-29",
+     2021.6528
+    ],
+    [
+     "2026-09-30",
+     2039.7566
+    ],
+    [
+     "2026-10-01",
+     2064.0276
+    ],
+    [
+     "2026-10-05",
+     2103.219
+    ],
+    [
+     "2026-10-06",
+     2088.8953
+    ],
+    [
+     "2026-10-07",
+     2069.2996
+    ],
+    [
+     "2026-10-08",
+     2065.0222
+    ],
+    [
+     "2026-10-09",
+     2144.5991
+    ],
+    [
+     "2026-10-12",
+     2113.7632
+    ],
+    [
+     "2026-10-13",
+     2257.3
+    ],
+    [
+     "2026-10-14",
+     2304.8999
+    ],
+    [
+     "2026-10-15",
+     2350.0
+    ],
+    [
+     "2026-10-16",
+     2465.0
+    ],
+    [
+     "2026-10-19",
+     2460.8999
+    ],
+    [
+     "2026-10-21",
+     2529.0
+    ],
+    [
+     "2026-10-22",
+     2506.8999
+    ],
+    [
+     "2026-10-23",
+     2530.0
+    ],
+    [
+     "2026-10-26",
+     2535.0
+    ],
+    [
+     "2026-10-27",
+     2496.8999
+    ],
+    [
+     "2026-10-28",
+     2460.0
+    ],
+    [
+     "2026-10-29",
+     2478.0
+    ],
+    [
+     "2026-10-30",
+     2502.6001
+    ],
+    [
+     "2026-11-02",
+     2501.7
+    ],
+    [
+     "2026-11-03",
+     2499.1001
+    ],
+    [
+     "2026-11-04",
+     2436.0
+    ],
+    [
+     "2026-11-05",
+     2495.7
+    ],
+    [
+     "2026-11-06",
+     2498.5
+    ],
+    [
+     "2026-11-09",
+     2475.3999
+    ],
+    [
+     "2026-11-11",
+     2472.1001
+    ],
+    [
+     "2026-11-12",
+     2442.3999
+    ],
+    [
+     "2026-11-13",
+     2407.5
+    ],
+    [
+     "2026-11-16",
+     2405.0
+    ],
+    [
+     "2026-11-17",
+     2406.6001
+    ],
+    [
+     "2026-11-18",
+     2379.5
+    ],
+    [
+     "2026-11-19",
+     2331.7
+    ]
+   ],
+   "volume_ratio_20d": 0.67,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.268,
+   "dividends": {
+    "symbol": "TCS.NS",
+    "trailing_12m": 112.0,
+    "last_amount": 12.0,
+    "last_ex_date": "2026-10-14",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:36Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": null,
+    "pe_trailing": 16.344454,
+    "pe_forward": 14.506276,
+    "price_to_book": 7.0901647,
+    "ev_to_ebitda": 11.295,
+    "profit_margin": 0.1822,
+    "operating_margin": 0.24588,
+    "roe": 0.45573002,
+    "revenue_growth": 0.112,
+    "earnings_growth": 0.15,
+    "debt_to_equity": 0.0983,
+    "current_ratio": 2.479,
+    "free_cashflow": 394597498880.0,
+    "payout_ratio": 0.4557,
+    "beta_yahoo": 0.075,
+    "yahoo_sector": "Technology",
+    "industry": "Information Technology Services"
+   },
+   "dividend_record": {
+    "years_paid": 22,
+    "consecutive_increases": 1,
+    "cagr_5y": 0.2619,
+    "cut_in_5y": true
+   },
+   "trend": {
+    "ret_1m": -0.0525,
+    "ret_3m": 0.0281,
+    "ret_6m": 0.0266,
+    "ret_12m": -0.2233,
+    "above_50d": true,
+    "above_200d": false,
+    "vol_annual": 0.2991,
+    "max_drawdown_1y": -0.3846,
+    "beta_1y": 0.78,
+    "rel_3m": -0.0217,
+    "rel_12m": -0.2033
+   },
+   "sector": {
+    "sector": "Information Technology",
+    "n_peers": 6,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100",
+    "pe_trailing": {
+     "median": 18.63,
+     "pct_rank": 0.33,
+     "n": 6
+    },
+    "pe_forward": {
+     "median": 16.07,
+     "pct_rank": 0.33,
+     "n": 6
+    },
+    "price_to_book": {
+     "median": 4.93,
+     "pct_rank": 0.83,
+     "n": 6
+    }
+   },
+   "next_earnings": null,
+   "news": [
+    {
+     "title": "Stock markets fall in early trade dragged by IT firms, US Fed rate hike jitters",
+     "source": "The New Indian Express",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMlVXem1ndXYtc3JOQ0xYTDRrcTc1d2J2c1JRWjNJd0prMkUyRzRxc3QwTFZqdm96aWR1VWlaRC1BY3U2OVlJWHNUNDV2RWo1d0VmNk9NLUdwOGZyM0tobEVUblhodVVKRnpVa3NtOGdPQ3U2TE9vRkFkZ0lmUXlhVzNSLVpqMXZtU0VMbXFCTTN2UGxGTEZzV0ZpMmxoTGZzd1BRekdCb3VwWkU4NmFYRmRncENaZjR0S2tHenFYMjJwVHRWcHFjVmR1UDjSAdoBQVVfeXFMTW1kNGx4dWRPNldnNEdBblVKVE9GR1RHaEI5VnhrTzRQWDlXM3N6Y2NjVEhsZE5wQ2tuaS1NdzVEQnFqUjVJYTdOcmFtdDgwVlVFWEgzdUE0M2ZacDNoQ3ptUWJ1aFlrV2cwOWxpWHloNjRoSlM0dDhxd3JIdVdfYVotUXBlRnd2ZkFoT1ROMlVnaEtWV2I4QTZ5Uko1WGNYMF8zdGFoaGZ4Q1FobHVIU2M5ZEg3ZENwMFo2NFdVdW9LclZ4a19lbjNmdmtBN2pKbjlMVUhsdmJ4YWc?oc=5",
+     "published": "2026-11-19 05:02 UTC"
+    },
+    {
+     "title": "Tata Consultancy Services slides Wednesday, underperforms market",
+     "source": "MarketWatch",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQRUhjYVQ2dWRMcWhadzBBSnVyTzFobXNqN0laZkN5VGRINjBzODVaS1NJZFNCUmpEQnVGTGloTmFrZ2JDMERma3A2M3dMM0doZUhFdGp3aWpjRjgwWE9hX3VCTTZGdGFaZE5pSEUyTmNBU0VnYU9oOU9wUURhWDFMRTZIYkpSOHZtcGlPVkpmSGxnNmdmTEFLa0ppcm5BclZhb2hwQkVpTW5GLVZreVZ0Y1V2NUdZcmF2dFR0VVJfOXQ2b2F6T2M2N1pQU0tIamNjNXg2NnNmdmE?oc=5",
+     "published": "2026-11-18 10:33 UTC"
+    },
+    {
+     "title": "TCS Share Price Falls 2.03%: Price Action and Valuation",
+     "source": "Univest",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSWtsZnh4OEpSd0xhcGZvbEp3R2IyUTNLUWpnRG93eWRuMDZyNXR1XzA3Q1d0S3czQjZrMEtDb2lwZHhtOGNXRVVCQnhabDhKeXZ6TVNXYzNKT2ZqWjFSTzZRRnlPY3hqbVZpdkVONkJTaUowWXZPVFNrTnRqbFhHekxwUk1sNURxTmc?oc=5",
+     "published": "2026-11-18 08:05 UTC"
+    },
+    {
+     "title": "TCS Share Price",
+     "source": "Upstox",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xa3lkaFFielNzaEh0c3oxTzdzMzV1MDk5TzFMYnoweVkwWG02cVBRTHZSUmM2Q1JpYVpsN2l2VmZwMFpwUzI5cm5WOUFHSGE1c2ZsRjRTWWl3MmlNOGdQUmdkSlZLUUxqRUctcGVsdDA?oc=5",
+     "published": "2026-11-18 06:31 UTC"
+    },
+    {
+     "title": "Stock Markets Today: Sensex, Nifty Down on Profit-taking",
+     "source": "Rediff",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxORkE3UWlyb0VrWmdfZy1IamtIemhZQU9YTjRfMGpnV3pNSVpRblc1SUZJWlAxRGNyNkJDMFpCWld3ekJSaDdpVWsyZ3lCQXY4SUdCSzc4bzJ3V1RjRFoxdkxwREdLTjFIUXlsWGtJQjM0VHlCR1ZuTnpaQk5VZENfelplNEZUejB2RUxKVXNtZFo3V1JiNFJQOVhHYW42UC15SzhDYmJOWG03M2xvLXN4MURiWWcxcExtLVJVaWhvWENyLUFScU9VRTR6Q1p5ZGhzN3Z2ZXM0c0prZUQ1bkRMcNIB4wFBVV95cUxPZjRrX3ZvejZibE9UU3NXMlVzZGNUcV9IMTM4SmRsTG5YM0FWazBwMXUwdG1MZHRhS1MtbFByZDJpY0cySzhPRzkyV3FPczJjTUltTm5fYVhMYlZCWGRQc3plUjIza2tfdWtpVTJYNnZzS0NqcndqdnJaTjJsUS1UbUg4VExnTW1TTEhtRXRET0k5RklfQlpBd3ZiZGNkOWhlckk5YVRZQ0pDVG41RVdZRWx3ZFZoeFNiS1pSTjl4TmFIdVd3Tk56LWJ1V2JnX01yZEwwb190ay1iU2JLaWh6bTU5WQ?oc=5",
+     "published": "2026-11-18 05:31 UTC"
+    },
+    {
+     "title": "Stock markets fall in early trade after two-day rally",
+     "source": "The Hindu",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd0ltRTRyRnlRdTlzMEhZT0g1QWxVQkQxb3gzdkVHYWdTUDk5LU9KUERubUhTUFZYRlZhU0xKWFBzR1VuS0J5UkFieHpJQ2tlck43TzZoTkphZUt0UWpXTGdPcEZpU3lDNUYxQWUyUVV3UTJLeUpoM0JwNV9LRDVsWjZtOTRRUngtVlJUdk5VdXlTSGEzU1VuLUV6VdIBogFBVV95cUxPTll2cDJjSDdyNHVPcmJ2MUtpekFWMzVyeHl3RU93RWo3Ulc5d3N1NWVWamdwQTNuYXZQdFlCcFJDU3BSZlo4cjZmYk04eHhQQkdSN1RlRXZ2VUZDdWJheTNSY3B3VVhFNU4ycU4xNTh4T3dnZ2EyUDdHWVM0c3lZZFE2MmI5QjlEWDlpWktIRUNNUFpzVVZib0JnYzVhVmpCZFE?oc=5",
+     "published": "2026-11-18 05:02 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.403,
+     "accuracy": 0.431,
+     "brier": 0.2867,
+     "brier_baseline": 0.2407,
+     "z_vs_baseline_optimistic": -7.38,
+     "strategy_mean_per_period": -0.00598,
+     "buyhold_mean_per_period": -0.00522,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.428,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.157,
+    "items": [
+     {
+      "title": "Stock markets fall in early trade dragged by IT firms, US Fed rate hike jitters",
+      "compound": -0.0516
+     },
+     {
+      "title": "Tata Consultancy Services slides Wednesday, underperforms market",
+      "compound": 0.0
+     },
+     {
+      "title": "TCS Share Price Falls 2.03%: Price Action and Valuation",
+      "compound": 0.296
+     },
+     {
+      "title": "TCS Share Price",
+      "compound": 0.296
+     },
+     {
+      "title": "Stock Markets Today: Sensex, Nifty Down on Profit-taking",
+      "compound": 0.4019
+     },
+     {
+      "title": "Stock markets fall in early trade after two-day rally",
+      "compound": 0.0
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:36Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Tata Consultancy Services"
+  },
+  {
+   "symbol": "BHARTIARTL.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far",
+    "at/near 52-week high"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:37Z",
+   "asof": "2026-11-19",
+   "close": 2141.5,
+   "ret_1d": 0.0045,
+   "move_vs_vol": 0.3,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     1935.0
+    ],
+    [
+     "2026-08-25",
+     1947.0
+    ],
+    [
+     "2026-08-26",
+     1902.1
+    ],
+    [
+     "2026-08-27",
+     1878.3
+    ],
+    [
+     "2026-08-28",
+     1882.4
+    ],
+    [
+     "2026-08-31",
+     1811.9
+    ],
+    [
+     "2026-09-01",
+     1877.2
+    ],
+    [
+     "2026-09-02",
+     1862.8
+    ],
+    [
+     "2026-09-03",
+     1869.0
+    ],
+    [
+     "2026-09-04",
+     1840.0
+    ],
+    [
+     "2026-09-07",
+     1854.0
+    ],
+    [
+     "2026-09-08",
+     1844.0
+    ],
+    [
+     "2026-09-09",
+     1814.7
+    ],
+    [
+     "2026-09-10",
+     1839.0
+    ],
+    [
+     "2026-09-11",
+     1831.1
+    ],
+    [
+     "2026-09-15",
+     1830.4
+    ],
+    [
+     "2026-09-16",
+     1835.0
+    ],
+    [
+     "2026-09-17",
+     1836.0
+    ],
+    [
+     "2026-09-18",
+     1893.3
+    ],
+    [
+     "2026-09-21",
+     1830.2
+    ],
+    [
+     "2026-09-22",
+     1817.2
+    ],
+    [
+     "2026-09-23",
+     1833.2
+    ],
+    [
+     "2026-09-24",
+     1795.8
+    ],
+    [
+     "2026-09-25",
+     1785.4
+    ],
+    [
+     "2026-09-28",
+     1771.4
+    ],
+    [
+     "2026-09-29",
+     1771.2
+    ],
+    [
+     "2026-09-30",
+     1757.0
+    ],
+    [
+     "2026-10-01",
+     1741.1
+    ],
+    [
+     "2026-10-05",
+     1779.9
+    ],
+    [
+     "2026-10-06",
+     1810.5
+    ],
+    [
+     "2026-10-07",
+     1833.9
+    ],
+    [
+     "2026-10-08",
+     1804.6
+    ],
+    [
+     "2026-10-09",
+     1805.1
+    ],
+    [
+     "2026-10-12",
+     1778.7
+    ],
+    [
+     "2026-10-13",
+     1806.5
+    ],
+    [
+     "2026-10-14",
+     1794.6
+    ],
+    [
+     "2026-10-15",
+     1854.0
+    ],
+    [
+     "2026-10-16",
+     1905.0
+    ],
+    [
+     "2026-10-19",
+     1875.2
+    ],
+    [
+     "2026-10-21",
+     1891.7
+    ],
+    [
+     "2026-10-22",
+     1895.0
+    ],
+    [
+     "2026-10-23",
+     1892.1
+    ],
+    [
+     "2026-10-26",
+     1917.5
+    ],
+    [
+     "2026-10-27",
+     1978.8
+    ],
+    [
+     "2026-10-28",
+     1948.1
+    ],
+    [
+     "2026-10-29",
+     1972.1
+    ],
+    [
+     "2026-10-30",
+     1973.7
+    ],
+    [
+     "2026-11-02",
+     1989.9
+    ],
+    [
+     "2026-11-03",
+     2065.0
+    ],
+    [
+     "2026-11-04",
+     2067.6001
+    ],
+    [
+     "2026-11-05",
+     2056.8999
+    ],
+    [
+     "2026-11-06",
+     2107.2
+    ],
+    [
+     "2026-11-09",
+     2072.1001
+    ],
+    [
+     "2026-11-11",
+     2109.0
+    ],
+    [
+     "2026-11-12",
+     2096.0
+    ],
+    [
+     "2026-11-13",
+     2106.0
+    ],
+    [
+     "2026-11-16",
+     2153.5
+    ],
+    [
+     "2026-11-17",
+     2138.3
+    ],
+    [
+     "2026-11-18",
+     2132.0
+    ],
+    [
+     "2026-11-19",
+     2141.5
+    ]
+   ],
+   "volume_ratio_20d": 0.58,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.006,
+   "dividends": {
+    "symbol": "BHARTIARTL.NS",
+    "trailing_12m": 24.0,
+    "last_amount": 24.0,
+    "last_ex_date": "2026-07-24",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:37Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 13361778524160.0,
+    "pe_trailing": 42.16381,
+    "pe_forward": 25.878742,
+    "price_to_book": 8.449865,
+    "ev_to_ebitda": 12.674,
+    "profit_margin": 0.13555,
+    "operating_margin": 0.32741,
+    "roe": 0.21389,
+    "revenue_growth": 0.167,
+    "earnings_growth": 0.26,
+    "debt_to_equity": 1.0002,
+    "current_ratio": 0.52,
+    "free_cashflow": 533515370496.0,
+    "payout_ratio": 0.4725,
+    "beta_yahoo": -0.033,
+    "yahoo_sector": "Communication Services",
+    "industry": "Telecom Services"
+   },
+   "dividend_record": {
+    "years_paid": 15,
+    "consecutive_increases": 4,
+    "cagr_5y": 0.1776,
+    "cut_in_5y": true
+   },
+   "trend": {
+    "ret_1m": 0.142,
+    "ret_3m": 0.1072,
+    "ret_6m": 0.1332,
+    "ret_12m": 0.0456,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.2135,
+    "max_drawdown_1y": -0.1877,
+    "beta_1y": 0.68,
+    "rel_3m": 0.0574,
+    "rel_12m": 0.0656
+   },
+   "sector": {
+    "sector": "Telecommunication",
+    "n_peers": 2,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100"
+   },
+   "next_earnings": "2027-02-03",
+   "news": [
+    {
+     "title": "Goldman Sachs names 22 \u2018high-growth\u2019 stocks; Bharti Airtel, Eternal and HDFC Bank feature in the list",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQd2tiY0xvUnRDTkdwcWlidXdOdW5mYmVjN2lkSEhDS1Q1bjJXTmJLNXo2eXZnUXVBbm9ZTl9xRDljVG1UaGhJb1FoeFNEQzJPQTlvNzhKcGtBTzlCWi13eUI2SFdaUzFXR2pzZXo3Vm55VWdzUDRTOGxCQ3ByWnVkOGdaNHhETW1xbFNxU0dqb2VOZzlXOWVEaF9QbE1VTWFMNExLdEs2bmUtQUM5ZUhZdllPc29lZ2liellINlpMdmJhTlN4Y1ZTSFJQY0ZNT2g2RmlDbGNxbFV2cExITHd0c1VEdjhpM2U1UVZORWFNY1JYRlZjY285TmlPNTdORnlEMEV3dmtUQ1I2elY1aXhrdndvcw?oc=5",
+     "published": "2026-11-19 07:24 UTC"
+    },
+    {
+     "title": "Bharti Airtel Share Price Prediction for Tomorrow (19 Nov 2026): Stock Slips 0.29% on Light Volume",
+     "source": "Univest",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbmxsZkZraWRqMzE4czJvN1R5cHN0cUVGRjJncEM3X1Z1VzB5Wm5OUGg3dEE2OXVMeU1qOUZVdjF1SzFOU3c4Mmhpdld4Z014NTVLdkNDLUJCWk0yd2ZqZmJTTmc1cUhpSndoVzNMa3hjX21RNU1wS3I4a01tdWJZeDdaS3psUU1OTm10OEo2aEdCZHVmYXc?oc=5",
+     "published": "2026-11-18 13:25 UTC"
+    },
+    {
+     "title": "Bharti Airtel Share Price Today: Market Cap and Valuation",
+     "source": "Univest",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORVJhZTNoYnNyUE9RR2tPaXdvaGRRUTU0WEFoOHBlLXR4Tk1mRUw0WHBKUm5UaFFtS3ZZX0p6eVc1R0NKbGtsckxsYWl1cG8xRVg5WDRDNE1mSUw3dDF6dWk3b3gxUHR2NF9Uc00wR0ZOMWZsTXgxQTZTMUp6dU9YRGdFWlZZVmxjM0NnNXNJbzk?oc=5",
+     "published": "2026-11-18 04:27 UTC"
+    },
+    {
+     "title": "Bharti Airtel, HCLTech and 3 Other Stocks With Golden Crossover to Keep on Your Radar",
+     "source": "Trade Brains",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWTVkNGVkV0xobTVYa3RCNzFlcVUwYzJGOEFmeVJSWml5TmRwNV9wa0lGQU8xdFNEdnF2THNOb0VPcVktQ0l0R2xYNDhnU3FETzJWaUdyLVlLTFBsaGY5cjNPaE5jeGZ2WGxXX05TMW81YVhlZHUydVh1bTVOZnF3STB1dlVhWTdQeXBrNW9yVjdjdVp3MWhBNW44MXBGRElQQlhiUlJnb2dLU0E5bXVZdVNkYnVLbGNYMTd6aU4zLXlmUW1FMnRjYU4wUQ?oc=5",
+     "published": "2026-11-18 02:00 UTC"
+    },
+    {
+     "title": "Stocks in News: Tata Group companies, Bharti Airtel, HCL Tech, Groww, IIFL Finance, ACME Solar",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPeVFsRmFrMHZWbHNvZDRURWdYcEdDMU1LaWZxOHRCam5JVS1LLUtUMEtSaDFralo0OS1obFRET0JNVkkwOEpwN0ZiQ0p3YUhIOGl1R1gzTjNTQ3M4b0tYeFM5eUlobDJEZDJXT3hNS05CV1dsVXEzb29kX1JFc3JmTk5yVVlYbHQ1b0hFN1hPN3RGV3hoTV9sMDRNdDluaG9VazlBWThDaGk1UVdMQ0tEa3VuNHJyWVlWdFR1RGFxdEZsYVNCclF2VncxSThEa19pS2xnNEp3Z1dMbXpUYmdyWHFUWmNKeUY5VGJWTjNqLXI3V1Nf0gH6AUFVX3lxTE9GWGhIMVV4Y1UzMlozeVJJNzhSWjlHSUcyak5YQ2xMYkRfNnBlU2pZMk5QTVh0dHpJQzF0UE1kVXB5TlFnN29VYjNrbXBKUE5qLWhHbG03b3ZYSHM0WHJPLS1DQUJ3NF94dnJMOVZGd19hN3dkcXpVWi1NOTFLaWE1d2hGd0RSZHRjWHh0Wkd2MmZ1Z1BaSDg2MjI5QkREcDMwNXJQU0FvbEQ5ME1RNkVRNGtTUHo5eEZVcnprcFlXelg4TmotVThCeWdwLUZvVFdZdWNsTV9GYXAxMk4xZ2ZCMjVkRGZfaUhTT0dfbmowN2NJb1hRalVFeUE?oc=5",
+     "published": "2026-11-18 00:30 UTC"
+    },
+    {
+     "title": "Bharti Airtel Upgraded to Buy by MarketsMOJO on Strong Fundamentals and Technicals",
+     "source": "MarketsMojo",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPTW54R1dsNDBCNnV1aXo3RnpZWUFVdmlaSDNuVmNKdUo2RGJfbzl0M21ITzZrcUFhN2lSYlluYnN3MnhCajhHS1p2QTFrdTlaRWpPM1paZFRPbVprZnhPTmdqMUdPTV9VNVdyRk9jYTlYenRITGFOZXdGOTcyZVU2Rkh3SHNENUQyWUJvVnFGMVV5UUc4SFF6M2FhZzdCWHktQXo1b2NZSVhXRC1vMkc2c2QzRU5FeklnTmt0Smo1UkZhRHZ1bUFZUC1mTTYwVFkwOUkzS05TRHllUlRE?oc=5",
+     "published": "2026-11-17 15:21 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.521,
+     "accuracy": 0.496,
+     "brier": 0.2686,
+     "brier_baseline": 0.2496,
+     "z_vs_baseline_optimistic": -1.1,
+     "strategy_mean_per_period": 0.00294,
+     "buyhold_mean_per_period": 0.00369,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.587,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.184,
+    "items": [
+     {
+      "title": "Goldman Sachs names 22 \u2018high-growth\u2019 stocks; Bharti Airtel, Eternal and HDFC Bank feature in the list",
+      "compound": 0.0
+     },
+     {
+      "title": "Bharti Airtel Share Price Prediction for Tomorrow (19 Nov 2026): Stock Slips 0.29% on Light Volume",
+      "compound": 0.296
+     },
+     {
+      "title": "Bharti Airtel Share Price Today: Market Cap and Valuation",
+      "compound": 0.296
+     },
+     {
+      "title": "Bharti Airtel, HCLTech and 3 Other Stocks With Golden Crossover to Keep on Your Radar",
+      "compound": 0.0
+     },
+     {
+      "title": "Stocks in News: Tata Group companies, Bharti Airtel, HCL Tech, Groww, IIFL Finance, ACME Solar",
+      "compound": 0.0
+     },
+     {
+      "title": "Bharti Airtel Upgraded to Buy by MarketsMOJO on Strong Fundamentals and Technicals",
+      "compound": 0.5106
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:37Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Bharti Airtel"
+  },
+  {
+   "symbol": "HDFCBANK.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:37Z",
+   "asof": "2026-11-19",
+   "close": 814.75,
+   "ret_1d": 0.0082,
+   "move_vs_vol": 0.51,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     729.0
+    ],
+    [
+     "2026-08-25",
+     727.5
+    ],
+    [
+     "2026-08-26",
+     727.2
+    ],
+    [
+     "2026-08-27",
+     711.0
+    ],
+    [
+     "2026-08-28",
+     720.3
+    ],
+    [
+     "2026-08-31",
+     709.0
+    ],
+    [
+     "2026-09-01",
+     711.9
+    ],
+    [
+     "2026-09-02",
+     700.8
+    ],
+    [
+     "2026-09-03",
+     706.65
+    ],
+    [
+     "2026-09-04",
+     712.1
+    ],
+    [
+     "2026-09-07",
+     710.5
+    ],
+    [
+     "2026-09-08",
+     703.0
+    ],
+    [
+     "2026-09-09",
+     687.1
+    ],
+    [
+     "2026-09-10",
+     693.8
+    ],
+    [
+     "2026-09-11",
+     708.25
+    ],
+    [
+     "2026-09-15",
+     716.55
+    ],
+    [
+     "2026-09-16",
+     721.5
+    ],
+    [
+     "2026-09-17",
+     713.0
+    ],
+    [
+     "2026-09-18",
+     731.0
+    ],
+    [
+     "2026-09-21",
+     739.5
+    ],
+    [
+     "2026-09-22",
+     738.6
+    ],
+    [
+     "2026-09-23",
+     737.25
+    ],
+    [
+     "2026-09-24",
+     728.9
+    ],
+    [
+     "2026-09-25",
+     735.6
+    ],
+    [
+     "2026-09-28",
+     719.05
+    ],
+    [
+     "2026-09-29",
+     722.7
+    ],
+    [
+     "2026-09-30",
+     708.7
+    ],
+    [
+     "2026-10-01",
+     721.2
+    ],
+    [
+     "2026-10-05",
+     704.8
+    ],
+    [
+     "2026-10-06",
+     711.45
+    ],
+    [
+     "2026-10-07",
+     702.75
+    ],
+    [
+     "2026-10-08",
+     692.25
+    ],
+    [
+     "2026-10-09",
+     707.25
+    ],
+    [
+     "2026-10-12",
+     704.9
+    ],
+    [
+     "2026-10-13",
+     714.0
+    ],
+    [
+     "2026-10-14",
+     710.7
+    ],
+    [
+     "2026-10-15",
+     726.85
+    ],
+    [
+     "2026-10-16",
+     728.85
+    ],
+    [
+     "2026-10-19",
+     712.0
+    ],
+    [
+     "2026-10-21",
+     706.95
+    ],
+    [
+     "2026-10-22",
+     694.05
+    ],
+    [
+     "2026-10-23",
+     692.8
+    ],
+    [
+     "2026-10-26",
+     688.05
+    ],
+    [
+     "2026-10-27",
+     680.2
+    ],
+    [
+     "2026-10-28",
+     685.3
+    ],
+    [
+     "2026-10-29",
+     683.3
+    ],
+    [
+     "2026-10-30",
+     692.8
+    ],
+    [
+     "2026-11-02",
+     700.0
+    ],
+    [
+     "2026-11-03",
+     725.5
+    ],
+    [
+     "2026-11-04",
+     736.7
+    ],
+    [
+     "2026-11-05",
+     760.0
+    ],
+    [
+     "2026-11-06",
+     788.25
+    ],
+    [
+     "2026-11-09",
+     798.15
+    ],
+    [
+     "2026-11-11",
+     806.6
+    ],
+    [
+     "2026-11-12",
+     812.3
+    ],
+    [
+     "2026-11-13",
+     804.0
+    ],
+    [
+     "2026-11-16",
+     816.5
+    ],
+    [
+     "2026-11-17",
+     814.95
+    ],
+    [
+     "2026-11-18",
+     808.15
+    ],
+    [
+     "2026-11-19",
+     814.75
+    ]
+   ],
+   "volume_ratio_20d": 0.54,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.18,
+   "dividends": {
+    "symbol": "HDFCBANK.NS",
+    "trailing_12m": 13.0,
+    "last_amount": 13.0,
+    "last_ex_date": "2026-06-19",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:38Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 12574611472384.0,
+    "pe_trailing": 17.808743,
+    "pe_forward": 13.296282,
+    "price_to_book": 2.0634995,
+    "ev_to_ebitda": null,
+    "profit_margin": 0.26532,
+    "operating_margin": 0.36597002,
+    "roe": 0.11005,
+    "revenue_growth": 0.808,
+    "earnings_growth": 0.213,
+    "debt_to_equity": null,
+    "current_ratio": null,
+    "free_cashflow": null,
+    "payout_ratio": 0.24040002,
+    "beta_yahoo": 0.394,
+    "yahoo_sector": "Financial Services",
+    "industry": "Banks - Regional"
+   },
+   "dividend_record": {
+    "years_paid": 28,
+    "consecutive_increases": 4,
+    "cagr_5y": 0.2198,
+    "cut_in_5y": true
+   },
+   "trend": {
+    "ret_1m": 0.1443,
+    "ret_3m": 0.1269,
+    "ret_6m": 0.0863,
+    "ret_12m": -0.163,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.2317,
+    "max_drawdown_1y": -0.3151,
+    "beta_1y": 1.25,
+    "rel_3m": 0.0771,
+    "rel_12m": -0.143
+   },
+   "sector": {
+    "sector": "Financial Services",
+    "n_peers": 23,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100",
+    "pe_trailing": {
+     "median": 17.57,
+     "pct_rank": 0.52,
+     "n": 23
+    },
+    "pe_forward": {
+     "median": 14.78,
+     "pct_rank": 0.45,
+     "n": 22
+    },
+    "price_to_book": {
+     "median": 2.05,
+     "pct_rank": 0.52,
+     "n": 23
+    }
+   },
+   "next_earnings": "2027-01-16",
+   "news": [
+    {
+     "title": "Goldman Sachs names 22 \u2018high-growth\u2019 stocks; Bharti Airtel, Eternal and HDFC Bank feature in the list",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQd2tiY0xvUnRDTkdwcWlidXdOdW5mYmVjN2lkSEhDS1Q1bjJXTmJLNXo2eXZnUXVBbm9ZTl9xRDljVG1UaGhJb1FoeFNEQzJPQTlvNzhKcGtBTzlCWi13eUI2SFdaUzFXR2pzZXo3Vm55VWdzUDRTOGxCQ3ByWnVkOGdaNHhETW1xbFNxU0dqb2VOZzlXOWVEaF9QbE1VTWFMNExLdEs2bmUtQUM5ZUhZdllPc29lZ2liellINlpMdmJhTlN4Y1ZTSFJQY0ZNT2g2RmlDbGNxbFV2cExITHd0c1VEdjhpM2U1UVZORWFNY1JYRlZjY285TmlPNTdORnlEMEV3dmtUQ1I2elY1aXhrdndvcw?oc=5",
+     "published": "2026-11-19 07:24 UTC"
+    },
+    {
+     "title": "HDFC Bank shares edge higher, but heavy selling keeps pressure on stock",
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWEJGZURDNnNwYmV5NTFtUU51QWJ0U0xDWjN2eGl5Z3RvYTNDYTY1T09VcDN5UHgyVVZMckhiWURtVmg2ampncW02N0tvYk1xQ1RlNS0xTlRFVWhtOGFNbERzeG9GZzNIc0JZd015SWs0MEtualNvT2ZTWlRqTUkwY3VSN25KWExfN1VvVUtNU1R2X2Z4QW9qU29sU2otTTE4ZXZDOC00V18zNU5sYXhIVVdLQkdZUTV1V0paN21YemIxN05HaWc?oc=5",
+     "published": "2026-11-19 07:08 UTC"
+    },
+    {
+     "title": "HDFC Bank shares recover marginally as sellers dominate trading",
+     "source": "BusinessLine",
+     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxON0VRRmhidGlpMkk3QV95bElTYXFkQXNfdHpFZXBsa2NfbzRqSThhVEF6TzI0Q1FHNjZEbUFfRG9kTzlwUVRlbjBMcnZidGdRUlJZRE13cS1odEtzYzhReW9iZEdTMzJhS2FEQmtsM2huZkNrNlZZb3J4NER3V3VvMElpQjZ1ei1xOGdNV1ZMSlJTMGgwWXZsLWhtN19JV2ttWDh3UDBmTklMWnlMWFhOS1p4VVNkaFNyY05RaU1aeFVHTUlOdVZiRFF4VXF0TEh0YUxrTDdBVFhmTnVQSDh2QjZ4Yw?oc=5",
+     "published": "2026-11-19 06:56 UTC"
+    },
+    {
+     "title": "Top 12 Bank Stocks To Buy In India November 2026",
+     "source": "Samco",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVTJGTjNBTndCWnlCMVF4am9OclFTVEN0clJWVXBKc3BWX0E4bDhwTUxlVWFKd0xReUJWSVl6T0M3UnExVHowUHZHdkExQ016S1MtX1lJdjNKYUNoRzBpM19fbTZYeTNOVGpNY0NPMTQydUdvWDZWMGFveE12Umh4eVRkVC02b1FMYVJhZQ?oc=5",
+     "published": "2026-11-19 06:50 UTC"
+    },
+    {
+     "title": "Trifecta effect! How RIL, HDFC Bank and ICICI Bank are powering Nifty rebound after 2 years",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNR2VLS2hTSHd4cGpBckJ1cFdlN2Vyc3ZpOTQ3Y1NuZnVaQlpmT2E0bTZfckUwQmVKbWkzYzRqa3dEU0hnM3dHQmgzekRCUURFNXFwUHItcDZDLW9xUE1vclJrX1g5WndJZ0lqZDlSNHVkdXNiTzVBZ29EVmNGSnpMb3owd3ZPcmFOWjRqSDF5ZDY5NmNKaHJLZ3IwVUpDTDVKTFNCZzJobzFXSy14QTN3aFhlQmo2aGFWeEVQWGFiekQ1Z0xOWXV6NnY1SWJ4M1BpZk9LRXJEMi1laXNOSW16OGg2TkpPRWNvdHpwQjhFbG1UemJxZEHSAfsBQVVfeXFMTlhvM1ROS191QjhyRlNHcU9HV1h0eVJXd1JRRnFzYkN1UGVPeThxYk95NkM2cXBOcHBiUWkzSWpEMXBPd3RZQnZpY0pFSEdiamxGWDhKcXA1eElGX2l6MlpzeTZ3eUJYa1V5bERVNktxT0Ytd3NabzI1eXplcU9nOW5KcGt3dW00YjktcVdrQlA4MjRZY0tBVk5pYlhyOUxoM1FaWnlRbmhKNHpSTmpkWjNOTkN0N1NTVUZUNHJvSUdITlFydEw5Xzl6eDd4VDV4MngwUlRwNHU3WVNwYjY4NVVjRTl2NFNzaFltempKRTdfeHFqRV96VVpLazA?oc=5",
+     "published": "2026-11-19 06:05 UTC"
+    },
+    {
+     "title": "Bank Stocks To Buy: ICICI Bank, HDFC Bank, SBI Among MOFSL's Top Picks; Full List Inside",
+     "source": "NDTV Profit",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcFc0NVUxNWJhY2VhUEtDNDdEZVFtYzVjSXBTU0x6aWcwRzJhTDJVRzJyQndqbFRkQ2pFVGxVclhGN3U0d0ZMYTZ5cjZ0VVhlcnF5RFZnR3lfdVZva2pqdUlINmxFaHV6XzhLSFVjNHA4by00OEpwb2J6MmFFeVJuSktfMmsybElvVVcyU0pXWEtoSFktckkyZlcwU3ZtVU52TTN1OWhGelBoTnFxV3NTWnRBLVF0Slc1UUUzVUZKNEEzQUhfS1E?oc=5",
+     "published": "2026-11-19 05:01 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.477,
+     "accuracy": 0.485,
+     "brier": 0.2787,
+     "brier_baseline": 0.2495,
+     "z_vs_baseline_optimistic": -1.65,
+     "strategy_mean_per_period": -0.00062,
+     "buyhold_mean_per_period": -0.00065,
+     "beats_buyhold_after_costs": true
+    },
+    "p_up_5d": 0.55,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.135,
+    "items": [
+     {
+      "title": "Goldman Sachs names 22 \u2018high-growth\u2019 stocks; Bharti Airtel, Eternal and HDFC Bank feature in the list",
+      "compound": 0.0
+     },
+     {
+      "title": "HDFC Bank shares edge higher, but heavy selling keeps pressure on stock",
+      "compound": -0.296
+     },
+     {
+      "title": "HDFC Bank shares recover marginally as sellers dominate trading",
+      "compound": 0.2415
+     },
+     {
+      "title": "Top 12 Bank Stocks To Buy In India November 2026",
+      "compound": 0.2023
+     },
+     {
+      "title": "Trifecta effect! How RIL, HDFC Bank and ICICI Bank are powering Nifty rebound after 2 years",
+      "compound": 0.4574
+     },
+     {
+      "title": "Bank Stocks To Buy: ICICI Bank, HDFC Bank, SBI Among MOFSL's Top Picks; Full List Inside",
+      "compound": 0.2023
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:38Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "HDFC Bank"
+  },
+  {
+   "symbol": "ICICIBANK.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far",
+    "at/near 52-week high"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:38Z",
+   "asof": "2026-11-19",
+   "close": 1596.5,
+   "ret_1d": -0.003,
+   "move_vs_vol": -0.17,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     1415.0
+    ],
+    [
+     "2026-08-25",
+     1422.7
+    ],
+    [
+     "2026-08-26",
+     1430.0
+    ],
+    [
+     "2026-08-27",
+     1443.0
+    ],
+    [
+     "2026-08-28",
+     1422.8
+    ],
+    [
+     "2026-08-31",
+     1454.0
+    ],
+    [
+     "2026-09-01",
+     1438.0
+    ],
+    [
+     "2026-09-02",
+     1426.5
+    ],
+    [
+     "2026-09-03",
+     1430.0
+    ],
+    [
+     "2026-09-04",
+     1423.2
+    ],
+    [
+     "2026-09-07",
+     1427.5
+    ],
+    [
+     "2026-09-08",
+     1399.4
+    ],
+    [
+     "2026-09-09",
+     1389.1
+    ],
+    [
+     "2026-09-10",
+     1384.5
+    ],
+    [
+     "2026-09-11",
+     1379.3
+    ],
+    [
+     "2026-09-15",
+     1350.4
+    ],
+    [
+     "2026-09-16",
+     1358.8
+    ],
+    [
+     "2026-09-17",
+     1347.6
+    ],
+    [
+     "2026-09-18",
+     1338.9
+    ],
+    [
+     "2026-09-21",
+     1345.0
+    ],
+    [
+     "2026-09-22",
+     1339.6
+    ],
+    [
+     "2026-09-23",
+     1340.0
+    ],
+    [
+     "2026-09-24",
+     1334.5
+    ],
+    [
+     "2026-09-25",
+     1326.8
+    ],
+    [
+     "2026-09-28",
+     1302.0
+    ],
+    [
+     "2026-09-29",
+     1292.2
+    ],
+    [
+     "2026-09-30",
+     1321.7
+    ],
+    [
+     "2026-10-01",
+     1310.6
+    ],
+    [
+     "2026-10-05",
+     1332.0
+    ],
+    [
+     "2026-10-06",
+     1342.8
+    ],
+    [
+     "2026-10-07",
+     1357.5
+    ],
+    [
+     "2026-10-08",
+     1349.0
+    ],
+    [
+     "2026-10-09",
+     1355.0
+    ],
+    [
+     "2026-10-12",
+     1340.0
+    ],
+    [
+     "2026-10-13",
+     1360.2
+    ],
+    [
+     "2026-10-14",
+     1338.6
+    ],
+    [
+     "2026-10-15",
+     1389.4
+    ],
+    [
+     "2026-10-16",
+     1397.0
+    ],
+    [
+     "2026-10-19",
+     1381.0
+    ],
+    [
+     "2026-10-21",
+     1385.0
+    ],
+    [
+     "2026-10-22",
+     1398.5
+    ],
+    [
+     "2026-10-23",
+     1394.2
+    ],
+    [
+     "2026-10-26",
+     1403.0
+    ],
+    [
+     "2026-10-27",
+     1386.9
+    ],
+    [
+     "2026-10-28",
+     1377.6
+    ],
+    [
+     "2026-10-29",
+     1386.6
+    ],
+    [
+     "2026-10-30",
+     1398.0
+    ],
+    [
+     "2026-11-02",
+     1387.4
+    ],
+    [
+     "2026-11-03",
+     1424.5
+    ],
+    [
+     "2026-11-04",
+     1424.1
+    ],
+    [
+     "2026-11-05",
+     1500.0
+    ],
+    [
+     "2026-11-06",
+     1571.2
+    ],
+    [
+     "2026-11-09",
+     1589.0
+    ],
+    [
+     "2026-11-11",
+     1571.6
+    ],
+    [
+     "2026-11-12",
+     1590.0
+    ],
+    [
+     "2026-11-13",
+     1583.6
+    ],
+    [
+     "2026-11-16",
+     1585.0
+    ],
+    [
+     "2026-11-17",
+     1598.7
+    ],
+    [
+     "2026-11-18",
+     1601.3
+    ],
+    [
+     "2026-11-19",
+     1596.5
+    ]
+   ],
+   "volume_ratio_20d": 0.62,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.003,
+   "dividends": {
+    "symbol": "ICICIBANK.NS",
+    "trailing_12m": 12.0,
+    "last_amount": 12.0,
+    "last_ex_date": "2026-08-03",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:39Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 11469454311424.0,
+    "pe_trailing": 19.605797,
+    "pe_forward": 16.25476,
+    "price_to_book": 2.9337232,
+    "ev_to_ebitda": null,
+    "profit_margin": 0.27844998,
+    "operating_margin": 0.29953,
+    "roe": 0.1649,
+    "revenue_growth": 0.158,
+    "earnings_growth": 0.221,
+    "debt_to_equity": null,
+    "current_ratio": null,
+    "free_cashflow": null,
+    "payout_ratio": 0.14739999,
+    "beta_yahoo": 0.193,
+    "yahoo_sector": "Financial Services",
+    "industry": "Banks - Regional"
+   },
+   "dividend_record": {
+    "years_paid": 22,
+    "consecutive_increases": 5,
+    "cagr_5y": 0.6154,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": 0.156,
+    "ret_3m": 0.1307,
+    "ret_6m": 0.2975,
+    "ret_12m": 0.1848,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.21,
+    "max_drawdown_1y": -0.1608,
+    "beta_1y": 0.98,
+    "rel_3m": 0.0809,
+    "rel_12m": 0.2048
+   },
+   "sector": {
+    "sector": "Financial Services",
+    "n_peers": 23,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100",
+    "pe_trailing": {
+     "median": 17.57,
+     "pct_rank": 0.57,
+     "n": 23
+    },
+    "pe_forward": {
+     "median": 14.78,
+     "pct_rank": 0.55,
+     "n": 22
+    },
+    "price_to_book": {
+     "median": 2.05,
+     "pct_rank": 0.65,
+     "n": 23
+    }
+   },
+   "next_earnings": "2027-01-14",
+   "news": [
+    {
+     "title": "FCNR Deposits Could Reshape Indias Banking Sector, ICICI Bank Identifies Key Triggers That May Decide Stock",
+     "source": "Free Press Journal",
+     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQcjltaXZHeXhlRXdvQ01rMEVMNUxDQVBWUDN1eFFRcEJmeHFfbnVQTUpfODhqV1ctMUQzZEtxZ2tTdUpPTXhiZmg1N25HbVJGVUs1cjJzVnFidmNxcllzcEktTzlBeEt1RDBHaGFvMHVwWmpwZWYtWm1JT1d6ZVZDbk9nUFpsNlRMcURCOTdGMnRBemdfd0h1dnJHQU85cFRja0xZcTAxN3hYMjZXUjYzaTBXWWxYdkNZNXJid0lsOGg0M1Y4bGFQZlJjZTZWUjM4YkZkaUg2RTVxbTRndXBhYU5XZ19nelQ4M1BoQ2Q3OS3SAfYBQVVfeXFMT3ZQQWVRc0NYbTJORk9LU2RlZ1FHQnlMbnRkVF9wNUpoa0NXbXhTOTc4TjU0eU9HOGJacEppLTQ3bkJwTTVVT0tjYktRb3VIWm8td0xfczFqZy05VWVRZGhOcXI4VHBDNFJXZWp5Rms5OS0yNmdENXNMS1owendtemgzeVBlbjM0dzdNbmoxLWJxUlE4THVBVzFoSnZnY3JBdEtDQlgzVUZyQjdqY0I4YzJpQlA4VHdkVWJjcllTeHVFYlNjYzV2alBEbVl0RUtyOVZCMnFTUFVnSVZZMEkzWTdpcFVBU1R1c3lyUnc2cFZRZC1tNVRn?oc=5",
+     "published": "2026-11-19 07:28 UTC"
+    },
+    {
+     "title": "stock insights ril icici bank it index cement stocks outlook",
+     "source": "Zee Business",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNODRIR3ktYVhrN09zaXhZaEhrSzVsdG93ZHJOOG9Wa19RdC1wMXYtZ2REUzV6NmpTa2hqLUZZTVJ2cGhTVmh3RTZxSnItMXVMdEFjN0pYZVB5NjhBRTU4eVVjVGd6T21pYnhGbHJsWGNGVkdncW5kV1ZKZS1lamVUWFFWVGphZUN0ZnMxVlZEMEE3SE9PUGlEMGdvQ2dsMjg2WXA4dF81UFZNZUxnRTJ3WFF2V0tQQUk?oc=5",
+     "published": "2026-11-19 07:06 UTC"
+    },
+    {
+     "title": "Top 12 Bank Stocks To Buy In India November 2026",
+     "source": "Samco",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVTJGTjNBTndCWnlCMVF4am9OclFTVEN0clJWVXBKc3BWX0E4bDhwTUxlVWFKd0xReUJWSVl6T0M3UnExVHowUHZHdkExQ016S1MtX1lJdjNKYUNoRzBpM19fbTZYeTNOVGpNY0NPMTQydUdvWDZWMGFveE12Umh4eVRkVC02b1FMYVJhZQ?oc=5",
+     "published": "2026-11-19 06:50 UTC"
+    },
+    {
+     "title": "Trifecta effect! How RIL, HDFC Bank and ICICI Bank are powering Nifty rebound after 2 years",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNR2VLS2hTSHd4cGpBckJ1cFdlN2Vyc3ZpOTQ3Y1NuZnVaQlpmT2E0bTZfckUwQmVKbWkzYzRqa3dEU0hnM3dHQmgzekRCUURFNXFwUHItcDZDLW9xUE1vclJrX1g5WndJZ0lqZDlSNHVkdXNiTzVBZ29EVmNGSnpMb3owd3ZPcmFOWjRqSDF5ZDY5NmNKaHJLZ3IwVUpDTDVKTFNCZzJobzFXSy14QTN3aFhlQmo2aGFWeEVQWGFiekQ1Z0xOWXV6NnY1SWJ4M1BpZk9LRXJEMi1laXNOSW16OGg2TkpPRWNvdHpwQjhFbG1UemJxZEHSAfsBQVVfeXFMTlhvM1ROS191QjhyRlNHcU9HV1h0eVJXd1JRRnFzYkN1UGVPeThxYk95NkM2cXBOcHBiUWkzSWpEMXBPd3RZQnZpY0pFSEdiamxGWDhKcXA1eElGX2l6MlpzeTZ3eUJYa1V5bERVNktxT0Ytd3NabzI1eXplcU9nOW5KcGt3dW00YjktcVdrQlA4MjRZY0tBVk5pYlhyOUxoM1FaWnlRbmhKNHpSTmpkWjNOTkN0N1NTVUZUNHJvSUdITlFydEw5Xzl6eDd4VDV4MngwUlRwNHU3WVNwYjY4NVVjRTl2NFNzaFltempKRTdfeHFqRV96VVpLazA?oc=5",
+     "published": "2026-11-19 06:05 UTC"
+    },
+    {
+     "title": "Bank Stocks To Buy: ICICI Bank, HDFC Bank, SBI Among MOFSL's Top Picks; Full List Inside",
+     "source": "NDTV Profit",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcFc0NVUxNWJhY2VhUEtDNDdEZVFtYzVjSXBTU0x6aWcwRzJhTDJVRzJyQndqbFRkQ2pFVGxVclhGN3U0d0ZMYTZ5cjZ0VVhlcnF5RFZnR3lfdVZva2pqdUlINmxFaHV6XzhLSFVjNHA4by00OEpwb2J6MmFFeVJuSktfMmsybElvVVcyU0pXWEtoSFktckkyZlcwU3ZtVU52TTN1OWhGelBoTnFxV3NTWnRBLVF0Slc1UUUzVUZKNEEzQUhfS1E?oc=5",
+     "published": "2026-11-19 05:01 UTC"
+    },
+    {
+     "title": "ICICI Bank Limited (IBN) stock price, news, quote and history",
+     "source": "Yahoo Finance Singapore",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1YNk1PczRZNVVwTC1Db0R2ckYtMllKMVNKMGhRNEI4Uk9EVlB1Z2hfeHVmVmQzamlSWFNTcVJEMV9Cb1A2dnFwSHh1ZnJMYUND?oc=5",
+     "published": "2026-11-18 17:34 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.494,
+     "accuracy": 0.538,
+     "brier": 0.257,
+     "brier_baseline": 0.25,
+     "z_vs_baseline_optimistic": 1.38,
+     "strategy_mean_per_period": 0.00063,
+     "buyhold_mean_per_period": 0.00249,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.35,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.106,
+    "items": [
+     {
+      "title": "FCNR Deposits Could Reshape Indias Banking Sector, ICICI Bank Identifies Key Triggers That May Decide Stock",
+      "compound": 0.0
+     },
+     {
+      "title": "stock insights ril icici bank it index cement stocks outlook",
+      "compound": 0.0
+     },
+     {
+      "title": "Top 12 Bank Stocks To Buy In India November 2026",
+      "compound": 0.2023
+     },
+     {
+      "title": "Trifecta effect! How RIL, HDFC Bank and ICICI Bank are powering Nifty rebound after 2 years",
+      "compound": 0.4574
+     },
+     {
+      "title": "Bank Stocks To Buy: ICICI Bank, HDFC Bank, SBI Among MOFSL's Top Picks; Full List Inside",
+      "compound": 0.2023
+     },
+     {
+      "title": "ICICI Bank Limited (IBN) stock price, news, quote and history",
+      "compound": -0.2263
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:39Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "ICICI Bank"
+  },
+  {
+   "symbol": "SBIN.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:39Z",
+   "asof": "2026-11-19",
+   "close": 1146.9,
+   "ret_1d": 0.0105,
+   "move_vs_vol": 0.7,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     1039.5
+    ],
+    [
+     "2026-08-25",
+     1048.0
+    ],
+    [
+     "2026-08-26",
+     1052.0
+    ],
+    [
+     "2026-08-27",
+     1042.9
+    ],
+    [
+     "2026-08-28",
+     1047.5
+    ],
+    [
+     "2026-08-31",
+     1060.0
+    ],
+    [
+     "2026-09-01",
+     1034.5
+    ],
+    [
+     "2026-09-02",
+     1020.9
+    ],
+    [
+     "2026-09-03",
+     1023.4
+    ],
+    [
+     "2026-09-04",
+     1016.1
+    ],
+    [
+     "2026-09-07",
+     1005.9
+    ],
+    [
+     "2026-09-08",
+     1008.0
+    ],
+    [
+     "2026-09-09",
+     1000.5
+    ],
+    [
+     "2026-09-10",
+     1009.7
+    ],
+    [
+     "2026-09-11",
+     995.7
+    ],
+    [
+     "2026-09-15",
+     968.0
+    ],
+    [
+     "2026-09-16",
+     991.4
+    ],
+    [
+     "2026-09-17",
+     988.7
+    ],
+    [
+     "2026-09-18",
+     996.2
+    ],
+    [
+     "2026-09-21",
+     996.0
+    ],
+    [
+     "2026-09-22",
+     987.0
+    ],
+    [
+     "2026-09-23",
+     994.1
+    ],
+    [
+     "2026-09-24",
+     978.5
+    ],
+    [
+     "2026-09-25",
+     983.0
+    ],
+    [
+     "2026-09-28",
+     962.0
+    ],
+    [
+     "2026-09-29",
+     964.7
+    ],
+    [
+     "2026-09-30",
+     959.5
+    ],
+    [
+     "2026-10-01",
+     954.1
+    ],
+    [
+     "2026-10-05",
+     958.0
+    ],
+    [
+     "2026-10-06",
+     958.75
+    ],
+    [
+     "2026-10-07",
+     954.0
+    ],
+    [
+     "2026-10-08",
+     940.0
+    ],
+    [
+     "2026-10-09",
+     959.1
+    ],
+    [
+     "2026-10-12",
+     941.0
+    ],
+    [
+     "2026-10-13",
+     957.0
+    ],
+    [
+     "2026-10-14",
+     954.9
+    ],
+    [
+     "2026-10-15",
+     960.0
+    ],
+    [
+     "2026-10-16",
+     962.6
+    ],
+    [
+     "2026-10-19",
+     973.7
+    ],
+    [
+     "2026-10-21",
+     963.0
+    ],
+    [
+     "2026-10-22",
+     970.0
+    ],
+    [
+     "2026-10-23",
+     958.6
+    ],
+    [
+     "2026-10-26",
+     960.8
+    ],
+    [
+     "2026-10-27",
+     945.1
+    ],
+    [
+     "2026-10-28",
+     956.8
+    ],
+    [
+     "2026-10-29",
+     971.9
+    ],
+    [
+     "2026-10-30",
+     961.85
+    ],
+    [
+     "2026-11-02",
+     987.0
+    ],
+    [
+     "2026-11-03",
+     970.25
+    ],
+    [
+     "2026-11-04",
+     979.0
+    ],
+    [
+     "2026-11-05",
+     1006.4
+    ],
+    [
+     "2026-11-06",
+     1018.5
+    ],
+    [
+     "2026-11-09",
+     1042.0
+    ],
+    [
+     "2026-11-11",
+     1061.2
+    ],
+    [
+     "2026-11-12",
+     1086.5
+    ],
+    [
+     "2026-11-13",
+     1080.0
+    ],
+    [
+     "2026-11-16",
+     1090.5
+    ],
+    [
+     "2026-11-17",
+     1108.6
+    ],
+    [
+     "2026-11-18",
+     1135.0
+    ],
+    [
+     "2026-11-19",
+     1146.9
+    ]
+   ],
+   "volume_ratio_20d": 1.85,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.049,
+   "dividends": {
+    "symbol": "SBIN.NS",
+    "trailing_12m": 17.35,
+    "last_amount": 17.35,
+    "last_ex_date": "2026-05-15",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:40Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 10586595262464.0,
+    "pe_trailing": 11.706645,
+    "pe_forward": 10.783042,
+    "price_to_book": 1.5763693,
+    "ev_to_ebitda": null,
+    "profit_margin": 0.23044,
+    "operating_margin": 0.30254,
+    "roe": 0.14671999,
+    "revenue_growth": 0.078,
+    "earnings_growth": 0.204,
+    "debt_to_equity": null,
+    "current_ratio": null,
+    "free_cashflow": null,
+    "payout_ratio": 0.17709999,
+    "beta_yahoo": 0.379,
+    "yahoo_sector": "Financial Services",
+    "industry": "Banks - Regional"
+   },
+   "dividend_record": {
+    "years_paid": 27,
+    "consecutive_increases": 5,
+    "cagr_5y": 0.4364,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": 0.1779,
+    "ret_3m": 0.0892,
+    "ret_6m": 0.2088,
+    "ret_12m": 0.2198,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.2432,
+    "max_drawdown_1y": -0.2211,
+    "beta_1y": 1.04,
+    "rel_3m": 0.0394,
+    "rel_12m": 0.2398
+   },
+   "sector": {
+    "sector": "Financial Services",
+    "n_peers": 23,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100",
+    "pe_trailing": {
+     "median": 17.57,
+     "pct_rank": 0.3,
+     "n": 23
+    },
+    "pe_forward": {
+     "median": 14.78,
+     "pct_rank": 0.32,
+     "n": 22
+    },
+    "price_to_book": {
+     "median": 2.05,
+     "pct_rank": 0.3,
+     "n": 23
+    }
+   },
+   "next_earnings": "2027-02-04",
+   "news": [
+    {
+     "title": "AC makers shine as copper extends fall; Voltas, Blue Star rally up to 8%",
+     "source": "Business Standard",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRGVFckhScFhVeXIyWU5GMDZIY1JhX2hTXzdka3BvNk1nUVJNWTBaM1hYTWxqY3BCRjAwOWl3NmhUQ0U2dS01U2dWYmFSYXRjQ3Vrc21uQjdLWE44THpuMi1xYkN2MDB1MDBrNGhKSjIwWDUyTG9EdWdxa3hrSWFvSjViWkJKV2xVdWQwNmJGdHJ4aDIyMWtQQ2xSV2p2YUltZ0ZmWXhBdUhZdlRhQmFHR0RNWFN1QVA5Umx4MmFLZVJ1VnRPaThtS2dIemZHMS10UmfSAdcBQVVfeXFMT0IzcVg5R0NLTnZCZzVmdDhlcVF3cTAxaXFaVi1Pb09sRkllSXNYVUhYdHU3SjFMZmxTNUpwRVZYQTk5WGR5eXNhQ1VBSFhvTnZhdWJDWUpNYWJpOFpibmJWeHJRVmstdzJpR1JaUGxRTXpYVVhCanN1ejZQYkVDNUJJOExsaWVSejlWSVc2LTM3cG1iak9sYXNGdkVPSng3QmwxRXBhc25OU1AzX0RkQk9MREZ4cDB2ZHpLcmhseTBOaHRRdWNQZkxYdElyc09fNmZqOHBfOEE?oc=5",
+     "published": "2026-11-19 07:11 UTC"
+    },
+    {
+     "title": "Top 19 PSU Stocks In India To Buy In November 2026",
+     "source": "Samco",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE14aGtfQTlCVjdRUHNUazZWXzBOU0xzZU5KNEpXTHRJTTMxbU9ueVVIWml1bmFFdktuQTNsZklJWFFkSGtGS2FqMzRxd2Q2TERKTjdqYklQWnhNV2I2dEs3eV9uOWh1bU1HV1JlMWRuaUowUjNZNGNxLUlR?oc=5",
+     "published": "2026-11-19 06:50 UTC"
+    },
+    {
+     "title": "PSU Bank index nears record high; SBI, PNB, BoI rally up 27% in November",
+     "source": "Business Standard",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVFZNWGozN2piVFVLNGNia0FBTXpBY3dwWHcwRGZxUzRpZXZaY3hyV2FDRks3aUNQd1dKb1ZQOHJfMFZ4ZWtZQm1mRmhUMFVkVGlqVzJjOVZ1TFpWbFJCWFJ1MmcyU1paMTBOM1NadXB5bVIzUVIwQWJTOHRTT3pQbWQ1RFBPdjRmaWQ4RGdLWjJmaUQ5dGhwZndkZ2RUTUM3X2w1dmxMWHVnTG02b3RWVEFXdDJ1d3BtNU81TnNmNFlzTlFRWFQ3Vk96QVhhX21N0gHWAUFVX3lxTE8wTzdWV0g2Y01qY2oxRGE0blRjR1RCeDZDTkQ4b0NiMjR3YnJwY3V1RTY3ZmRSM1BYYXJXVThzMTJUYWtsTzAzMEdQY2pLZUJGcmg5cGVQUUdqcjdzTHV0UUxScHpsZ1lTeTlmU3pLckdleHhpeTQ3ck9LblVRQzlsaG5GWTIxTlpyWE1zWU5ZZkV2NHkwOXpleG9saVhIaUM4Rk41bjZxaHF2bDdGeDRvUEdTMk9NV01BWE5vWTM2UTNRZV93M2lYVDZTQ0VEY19wUVA3Z1E?oc=5",
+     "published": "2026-11-19 06:47 UTC"
+    },
+    {
+     "title": "SBI Clerk Prelims Results 2026 OUT: Junior Associates Scorecards Releases At sbi.bank.in; Direct Link Here",
+     "source": "The Daily Jagran",
+     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOOWRRZ1BNYW55M3BRSDdTTFVvR1JSRGQxZU1meTl1LTN3RS1heDlfMVNWVnhYVVdmZ1ZiN3pSeUtId3FRSExqRmVlOVlFT3hDLXNIcEt2TWVuNWdQYTU3Qk9KZVN5UHVmdnNaMjBJcTJvdnF0T2o2VENZUmlGLVhkOWU3aUFtS20ybEEtNURVY1FTeGY5aXFJNzhZWlNDZFNQcDNZRkdGUlN2YzR3V1hMYTE2ZzZuRDNmMEpXcVpYZk9BRHN4YUdVeDBCRklOR2dJMG1VRzZ3TVBEd0JOcF9Md1FVazFEMzYtajNlMHVn0gH0AUFVX3lxTE5iSWt1NG01NHllWTRValQ0bjBOanQ1MDVjWlA2QU5fcU1SQjFhR1RSS3l5Um1BNVZLMWc0OC1OWlpwcmFVaVozcGR2ekllLVVYT0t4cFBQdGdCb1BCaEIyTHBZcHhOWnhseGU5OVB2c0ZZbnZUb0pCejdtZUdYT0pKOGxyNmZuQy1YN1hHRzJFRWFxVEs4V1BmT0tGdnpzUnJxMzRpLTlCdDVMRmhiZXBvdWJ5bWF4Q1lXT0Jkd21qSlFvSGJEQ0VxZXd6MzdWVzliWm1VZldaeGZzY0N4MFI3Wmk1Ykt4bjRfUXRaT2pLQmkwNWo?oc=5",
+     "published": "2026-11-19 05:13 UTC"
+    },
+    {
+     "title": "PNB, BoB, Canara Bank, BoM, BoI, other PSU bank stocks rise; here's what is driving the gains",
+     "source": "Business Today",
+     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxONWR4VktielZSRm1hQXlwYUlzaFJMeU1CZGhTdmJaZTA2SVM1QmlIcDFxdGhnSlMyZklQcEZyeWhnUi1tSE9kazJrNWhzVTZ6T3k3QVZtS0N2STIxMlk5NVQxWHZycXFqWGFtWWM3SzZmYmlSdXlYdFBra2tCTlJKdkcxNWdNSXRvZVVfU1N4bEYyTFlTaTFMUnRJS3R3Uk5SUG5ybzRDUXVmaUcwOHE2MnM2LW1aM3FfRzdwZ0FqVTVlUFBJOXNBY3FFdnd6M2JwZ05hUkFqZHdyNUJVMjR2MGVoS0hqclQxVlHSAe8BQVVfeXFMTXY4X3J3dzZZUUZlQ0NfdHR1M3JJdHA2RkNnX19ZUFZWUGFfR0VZLV9Kejg4cmRGeW1UN09KSDd3eFVFQWIweExJNEp5V3ZVaGhYeFMwcEFhaWpNRXZNZHJrbE5YU0RRbEdqWTBUZ2dMV1k4bk9pSHJjYTFDamFRUUkyY3ZSSndKRk1sUGNVSGRDZUdFQ0dMTEg3T25TQTRXRV9GUzhRSGlRRy0yc244RkROZ1BfVlBHdDJxQlI0VTUyYlUwbEYtaVc3NkRGNTRKLURUQ2tsRmxTdUFOTEt2Q2NXNlQ4ampiUFdXZmhRZ2s?oc=5",
+     "published": "2026-11-19 04:56 UTC"
+    },
+    {
+     "title": "Stock market opens mixed: Sensex gains, Nifty falls; Infosys leads losers",
+     "source": "India Today",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNLXpIdFdLRUp0aFVtc3lJdUkyS2NlLUthSWZvb01OUkh0bXZUaEo0XzQ0V296SkN4dFd6NzNXaC1LWHhBVHlURXVYVnZXZWk5dy1nV1FvLUxHUnVoNHprZUxoTk1rZDJtbUhKbVJ0cVdfMDVnLV8yaFItYVFRTnFvaFlmRk1iLThFRmRfcWs3S2RrYkFYNjNLM0MwQ3NtV1VpR1VwS0YxcE1yUXUxMlRJVlNMZy1EcWN3eFc5c21PVTYtSmlMaWpzcURR0gHPAUFVX3lxTE1XMG1Lb3ZYV1VCUVRRQWx0anB1NTU5OThvdENyV2NFR05hLW5yRHhiUVBOZWpLelQyNHBIT2dackhXUmY0T291ZVVSV0tFRldla1ZSbFFnT3Azay1raXZmX3J0SzAwZEctRE9TT25DYnRMZDNUYUw2SktUaGQ4aGhwejlYQ0RwRGhFWGxPdzBWbmRHTlZjV08wMXo1T0l0OHhmUTUxUy1DbVhVcWRJR1Q4Y0N2MHJjWFh5N001TURNZ212WWs2ZVhDbUNCY0RTSQ?oc=5",
+     "published": "2026-11-19 03:50 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.561,
+     "accuracy": 0.496,
+     "brier": 0.2744,
+     "brier_baseline": 0.2463,
+     "z_vs_baseline_optimistic": -2.86,
+     "strategy_mean_per_period": 0.0027,
+     "buyhold_mean_per_period": 0.00386,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.593,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.141,
+    "items": [
+     {
+      "title": "AC makers shine as copper extends fall; Voltas, Blue Star rally up to 8%",
+      "compound": 0.128
+     },
+     {
+      "title": "Top 19 PSU Stocks In India To Buy In November 2026",
+      "compound": 0.2023
+     },
+     {
+      "title": "PSU Bank index nears record high; SBI, PNB, BoI rally up 27% in November",
+      "compound": 0.0
+     },
+     {
+      "title": "SBI Clerk Prelims Results 2026 OUT: Junior Associates Scorecards Releases At sbi.bank.in; Direct Link Here",
+      "compound": 0.0
+     },
+     {
+      "title": "PNB, BoB, Canara Bank, BoM, BoI, other PSU bank stocks rise; here's what is driving the gains",
+      "compound": 0.34
+     },
+     {
+      "title": "Stock market opens mixed: Sensex gains, Nifty falls; Infosys leads losers",
+      "compound": 0.1779
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:40Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "State Bank of India"
+  },
+  {
+   "symbol": "BAJFINANCE.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:40Z",
+   "asof": "2026-11-19",
+   "close": 1095.0,
+   "ret_1d": 0.0011,
+   "move_vs_vol": 0.04,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     1077.0
+    ],
+    [
+     "2026-08-25",
+     1087.4
+    ],
+    [
+     "2026-08-26",
+     1085.0
+    ],
+    [
+     "2026-08-27",
+     1083.0
+    ],
+    [
+     "2026-08-28",
+     1079.9
+    ],
+    [
+     "2026-08-31",
+     1057.0
+    ],
+    [
+     "2026-09-01",
+     1053.9
+    ],
+    [
+     "2026-09-02",
+     1055.9
+    ],
+    [
+     "2026-09-03",
+     1049.0
+    ],
+    [
+     "2026-09-04",
+     1060.5
+    ],
+    [
+     "2026-09-07",
+     1060.0
+    ],
+    [
+     "2026-09-08",
+     1054.1
+    ],
+    [
+     "2026-09-09",
+     1039.3
+    ],
+    [
+     "2026-09-10",
+     1043.5
+    ],
+    [
+     "2026-09-11",
+     1034.5
+    ],
+    [
+     "2026-09-15",
+     1009.2
+    ],
+    [
+     "2026-09-16",
+     1006.2
+    ],
+    [
+     "2026-09-17",
+     1015.0
+    ],
+    [
+     "2026-09-18",
+     1040.3
+    ],
+    [
+     "2026-09-21",
+     1021.3
+    ],
+    [
+     "2026-09-22",
+     1008.8
+    ],
+    [
+     "2026-09-23",
+     1043.2
+    ],
+    [
+     "2026-09-24",
+     982.0
+    ],
+    [
+     "2026-09-25",
+     996.9
+    ],
+    [
+     "2026-09-28",
+     985.0
+    ],
+    [
+     "2026-09-29",
+     973.8
+    ],
+    [
+     "2026-09-30",
+     959.4
+    ],
+    [
+     "2026-10-01",
+     948.3
+    ],
+    [
+     "2026-10-05",
+     970.0
+    ],
+    [
+     "2026-10-06",
+     963.1
+    ],
+    [
+     "2026-10-07",
+     963.85
+    ],
+    [
+     "2026-10-08",
+     955.95
+    ],
+    [
+     "2026-10-09",
+     960.0
+    ],
+    [
+     "2026-10-12",
+     957.25
+    ],
+    [
+     "2026-10-13",
+     982.75
+    ],
+    [
+     "2026-10-14",
+     957.0
+    ],
+    [
+     "2026-10-15",
+     965.25
+    ],
+    [
+     "2026-10-16",
+     982.1
+    ],
+    [
+     "2026-10-19",
+     957.35
+    ],
+    [
+     "2026-10-21",
+     926.0
+    ],
+    [
+     "2026-10-22",
+     942.1
+    ],
+    [
+     "2026-10-23",
+     928.95
+    ],
+    [
+     "2026-10-26",
+     918.7
+    ],
+    [
+     "2026-10-27",
+     912.0
+    ],
+    [
+     "2026-10-28",
+     917.25
+    ],
+    [
+     "2026-10-29",
+     938.9
+    ],
+    [
+     "2026-10-30",
+     939.1
+    ],
+    [
+     "2026-11-02",
+     959.4
+    ],
+    [
+     "2026-11-03",
+     970.0
+    ],
+    [
+     "2026-11-04",
+     994.0
+    ],
+    [
+     "2026-11-05",
+     1070.0
+    ],
+    [
+     "2026-11-06",
+     1087.75
+    ],
+    [
+     "2026-11-09",
+     1064.85
+    ],
+    [
+     "2026-11-11",
+     1078.8
+    ],
+    [
+     "2026-11-12",
+     1115.0
+    ],
+    [
+     "2026-11-13",
+     1117.0
+    ],
+    [
+     "2026-11-16",
+     1110.0
+    ],
+    [
+     "2026-11-17",
+     1121.1
+    ],
+    [
+     "2026-11-18",
+     1093.85
+    ],
+    [
+     "2026-11-19",
+     1095.0
+    ]
+   ],
+   "volume_ratio_20d": 0.63,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.055,
+   "dividends": {
+    "symbol": "BAJFINANCE.NS",
+    "trailing_12m": 6.0,
+    "last_amount": 6.0,
+    "last_ex_date": "2026-06-30",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:41Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 6940164882432.0,
+    "pe_trailing": 31.483612,
+    "pe_forward": 21.749317,
+    "price_to_book": 5.531588,
+    "ev_to_ebitda": null,
+    "profit_margin": 0.4375,
+    "operating_margin": 0.6007,
+    "roe": 0.19026,
+    "revenue_growth": 0.267,
+    "earnings_growth": 0.284,
+    "debt_to_equity": 3.42416,
+    "current_ratio": 8.003,
+    "free_cashflow": null,
+    "payout_ratio": 0.15529999,
+    "beta_yahoo": 0.312,
+    "yahoo_sector": "Financial Services",
+    "industry": "Credit Services"
+   },
+   "dividend_record": {
+    "years_paid": 23,
+    "consecutive_increases": 4,
+    "cagr_5y": 0.4114,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": 0.1438,
+    "ret_3m": 0.0006,
+    "ret_6m": 0.1929,
+    "ret_12m": 0.0874,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.314,
+    "max_drawdown_1y": -0.2352,
+    "beta_1y": 1.57,
+    "rel_3m": -0.0492,
+    "rel_12m": 0.1074
+   },
+   "sector": {
+    "sector": "Financial Services",
+    "n_peers": 23,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100",
+    "pe_trailing": {
+     "median": 17.57,
+     "pct_rank": 0.74,
+     "n": 23
+    },
+    "pe_forward": {
+     "median": 14.78,
+     "pct_rank": 0.73,
+     "n": 22
+    },
+    "price_to_book": {
+     "median": 2.05,
+     "pct_rank": 0.78,
+     "n": 23
+    }
+   },
+   "next_earnings": null,
+   "news": [
+    {
+     "title": "Can Piramal Finance, Aditya Birla Capital and Poonawalla Fincorp replicate Bajaj Finance's success?",
+     "source": "bfsi.economictimes.indiatimes.com",
+     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNU3dQMm92eVp0NHVOUWJLMFppNGdjRTlPNE5hT0JwMVQ0dGpyQ2t2enhoY2dSVHpMc3JoeHdiRS1BTTBIcnRuNXJLX3M1d3dFd2lvTDJzTHRKdThOb1JRMmVsR0k3TUdfdHlrc3pKNGh6Zkp3VmN2TkNnX1VkRkpNQUNrVWZDR3FlQUdCT2dhOEVSUVppdmVZS1RvLTlGQnhuQW40Vm5EQWM3ekxyNy1sTEd0ZC1jRlExd1VKR3JHOTFucHoxMFZhN1gyc0FhWTlyY3VRMDl6UExDLXloNEh1MmdFTmNYVHByQ0JtTEVR0gHzAUFVX3lxTE1ZTjQtbXFBR29zYk9zQ2hwLWM2cWNHdWszMnBBYVV6RGg4dXJGcFlqbnI5NFhEaUo5YjNjb084M2NSSkxvQ0YwX19qRDc3ZzcxVk9NUEtlV3R0Nl9iZlVQTTc2WjBVcEk4aFFSOUNuTzRDeGdidmdLV0F6TFV3bTI2dmIzTWxSMlBrQi15Y3M0azlMa2VNTGh1WVctbWhDTFAybEZ6QXRtcmFWb2NqY3ZRSEMyTlFfLTNhdU83UDkzSGJJRWthWjNqal81Q0lPb3RJMUwyX3psbGhVOGtGdlpXdjhlUmpQMGQ5dWFRMjBtZGRRRQ?oc=5",
+     "published": "2026-11-19 02:29 UTC"
+    },
+    {
+     "title": "Bajaj Finance Raises Rs 11,700 Cr Through Institutional Placement",
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQkRENGN3MXdRQmRjbTJpZ0tZU1ZiUFMzdlVEeTFRYUdEMWlRdjVCa0hwb3F3SnJuX0N5bkJad1FrYjZuRVNxZkZVZm5xLXB1MmJNdUxLbXQ2akUwQVZCTG9uZlNwT1V2b1pTNkZLcTBEVVBjaGczQkpQSXl6Sk9nZFZlR1FSTGpsWWlxRkRzXzlRN3ktVlFUN25oSmdyUzhBMXFEOGl3Q0pfdU5MU3dyV1JrRUJRUjhrUElxb005RQ?oc=5",
+     "published": "2026-11-18 15:07 UTC"
+    },
+    {
+     "title": "Cipla, Tata Consumer, SBI Share Price Remains Firm, HDFC Life, Titan Bajaj Finance Decline; NSE Nifty Trades One Percent Lower",
+     "source": "TopNews",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRG9kSnZOSFpkUGl6SUtRR1RIMXlCTkYxRXI1aVNzVGtvWVZQLTNGMDNnX0NjWVZyci1rU01Yam9ma19hazNnSDB4emVyZmNMc0dObjdxZTBZRDdnR2pRSndITUFXcXNEVlZ5aVdHVFdMRC16ZllfWVFQUFRqT3ZYbU9JVmpUYjFzZ3NCSFRhMG5wc0VIUGNENEZzamJZUEE1ZHJTYmpSLTVzdEFPdVdHZ0VQWWE2QQ?oc=5",
+     "published": "2026-11-18 08:58 UTC"
+    },
+    {
+     "title": "The comeback club: ICICI Bank, Kotak Mahindra Bank, Bajaj Finance and Adani Port recovered up to 50% from their 52-week lows. What changed?",
+     "source": "Upstox",
+     "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOSjFvQ1VuZ091NUlIN0VUVDJneHJHUkVlNGNiNzVfSGU3SE0wandXWXFqSVI2Q3FCOUctZWthZy1LbjZaX1ZPMjlVYkhGUzZfWWZiQkYtaDJodVVnQzBoaFp3dTNXektFQWwzb3ItNnVxWWo1VVlkZjBHM1dUNlBVR3VqOGpSWmFkQl85ZDNvSC1OTnRaOWdPSXpUNHJraW03TzNTQ3lpZmx1Y2JHb25HOWhLUUtjb0tVc1lLRHZObVFpTVVTM3Z1WGFVanc4Z2tveHZJZ0hsVnUxQWFOTVN3NVk3TG81NWhPMzM2ellSZ3BYZDBDVGdJalNKOU9McnZVdjV4T3Y0eWxaNi1PT0tLbGJWb0NzX3NteUdqcw?oc=5",
+     "published": "2026-11-18 08:55 UTC"
+    },
+    {
+     "title": "Bajaj Finance - Max Healthcare among 10 Nifty stocks rallied up to 22% in 1 month. Did you miss the rally?",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPM01GcGRJWXdsWF9YSFVuSVpUMjEzRnZfVUJYZUJCLWQyUWdUSENRcVMxY093MWVWdG5iZ1lJdlplSHZFV2Z1SnRPTUp2NVFXQ1lXVW5Fd3g0dy1mTncybTMyWjFFS2pIRkdYUDAtU0d6bEFHRThVcmR4LTVSdTVSLXczVDVqTjVJMGxpcG9QQldRbnNvUkZseXZUT3ZLNC12V1lsTzdQb2Jwb1Rza3dXVi1XcTdGbnRKYklCakE0STJSSHFGSUhWS1RqclNHRnlyc2FuaEtEZGZlU1pWbDZueUFkZ19xS09ZQ290bnZ0cjdpaWRKczQtdTRvMkZYYTk2MDBB?oc=5",
+     "published": "2026-11-18 06:24 UTC"
+    },
+    {
+     "title": "If EPS Growth Is Important To You, Bajaj Finance (NSE:BAJFINANCE) Presents An Opportunity",
+     "source": "Simply Wall St",
+     "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMzlPLUhKTV95STNCYW5HZExyNHBLdXVKellUTDNRemlRWTZTRzhQc0Z5ZDg1b3FlZGxYNlcyTDI0Q3NuY2JMaTBnWnU1a0EzZnphcWwzRXUtMW5FNVhQWTBPTHZGMlZGQ3RlSU43dHZ3a2JHR1EyRTNBeXlBZlhaaWxmaVZHOFl1dElXTVZQdVNZdl9zckdfTTFkZU5zdVpoWk10dHR2MzVzZzYwT3hUeGEzM0dtTDR1N05LdXhaLWpjMm82RE9GR1hnZlVkMVlTdU4xSG5PUFAxRmNWcjktdG9zMFY0UzdrTEw0dGdzbGxkQdIB8gFBVV95cUxQMzlPLUhKTV95STNCYW5HZExyNHBLdXVKellUTDNRemlRWTZTRzhQc0Z5ZDg1b3FlZGxYNlcyTDI0Q3NuY2JMaTBnWnU1a0EzZnphcWwzRXUtMW5FNVhQWTBPTHZGMlZGQ3RlSU43dHZ3a2JHR1EyRTNBeXlBZlhaaWxmaVZHOFl1dElXTVZQdVNZdl9zckdfTTFkZU5zdVpoWk10dHR2MzVzZzYwT3hUeGEzM0dtTDR1N05LdXhaLWpjMm82RE9GR1hnZlVkMVlTdU4xSG5PUFAxRmNWcjktdG9zMFY0UzdrTEw0dGdzbGxkQQ?oc=5",
+     "published": "2026-11-18 01:39 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.506,
+     "accuracy": 0.479,
+     "brier": 0.2691,
+     "brier_baseline": 0.25,
+     "z_vs_baseline_optimistic": -1.19,
+     "strategy_mean_per_period": 0.00021,
+     "buyhold_mean_per_period": 0.0055,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.533,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.297,
+    "items": [
+     {
+      "title": "Can Piramal Finance, Aditya Birla Capital and Poonawalla Fincorp replicate Bajaj Finance's success?",
+      "compound": 0.5719
+     },
+     {
+      "title": "Bajaj Finance Raises Rs 11,700 Cr Through Institutional Placement",
+      "compound": 0.0
+     },
+     {
+      "title": "Cipla, Tata Consumer, SBI Share Price Remains Firm, HDFC Life, Titan Bajaj Finance Decline; NSE Nifty Trades One Percent Lower",
+      "compound": 0.4019
+     },
+     {
+      "title": "The comeback club: ICICI Bank, Kotak Mahindra Bank, Bajaj Finance and Adani Port recovered up to 50% from their 52-week lows. What changed?",
+      "compound": -0.2023
+     },
+     {
+      "title": "Bajaj Finance - Max Healthcare among 10 Nifty stocks rallied up to 22% in 1 month. Did you miss the rally?",
+      "compound": 0.2732
+     },
+     {
+      "title": "If EPS Growth Is Important To You, Bajaj Finance (NSE:BAJFINANCE) Presents An Opportunity",
+      "compound": 0.7351
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:41Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Bajaj Finance"
+  },
+  {
+   "symbol": "LT.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:41Z",
+   "asof": "2026-11-19",
+   "close": 4172.2998,
+   "ret_1d": 0.0032,
+   "move_vs_vol": 0.27,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     4090.0
+    ],
+    [
+     "2026-08-25",
+     4119.0
+    ],
+    [
+     "2026-08-26",
+     4038.1001
+    ],
+    [
+     "2026-08-27",
+     4027.0
+    ],
+    [
+     "2026-08-28",
+     4045.8
+    ],
+    [
+     "2026-08-31",
+     4044.8999
+    ],
+    [
+     "2026-09-01",
+     3980.1001
+    ],
+    [
+     "2026-09-02",
+     3981.0
+    ],
+    [
+     "2026-09-03",
+     3975.0
+    ],
+    [
+     "2026-09-04",
+     3964.1001
+    ],
+    [
+     "2026-09-07",
+     3999.0
+    ],
+    [
+     "2026-09-08",
+     3946.1001
+    ],
+    [
+     "2026-09-09",
+     3922.6001
+    ],
+    [
+     "2026-09-10",
+     3955.0
+    ],
+    [
+     "2026-09-11",
+     3930.7
+    ],
+    [
+     "2026-09-15",
+     3850.7
+    ],
+    [
+     "2026-09-16",
+     3807.7
+    ],
+    [
+     "2026-09-17",
+     3836.2
+    ],
+    [
+     "2026-09-18",
+     3885.0
+    ],
+    [
+     "2026-09-21",
+     3904.8
+    ],
+    [
+     "2026-09-22",
+     3866.3999
+    ],
+    [
+     "2026-09-23",
+     3929.8999
+    ],
+    [
+     "2026-09-24",
+     3858.3999
+    ],
+    [
+     "2026-09-25",
+     3876.2
+    ],
+    [
+     "2026-09-28",
+     3766.3999
+    ],
+    [
+     "2026-09-29",
+     3749.1001
+    ],
+    [
+     "2026-09-30",
+     3760.0
+    ],
+    [
+     "2026-10-01",
+     3693.3999
+    ],
+    [
+     "2026-10-05",
+     3750.0
+    ],
+    [
+     "2026-10-06",
+     3770.0
+    ],
+    [
+     "2026-10-07",
+     3701.5
+    ],
+    [
+     "2026-10-08",
+     3625.1001
+    ],
+    [
+     "2026-10-09",
+     3703.3
+    ],
+    [
+     "2026-10-12",
+     3627.5
+    ],
+    [
+     "2026-10-13",
+     3675.0
+    ],
+    [
+     "2026-10-14",
+     3642.0
+    ],
+    [
+     "2026-10-15",
+     3632.0
+    ],
+    [
+     "2026-10-16",
+     3627.1001
+    ],
+    [
+     "2026-10-19",
+     3661.8999
+    ],
+    [
+     "2026-10-21",
+     3636.0
+    ],
+    [
+     "2026-10-22",
+     3638.3
+    ],
+    [
+     "2026-10-23",
+     3647.0
+    ],
+    [
+     "2026-10-26",
+     3680.0
+    ],
+    [
+     "2026-10-27",
+     3665.1001
+    ],
+    [
+     "2026-10-28",
+     3801.3
+    ],
+    [
+     "2026-10-29",
+     3837.1001
+    ],
+    [
+     "2026-10-30",
+     3871.7
+    ],
+    [
+     "2026-11-02",
+     3939.8999
+    ],
+    [
+     "2026-11-03",
+     3948.2
+    ],
+    [
+     "2026-11-04",
+     3944.3999
+    ],
+    [
+     "2026-11-05",
+     4050.0
+    ],
+    [
+     "2026-11-06",
+     4117.7002
+    ],
+    [
+     "2026-11-09",
+     4185.0
+    ],
+    [
+     "2026-11-11",
+     4212.0
+    ],
+    [
+     "2026-11-12",
+     4159.2002
+    ],
+    [
+     "2026-11-13",
+     4143.7998
+    ],
+    [
+     "2026-11-16",
+     4140.0
+    ],
+    [
+     "2026-11-17",
+     4155.5
+    ],
+    [
+     "2026-11-18",
+     4159.0
+    ],
+    [
+     "2026-11-19",
+     4172.2998
+    ]
+   ],
+   "volume_ratio_20d": 0.69,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.046,
+   "dividends": {
+    "symbol": "LT.NS",
+    "trailing_12m": 38.0,
+    "last_amount": 38.0,
+    "last_ex_date": "2026-05-22",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:42Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 5740613861376.0,
+    "pe_trailing": 32.13911,
+    "pe_forward": 23.159735,
+    "price_to_book": 5.0787687,
+    "ev_to_ebitda": 17.798,
+    "profit_margin": 0.05789,
+    "operating_margin": 0.10496,
+    "roe": 0.17875,
+    "revenue_growth": 0.169,
+    "earnings_growth": 0.325,
+    "debt_to_equity": 1.05287,
+    "current_ratio": 1.235,
+    "free_cashflow": 354946973696.0,
+    "payout_ratio": 0.2927,
+    "beta_yahoo": 0.495,
+    "yahoo_sector": "Industrials",
+    "industry": "Engineering & Construction"
+   },
+   "dividend_record": {
+    "years_paid": 22,
+    "consecutive_increases": 1,
+    "cagr_5y": -0.0114,
+    "cut_in_5y": true
+   },
+   "trend": {
+    "ret_1m": 0.1394,
+    "ret_3m": 0.0266,
+    "ret_6m": 0.0745,
+    "ret_12m": 0.0654,
+    "above_50d": true,
+    "above_200d": true,
+    "vol_annual": 0.2565,
+    "max_drawdown_1y": -0.2435,
+    "beta_1y": 1.36,
+    "rel_3m": -0.0232,
+    "rel_12m": 0.0854
+   },
+   "sector": {
+    "sector": "Construction",
+    "n_peers": 1,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100"
+   },
+   "next_earnings": "2027-01-28",
+   "news": [
+    {
+     "title": "'Are we undervalued?' Uday Kotak asks as Anthropic outvalues India's top 10 firms combined",
+     "source": "NewsDrum",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSldINHdzMlpLUXpPa3hKNEVTNmlMYXR2S3VnOTM1c2VOV2NZdG5kY0xSQkcwT0x4dTA0UFlTbEdkYmxNa2dsMHhmVTRtUGpIeThwUzBuMXIxbU1GbWNNYTI1R3I1WVN0OVpXZXg0NEFGS205Z3J2X2NPeEU5RFItMGoxVks3Ymdfc2xmLUtvMkxtc2MxNGpvd04tbFotTlREOFZZb0Rzb3hIRDhlTUQzVUNHWXc0X1dadnlDLURmeExwd1dzQ0Fn0gHHAUFVX3lxTFBKV0g0d3MyWktRek9reEo0RVM2aUxhdHZLdWc5MzVzZU5XY1l0bmRjTFJCRzBPTHh1MDRQWVNsR2RibE1rZ2wweGZVNG1Qakh5OHBTMG4xcjFtTUZtY01hMjVHcjVZU3Q5WldleDQ0QUZLbTlncnZfY094RTlEUi0wajFWSzdiZ19zbGYtS28yTG1zYzE0am93Ti1sWi1OVEQ4VllvRHNveEhEOGVNRDNVQ0dZdzRfV1p2eUMtRGZ4THB3V3NDQWc?oc=5",
+     "published": "2026-11-19 04:55 UTC"
+    },
+    {
+     "title": "6 Infra Stocks With Order Books Above \u20b940,000 Crore to Keep an Eye On",
+     "source": "Trade Brains",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFdXNW1qaXhXUmhtR3NPVlo1QnpGUVFZR3BPTENMdGlrTjRoT1hndHdueW9qYWJYRC13SzE3M2h0Yjh5NjFIMjlVaTZvRm9mLVc2X3B0cGRuWGFuLV80S0NXRkZNeE5rbjRMVmFob0pJUThwTW8yYzNIUEpGdkJBb0loeUREY080b05lWEUwSXlvUUNjVlBVWDRKU1BQZjdCMzRjRmxxdVp0cjlvd2RTUGNNUkg?oc=5",
+     "published": "2026-11-19 04:04 UTC"
+    },
+    {
+     "title": "Q2 earnings review: Revenue growth hits 15-quarter high of 21%, says Jefferies",
+     "source": "Fortune India",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUldnSndpM1AtMG1JbVpOWFhJbFZYSW5ZN1JqY3c4dG5rcGI2QU5mU3VNRUZBTURKN2tjeVBkX3A2TTE3Y20tZlduQnVOOVZ0VGhQUXVoS3ZWb2NvUkp5Mjg0UnlsVk54YmxZVGJyRmpLN0F0X3RfZUNXMzdILUw3LVpJaGVlRmdkcVJFdnBvU0dWR0czSE9fZTF0QnMzXzJSSGx4UTlIYWtCdkUzUWx4S1FJZVNMMzRtWGt30gHIAUFVX3lxTE9NUGhqTjYwelNacGJLNzNIak9iaWs0M2Y1alV1VERBa1lIWUpmRDQ4NzlfeVJ0a0Z6VFVSZGV5QlRieW5GYnMwQkpWUkY5Q1dmdlhxaU5XdkxzSEZGa3pUQzQyQmZONFpoZVpfVXg5QV9fNXFUYkU5UlNuYXlnaWdiUi1oWG11eWVKTjdaQTJmcE00cmQ4TkgyT1NJcjdlV1g4YXo3ZnVzclpBUnZKTHFxaW8tMHJZaTJCTWlKLXJEMm8tUF8tWXNM?oc=5",
+     "published": "2026-11-19 03:04 UTC"
+    },
+    {
+     "title": "Aditya Infotech, Persistent Systems & 3 Other Nifty 500 Stocks Trading Above Their 50-DMA and 200-DMA",
+     "source": "Trade Brains",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZUV2TXJvNHY0QjB3elVkb3FCU3h6eVROU2pXZWRWSHdHTGl5QVE0aUZtODRaanBnR1g2SEt5R3BiM2VHSTdKRjU4dm5lamRpTC1KakRPMmx2T2hkLTdaN0hmYmxwVGpjQmVuWVc0R3dXdzJYWTJ4aFl0QlVDSGpMeldWclcyVjhCX0YtUlBZMjF1cURqVkxjMFpBZmxiazFRWUhmUFlrMWc4SEFqWU5fTGs3Sm5vdXFyMEpMS2lBNmc5YzBVSC01VUNoNmNTaXJCVERsbFNrckZHN0lkbGc?oc=5",
+     "published": "2026-11-18 09:30 UTC"
+    },
+    {
+     "title": "Good time to buy L&T stock? CLSA backs $1.4-billion NVIDIA AI-factory win, 10x data centre push",
+     "source": "Zee Business",
+     "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQTFpYklHNklWOVIzVXZYRm81M0RDZXJLbVpPVS00MzdyZWliblJ4VndNRHEyNE8yeU5keFllVVZzRklmcGYtS1NJLXBROG52UW9mRTJiUFVGSzN5LW1PblZBN2JVN1NPQ3dsbTFCdHp6bW5IeVo0TU1vWUNpTVc3ZW5ZZmkzMjM4MVRsOEVHbDRtY0FhM3luVjVWLS1Oa2FaVjlLWnN3Z1J0NkdPaUxqWXNKNUk2ZEpsX1lBcVBHZTI4d3ZDd2UwMV84LVpmUzNka05kamlINjlNM0h1Zmp6RDV1cnB1ckVMX0dyR0dWY044akZhejZN?oc=5",
+     "published": "2026-11-18 08:40 UTC"
+    },
+    {
+     "title": "L&T shares rise 14% in a month as order book expands | Tap to know more | Inshorts",
+     "source": "Inshorts",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm04NkZwQnAwclZlc2VkM0ptNC1TTGhGVDhjVGRMMk44SUY5Wk9CMENDZmFxTEVCaFlON3B6ZEZyNkVsbUdUWS1fQV9rcVdOQ3ZhR0xHZDZ3ZjduRW1CY3pxeDFjcXFWTFItZVJjVHhZaERfZ1Q0eGltaWpVQ2lJVi03VW1MenJVSlBPNDZrMVJvZEhYazFKUzZWQ0tVUWtD0gGgAUFVX3lxTE5KbTg2RnBCcDByVmVzZWQzSm00LVNMaEZUOGNUZEwyTjhJRjlaT0IwQ0NmYXFMRUJoWU43cHpkRnI2RWxtR1RZLV9BX2txV05DdmFHTEdkNndmN25FbUJjenF4MWNxcVZMUi1lUmNUeFloRF9nVDR4aW1palVDaUlWLTdVbUx6clVKUE80NmsxUm9kSFhrMUpTNlZDS1VRa0M?oc=5",
+     "published": "2026-11-18 07:45 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.511,
+     "accuracy": 0.462,
+     "brier": 0.2809,
+     "brier_baseline": 0.2499,
+     "z_vs_baseline_optimistic": -2.11,
+     "strategy_mean_per_period": -0.00031,
+     "buyhold_mean_per_period": 0.00137,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.479,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.354,
+    "items": [
+     {
+      "title": "'Are we undervalued?' Uday Kotak asks as Anthropic outvalues India's top 10 firms combined",
+      "compound": 0.2023
+     },
+     {
+      "title": "6 Infra Stocks With Order Books Above \u20b940,000 Crore to Keep an Eye On",
+      "compound": 0.0
+     },
+     {
+      "title": "Q2 earnings review: Revenue growth hits 15-quarter high of 21%, says Jefferies",
+      "compound": 0.3818
+     },
+     {
+      "title": "Aditya Infotech, Persistent Systems & 3 Other Nifty 500 Stocks Trading Above Their 50-DMA and 200-DMA",
+      "compound": 0.4019
+     },
+     {
+      "title": "Good time to buy L&T stock? CLSA backs $1.4-billion NVIDIA AI-factory win, 10x data centre push",
+      "compound": 0.7579
+     },
+     {
+      "title": "L&T shares rise 14% in a month as order book expands | Tap to know more | Inshorts",
+      "compound": 0.3818
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:42Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Larsen & Toubro"
+  },
+  {
+   "symbol": "HINDUNILVR.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far",
+    "large 1-day move (2.8 x 20d vol)"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:42Z",
+   "asof": "2026-11-19",
+   "close": 2059.6001,
+   "ret_1d": 0.0334,
+   "move_vs_vol": 2.8,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     2010.9286
+    ],
+    [
+     "2026-08-25",
+     2005.1831
+    ],
+    [
+     "2026-08-26",
+     2002.0132
+    ],
+    [
+     "2026-08-27",
+     1990.126
+    ],
+    [
+     "2026-08-28",
+     1991.5128
+    ],
+    [
+     "2026-08-31",
+     1948.9167
+    ],
+    [
+     "2026-09-01",
+     1976.0593
+    ],
+    [
+     "2026-09-02",
+     1956.4453
+    ],
+    [
+     "2026-09-03",
+     1943.5675
+    ],
+    [
+     "2026-09-04",
+     1954.8604
+    ],
+    [
+     "2026-09-07",
+     1941.5863
+    ],
+    [
+     "2026-09-08",
+     1961.3983
+    ],
+    [
+     "2026-09-09",
+     1926.7272
+    ],
+    [
+     "2026-09-10",
+     1924.0526
+    ],
+    [
+     "2026-09-11",
+     1908.8962
+    ],
+    [
+     "2026-09-15",
+     1919.892
+    ],
+    [
+     "2026-09-16",
+     1943.5675
+    ],
+    [
+     "2026-09-17",
+     1923.9535
+    ],
+    [
+     "2026-09-18",
+     1913.8494
+    ],
+    [
+     "2026-09-21",
+     1928.7084
+    ],
+    [
+     "2026-09-22",
+     1915.6324
+    ],
+    [
+     "2026-09-23",
+     1931.6802
+    ],
+    [
+     "2026-09-24",
+     1915.3352
+    ],
+    [
+     "2026-09-25",
+     1924.647
+    ],
+    [
+     "2026-09-28",
+     1878.1875
+    ],
+    [
+     "2026-09-29",
+     1846.29
+    ],
+    [
+     "2026-09-30",
+     1861.4463
+    ],
+    [
+     "2026-10-01",
+     1818.7512
+    ],
+    [
+     "2026-10-05",
+     1821.1287
+    ],
+    [
+     "2026-10-06",
+     1877.395
+    ],
+    [
+     "2026-10-07",
+     1847.875
+    ],
+    [
+     "2026-10-08",
+     1827.1714
+    ],
+    [
+     "2026-10-09",
+     1839.2567
+    ],
+    [
+     "2026-10-12",
+     1803.5948
+    ],
+    [
+     "2026-10-13",
+     1857.8801
+    ],
+    [
+     "2026-10-14",
+     1877.6923
+    ],
+    [
+     "2026-10-15",
+     1879.2772
+    ],
+    [
+     "2026-10-16",
+     1876.0083
+    ],
+    [
+     "2026-10-19",
+     1835.7896
+    ],
+    [
+     "2026-10-21",
+     1832.8177
+    ],
+    [
+     "2026-10-22",
+     1811.1237
+    ],
+    [
+     "2026-10-23",
+     1797.6512
+    ],
+    [
+     "2026-10-26",
+     1801.5146
+    ],
+    [
+     "2026-10-27",
+     1800.9203
+    ],
+    [
+     "2026-10-28",
+     1798.7411
+    ],
+    [
+     "2026-10-29",
+     1840.7426
+    ],
+    [
+     "2026-10-30",
+     1847.0825
+    ],
+    [
+     "2026-11-02",
+     1880.4659
+    ],
+    [
+     "2026-11-03",
+     1944.36
+    ],
+    [
+     "2026-11-04",
+     1958.5256
+    ],
+    [
+     "2026-11-05",
+     1963.3795
+    ],
+    [
+     "2026-11-06",
+     1979.6255
+    ],
+    [
+     "2026-11-09",
+     1971.6017
+    ],
+    [
+     "2026-11-11",
+     2003.4
+    ],
+    [
+     "2026-11-12",
+     1974.0
+    ],
+    [
+     "2026-11-13",
+     1992.9
+    ],
+    [
+     "2026-11-16",
+     2000.3
+    ],
+    [
+     "2026-11-17",
+     2009.9
+    ],
+    [
+     "2026-11-18",
+     1993.0
+    ],
+    [
+     "2026-11-19",
+     2059.6001
+    ]
+   ],
+   "volume_ratio_20d": 1.46,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.152,
+   "dividends": {
+    "symbol": "HINDUNILVR.NS",
+    "trailing_12m": 41.0,
+    "last_amount": 19.0,
+    "last_ex_date": "2026-11-12",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:43Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 4839218610176.0,
+    "pe_trailing": 45.72824,
+    "pe_forward": 38.604195,
+    "price_to_book": 9.91403,
+    "ev_to_ebitda": 30.531,
+    "profit_margin": 0.22034,
+    "operating_margin": 0.20812,
+    "roe": 0.21564,
+    "revenue_growth": 0.122,
+    "earnings_growth": 0.039,
+    "debt_to_equity": 0.03405,
+    "current_ratio": 1.147,
+    "free_cashflow": 92607496192.0,
+    "payout_ratio": 0.9103,
+    "beta_yahoo": 0.314,
+    "yahoo_sector": "Consumer Defensive",
+    "industry": "Household & Personal Products"
+   },
+   "dividend_record": {
+    "years_paid": 28,
+    "consecutive_increases": 0,
+    "cagr_5y": 0.0277,
+    "cut_in_5y": true
+   },
+   "trend": {
+    "ret_1m": 0.1219,
+    "ret_3m": 0.0217,
+    "ret_6m": -0.0594,
+    "ret_12m": -0.1337,
+    "above_50d": true,
+    "above_200d": false,
+    "vol_annual": 0.2279,
+    "max_drawdown_1y": -0.2602,
+    "beta_1y": 0.8,
+    "rel_3m": -0.0281,
+    "rel_12m": -0.1137
+   },
+   "sector": {
+    "sector": "Fast Moving Consumer Goods",
+    "n_peers": 7,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100",
+    "pe_trailing": {
+     "median": 45.05,
+     "pct_rank": 0.57,
+     "n": 7
+    },
+    "pe_forward": {
+     "median": 37.21,
+     "pct_rank": 0.71,
+     "n": 7
+    },
+    "price_to_book": {
+     "median": 7.06,
+     "pct_rank": 0.71,
+     "n": 7
+    }
+   },
+   "next_earnings": null,
+   "news": [
+    {
+     "title": "ITC share price tops \u20b9300-mark after 6-month gap; jumps 19% from Oct low",
+     "source": "Business Standard",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWjdXeExlUElqdC1BcEpnbTVibHRtSThGR1JPZ2lqMm5GalRIdUVjYW5SaWwtd2lNOFBYRTNFRmlRcmtnbEoyVHBCZWJ3VVZlUWJXckR3ZldfajZZcTJNQ2lXLUZjQW9VdDBNU3RkYzFVSlFzS0s5ekQ2a1Rsd0lkd184aXpzVzBTSDJxYml5ZjRmbzhxOU9malpvNWd6VzFiSnJLUTR1SEVUYVA4UmZiWWFrb2wzRkZjQ2NzZVRfRTVhRjE4WncyN01VVW94V0R0TkHSAdcBQVVfeXFMT0g5eHZDR1JHWGZKLUZqa2Y2ZXRIREUta1Y1N2JYYUd5clB2VGNvVy1EdWM3Slk3bkRKTlBBYmtseU9aUGJWX3dueHBvYWREdHpYaXlqNDBTUXpPWVpENDJudXhzOUpWMmRVRk5ja0w3X3g0QUc0dXMxU2xyR2c2S2JLbEkzMkQydjVUSTNQQ2d5cExKRXBuRWx3cC0tX21zY2tuOW5EMWhmN3B3OWUtbkNrd2NHRjFiSl9vbFVxQUdfWF9qeXA1QVpKX09weHZYMW5HVzhpS0E?oc=5",
+     "published": "2026-11-19 07:48 UTC"
+    },
+    {
+     "title": "Auto, banking lift Sensex, Nifty on Thursday morning after mid-week slump",
+     "source": "The Week",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSHUwVHFKa0hOS2xmMHFWYXc0TE9qRE1uS0dwb29pSFhrOHhiclB2VHB1SnQwSmlBZ3NnM3NYSWRZU2lmYzFyR2FpQ3l2Vm40VHhRYTJPeWhnODdIN0FjUU1Td1B4NzZsOXRJRDJMYkpwNnp5ZE1vMWY4ajV4SVgwVnNqWEJNVUhhNDVOUGVhcEFDd9IBlwFBVV95cUxNaE5ZZS1Va09Zckp5OTQySFVVV1JacnpwS2otRFc1d1FSYWpUY0RrVHdqOEtLcTRJY1VVVXZwSHRPMjZpRHRNelFISTlWLUNlanZJOG52RmJMS0VWQ2IwWmFPVERrTHNaVnZpb1A3dVNVOG5pUVRBTkxXTXJIU1lOck9NMFhYeXRaM2JUYWYza3VEWjcxV2NZ?oc=5",
+     "published": "2026-11-19 05:54 UTC"
+    },
+    {
+     "title": "Stock markets fall in early trade dragged by IT firms, U.S. Fed sens",
+     "source": "The Hindu",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOVVqa1Q5RXFiTUhwN3A5RHJoQVVDTGY1a1c5VzhfZ2lvajdMaDRUX1hZZzhiQUZXWHdvRlRkTERLVnoxMnh2TVQzM2UwQlZYeHI4MUhxWEpObkxIYXRyZl9jY2JmeVJBQklPcFgzeHVVc1R3YmRiMFlBcVBCd1NrVUNyTEwxOUE0ZlZ1d0wwQVp3Y2daQ0pYYWtnRjlrdzFGdTNOV0dJODhZbmRmYnN4UG9pazkyMlE4RHpqaFFESlozTTdIOUHSAcwBQVVfeXFMTXdQZ05nbDRSM0tQRU41Rnowb0s1OFRRekhad05aZDlGMjNTazFTZmNTR3dLREVudVAya0lDbUd5WlJnQjZ1a0R2T2ZoUTNGUW9uQ3oxSnUwY3JzLVhFSVRFS0tiQ1NEY0pGdFZOWFpEbFpmc0YyUjUyaE9BWkJzbEV3dFJaVWZqZC1sVHJjZ3ZwcG1aQk1RaVdaZGpqMXl5d2V3dDduZ2JrOEZXR0htMzVfYnFGc3RfdV9HU3draGt5WnBvSzVpMXZXV0x3?oc=5",
+     "published": "2026-11-19 05:17 UTC"
+    },
+    {
+     "title": "227% rally in 6 months: Smallcap hits 4th upper circuit on business update - Stock split, bonus ahead - Do you own it?",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQM1RCZnFjMmYwcXYyMHV3Y1lxT19BZG5WdGIwNGhxUlViclc0NXhmSXAtYXh1c0tXcGRhcE1LSEdHNFg5Yi1RYzNWdTMtVnBZNERiRDRicFdLSnM0SjdRek5YR3VJb0VXc2s0SHl1dWlEUmFSSWFteEcxOVNFMGh2RUtCQUtkQ0p4MTVYcS1scU1CdUE2c0JJUVRlb2pMSUdFMmZ0bzFaRDRQd0JFNlpxNVNjdHdZUVBxUWZ6Mmp0dGt0VzdtTDl5Mm1KR2hSdDV3YUN3Qko5eEVzcWd4VjlrT0dLYmFTY0tVNmN4bkxReVVpT0dBVFJ6OWFrWEwxc0hwaVBNUTV2X2tlckVT0gGSAkFVX3lxTE1NVkoweXNRcTg3R3ZlZDVOS0lNaDBBZnp6WGFFdTMzd1YtVDF6TU56dXlybkVHSHJITF9hU1p0VkFxN1FjWDJlM3o4VUVkWXB0OV85eTduX1F6UzdtckppakdmTm9mdWg5eENvV1lja3llbTB2dXVYQTBQeUx5ejBkN0FmZVFIbG5ra001bEJnV293N3FWeEtWUHhxYnQ0QVBZMDF5UXZSTXo5UTFJYUVSTmg4VGtxb18wRmZRMDZsMFVpTEdMR044LVN3T0hJSzU1Y2NWNmRlb0kxSVhsU3BwR3AzOTZ0XzdEMlV5YlZCNjJhYXVReVoyR2xJOE1vdW1RVXNwd2Z1RnB0NWRqSWp2UGc?oc=5",
+     "published": "2026-11-19 04:14 UTC"
+    },
+    {
+     "title": "Noble Polymers Q3 Results 2026 - Find Noble Polymers Q3 Earnings Result | Noble Polymers Q3 results",
+     "source": "Livemint",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVVhVWDBkN2ZOOS1NS1BlQmpBNWNtVXpyRU1USEI1THV1NWxfTFpNNnZHMGF5S3ZWWGNyQ3hKUlh6UUpmYXpBZHRia3BHT2VISW9YTUNCZjQ0Y3FnQWJ3WGZRYjE3aGxaa25qTjZoM2ZNam1tMlJFcmpnRDhOakhpVUlJREFPQQ?oc=5",
+     "published": "2026-11-18 23:59 UTC"
+    },
+    {
+     "title": "Hindustan Unilever (NSE:HINDUNILVR) in Focus",
+     "source": "Kalkine India",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdzdseU5lbF9EZ2R1WW9DWnFEdUNZd3VmeEtFbE5pQkpyU3FLM2lFd1RVTDBtNzhUNk02WXg5NWdweTZkVXdodkl1TV9JMTJEcEE5dFFZN281TWExR0pMUFdmbjhxQ2diTEZkU1JQazM4R3ZOY3pBSkI4OUdmVlBxdHJkcGNOdkxQQ0NwVi04dzFnNk1mLUdfTWt3XzFjMTdFNWc3RXZrY25Xbm5WN1U3dVIzdnVpam1hcEFzQzNwcEh6a28yWUVraXQ4NmxSYmZ6cWdjbDBReUIxRG40YlNXRA?oc=5",
+     "published": "2026-11-18 14:04 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.433,
+     "accuracy": 0.506,
+     "brier": 0.2565,
+     "brier_baseline": 0.2455,
+     "z_vs_baseline_optimistic": -2.68,
+     "strategy_mean_per_period": -0.00083,
+     "buyhold_mean_per_period": -0.00082,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.357,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": 0.377,
+    "items": [
+     {
+      "title": "ITC share price tops \u20b9300-mark after 6-month gap; jumps 19% from Oct low",
+      "compound": 0.5267
+     },
+     {
+      "title": "Auto, banking lift Sensex, Nifty on Thursday morning after mid-week slump",
+      "compound": 0.4019
+     },
+     {
+      "title": "Stock markets fall in early trade dragged by IT firms, U.S. Fed sens",
+      "compound": -0.0516
+     },
+     {
+      "title": "227% rally in 6 months: Smallcap hits 4th upper circuit on business update - Stock split, bonus ahead - Do you own it?",
+      "compound": 0.5423
+     },
+     {
+      "title": "Noble Polymers Q3 Results 2026 - Find Noble Polymers Q3 Earnings Result | Noble Polymers Q3 results",
+      "compound": 0.8402
+     },
+     {
+      "title": "Hindustan Unilever (NSE:HINDUNILVR) in Focus",
+      "compound": 0.0
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:43Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Hindustan Unilever"
+  },
+  {
+   "symbol": "TITAN.NS",
+   "flags": [
+    "intraday: day 67% done, move and volume so far"
+   ],
+   "gaps": [],
+   "status": "ok",
+   "source": "yfinance (delayed/EOD)",
+   "retrieved": "2026-11-19T07:57:43Z",
+   "asof": "2026-11-19",
+   "close": 4664.0,
+   "ret_1d": 0.0034,
+   "move_vs_vol": 0.17,
+   "closes_60d": [
+    [
+     "2026-08-24",
+     5079.0
+    ],
+    [
+     "2026-08-25",
+     5124.7998
+    ],
+    [
+     "2026-08-26",
+     5100.0
+    ],
+    [
+     "2026-08-27",
+     5139.2998
+    ],
+    [
+     "2026-08-28",
+     5169.2002
+    ],
+    [
+     "2026-08-31",
+     5102.3999
+    ],
+    [
+     "2026-09-01",
+     5050.0
+    ],
+    [
+     "2026-09-02",
+     5074.0
+    ],
+    [
+     "2026-09-03",
+     5027.0
+    ],
+    [
+     "2026-09-04",
+     5020.0
+    ],
+    [
+     "2026-09-07",
+     4995.0
+    ],
+    [
+     "2026-09-08",
+     4987.0
+    ],
+    [
+     "2026-09-09",
+     5005.0
+    ],
+    [
+     "2026-09-10",
+     5021.0
+    ],
+    [
+     "2026-09-11",
+     5009.5
+    ],
+    [
+     "2026-09-15",
+     4856.0
+    ],
+    [
+     "2026-09-16",
+     4908.5
+    ],
+    [
+     "2026-09-17",
+     4841.0
+    ],
+    [
+     "2026-09-18",
+     4798.5
+    ],
+    [
+     "2026-09-21",
+     4875.0
+    ],
+    [
+     "2026-09-22",
+     4928.5
+    ],
+    [
+     "2026-09-23",
+     4880.0
+    ],
+    [
+     "2026-09-24",
+     4832.5
+    ],
+    [
+     "2026-09-25",
+     4884.0
+    ],
+    [
+     "2026-09-28",
+     4819.5
+    ],
+    [
+     "2026-09-29",
+     4675.0
+    ],
+    [
+     "2026-09-30",
+     4587.0
+    ],
+    [
+     "2026-10-01",
+     4515.7002
+    ],
+    [
+     "2026-10-05",
+     4580.0
+    ],
+    [
+     "2026-10-06",
+     4550.0
+    ],
+    [
+     "2026-10-07",
+     4377.0
+    ],
+    [
+     "2026-10-08",
+     4359.5
+    ],
+    [
+     "2026-10-09",
+     4410.0
+    ],
+    [
+     "2026-10-12",
+     4400.0
+    ],
+    [
+     "2026-10-13",
+     4487.0
+    ],
+    [
+     "2026-10-14",
+     4444.0
+    ],
+    [
+     "2026-10-15",
+     4455.7998
+    ],
+    [
+     "2026-10-16",
+     4444.7998
+    ],
+    [
+     "2026-10-19",
+     4424.2002
+    ],
+    [
+     "2026-10-21",
+     4380.8999
+    ],
+    [
+     "2026-10-22",
+     4350.0
+    ],
+    [
+     "2026-10-23",
+     4299.7002
+    ],
+    [
+     "2026-10-26",
+     4323.0
+    ],
+    [
+     "2026-10-27",
+     4365.8999
+    ],
+    [
+     "2026-10-28",
+     4337.8999
+    ],
+    [
+     "2026-10-29",
+     4434.0
+    ],
+    [
+     "2026-10-30",
+     4436.5
+    ],
+    [
+     "2026-11-02",
+     4476.2998
+    ],
+    [
+     "2026-11-03",
+     4562.0
+    ],
+    [
+     "2026-11-04",
+     4754.3999
+    ],
+    [
+     "2026-11-05",
+     4834.6001
+    ],
+    [
+     "2026-11-06",
+     5000.0
+    ],
+    [
+     "2026-11-09",
+     5005.0
+    ],
+    [
+     "2026-11-11",
+     4970.0
+    ],
+    [
+     "2026-11-12",
+     4921.8999
+    ],
+    [
+     "2026-11-13",
+     4844.8999
+    ],
+    [
+     "2026-11-16",
+     4910.0
+    ],
+    [
+     "2026-11-17",
+     4908.0
+    ],
+    [
+     "2026-11-18",
+     4648.1001
+    ],
+    [
+     "2026-11-19",
+     4664.0
+    ]
+   ],
+   "volume_ratio_20d": 1.22,
+   "bar": "partial (67% of session)",
+   "dist_52w_high": -0.098,
+   "dividends": {
+    "symbol": "TITAN.NS",
+    "trailing_12m": 15.0,
+    "last_amount": 15.0,
+    "last_ex_date": "2026-07-09",
+    "next_ex_date": null,
+    "pay_date": null,
+    "source": "yfinance",
+    "retrieved": "2026-11-19T07:57:43Z"
+   },
+   "fundamentals": {
+    "source": "Yahoo Finance quote summary (secondary)",
+    "market_cap": 4138424598528.0,
+    "pe_trailing": 58.86659,
+    "pe_forward": 52.642586,
+    "price_to_book": 22.667847,
+    "ev_to_ebitda": 44.738,
+    "profit_margin": 0.07457,
+    "operating_margin": 0.1015,
+    "roe": 0.45271,
+    "revenue_growth": 0.101,
+    "earnings_growth": 1.136,
+    "debt_to_equity": 2.18562,
+    "current_ratio": 1.261,
+    "free_cashflow": -107911249920.0,
+    "payout_ratio": 0.1893,
+    "beta_yahoo": 0.238,
+    "yahoo_sector": "Consumer Cyclical",
+    "industry": "Luxury Goods"
+   },
+   "dividend_record": {
+    "years_paid": 21,
+    "consecutive_increases": 0,
+    "cagr_5y": 0.2242,
+    "cut_in_5y": false
+   },
+   "trend": {
+    "ret_1m": 0.0542,
+    "ret_3m": -0.0762,
+    "ret_6m": 0.1407,
+    "ret_12m": 0.2151,
+    "above_50d": false,
+    "above_200d": true,
+    "vol_annual": 0.2463,
+    "max_drawdown_1y": -0.1682,
+    "beta_1y": 1.06,
+    "rel_3m": -0.126,
+    "rel_12m": 0.2351
+   },
+   "sector": {
+    "sector": "Consumer Durables",
+    "n_peers": 2,
+    "scan_date": "2026-11-13",
+    "universe": "Nifty 100"
+   },
+   "next_earnings": null,
+   "news": [
+    {
+     "title": "Titan Company Limited (NSE: TITAN) Schedules Physical Meeting with Six Institutional Investors on November 24, 2026",
+     "source": "Kalkine India",
+     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNYnFzTEdWVHlteERwRHFCaXdQNGpOQlRDOVh1Nm1sWXBDR2dMd1p1cmp3ZWNYOHFmeDJRYUtQclhsWm9UXzUydFc1aFRINmxqTzVWUDhqYkYwV095dnBDSGZBNnkyRm5MZ0N1Y196aTU0Rko2ODFPQTNaTDdNbXc0UHhuQ3pmQmhka2ZLVjlKUzQzNFFmLWc0a3JTVmdNa0ppR1pXV3V6ZmZ4cXhoclVNUTF3NE1xWlBEM3JoS3FfdG10b3d2aWJIZkoxYWtaMUk5cHZ4SklFNmhLR2hkcWdNV0JNVEpVS2FCV1B5NThZZ1o?oc=5",
+     "published": "2026-11-19 06:36 UTC"
+    },
+    {
+     "title": "Titan Company Share Price",
+     "source": "Upstox",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLaEdJb1pERXM5Z3lpRHpvd0FueUNpN2V0VGsxc2p6bkhJVmpaaEFHUklFc1dOSUJiMkVBd1RkcmVXQW03aThSdktIMjgwaGtPUGRrWGJDMVN6c0tldTlSc09USm1sRjR0dFE1Ng?oc=5",
+     "published": "2026-11-18 18:18 UTC"
+    },
+    {
+     "title": "Titan Company NSE:TITAN Analyst Meet November 2026",
+     "source": "Kalkine India",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONk9nTFBNRlRjeXJnVTNtc2tLRE1GRlpDZVZoelhyVUI3akw2cm85UUFuYlBtLU12MzhxTTRfeXBoNXlPSEJQaGR2TjYxZzhVbXhrOHM1alFuaXRHTURzT0RSSjMwZkRYRXRFSWVma01TNTlyRlpVbGpLLTJ5c21IWjJhLVgxeUZvUFQ3cnFPS2tQcHhuaHIwZFRiWTdSbmRUUGdPUmZuVDRoTFlhREttYi1Nd1k3c2p4QjBWSVF3ZFlVOGh6MEQ3SXltNjJIR1JCeVBxWDJB?oc=5",
+     "published": "2026-11-18 15:23 UTC"
+    },
+    {
+     "title": "Titan Company Ltd falls 5.30% in Wednesday's session",
+     "source": "Global Banking & Finance Review",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZE1wZGlIRDU4QmUtQ0hJdWV4aW1nUlFXOEFkWXlHT1pseFRiNzJuZlZRMnNZcEl2dFAyUXZSTXJheHdCb1pPZTZCQTFDWVRGV0dySXFseG03SEl0Zy1FMWhxZEtQU0JBOFFjWC1sR1NTSVZqNXpvOXFHLW1tQ3ZDOFpBUWFFQ2dDXzB1cA?oc=5",
+     "published": "2026-11-18 14:49 UTC"
+    },
+    {
+     "title": "Market wrap: SBI, Cipla, Titan Company, HDFC Life top gainers and losers on Nifty and Sensex on Wednesday",
+     "source": "The Economic Times",
+     "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQQ0t5QlFtWHNjcGZIdUZOYmVGSEJsV0gtUGc1cU5tZTVqUEFOajExOFNTZjRDWjVadTdndmpkS3NLZVhfbU9XMXMydTc5Rm9DdnIxd0NGWnJhaXJpM0FFLXl4RWQyWi1YX1dzRnoxM3J4SURScUYzYnpPTEFqRXdPdmR0UG9UZFU5V2lmTTFHODFsbU5CNGlwOFI4TTQ0Z3pLOVl6WWo0Z3E5bW5TZ0F0cmN5TUR0Z0pDbnE5XzBCWVhZUHhJRm1JY3NXUnViS1BXb2wxS1FRQnM4U2JTV196b0w0VEJTR3RtT0RXNW13NzlDQ1EzNmJmWW0zQ0dRcl91ZktHYUducFNjWHViU3A0Ynhn0gGLAkFVX3lxTE96eHA4SXBuMnh2MEZPdW94ay1WMVdVb3ZRSDlWTXdJZFE0TldPR3IzUVllM3VhNmZFaFdKcVl5bUxQcG1PNlI2SWNtdWZ1SjRwdlpSUVdSN1VxN3l6QXZlemJ6N1UzaXE0Y1BmZThGVmxWWm00SFJYX3E0bW9zWVVON21JUkJpa3RiSGJVdFdXX2xnOFpqMHFkSFNlZTgyWFo0Ym50aWhtdEtDQTg4TWdrUTQxQndfc3duTzhycjNaaUpqbVh4UVFFclZ6N1pFWXhEMHItcWZqbEJfOFB5NXQ5eHAzODI4RUlmWWVjX0FzdlJQVFQ2VENUVTg1Qy1nUm9Ob2JUaUQ3bTAxTQ?oc=5",
+     "published": "2026-11-18 11:45 UTC"
+    },
+    {
+     "title": "Top gainers and losers, Nov 18: Titan tumbles 4%, HDFC Life falls 3%, Cipla shares jump 3%; check list",
+     "source": "Upstox",
+     "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPd2h5eFdDVE45cmtrY3Etckh4VkVWWVFjWGNRUnFjLTNCNXVobk5NYTZkd1MwWnpoSmVFQmhMLUhWWmFTaXJsNEdtRUZrYXEwVDdLZGEycFVUMmhrUzZOSS1VbGlQT3RLbG12UERMbXRVVTZFaDR6QXNhSTRidXkybk5UczdJS01jZDh4T2s0cDNLWmpOSmN2TGFoajdYRzB0Vk1RN3RQaFpDSkp6ZHFaUEVjYkpDNEx0VUVyTEFxSGZvclN2c2VDT1JpNmJMUG1Vb1dVbG8xSzg3eXZmaTd5Y1ROTU5QMDRX?oc=5",
+     "published": "2026-11-18 11:33 UTC"
+    }
+   ],
+   "model": {
+    "oos": {
+     "status": "ok",
+     "n_oos": 476,
+     "base_rate_up": 0.532,
+     "accuracy": 0.487,
+     "brier": 0.2658,
+     "brier_baseline": 0.249,
+     "z_vs_baseline_optimistic": -1.93,
+     "strategy_mean_per_period": 0.00125,
+     "buyhold_mean_per_period": 0.00371,
+     "beats_buyhold_after_costs": false
+    },
+    "p_up_5d": 0.527,
+    "label": "hypothesis, not a signal",
+    "edge_evidence": "weak/none"
+   },
+   "sentiment": {
+    "status": "ok",
+    "n": 6,
+    "mean_compound": -0.001,
+    "items": [
+     {
+      "title": "Titan Company Limited (NSE: TITAN) Schedules Physical Meeting with Six Institutional Investors on November 24, 2026",
+      "compound": -0.2263
+     },
+     {
+      "title": "Titan Company Share Price",
+      "compound": 0.296
+     },
+     {
+      "title": "Titan Company NSE:TITAN Analyst Meet November 2026",
+      "compound": 0.0
+     },
+     {
+      "title": "Titan Company Ltd falls 5.30% in Wednesday's session",
+      "compound": 0.0
+     },
+     {
+      "title": "Market wrap: SBI, Cipla, Titan Company, HDFC Life top gainers and losers on Nifty and Sensex on Wednesday",
+      "compound": 0.0258
+     },
+     {
+      "title": "Top gainers and losers, Nov 18: Titan tumbles 4%, HDFC Life falls 3%, Cipla shares jump 3%; check list",
+      "compound": -0.1027
+     }
+    ],
+    "retrieved": "2026-11-19T07:57:44Z",
+    "label": "hypothesis (press tone, not causation)"
+   },
+   "name": "Titan Company"
+  }
+ ],
+ "unresolved": [],
+ "changes": [
+  "no earlier run today to compare"
+ ],
+ "upcoming_dividends": []
+}
