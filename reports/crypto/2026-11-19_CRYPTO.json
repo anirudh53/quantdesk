@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T07:47:04Z",
+ "generated": "2026-11-21T02:46:13Z",
  "source": "yfinance (daily, UTC close, delayed)",
  "asof": "2026-11-19",
  "cost_round_trip_bps": 30.0,
@@ -17,7 +17,7 @@
    "name": "Bitcoin",
    "status": "ok",
    "close": 61901.820312,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0172,
    "ret_7d": -0.1323,
    "ret_30d": -0.2537,
@@ -548,7 +548,7 @@
    "name": "Ethereum",
    "status": "ok",
    "close": 1755.189819,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.011,
    "ret_7d": -0.1297,
    "ret_30d": -0.2826,
@@ -1055,16 +1055,16 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.069,
+     "cagr": -0.064,
      "vol": 0.702,
-     "sharpe": 0.25,
+     "sharpe": 0.26,
      "maxdd": -0.794,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": 0.057,
+     "cagr": 0.063,
      "vol": 0.412,
-     "sharpe": 0.34,
+     "sharpe": 0.35,
      "maxdd": -0.577,
      "years": 5.5
     },
@@ -1079,7 +1079,7 @@
    "name": "Solana",
    "status": "ok",
    "close": 73.065956,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0076,
    "ret_7d": -0.1052,
    "ret_30d": -0.3134,
@@ -1586,16 +1586,16 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.126,
-     "vol": 0.963,
-     "sharpe": 0.61,
+     "cagr": 0.109,
+     "vol": 0.962,
+     "sharpe": 0.59,
      "maxdd": -0.963,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": 0.501,
-     "vol": 0.606,
-     "sharpe": 0.96,
+     "cagr": 0.479,
+     "vol": 0.605,
+     "sharpe": 0.94,
      "maxdd": -0.725,
      "years": 5.5
     },
@@ -1610,7 +1610,7 @@
    "name": "XRP",
    "status": "ok",
    "close": 0.959807,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0091,
    "ret_7d": -0.077,
    "ret_30d": -0.2807,
@@ -2117,7 +2117,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.02,
+     "cagr": 0.017,
      "vol": 0.852,
      "sharpe": 0.42,
      "maxdd": -0.778,
@@ -2141,7 +2141,7 @@
    "name": "BNB",
    "status": "ok",
    "close": 579.591858,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.005,
    "ret_7d": -0.1165,
    "ret_30d": -0.2176,
@@ -2648,7 +2648,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.093,
+     "cagr": 0.095,
      "vol": 0.593,
      "sharpe": 0.45,
      "maxdd": -0.699,
@@ -2672,7 +2672,7 @@
    "name": "Dogecoin",
    "status": "ok",
    "close": 0.058119,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0116,
    "ret_7d": -0.125,
    "ret_30d": -0.2896,
@@ -3179,8 +3179,8 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.273,
-     "vol": 0.92,
+     "cagr": -0.272,
+     "vol": 0.921,
      "sharpe": 0.11,
      "maxdd": -0.877,
      "years": 5.5
@@ -3203,7 +3203,7 @@
    "name": "Cardano",
    "status": "ok",
    "close": 0.15165,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0014,
    "ret_7d": -0.1291,
    "ret_30d": -0.3223,
@@ -3710,16 +3710,16 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.348,
+     "cagr": -0.35,
      "vol": 0.883,
      "sharpe": -0.06,
      "maxdd": -0.952,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": -0.0,
+     "cagr": -0.003,
      "vol": 0.478,
-     "sharpe": 0.24,
+     "sharpe": 0.23,
      "maxdd": -0.68,
      "years": 5.5
     },
@@ -3734,7 +3734,7 @@
    "name": "Tron",
    "status": "ok",
    "close": 0.310109,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.002,
    "ret_7d": -0.0168,
    "ret_30d": -0.0632,
@@ -4241,7 +4241,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.308,
+     "cagr": 0.305,
      "vol": 0.668,
      "sharpe": 0.69,
      "maxdd": -0.595,
@@ -4265,7 +4265,7 @@
    "name": "Avalanche",
    "status": "ok",
    "close": 6.981661,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0075,
    "ret_7d": -0.1633,
    "ret_30d": -0.2834,
@@ -4772,14 +4772,14 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.136,
+     "cagr": -0.129,
      "vol": 0.993,
      "sharpe": 0.35,
      "maxdd": -0.956,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": 0.373,
+     "cagr": 0.374,
      "vol": 0.663,
      "sharpe": 0.8,
      "maxdd": -0.728,
@@ -4796,7 +4796,7 @@
    "name": "Chainlink",
    "status": "ok",
    "close": 8.989904,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0111,
    "ret_7d": -0.1127,
    "ret_30d": -0.2704,
@@ -5303,9 +5303,9 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.168,
+     "cagr": -0.166,
      "vol": 0.886,
-     "sharpe": 0.23,
+     "sharpe": 0.24,
      "maxdd": -0.853,
      "years": 5.5
     },
@@ -5327,7 +5327,7 @@
    "name": "Polkadot",
    "status": "ok",
    "close": 0.713386,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0086,
    "ret_7d": -0.1438,
    "ret_30d": -0.3795,
@@ -5834,7 +5834,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.465,
+     "cagr": -0.466,
      "vol": 0.867,
      "sharpe": -0.29,
      "maxdd": -0.987,
@@ -5858,7 +5858,7 @@
    "name": "Litecoin",
    "status": "ok",
    "close": 42.268341,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0411,
    "ret_7d": -0.1543,
    "ret_30d": -0.3131,
@@ -6389,7 +6389,7 @@
    "name": "Bitcoin Cash",
    "status": "ok",
    "close": 206.029022,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0126,
    "ret_7d": -0.0836,
    "ret_30d": -0.2721,
@@ -6920,7 +6920,7 @@
    "name": "Stellar",
    "status": "ok",
    "close": 0.132722,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0355,
    "ret_7d": -0.1053,
    "ret_30d": -0.2706,
@@ -7427,8 +7427,8 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.161,
-     "vol": 0.877,
+     "cagr": -0.163,
+     "vol": 0.878,
      "sharpe": 0.21,
      "maxdd": -0.832,
      "years": 5.5
@@ -7451,7 +7451,7 @@
    "name": "Hedera",
    "status": "ok",
    "close": 0.053679,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.043,
    "ret_7d": -0.1574,
    "ret_30d": -0.363,
@@ -7958,15 +7958,15 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.221,
+     "cagr": -0.226,
      "vol": 1.004,
-     "sharpe": 0.22,
+     "sharpe": 0.21,
      "maxdd": -0.928,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": 0.161,
-     "vol": 0.688,
+     "cagr": 0.162,
+     "vol": 0.689,
      "sharpe": 0.53,
      "maxdd": -0.703,
      "years": 5.5
@@ -8513,7 +8513,7 @@
    "name": "Near",
    "status": "ok",
    "close": 3.205023,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0309,
    "ret_7d": -0.0623,
    "ret_30d": -0.3492,
@@ -9020,7 +9020,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.017,
+     "cagr": 0.018,
      "vol": 1.142,
      "sharpe": 0.57,
      "maxdd": -0.952,
@@ -9044,7 +9044,7 @@
    "name": "Uniswap",
    "status": "ok",
    "close": 4.927586,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0514,
    "ret_7d": -0.1865,
    "ret_30d": -0.3371,
@@ -9551,15 +9551,15 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.253,
-     "vol": 1.014,
+     "cagr": -0.249,
+     "vol": 1.015,
      "sharpe": 0.21,
      "maxdd": -0.923,
      "years": 5.5
     },
     "trend_rule": {
      "cagr": -0.163,
-     "vol": 0.595,
+     "vol": 0.596,
      "sharpe": -0.02,
      "maxdd": -0.819,
      "years": 5.5
@@ -9575,7 +9575,7 @@
    "name": "Aave",
    "status": "ok",
    "close": 104.748512,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0437,
    "ret_7d": -0.0808,
    "ret_30d": -0.3219,
@@ -10082,9 +10082,9 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.191,
+     "cagr": -0.19,
      "vol": 0.986,
-     "sharpe": 0.27,
+     "sharpe": 0.28,
      "maxdd": -0.884,
      "years": 5.5
     },
