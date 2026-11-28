@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T09:06:46Z",
+ "generated": "2026-11-28T03:30:33Z",
  "source": "yfinance (daily, UTC close, delayed)",
  "asof": "2026-11-26",
  "cost_round_trip_bps": 30.0,
@@ -8,8 +8,8 @@
   "btc_above_200d": false,
   "btc_dd_from_high": -0.515,
   "btc_vol30_percentile_5y": 0.54,
-  "breadth_above_200d": 0.05,
-  "breadth_n": 19
+  "breadth_above_200d": 0.06,
+  "breadth_n": 18
  },
  "results": [
   {
@@ -17,7 +17,7 @@
    "name": "Bitcoin",
    "status": "ok",
    "close": 60494.710938,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0019,
    "ret_7d": -0.0227,
    "ret_30d": -0.2514,
@@ -524,7 +524,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.078,
+     "cagr": 0.077,
      "vol": 0.524,
      "sharpe": 0.4,
      "maxdd": -0.766,
@@ -548,7 +548,7 @@
    "name": "Ethereum",
    "status": "ok",
    "close": 1687.741821,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0018,
    "ret_7d": -0.0384,
    "ret_30d": -0.2811,
@@ -1055,14 +1055,14 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.072,
+     "cagr": -0.077,
      "vol": 0.702,
      "sharpe": 0.24,
      "maxdd": -0.794,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": 0.074,
+     "cagr": 0.075,
      "vol": 0.411,
      "sharpe": 0.38,
      "maxdd": -0.577,
@@ -1079,7 +1079,7 @@
    "name": "Solana",
    "status": "ok",
    "close": 70.932762,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0077,
    "ret_7d": -0.0292,
    "ret_30d": -0.2995,
@@ -1586,16 +1586,16 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.117,
-     "vol": 0.961,
-     "sharpe": 0.6,
+     "cagr": 0.105,
+     "vol": 0.96,
+     "sharpe": 0.59,
      "maxdd": -0.963,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": 0.497,
+     "cagr": 0.481,
      "vol": 0.602,
-     "sharpe": 0.96,
+     "sharpe": 0.94,
      "maxdd": -0.725,
      "years": 5.5
     },
@@ -1610,7 +1610,7 @@
    "name": "XRP",
    "status": "ok",
    "close": 0.942907,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0064,
    "ret_7d": -0.0176,
    "ret_30d": -0.2908,
@@ -2117,7 +2117,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.01,
+     "cagr": 0.011,
      "vol": 0.851,
      "sharpe": 0.41,
      "maxdd": -0.778,
@@ -2141,7 +2141,7 @@
    "name": "BNB",
    "status": "ok",
    "close": 553.161499,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0007,
    "ret_7d": -0.0456,
    "ret_30d": -0.2567,
@@ -2648,7 +2648,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.077,
+     "cagr": 0.075,
      "vol": 0.592,
      "sharpe": 0.42,
      "maxdd": -0.699,
@@ -2672,7 +2672,7 @@
    "name": "Dogecoin",
    "status": "ok",
    "close": 0.056385,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0075,
    "ret_7d": -0.0298,
    "ret_30d": -0.2861,
@@ -3179,7 +3179,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.278,
+     "cagr": -0.276,
      "vol": 0.92,
      "sharpe": 0.1,
      "maxdd": -0.884,
@@ -3203,7 +3203,7 @@
    "name": "Cardano",
    "status": "ok",
    "close": 0.148392,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0181,
    "ret_7d": -0.0215,
    "ret_30d": -0.2788,
@@ -3710,7 +3710,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.351,
+     "cagr": -0.353,
      "vol": 0.882,
      "sharpe": -0.07,
      "maxdd": -0.952,
@@ -3734,7 +3734,7 @@
    "name": "Tron",
    "status": "ok",
    "close": 0.303668,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0002,
    "ret_7d": -0.0208,
    "ret_30d": -0.0828,
@@ -4241,7 +4241,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": 0.301,
+     "cagr": 0.3,
      "vol": 0.667,
      "sharpe": 0.69,
      "maxdd": -0.595,
@@ -4265,7 +4265,7 @@
    "name": "Avalanche",
    "status": "ok",
    "close": 6.584008,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.006,
    "ret_7d": -0.057,
    "ret_30d": -0.2646,
@@ -4772,14 +4772,14 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.14,
-     "vol": 0.991,
+     "cagr": -0.142,
+     "vol": 0.992,
      "sharpe": 0.34,
      "maxdd": -0.956,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": 0.373,
+     "cagr": 0.374,
      "vol": 0.663,
      "sharpe": 0.8,
      "maxdd": -0.728,
@@ -4796,7 +4796,7 @@
    "name": "Chainlink",
    "status": "ok",
    "close": 9.270196,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0246,
    "ret_7d": 0.0312,
    "ret_30d": -0.1986,
@@ -5303,9 +5303,9 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.159,
+     "cagr": -0.173,
      "vol": 0.884,
-     "sharpe": 0.25,
+     "sharpe": 0.23,
      "maxdd": -0.853,
      "years": 5.5
     },
@@ -5327,7 +5327,7 @@
    "name": "Polkadot",
    "status": "ok",
    "close": 0.671823,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.02,
    "ret_7d": -0.0583,
    "ret_30d": -0.3284,
@@ -5834,9 +5834,9 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.473,
-     "vol": 0.866,
-     "sharpe": -0.31,
+     "cagr": -0.484,
+     "vol": 0.865,
+     "sharpe": -0.33,
      "maxdd": -0.988,
      "years": 5.5
     },
@@ -5858,7 +5858,7 @@
    "name": "Litecoin",
    "status": "ok",
    "close": 43.823524,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0256,
    "ret_7d": 0.0368,
    "ret_30d": -0.2329,
@@ -6365,7 +6365,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.223,
+     "cagr": -0.227,
      "vol": 0.754,
      "sharpe": 0.04,
      "maxdd": -0.857,
@@ -6389,7 +6389,7 @@
    "name": "Bitcoin Cash",
    "status": "ok",
    "close": 209.579529,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0191,
    "ret_7d": 0.0172,
    "ret_30d": -0.2917,
@@ -6896,7 +6896,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.182,
+     "cagr": -0.185,
      "vol": 0.839,
      "sharpe": 0.16,
      "maxdd": -0.886,
@@ -6920,7 +6920,7 @@
    "name": "Stellar",
    "status": "ok",
    "close": 0.126691,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0094,
    "ret_7d": -0.0454,
    "ret_30d": -0.2561,
@@ -7427,8 +7427,8 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.169,
-     "vol": 0.876,
+     "cagr": -0.167,
+     "vol": 0.877,
      "sharpe": 0.2,
      "maxdd": -0.832,
      "years": 5.5
@@ -7451,7 +7451,7 @@
    "name": "Hedera",
    "status": "ok",
    "close": 0.0539,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": 0.0348,
    "ret_7d": 0.0041,
    "ret_30d": -0.2908,
@@ -7958,15 +7958,15 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.212,
+     "cagr": -0.222,
      "vol": 1.004,
-     "sharpe": 0.23,
+     "sharpe": 0.22,
      "maxdd": -0.928,
      "years": 5.5
     },
     "trend_rule": {
-     "cagr": 0.161,
-     "vol": 0.688,
+     "cagr": 0.162,
+     "vol": 0.689,
      "sharpe": 0.53,
      "maxdd": -0.703,
      "years": 5.5
@@ -8513,7 +8513,7 @@
    "name": "Near",
    "status": "ok",
    "close": 3.044531,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0011,
    "ret_7d": -0.0501,
    "ret_30d": -0.3497,
@@ -9020,7 +9020,7 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.007,
+     "cagr": -0.014,
      "vol": 1.141,
      "sharpe": 0.55,
      "maxdd": -0.952,
@@ -9044,7 +9044,7 @@
    "name": "Uniswap",
    "status": "ok",
    "close": 4.652914,
-   "history_days": 2191,
+   "history_days": 2190,
    "ret_1d": -0.0176,
    "ret_7d": -0.0557,
    "ret_30d": -0.3428,
@@ -9551,551 +9551,20 @@
    ],
    "trend": {
     "buy_hold": {
-     "cagr": -0.256,
+     "cagr": -0.261,
      "vol": 1.014,
-     "sharpe": 0.2,
+     "sharpe": 0.19,
      "maxdd": -0.923,
      "years": 5.5
     },
     "trend_rule": {
      "cagr": -0.163,
-     "vol": 0.595,
+     "vol": 0.596,
      "sharpe": -0.02,
      "maxdd": -0.819,
      "years": 5.5
     },
     "time_in_market": 0.32,
-    "signal_now": "out (downtrend)",
-    "better_risk_adjusted": false,
-    "smaller_drawdown": true
-   }
-  },
-  {
-   "symbol": "AAVE-USD",
-   "name": "Aave",
-   "status": "ok",
-   "close": 94.461266,
-   "history_days": 2191,
-   "ret_1d": -0.009,
-   "ret_7d": -0.0982,
-   "ret_30d": -0.294,
-   "ret_90d": -0.2269,
-   "ret_365d": -0.4918,
-   "move_vs_vol": -0.21,
-   "volume_ratio_30d": 0.9,
-   "vol_ann_30d": 0.872,
-   "vol_ann_1y": 0.834,
-   "sharpe_1y": -0.4,
-   "cvar5_daily_1y": -0.0905,
-   "dd_from_high": -0.851,
-   "maxdd_3y": -0.841,
-   "beta_btc_90d": 1.34,
-   "corr_btc_90d": 0.69,
-   "above_ma": {
-    "20": false,
-    "50": false,
-    "100": false,
-    "200": false
-   },
-   "trend_score": 0.0,
-   "closes_120d": [
-    [
-     "2026-07-30",
-     99.442001
-    ],
-    [
-     "2026-07-31",
-     93.681778
-    ],
-    [
-     "2026-08-01",
-     90.519958
-    ],
-    [
-     "2026-08-02",
-     92.000931
-    ],
-    [
-     "2026-08-03",
-     92.281708
-    ],
-    [
-     "2026-08-04",
-     90.410797
-    ],
-    [
-     "2026-08-05",
-     89.744484
-    ],
-    [
-     "2026-08-06",
-     89.585762
-    ],
-    [
-     "2026-08-07",
-     89.931084
-    ],
-    [
-     "2026-08-08",
-     91.22995
-    ],
-    [
-     "2026-08-09",
-     90.548492
-    ],
-    [
-     "2026-08-10",
-     89.133034
-    ],
-    [
-     "2026-08-11",
-     88.2379
-    ],
-    [
-     "2026-08-12",
-     88.079643
-    ],
-    [
-     "2026-08-13",
-     87.797348
-    ],
-    [
-     "2026-08-14",
-     86.329285
-    ],
-    [
-     "2026-08-15",
-     86.113731
-    ],
-    [
-     "2026-08-16",
-     85.892815
-    ],
-    [
-     "2026-08-17",
-     89.247337
-    ],
-    [
-     "2026-08-18",
-     87.488533
-    ],
-    [
-     "2026-08-19",
-     95.264297
-    ],
-    [
-     "2026-08-20",
-     99.174721
-    ],
-    [
-     "2026-08-21",
-     122.428375
-    ],
-    [
-     "2026-08-22",
-     126.415718
-    ],
-    [
-     "2026-08-23",
-     141.618378
-    ],
-    [
-     "2026-08-24",
-     132.457626
-    ],
-    [
-     "2026-08-25",
-     126.272949
-    ],
-    [
-     "2026-08-26",
-     127.031158
-    ],
-    [
-     "2026-08-27",
-     127.957314
-    ],
-    [
-     "2026-08-28",
-     122.18824
-    ],
-    [
-     "2026-08-29",
-     126.815369
-    ],
-    [
-     "2026-08-30",
-     122.499916
-    ],
-    [
-     "2026-08-31",
-     124.054764
-    ],
-    [
-     "2026-09-01",
-     127.708656
-    ],
-    [
-     "2026-09-02",
-     126.980637
-    ],
-    [
-     "2026-09-03",
-     132.744156
-    ],
-    [
-     "2026-09-04",
-     130.434708
-    ],
-    [
-     "2026-09-05",
-     134.371338
-    ],
-    [
-     "2026-09-06",
-     136.412567
-    ],
-    [
-     "2026-09-07",
-     132.273483
-    ],
-    [
-     "2026-09-08",
-     128.804977
-    ],
-    [
-     "2026-09-09",
-     125.714302
-    ],
-    [
-     "2026-09-10",
-     120.920097
-    ],
-    [
-     "2026-09-11",
-     124.872589
-    ],
-    [
-     "2026-09-12",
-     125.538933
-    ],
-    [
-     "2026-09-13",
-     124.345444
-    ],
-    [
-     "2026-09-14",
-     128.23877
-    ],
-    [
-     "2026-09-15",
-     122.180862
-    ],
-    [
-     "2026-09-16",
-     119.871269
-    ],
-    [
-     "2026-09-17",
-     128.633408
-    ],
-    [
-     "2026-09-18",
-     139.517273
-    ],
-    [
-     "2026-09-19",
-     141.116379
-    ],
-    [
-     "2026-09-20",
-     137.523941
-    ],
-    [
-     "2026-09-21",
-     145.718231
-    ],
-    [
-     "2026-09-22",
-     147.838547
-    ],
-    [
-     "2026-09-23",
-     138.881485
-    ],
-    [
-     "2026-09-24",
-     146.792206
-    ],
-    [
-     "2026-09-25",
-     153.552277
-    ],
-    [
-     "2026-09-26",
-     155.633606
-    ],
-    [
-     "2026-09-27",
-     154.92247
-    ],
-    [
-     "2026-09-28",
-     149.308777
-    ],
-    [
-     "2026-09-29",
-     165.217117
-    ],
-    [
-     "2026-09-30",
-     159.365036
-    ],
-    [
-     "2026-10-01",
-     171.649811
-    ],
-    [
-     "2026-10-02",
-     179.513351
-    ],
-    [
-     "2026-10-03",
-     181.536972
-    ],
-    [
-     "2026-10-04",
-     179.230026
-    ],
-    [
-     "2026-10-05",
-     184.315918
-    ],
-    [
-     "2026-10-06",
-     179.917252
-    ],
-    [
-     "2026-10-07",
-     173.867401
-    ],
-    [
-     "2026-10-08",
-     166.094955
-    ],
-    [
-     "2026-10-09",
-     167.283188
-    ],
-    [
-     "2026-10-10",
-     168.450653
-    ],
-    [
-     "2026-10-11",
-     171.444534
-    ],
-    [
-     "2026-10-12",
-     156.742523
-    ],
-    [
-     "2026-10-13",
-     160.238983
-    ],
-    [
-     "2026-10-14",
-     154.0952
-    ],
-    [
-     "2026-10-15",
-     157.387939
-    ],
-    [
-     "2026-10-16",
-     155.059845
-    ],
-    [
-     "2026-10-17",
-     151.651642
-    ],
-    [
-     "2026-10-18",
-     151.91864
-    ],
-    [
-     "2026-10-19",
-     149.255219
-    ],
-    [
-     "2026-10-20",
-     154.482132
-    ],
-    [
-     "2026-10-21",
-     154.706818
-    ],
-    [
-     "2026-10-22",
-     146.470993
-    ],
-    [
-     "2026-10-23",
-     144.16243
-    ],
-    [
-     "2026-10-24",
-     138.006836
-    ],
-    [
-     "2026-10-25",
-     136.160202
-    ],
-    [
-     "2026-10-26",
-     135.573837
-    ],
-    [
-     "2026-10-27",
-     133.792572
-    ],
-    [
-     "2026-10-28",
-     133.789215
-    ],
-    [
-     "2026-10-29",
-     119.584656
-    ],
-    [
-     "2026-10-30",
-     128.958801
-    ],
-    [
-     "2026-10-31",
-     133.717087
-    ],
-    [
-     "2026-11-01",
-     134.589951
-    ],
-    [
-     "2026-11-02",
-     126.382614
-    ],
-    [
-     "2026-11-03",
-     127.345093
-    ],
-    [
-     "2026-11-04",
-     131.781754
-    ],
-    [
-     "2026-11-05",
-     128.311066
-    ],
-    [
-     "2026-11-06",
-     130.589752
-    ],
-    [
-     "2026-11-07",
-     131.575424
-    ],
-    [
-     "2026-11-08",
-     125.888161
-    ],
-    [
-     "2026-11-09",
-     131.358322
-    ],
-    [
-     "2026-11-10",
-     123.476189
-    ],
-    [
-     "2026-11-11",
-     120.767769
-    ],
-    [
-     "2026-11-12",
-     113.950104
-    ],
-    [
-     "2026-11-13",
-     111.474342
-    ],
-    [
-     "2026-11-14",
-     100.514252
-    ],
-    [
-     "2026-11-15",
-     109.447395
-    ],
-    [
-     "2026-11-16",
-     108.322281
-    ],
-    [
-     "2026-11-17",
-     112.363609
-    ],
-    [
-     "2026-11-18",
-     109.53434
-    ],
-    [
-     "2026-11-19",
-     104.748512
-    ],
-    [
-     "2026-11-20",
-     97.92366
-    ],
-    [
-     "2026-11-21",
-     97.513435
-    ],
-    [
-     "2026-11-22",
-     97.902451
-    ],
-    [
-     "2026-11-23",
-     96.99929
-    ],
-    [
-     "2026-11-24",
-     93.884644
-    ],
-    [
-     "2026-11-25",
-     95.323692
-    ],
-    [
-     "2026-11-26",
-     94.461266
-    ]
-   ],
-   "trend": {
-    "buy_hold": {
-     "cagr": -0.199,
-     "vol": 0.983,
-     "sharpe": 0.26,
-     "maxdd": -0.884,
-     "years": 5.5
-    },
-    "trend_rule": {
-     "cagr": -0.103,
-     "vol": 0.561,
-     "sharpe": 0.08,
-     "maxdd": -0.756,
-     "years": 5.5
-    },
-    "time_in_market": 0.35,
     "signal_now": "out (downtrend)",
     "better_risk_adjusted": false,
     "smaller_drawdown": true
@@ -10108,154 +9577,149 @@
   "oos": {
    "momentum_28d (no model)": {
     "weeks": 208,
-    "mean_ic": 0.006,
-    "ic_t_stat": 0.29,
+    "mean_ic": 0.0052,
+    "ic_t_stat": 0.24,
     "ic_positive_share": 0.51,
-    "ic_last_52w": -0.0614,
+    "ic_last_52w": -0.0635,
     "ic_by_year": {
-     "2022": -0.011,
-     "2023": 0.074,
-     "2024": 0.005,
-     "2025": 0.013,
-     "2026": -0.074
+     "2022": -0.026,
+     "2023": 0.076,
+     "2024": 0.004,
+     "2025": 0.012,
+     "2026": -0.076
     },
-    "top_third_excess_ann": 0.154,
-    "top_third_excess_sharpe": 0.68,
-    "top_third_hit_rate": 0.5,
+    "top_third_excess_ann": 0.233,
+    "top_third_excess_sharpe": 0.95,
+    "top_third_hit_rate": 0.51,
     "edge_evidence": "weak/none"
    },
    "ridge": {
     "weeks": 208,
-    "mean_ic": 0.0756,
-    "ic_t_stat": 3.08,
-    "ic_positive_share": 0.57,
-    "ic_last_52w": 0.0794,
+    "mean_ic": 0.0846,
+    "ic_t_stat": 3.32,
+    "ic_positive_share": 0.6,
+    "ic_last_52w": 0.1011,
     "ic_by_year": {
-     "2022": 0.072,
+     "2022": 0.041,
      "2023": 0.06,
-     "2024": 0.058,
-     "2025": 0.119,
-     "2026": 0.065
+     "2024": 0.05,
+     "2025": 0.15,
+     "2026": 0.083
     },
-    "top_third_excess_ann": -0.028,
-    "top_third_excess_sharpe": -0.13,
-    "top_third_hit_rate": 0.55,
+    "top_third_excess_ann": -0.069,
+    "top_third_excess_sharpe": -0.32,
+    "top_third_hit_rate": 0.52,
     "edge_evidence": "weak/none"
    },
    "boosting": {
     "weeks": 208,
-    "mean_ic": 0.0458,
-    "ic_t_stat": 2.54,
-    "ic_positive_share": 0.56,
-    "ic_last_52w": 0.0336,
+    "mean_ic": 0.0396,
+    "ic_t_stat": 2.0,
+    "ic_positive_share": 0.57,
+    "ic_last_52w": 0.0672,
     "ic_by_year": {
-     "2022": -0.004,
-     "2023": 0.027,
-     "2024": 0.035,
-     "2025": 0.096,
-     "2026": 0.029
+     "2022": -0.073,
+     "2023": 0.018,
+     "2024": -0.002,
+     "2025": 0.088,
+     "2026": 0.068
     },
-    "top_third_excess_ann": -0.174,
-    "top_third_excess_sharpe": -1.0,
-    "top_third_hit_rate": 0.5,
+    "top_third_excess_ann": -0.144,
+    "top_third_excess_sharpe": -0.78,
+    "top_third_hit_rate": 0.48,
     "edge_evidence": "weak/none"
    }
   },
   "latest_rank": {
    "BTC-USD": {
     "ridge": 1,
-    "boosting": 3,
-    "momentum_28d (no model)": 10
+    "boosting": 4,
+    "momentum_28d (no model)": 9
    },
    "ETH-USD": {
     "ridge": 5,
-    "boosting": 8,
-    "momentum_28d (no model)": 15
+    "boosting": 10,
+    "momentum_28d (no model)": 14
    },
    "SOL-USD": {
     "ridge": 3,
-    "boosting": 10,
-    "momentum_28d (no model)": 17
+    "boosting": 8,
+    "momentum_28d (no model)": 16
    },
    "XRP-USD": {
     "ridge": 6,
-    "boosting": 6,
-    "momentum_28d (no model)": 13
+    "boosting": 3,
+    "momentum_28d (no model)": 12
    },
    "BNB-USD": {
     "ridge": 4,
-    "boosting": 1,
+    "boosting": 2,
     "momentum_28d (no model)": 5
    },
    "DOGE-USD": {
     "ridge": 8,
-    "boosting": 11,
-    "momentum_28d (no model)": 16
+    "boosting": 7,
+    "momentum_28d (no model)": 15
    },
    "ADA-USD": {
-    "ridge": 16,
-    "boosting": 12,
-    "momentum_28d (no model)": 9
+    "ridge": 15,
+    "boosting": 9,
+    "momentum_28d (no model)": 8
    },
    "TRX-USD": {
     "ridge": 2,
-    "boosting": 2,
+    "boosting": 1,
     "momentum_28d (no model)": 2
    },
    "AVAX-USD": {
     "ridge": 18,
-    "boosting": 19,
+    "boosting": 14,
     "momentum_28d (no model)": 4
    },
    "LINK-USD": {
-    "ridge": 9,
-    "boosting": 4,
+    "ridge": 10,
+    "boosting": 5,
     "momentum_28d (no model)": 1
    },
    "DOT-USD": {
-    "ridge": 15,
-    "boosting": 15,
-    "momentum_28d (no model)": 18
+    "ridge": 14,
+    "boosting": 17,
+    "momentum_28d (no model)": 17
    },
    "LTC-USD": {
-    "ridge": 10,
-    "boosting": 14,
+    "ridge": 9,
+    "boosting": 12,
     "momentum_28d (no model)": 3
    },
    "BCH-USD": {
     "ridge": 11,
-    "boosting": 18,
-    "momentum_28d (no model)": 12
-   },
-   "XLM-USD": {
-    "ridge": 7,
-    "boosting": 5,
-    "momentum_28d (no model)": 8
-   },
-   "HBAR-USD": {
-    "ridge": 13,
-    "boosting": 7,
-    "momentum_28d (no model)": 7
-   },
-   "SUI20947-USD": {
-    "ridge": 17,
     "boosting": 13,
     "momentum_28d (no model)": 11
    },
+   "XLM-USD": {
+    "ridge": 7,
+    "boosting": 6,
+    "momentum_28d (no model)": 7
+   },
+   "HBAR-USD": {
+    "ridge": 13,
+    "boosting": 11,
+    "momentum_28d (no model)": 6
+   },
+   "SUI20947-USD": {
+    "ridge": 16,
+    "boosting": 15,
+    "momentum_28d (no model)": 10
+   },
    "NEAR-USD": {
-    "ridge": 14,
+    "ridge": 12,
     "boosting": 16,
-    "momentum_28d (no model)": 14
+    "momentum_28d (no model)": 13
    },
    "UNI7083-USD": {
-    "ridge": 19,
-    "boosting": 17,
-    "momentum_28d (no model)": 19
-   },
-   "AAVE-USD": {
-    "ridge": 12,
-    "boosting": 9,
-    "momentum_28d (no model)": 6
+    "ridge": 17,
+    "boosting": 18,
+    "momentum_28d (no model)": 18
    }
   },
   "consensus_order": [
@@ -10266,21 +9730,22 @@
    "XLM-USD",
    "XRP-USD",
    "LTC-USD",
-   "HBAR-USD",
-   "AAVE-USD",
-   "ETH-USD",
    "SOL-USD",
+   "ETH-USD",
    "DOGE-USD",
+   "HBAR-USD",
    "ADA-USD",
    "BCH-USD",
-   "SUI20947-USD",
    "AVAX-USD",
+   "SUI20947-USD",
    "NEAR-USD",
    "DOT-USD",
    "UNI7083-USD"
   ]
  },
- "unresolved": [],
+ "unresolved": [
+  "AAVE-USD"
+ ],
  "alerts": [
   "Model 'ridge' edge evidence: candidate (still unvalidated) -> weak/none"
  ]
